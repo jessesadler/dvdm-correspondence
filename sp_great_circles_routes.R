@@ -1,0 +1,60 @@
+### Make great circles for routes with data as Spatial Lines Data Frame ###
+
+# Load libraries
+library(tidyverse)
+library(sp)
+library(geosphere)
+library(data.table)
+
+# Load letters and geographic data
+letters <- read_csv("dvdm-correspondence-1591.csv")
+locations <- read_csv("locations.csv")
+geo_data <- select(locations, place:lat) # simplify locations data to only necessary variables
+
+# Data from letters
+per_route <- letters %>%
+  group_by(source, destination) %>%
+  summarise(count = n()) %>%
+  remove_missing() %>%
+  arrange(count)
+
+# Join data to locations data
+geo_per_route <- per_route %>%
+  left_join(geo_data, by = c("source" = "place")) %>% 
+  left_join(geo_data, by = c("destination" = "place"))
+geo_per_route$ID <-as.character(c(1:nrow(geo_per_route))) # create id for each pair
+
+# Make a data.table for faster data manipulation using data.table package
+setDT(geo_per_route)
+
+# Extract source and destination lat and lon data to be placed into gcIntermediate command
+source_loc <- geo_per_route[ , .(lon.x, lat.x)] # Origin
+dest_loc <- geo_per_route[ , .(lon.y, lat.y)] # Destinations
+
+# Calculate great circle routes between sources and destinations and return a SpatialLines object
+routes <- gcIntermediate(source_loc, dest_loc, 100, addStartEnd=TRUE, sp=TRUE)
+
+# Convert a SpatialLines object into SpatialLinesDataFrame, so that tabular data can be added
+
+# create empty data frame
+ids <- data.frame()
+
+# fill data frame with IDs for each line
+for (i in (1:length(routes))) {         
+  id <- data.frame(routes@lines[[i]]@ID)
+  ids <- rbind(ids, id)  }
+
+colnames(ids)[1] <- "ID" # rename ID column, [1] says the first column is that which is to be renamed
+
+# Convert SpatialLines into SpatialLinesDataFrame using IDs as the data frame
+# Only variable in the SpatialLinesDataFRame after this is ID
+
+routes <- SpatialLinesDataFrame(routes, data = ids, match.ID = TRUE)
+
+# Join geo_per_route to routes and maintain as SpatialLinesDataFrame
+
+gcircles_routes <- merge(routes, geo_per_route, by = "ID")
+
+# Save the spatial lines data frame as rds object
+
+write_rds(gcircles_routes, "gcircles_routes.rds")
