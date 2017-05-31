@@ -5,7 +5,7 @@ library(tidyverse)
 library(ggmap)
 
 # Load letters data
-letters <- read_csv("dvdm-correspondence-1591.csv")
+letters <- read_csv("data/dvdm-correspondence-1591.csv")
 
 # The rest of the code makes a tibble (locations) with the geocoding of all of
 # the places in the letters tibble and saves it as a rds document.

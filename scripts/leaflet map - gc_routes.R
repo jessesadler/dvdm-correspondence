@@ -7,9 +7,9 @@ library(htmltools)
 library(RColorBrewer)
 
 # Load letters and geographic data
-letters <- read_csv("dvdm-correspondence-1591.csv")
-locations <- read_csv("locations.csv")
-gcircles_routes <- read_rds("gcircles_routes_sp.rds")
+letters <- read_csv("data/dvdm-correspondence-1591.csv")
+locations <- read_csv("data/locations-1591.csv")
+gcircles_routes <- read_rds("data/gcircles_routes_sp.rds")
 
 # Prepare the data
 
