@@ -1,14 +1,16 @@
-### Make great circles for routes with data as Spatial Lines Data Frame ###
+### Make great circles for routes:
+### Export data as Spatial Lines Data Frame (sf) and as dataframe and tibble for ggplot ###
 
 # Load libraries
 library(tidyverse)
 library(sp)
 library(geosphere)
 library(data.table)
+library(broom)
 
 # Load letters and geographic data
 letters <- read_csv("dvdm-correspondence-1591.csv")
-locations <- read_csv("locations.csv")
+locations <- read_csv("locations-1591.csv")
 geo_data <- select(locations, place:lat) # simplify locations data to only necessary variables
 
 # Data from letters
@@ -36,25 +38,35 @@ routes <- gcIntermediate(source_loc, dest_loc, 100, addStartEnd=TRUE, sp=TRUE)
 
 # Convert a SpatialLines object into SpatialLinesDataFrame, so that tabular data can be added
 
-# create empty data frame
+# create empty dataframe
 ids <- data.frame()
 
-# fill data frame with IDs for each line
+# fill dataframe with IDs for each line
 for (i in (1:length(routes))) {         
   id <- data.frame(routes@lines[[i]]@ID)
   ids <- rbind(ids, id)  }
 
 colnames(ids)[1] <- "ID" # rename ID column, [1] says the first column is that which is to be renamed
 
-# Convert SpatialLines into SpatialLinesDataFrame using IDs as the data frame
+# Convert SpatialLines into SpatialLinesDataFrame using IDs as the dataframe
 # Only variable in the SpatialLinesDataFRame after this is ID
 
 routes <- SpatialLinesDataFrame(routes, data = ids, match.ID = TRUE)
 
-# Join geo_per_route to routes and maintain as SpatialLinesDataFrame
+### Join data as SpatialLinesDataFrame and save ###
 
-gcircles_routes <- merge(routes, geo_per_route, by = "ID")
+gcircles_routes_sp <- merge(routes, geo_per_route, by = "ID")
 
-# Save the spatial lines data frame as rds object
+write_rds(gcircles_routes_sp, "gcircles_routes_sp.rds")
 
-write_rds(gcircles_routes, "gcircles_routes.rds")
+### Tidy routes (convert to data frame) and join attributes ###
+routes_df <- tidy(routes, region = "ID") # convert SpatialLinesDataFrame to a dataframe so it can be used by ggplot
+routes_df <- rename(routes_df, ID = id) # rename id column to capitalized
+gcircles_routes_df <- left_join(routes_df, geo_per_route, by = "ID")
+
+write_rds(gcircles_routes_df, "gcircles_routes_df.rds")
+
+## As tibble ##
+gcircles_routes_tb <- as_tibble(gcircles_routes_df)
+
+write_rds(gcircles_routes_tb, "gcircles_routes_tb.rds")

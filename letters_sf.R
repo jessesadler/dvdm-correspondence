@@ -52,7 +52,7 @@ routes <- SpatialLinesDataFrame(routes, data = ids, match.ID = TRUE)
 gcircles_sp <- merge(routes, geo_letters, by = "ID")
 
 # Transform sp object to sf object
-gcircles_sf <- st_as_sf(gcircles_sp)
+letters_sf <- st_as_sf(gcircles_sp)
 
 # Save data
-write_rds(gcircles_sf, "gcircles_sf.rds")
+write_rds(letters_sf, "letters_sf.rds")
