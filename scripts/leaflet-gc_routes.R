@@ -2,6 +2,7 @@
 
 # Load libraries
 library(tidyverse)
+library(sp)
 library(leaflet)
 library(htmltools)
 library(RColorBrewer)
