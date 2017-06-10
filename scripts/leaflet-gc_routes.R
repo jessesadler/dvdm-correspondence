@@ -28,9 +28,16 @@ per_destination <- letters %>%
   remove_missing() %>%
   arrange(count)
 
+corrs_per <- letters %>%
+  group_by(source) %>%
+  summarise(correspondents = n_distinct(name)) %>% 
+  rename(place = source) %>% 
+  arrange(desc(correspondents))
+
 geo_per_destination <- inner_join(geo_data, per_destination, by = c("place" = "destination"))
 geo_per_source <- inner_join(geo_data, per_source, by = c("place" = "source"))
 cities <- full_join(geo_per_source, geo_per_destination, by = "place") # keep all items in both tables
+cities <- left_join(cities, corrs_per, by = "place")
 
 # Color palette
 pal <- colorNumeric(palette = "YlOrRd", domain = gcircles_routes$count)
@@ -42,8 +49,8 @@ label1 <- sprintf(
 ) %>% lapply(htmltools::HTML)
 
 label2 <- sprintf(
-  "<strong>%s</strong><br/>Letters from: %g<br/>Letters to: %g",
-  cities$place, cities$count.x, cities$count.y
+  "<strong>%s</strong><br/>Letters from: %g<br/>Letters to: %g<br/>Correspondents: %g",
+  cities$place, cities$count.x, cities$count.y, cities$correspondents
 ) %>% lapply(htmltools::HTML)
 
 # Plot
@@ -60,6 +67,6 @@ leaflet(gcircles_routes) %>% addProviderTiles(providers$CartoDB.PositronNoLabels
   addLegend(position = "topright",
       colors = c("#ffe79e", "#addd8e"),
       labels = c("Sent Location", "Received Location"),
-      opacity = 1) %>% 
+      opacity = 1) %>%
   addLegend(pal = pal, values = ~count, opacity = 1,
-            title = "Letters")
+            title = "Letters<br/>Received")

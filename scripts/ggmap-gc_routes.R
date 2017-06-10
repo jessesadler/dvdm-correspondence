@@ -40,12 +40,12 @@ ggmap(bw_map, extent = "device", legend = "topright") +
   geom_point(aes(x = lon, y = lat), color = "#addd8e", alpha = .9, size = 4, data = geo_per_destination) +
   geom_point(aes(x = lon, y = lat), color = "#ffe79e", alpha = .9, size = 2, data = geo_per_source) +
   geom_line(data = routes, aes(x = long, y = lat, group = group, color = count), size = .7) +
-  scale_colour_distiller(palette = "YlOrRd", direction = 1, name = "Letters", guide = "colorbar")
+  scale_colour_distiller(palette = "YlOrRd", direction = 1, name = "Letters\nReceived", guide = "colorbar")
 
 ### Map without need for extra data ###
 ggmap(bw_map, extent = "device", legend = "topright") +
   geom_point(data = routes, aes(x = lon.y, y = lat.y), color = "#addd8e", alpha = .9, size = 4) +
   geom_point(data = routes, aes(x = lon.x, y = lat.x), color = "#ffe79e", alpha = .9, size = 2) +
   geom_line(data = routes, aes(x = long, y = lat, group = group, color = count), size = 0.7) +
-  scale_colour_distiller(palette = "YlOrRd", direction = 1, name = "Letters", guide = "colorbar") +
+  scale_colour_distiller(palette = "YlOrRd", direction = 1, name = "Letters\nReceived", guide = "colorbar") +
   labs(title = "Daniel van der Meulen Correspondence, 1578-1591")
