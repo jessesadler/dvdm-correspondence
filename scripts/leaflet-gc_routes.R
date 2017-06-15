@@ -37,7 +37,8 @@ corrs_per <- letters %>%
 geo_per_destination <- inner_join(geo_data, per_destination, by = c("place" = "destination"))
 geo_per_source <- inner_join(geo_data, per_source, by = c("place" = "source"))
 cities <- full_join(geo_per_source, geo_per_destination, by = "place") # keep all items in both tables
-cities <- left_join(cities, corrs_per, by = "place")
+cities <- left_join(cities, corrs_per, by = "place") %>% 
+  replace_na(list(count.x =0, count.y = 0, correspondents = 0)) # replace NAs with 0s in count columns
 
 # Color palette
 pal <- colorNumeric(palette = "YlOrRd", domain = gcircles_routes$count)
