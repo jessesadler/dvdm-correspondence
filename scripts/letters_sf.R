@@ -5,7 +5,6 @@ library(tidyverse)
 library(sp)
 library(sf)
 library(geosphere)
-library(data.table)
 
 # Load letters and geographic data
 letters <- read_csv("data/dvdm-correspondence-1591.csv")
@@ -20,12 +19,9 @@ geo_letters <- letters %>%
 
 geo_letters$ID <-as.character(c(1:nrow(geo_letters))) # create id for each pair
 
-# Make a data.table for faster data manipulation using data.table package
-setDT(geo_letters)
-
 # Extract source and destination latitude and longitude data to be placed into gcIntermediate command
-source_loc <- geo_letters[ , .(lon.x, lat.x)] # Origin
-dest_loc <- geo_letters[ , .(lon.y, lat.y)] # Destinations
+source_loc <- select(geo_letters, lon.x, lat.x)
+dest_loc <- select(geo_letters, lon.y, lat.y)
 
 # Calculate great circle routes between sources and destinations and return a SpatialLines object
 routes <- gcIntermediate(source_loc, dest_loc, 100, addStartEnd=TRUE, sp=TRUE)

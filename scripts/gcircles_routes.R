@@ -18,7 +18,8 @@ per_route <- letters %>%
   group_by(source, destination) %>%
   summarise(count = n()) %>%
   remove_missing() %>%
-  arrange(count)
+  arrange(count) %>%
+  ungroup()
 
 # Join data to locations data
 geo_per_route <- per_route %>%
@@ -26,12 +27,9 @@ geo_per_route <- per_route %>%
   left_join(geo_data, by = c("destination" = "place"))
 geo_per_route$ID <-as.character(c(1:nrow(geo_per_route))) # create id for each pair
 
-# Make a data.table for faster data manipulation using data.table package
-setDT(geo_per_route)
-
 # Extract source and destination lat and lon data to be placed into gcIntermediate command
-source_loc <- geo_per_route[ , .(lon.x, lat.x)] # Origin
-dest_loc <- geo_per_route[ , .(lon.y, lat.y)] # Destinations
+source_loc <- select(geo_per_route, lon.x, lat.x)
+dest_loc <- select(geo_per_route, lon.y, lat.y)
 
 # Calculate great circle routes between sources and destinations and return a SpatialLines object
 routes <- gcIntermediate(source_loc, dest_loc, 100, addStartEnd=TRUE, sp=TRUE)
