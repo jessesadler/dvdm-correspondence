@@ -25,7 +25,7 @@ per_route <- letters %>%
 geo_per_route <- per_route %>%
   left_join(geo_data, by = c("source" = "place")) %>% 
   left_join(geo_data, by = c("destination" = "place"))
-geo_per_route$ID <-as.character(c(1:nrow(geo_per_route))) # create id for each pair
+geo_per_route$ID <- as.character(c(1:nrow(geo_per_route))) # create id for each pair
 
 # Extract source and destination lat and lon data to be placed into gcIntermediate command
 source_loc <- select(geo_per_route, lon.x, lat.x)
