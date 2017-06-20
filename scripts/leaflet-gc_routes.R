@@ -60,13 +60,13 @@ leaflet(gcircles_routes) %>% addProviderTiles(providers$CartoDB.PositronNoLabels
       color = "#addd8e", stroke = FALSE, fillOpacity = 1, radius = 10,
       label = label2) %>%
   addCircleMarkers(data = cities, lng = ~lon.x, lat = ~lat.x,
-      color = "#ffe79e", stroke = FALSE, fillOpacity = 1, radius = 5,
+      color = "#ffd24d", stroke = FALSE, fillOpacity = 1, radius = 5,
       label = label2) %>%
   addPolylines(opacity = 0.8, weight = 3, color = ~pal(count),
       label = label1,
       highlight = highlightOptions(weight = 5, color = "red", opacity = 1)) %>%
   addLegend(position = "topright",
-      colors = c("#ffe79e", "#addd8e"),
+      colors = c("#ffd24d", "#addd8e"),
       labels = c("Sent Location", "Received Location"),
       opacity = 1) %>%
   addLegend(pal = pal, values = ~count, opacity = 1,

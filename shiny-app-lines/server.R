@@ -13,9 +13,16 @@ letters <- read_csv("data/dvdm-correspondence-1591.csv")
 locations <- read_csv("data/locations-1591.csv")
 geo_data <- select(locations, place:lat) # simplify locations data to only necessary variables
 
+routes_all <- letters %>% 
+  group_by(source, destination) %>%
+  summarise(count = n()) %>%
+  remove_missing() %>%
+  arrange(count)
+
 shinyServer(function(input, output, session) {
 
-  output$map <- renderLeaflet({
+  # Routes
+  gcircles_routes <- reactive({
 
     per_route <- letters %>%
       filter(year >= input$range[1] & year <= input$range[2]) %>% 
@@ -57,8 +64,12 @@ shinyServer(function(input, output, session) {
     
     ### Join data as SpatialLinesDataFrame and save ###
     
-    gcircles_routes <- merge(routes, geo_per_route, by = "ID")
+    merge(routes, geo_per_route, by = "ID")
+  })
     
+  ## Cities
+  cities <- reactive({
+  
     per_source <- letters %>%
       filter(year >= input$range[1] & year <= input$range[2]) %>% 
       group_by(source) %>%
@@ -82,37 +93,56 @@ shinyServer(function(input, output, session) {
     
     geo_per_destination <- inner_join(geo_data, per_destination, by = c("place" = "destination"))
     geo_per_source <- inner_join(geo_data, per_source, by = c("place" = "source"))
-    cities <- full_join(geo_per_source, geo_per_destination, by = "place") # keep all items in both tables
-    cities <- left_join(cities, corrs_per, by = "place") %>% 
+    cities_temp <- full_join(geo_per_source, geo_per_destination, by = "place") # keep all items in both tables
+    
+    left_join(cities_temp, corrs_per, by = "place") %>% 
       replace_na(list(count.x =0, count.y = 0, correspondents = 0)) # replace NAs with 0s in count columns
+  })  
+ 
+  output$map <- renderLeaflet({
+    leaflet() %>% addProviderTiles(providers$CartoDB.DarkMatterNoLabels) %>% 
+      setView(3.5, 46.5, zoom = 5)
+      
+  })
     
-    # Color palette
-    pal <- colorNumeric(palette = "YlOrRd", domain = gcircles_routes$count)
-    
-    # Labels
-    label1 <- sprintf(
-      "%s to %s<br/>Number of letters: %g",
-      gcircles_routes$source, gcircles_routes$destination, gcircles_routes$count
-    ) %>% lapply(htmltools::HTML)
-    
+  observe({
     label2 <- sprintf(
       "<strong>%s</strong><br/>Letters from: %g<br/>Letters to: %g<br/>Correspondents: %g",
-      cities$place, cities$count.x, cities$count.y, cities$correspondents
+      cities()$place, cities()$count.x, cities()$count.y, cities()$correspondents
+    ) %>% lapply(htmltools::HTML)
+
+    leafletProxy("map", data = cities()) %>%
+      clearMarkers() %>% 
+      addCircleMarkers(lng = ~lon.y, lat = ~lat.y,
+                       color = "#addd8e", stroke = FALSE, fillOpacity = 1, radius = 8,
+                       label = label2) %>% 
+      addCircleMarkers(lng = ~lon.x, lat = ~lat.x,
+                       color = "#ffd24d", stroke = FALSE, fillOpacity = 1, radius = 5,
+                       label = label2)
+  })
+  
+  observe({
+
+    pal <- colorNumeric(palette = "YlOrRd", domain = routes_all$count)
+    label1 <- sprintf(
+      "%s to %s<br/>Number of letters: %g",
+      gcircles_routes()$source, gcircles_routes()$destination, gcircles_routes()$count
     ) %>% lapply(htmltools::HTML)
     
-    # Plot
-    leaflet(data = gcircles_routes) %>% addProviderTiles(providers$CartoDB.PositronNoLabels) %>%
-      addCircleMarkers(data = cities, lng = ~lon.y, lat = ~lat.y,
-                       color = "#addd8e", stroke = FALSE, fillOpacity = 1, radius = 10,
-                       label = label2) %>%
-      addCircleMarkers(data = cities, lng = ~lon.x, lat = ~lat.x,
-                       color = "#ffe79e", stroke = FALSE, fillOpacity = 1, radius = 5,
-                       label = label2) %>%
-      addPolylines(opacity = 0.8, weight = 3, color = ~pal(count),
+    leafletProxy("map") %>% 
+      clearShapes() %>% 
+      addPolylines(data = gcircles_routes(), opacity = 0.9, weight = 3, color = ~pal(count),
                    label = label1,
-                   highlight = highlightOptions(weight = 5, color = "red", opacity = 1)) %>%
+                   highlight = highlightOptions(weight = 5, color = "red", opacity = 1))
+  })
+  
+  observe({
+    pal <- colorNumeric(palette = "YlOrRd", domain = routes_all$count) # may want to change this to make legend always the same
+    
+    leafletProxy("map", data = routes_all) %>%
+      clearControls() %>% 
       addLegend(position = "topright",
-                colors = c("#ffe79e", "#addd8e"),
+                colors = c("#ffd24d", "#addd8e"),
                 labels = c("Sent Location", "Received Location"),
                 opacity = 1) %>%
       addLegend(pal = pal, values = ~count, opacity = 1,

@@ -6,6 +6,6 @@ shinyUI(bootstrapPage(
   leafletOutput("map", width = "100%", height = "100%"),
   absolutePanel(top = 10, left = 50,
                 sliderInput("range", "Years", min(1578), max(1591),
-                            value = range(1578, 1591), step = 1, sep = ""))
+                            value = range(1578, 1579), step = 1, sep = "", animate=TRUE))
 )
 )
