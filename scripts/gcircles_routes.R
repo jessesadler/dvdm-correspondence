@@ -5,8 +5,6 @@
 library(tidyverse)
 library(sp)
 library(geosphere)
-library(data.table)
-library(broom)
 
 # Load letters and geographic data
 letters <- read_csv("data/dvdm-correspondence-1591.csv")
@@ -55,14 +53,16 @@ routes <- SpatialLinesDataFrame(routes, data = ids, match.ID = TRUE)
 
 gcircles_routes_sp <- merge(routes, geo_per_route, by = "ID")
 
-write_rds(gcircles_routes_sp, "gcircles_routes_sp.rds")
+write_rds(gcircles_routes_sp, "data/gcircles_routes_sp.rds")
 
 ### Tidy routes (convert to data frame) and join attributes ###
+library(broom)
+
 routes_df <- tidy(routes, region = "ID") # convert SpatialLinesDataFrame to a dataframe so it can be used by ggplot
 routes_df <- rename(routes_df, ID = id) # rename id column to capitalized
 gcircles_routes_df <- left_join(routes_df, geo_per_route, by = "ID")
 
-write_rds(gcircles_routes_df, "gcircles_routes_df.rds")
+write_rds(gcircles_routes_df, "data/gcircles_routes_df.rds")
 
 ## As tibble ##
 gcircles_routes_tb <- as_tibble(gcircles_routes_df)

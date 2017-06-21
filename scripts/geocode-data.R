@@ -5,7 +5,7 @@ library(tidyverse)
 library(ggmap)
 
 # Load letters data
-letters <- read_csv("data/dvdm-correspondence-1591.csv")
+letters <- read_csv("data/dvdm-correspondence-original.csv")
 
 # The rest of the code makes a tibble (locations) with the geocoding of all of
 # the places in the letters tibble and saves it as a rds document.
@@ -35,12 +35,16 @@ locations <- as_tibble(locations_df) %>%
   select(place:country) %>% 
   rename(admin_area = administrative_area_level_1)
 
-# Save tibble as rds document to maintain the type for each variable
-write_rds(locations, "locations.rds")
+# Take out country name from places that needed it for geocoding
+locations$place <- str_replace(locations$place, ",.*", "")
 
-# Load tibble from rds
-locations <- read_rds("locations.rds")
+# Save as csv
+write_csv(locations, "data/locations-year.csv")
+locations <- read_csv("data/locations.csv")
 
-# Could save to csv, which drops country and admin_area as factors
-write_csv(locations, "locations.csv")
-read_csv(locations, "locations.csv")
+# Take out country name from places that needed it for geocoding in letters data
+letters$source <- str_replace(letters$source, ",.*", "")
+letters$destination <- str_replace(letters$destination, ",.*", "")
+
+# Save cleaned letters data as csv
+write_csv(letters, "data/dvdm-correspondence-year.csv")

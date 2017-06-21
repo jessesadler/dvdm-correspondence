@@ -51,4 +51,4 @@ gcircles_sp <- merge(routes, geo_letters, by = "ID")
 letters_sf <- st_as_sf(gcircles_sp)
 
 # Save data
-write_rds(letters_sf, "letters_sf.rds")
+write_rds(letters_sf, "data/letters_sf.rds")

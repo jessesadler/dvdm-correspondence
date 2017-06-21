@@ -139,10 +139,12 @@ shinyServer(function(input, output, session) {
       clearMarkers() %>% 
       addCircleMarkers(lng = ~lon.y, lat = ~lat.y,
                        color = "#addd8e", stroke = FALSE, fillOpacity = 1, radius = 8,
-                       label = label2) %>% 
+                       label = label2,
+                       labelOptions = labelOptions(textsize = "11px")) %>% 
       addCircleMarkers(lng = ~lon.x, lat = ~lat.x,
                        color = "#ffd24d", stroke = FALSE, fillOpacity = 1, radius = 5,
-                       label = label2)
+                       label = label2,
+                       labelOptions = labelOptions(textsize = "11px"))
   })
   
   # Routes
@@ -155,7 +157,7 @@ shinyServer(function(input, output, session) {
     } else {
     
     sprintf(
-      "%s to %s<br/>Number of letters: %g",
+      "%s to %s<br/>Letters: %g",
       gcircles_routes()$source, gcircles_routes()$destination, gcircles_routes()$count
     ) %>% lapply(htmltools::HTML)
     }
@@ -164,6 +166,7 @@ shinyServer(function(input, output, session) {
       clearShapes() %>% 
       addPolylines(data = gcircles_routes(), opacity = 0.9, weight = 3, color = ~pal(count),
                    label = label1,
+                   labelOptions = labelOptions(textsize = "11px"),
                    highlight = highlightOptions(weight = 5, color = "red", opacity = 1))
   })
   })

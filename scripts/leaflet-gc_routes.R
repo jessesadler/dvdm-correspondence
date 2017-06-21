@@ -45,7 +45,7 @@ pal <- colorNumeric(palette = "YlOrRd", domain = gcircles_routes$count)
 
 # Labels
 label1 <- sprintf(
-  "%s to %s<br/>Number of letters: %g",
+  "%s to %s<br/>Letters: %g",
   gcircles_routes$source, gcircles_routes$destination, gcircles_routes$count
 ) %>% lapply(htmltools::HTML)
 
@@ -57,13 +57,16 @@ label2 <- sprintf(
 # Plot
 leaflet(gcircles_routes) %>% addProviderTiles(providers$CartoDB.PositronNoLabels) %>%
   addCircleMarkers(data = cities, lng = ~lon.y, lat = ~lat.y,
-      color = "#addd8e", stroke = FALSE, fillOpacity = 1, radius = 10,
-      label = label2) %>%
+      color = "#addd8e", stroke = FALSE, fillOpacity = 1, radius = 8,
+      label = label2,
+      labelOptions = labelOptions(textsize = "11px")) %>%
   addCircleMarkers(data = cities, lng = ~lon.x, lat = ~lat.x,
       color = "#ffd24d", stroke = FALSE, fillOpacity = 1, radius = 5,
-      label = label2) %>%
+      label = label2,
+      labelOptions = labelOptions(textsize = "11px")) %>%
   addPolylines(opacity = 0.8, weight = 3, color = ~pal(count),
       label = label1,
+      labelOptions = labelOptions(textsize = "11px"),
       highlight = highlightOptions(weight = 5, color = "red", opacity = 1)) %>%
   addLegend(position = "topright",
       colors = c("#ffd24d", "#addd8e"),
