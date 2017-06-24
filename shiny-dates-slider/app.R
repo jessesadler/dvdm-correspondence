@@ -2,6 +2,8 @@ library(shiny)
 library(leaflet)
 library(dplyr)
 
+# See https://stackoverflow.com/questions/40392676/r-shiny-date-slider-animation-by-month-currently-by-day/40402610#40402610
+
 df <- data.frame(id = 1:5, 
                  lat = c(45.53814, 45.51076, 45.4356, 45.54332, 45.52234), 
                  lon = c(-73.63672, -73.61029, -73.6010, -73.56000, -73.59022),

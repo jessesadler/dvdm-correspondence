@@ -6,8 +6,9 @@ The the center of this extensive mercantile archive is a collection of approxima
 
 The collection of letters preserved in the Daniel van der Meulen archive can be divided into two periods: before and after September 1591. In September of 1591, Daniel moved to Leiden after a six year stay in Bremen following the fall of Antwerp. After Daniel moved to Leiden in 1591 his correspondence grew at a rapid rate. The current repository contains information on all of the letters to the end of 1591. The vast majority of the letters that Daniel received between 1592 and 1600 — approximately 6,000 — still needs to be added to the analysis.
 
+You can see the current early phase of the project at [the projects page on my website](https://www.jessesadler.com/project/)
+
 ### To be done
 * Data entry of letters, 1592–1600: This is underway, but it is a slow process
-* Create an interactive [Shiny app](http://shiny.rstudio.com) to analyze different aspects of the correspondence network
 * Geographical analysis with the [R Simple Features package](https://cran.r-project.org/web/packages/sf/)
-* Analysis and visualization of more aspects of the data including, distance, number of correspondents, and characteristics of the correspondents
+* Analysis and visualization of more aspects of the data including characteristics of the correspondents
