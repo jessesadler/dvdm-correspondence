@@ -29,7 +29,7 @@ shinyServer(function(input, output, session) {
   gcircles_routes <- reactive({
     
     per_route <- letters %>%
-      filter(date >= input$range[1] & date <= input$range[2]) %>% 
+      filter(date <= input$dates) %>% 
       group_by(source, destination) %>%
       summarise(count = n()) %>%
       remove_missing() %>%
@@ -74,21 +74,21 @@ shinyServer(function(input, output, session) {
   cities <- reactive({
     
     per_source <- letters %>%
-      filter(date >= input$range[1] & date <= input$range[2]) %>% 
+      filter(date <= input$dates) %>% 
       group_by(source) %>%
       summarise(count = n()) %>%
       remove_missing() %>%
       arrange(count)
     
     per_destination <- letters %>%
-      filter(date >= input$range[1] & date <= input$range[2]) %>% 
+      filter(date <= input$dates) %>% 
       group_by(destination) %>%
       summarise(count = n()) %>%
       remove_missing() %>%
       arrange(count)
     
     corrs_per <- letters %>%
-      filter(date >= input$range[1] & date <= input$range[2]) %>% 
+      filter(date <= input$dates) %>% 
       group_by(source) %>%
       summarise(correspondents = n_distinct(name)) %>% 
       rename(place = source) %>% 
