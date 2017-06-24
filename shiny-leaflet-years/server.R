@@ -70,7 +70,7 @@ shinyServer(function(input, output, session) {
     }
   })
     
-  ## Cities
+  ## Cities: To be used for labels on map
   cities <- reactive({
   
     per_source <- letters %>%
