@@ -1,5 +1,7 @@
 ### Shiny Leaflet Map of Daniel van der Meulen Correspondence ###
 
+## Shows animation of the development of the correspondence of Daniel ##
+
 library(shiny)
 library(tidyverse)
 library(sp)
@@ -29,6 +31,7 @@ shinyServer(function(input, output, session) {
   gcircles_routes <- reactive({
     
     per_route <- letters %>%
+      filter(source != destination) %>%
       filter(date <= input$dates) %>% 
       group_by(source, destination) %>%
       summarise(count = n()) %>%

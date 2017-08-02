@@ -14,6 +14,7 @@ geo_data <- select(locations, place:lat) # simplify locations data to only neces
 # Data from letters
 per_route <- letters %>%
   group_by(source, destination) %>%
+  filter(source != destination) %>%
   summarise(count = n()) %>%
   remove_missing() %>%
   arrange(count) %>%

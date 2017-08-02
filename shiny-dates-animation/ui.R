@@ -9,7 +9,7 @@ shinyUI(bootstrapPage(
                   min(as.Date("1578-01-01", "%Y-%m-%d")),
                   max(as.Date("1591-12-31", "%Y-%m-%d")),
                   value = as.Date("1578-01-01", "%Y-%m-%d"),
-                  step = 182.625, # half year
+                  step = 182.625, # each step in animation is half year
                   timeFormat = "%e %b %Y",
                   animate = TRUE
                   ))

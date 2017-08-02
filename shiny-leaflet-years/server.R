@@ -29,6 +29,7 @@ shinyServer(function(input, output, session) {
   gcircles_routes <- reactive({
 
     per_route <- letters %>%
+      filter(source != destination) %>%
       filter(year >= input$range[1] & year < input$range[2]) %>% 
       group_by(source, destination) %>%
       summarise(count = n()) %>%

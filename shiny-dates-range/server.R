@@ -13,8 +13,7 @@ library(RColorBrewer)
 letters <- read_csv("data/dvdm-correspondence-1591.csv")
 locations <- read_csv("data/locations-1591.csv")
 geo_data <- select(locations, place:lat) # simplify locations data to only necessary variables
-# empty sf object of lines to use for periods with no data
-empty_sf <- read_rds("data/empty_sf.rds")
+empty_sf <- read_rds("data/empty_sf.rds") # empty sf object of lines to use for periods with no data
 
 # Set baseline for palette to be used for legend
 routes_all <- letters %>% 
@@ -29,6 +28,7 @@ shinyServer(function(input, output, session) {
   gcircles_routes <- reactive({
     
     per_route <- letters %>%
+      filter(source != destination) %>%
       filter(date >= input$range[1] & date <= input$range[2]) %>% 
       group_by(source, destination) %>%
       summarise(count = n()) %>%
@@ -99,7 +99,7 @@ shinyServer(function(input, output, session) {
     cities_temp <- full_join(geo_per_source, geo_per_destination, by = "place")
     
     left_join(cities_temp, corrs_per, by = "place") %>% 
-      replace_na(list(count.x =0, count.y = 0, correspondents = 0)) # replace NAs with 0s in count columns
+      replace_na(list(count.x = 0, count.y = 0, correspondents = 0)) # replace NAs with 0s in count columns
   })  
   
   # Output base map

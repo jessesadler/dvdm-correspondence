@@ -1,3 +1,4 @@
+# Leaflet map with date range that creates circles based on source and destination
 
 library(shiny)
 library(tidyverse)
@@ -16,14 +17,14 @@ shinyServer(function(input, output, session) {
   output$map <- renderLeaflet({
 
     destination <- letters_geo %>% 
-      filter(year >= input$range[1] & year <= input$range[2]) %>%
+      filter(date >= input$range[1] & date <= input$range[2]) %>%
       group_by(destination, lon.y, lat.y) %>%
       summarise(count = n()) %>%
       remove_missing() %>%
       arrange(count)
 
     source <- letters_geo %>% 
-      filter(year >= input$range[1] & year <= input$range[2]) %>%
+      filter(date >= input$range[1] & date <= input$range[2]) %>%
       group_by(source, lon.x, lat.x) %>%
       summarise(count = n()) %>%
       remove_missing() %>%
