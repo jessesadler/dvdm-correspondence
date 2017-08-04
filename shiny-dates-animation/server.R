@@ -105,18 +105,12 @@ shinyServer(function(input, output, session) {
       replace_na(list(count.x =0, count.y = 0, correspondents = 0)) # replace NAs with 0s in count columns
   })  
   
-  # Output base map
-  output$map <- renderLeaflet({
-    leaflet() %>% addProviderTiles(providers$CartoDB.DarkMatterNoLabels) %>% 
-      setView(3.5, 46.5, zoom = 5)
-  })
+  # Output base map with legends
+  pal <- colorNumeric(palette = "YlOrRd", domain = routes_all$count)
   
-  # Legend
-  observe({
-    pal <- colorNumeric(palette = "YlOrRd", domain = routes_all$count)
-    
-    leafletProxy("map", data = routes_all) %>%
-      clearControls() %>% 
+  output$map <- renderLeaflet({
+    leaflet(data = routes_all) %>% addProviderTiles(providers$CartoDB.DarkMatterNoLabels) %>%
+      setView(3.5, 46.5, zoom = 5) %>%
       addLegend(position = "topright",
                 colors = c("#ffd24d", "#addd8e"),
                 labels = c("Sent Location", "Received Location"),
