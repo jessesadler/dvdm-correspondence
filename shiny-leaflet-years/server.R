@@ -23,6 +23,8 @@ routes_all <- letters %>%
   remove_missing() %>%
   arrange(count)
 
+pal <- colorNumeric(palette = "viridis", domain = routes_all$count, reverse = TRUE)
+
 shinyServer(function(input, output, session) {
 
   # Routes
@@ -67,7 +69,7 @@ shinyServer(function(input, output, session) {
     routes <- SpatialLinesDataFrame(routes, data = ids, match.ID = TRUE)
     
     # Create and return a SpatialLinesDataFrame
-    merge(routes, geo_per_route, by = "ID")
+    sp::merge(routes, geo_per_route, by = "ID")
     }
   })
     
@@ -104,10 +106,8 @@ shinyServer(function(input, output, session) {
   })  
  
   # Output base map with legends
-  pal <- colorNumeric(palette = "YlOrRd", domain = routes_all$count)
-  
   output$map <- renderLeaflet({
-    leaflet(data = routes_all) %>% addProviderTiles(providers$CartoDB.DarkMatterNoLabels) %>%
+    leaflet(data = routes_all) %>% addProviderTiles(providers$CartoDB.PositronNoLabels) %>%
       setView(3.5, 46.5, zoom = 5) %>%
       addLegend(position = "topright",
                 colors = c("#ffd24d", "#addd8e"),
@@ -144,8 +144,6 @@ shinyServer(function(input, output, session) {
   
   # Routes
   observe({
-    pal <- colorNumeric(palette = "YlOrRd", domain = routes_all$count)
-    
     # Return NA for labels if routes function is empty otherwise create labels
     label1 <- if(nrow(gcircles_routes()) < 1) {
       NA

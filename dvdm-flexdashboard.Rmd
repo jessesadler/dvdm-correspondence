@@ -1,5 +1,14 @@
-### Shiny Leaflet Map of Daniel van der Meulen Correspondence ###
+---
+title: "Daniel van der Meulen Correspondence Network, 1578-1591"
+runtime: shiny
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: fill
+---
 
+```{r setup, include=FALSE}
+library(flexdashboard)
 library(shiny)
 library(tidyverse)
 library(sp)
@@ -24,14 +33,45 @@ routes_all <- letters %>%
 
 pal <- colorNumeric(palette = "YlOrRd", domain = routes_all$count)
 
-shinyServer(function(input, output, session) {
+# Cities: Filtering data for source and destination of correspondence
+  cities <- reactive({
   
-  # Routes
+    filtered_letters <- letters[letters$date >= input$range[1] & letters$date < input$range[2], ]
+    
+    per_source <- filtered_letters %>%
+      group_by(source) %>%
+      summarise(count = n()) %>%
+      remove_missing() %>%
+      arrange(count)
+
+    per_destination <- filtered_letters %>%
+      group_by(destination) %>%
+      summarise(count = n()) %>%
+      remove_missing() %>%
+      arrange(count)
+    
+    corrs_per <- filtered_letters %>% 
+      group_by(source) %>%
+      summarise(correspondents = n_distinct(name)) %>% 
+      rename(place = source) %>% 
+      arrange(desc(correspondents))    
+
+    geo_per_destination <- inner_join(geo_data, per_destination, by = c("place" = "destination"))
+    geo_per_source <- inner_join(geo_data, per_source, by = c("place" = "source"))
+    geo_data <- full_join(geo_per_source, geo_per_destination, by = "place")
+        
+    cities <- left_join(geo_data, corrs_per, by = "place") %>% 
+      replace_na(list(count.x = 0, count.y = 0, correspondents = 0)) # replace NAs with 0s in count columns
+
+    return(cities)
+  })  
+
+# Routes: Filtering data for routes of correspondence
   gcircles_routes <- reactive({
     
-    per_route <- letters %>%
-      filter(source != destination) %>%
-      filter(date >= input$range[1] & date <= input$range[2]) %>% 
+    filtered_letters <- letters[letters$date >= input$range[1] & letters$date < input$range[2], ]
+    
+    per_route <- filtered_letters %>%  
       group_by(source, destination) %>%
       summarise(count = n()) %>%
       remove_missing() %>%
@@ -40,7 +80,7 @@ shinyServer(function(input, output, session) {
     
     # Skip rest of function and return empty sf lines object if filtered data is empty
     if(nrow(per_route) < 1) {
-      empty_sf
+     empty_sf
     } else {
       
       # Join data to locations data
@@ -68,54 +108,51 @@ shinyServer(function(input, output, session) {
       routes <- SpatialLinesDataFrame(routes, data = ids, match.ID = TRUE)
       
       # Create and return a SpatialLinesDataFrame
-      sp::merge(routes, geo_per_route, by = "ID")
+      gcircles_routes <- sp::merge(routes, geo_per_route, by = "ID")
+      
+      return(gcircles_routes)
     }
   })
-  
-  ## Cities: To be used for labels on map
-  cities <- reactive({
-    
-    per_source <- letters %>%
-      filter(date >= input$range[1] & date <= input$range[2]) %>% 
-      group_by(source) %>%
-      summarise(count = n()) %>%
-      remove_missing() %>%
-      arrange(count)
-    
-    per_destination <- letters %>%
-      filter(date >= input$range[1] & date <= input$range[2]) %>% 
-      group_by(destination) %>%
-      summarise(count = n()) %>%
-      remove_missing() %>%
-      arrange(count)
-    
-    corrs_per <- letters %>%
-      filter(date >= input$range[1] & date <= input$range[2]) %>% 
-      group_by(source) %>%
-      summarise(correspondents = n_distinct(name)) %>% 
-      rename(place = source) %>% 
-      arrange(desc(correspondents))
-    
-    geo_per_destination <- inner_join(geo_data, per_destination, by = c("place" = "destination"))
-    geo_per_source <- inner_join(geo_data, per_source, by = c("place" = "source"))
-    cities_temp <- full_join(geo_per_source, geo_per_destination, by = "place")
-    
-    left_join(cities_temp, corrs_per, by = "place") %>% 
-      replace_na(list(count.x = 0, count.y = 0, correspondents = 0)) # replace NAs with 0s in count columns
-  })
-  
- # Output base map with legends
+
+```
+
+Sidebar {.sidebar data-width=350}
+-----------------------------------------------------------------------
+
+```{r}
+sliderInput("range", "Date Range",
+           min(as.Date("1578-01-01", "%Y-%m-%d")),
+           max(as.Date("1591-12-31", "%Y-%m-%d")),
+           value = range(as.Date("1578-01-01", "%Y-%m-%d"), as.Date("1578-12-31", "%Y-%m-%d")),
+           timeFormat = "%e %b %Y")
+```
+
+This map presents letters received by Daniel van der Meulen from 1578 to the end of 1591. This map is still under development and is part of a larger project. The outline of the larger project can be found [here](https://www.jessesadler.com/project/dvdm-correspondence/).
+
+* In order to interact with the map choose the date range to visualize the letters Daniel van der Meulen received over a specific period.
+* Hover over the routes to see the amount of letters sent along each route.
+* Hover over the cities to see the amount of letters sent from and recieved in the location, as well as the number of correspondents who sent Daniel letters from the location.
+
+Row
+-----------------------------------------------------------------------
+
+### Map
+
+```{r}
  output$map <- renderLeaflet({
-   leaflet(data = routes_all) %>% addProviderTiles(providers$CartoDB.DarkMatterNoLabels) %>%
-      setView(3.5, 46.5, zoom = 5) %>%
+   map <- leaflet(data = routes_all) %>% addProviderTiles(providers$CartoDB.DarkMatterNoLabels) %>%
+      setView(4.8, 49, zoom = 5) %>%
       addLegend(position = "topright",
                 colors = c("#ffd24d", "#addd8e"),
                 labels = c("Sent Location", "Received Location"),
                 opacity = 1) %>%
       addLegend(pal = pal, values = ~count, opacity = 1,
                 title = "Letters<br/>Received")
+   
+   map
+   
   })
-  
+
   # CircleMarkers
   observe({
     # Return NA for labels if cities function is empty otherwise create labels
@@ -129,7 +166,7 @@ shinyServer(function(input, output, session) {
       ) %>% lapply(htmltools::HTML)
     }
     
-    leafletProxy("map", data = cities()) %>%
+    map <- leafletProxy("map", data = cities()) %>%
       clearMarkers() %>% 
       addCircleMarkers(lng = ~lon.y, lat = ~lat.y,
                        color = "#addd8e", stroke = FALSE, fillOpacity = 1, radius = 8,
@@ -140,7 +177,7 @@ shinyServer(function(input, output, session) {
                        label = label2,
                        labelOptions = labelOptions(textsize = "11px"))
   })
-  
+
   # Routes
   observe({
     # Return NA for labels if routes function is empty otherwise create labels
@@ -154,11 +191,15 @@ shinyServer(function(input, output, session) {
       ) %>% lapply(htmltools::HTML)
     }
     
-    leafletProxy("map") %>% 
+    map <- leafletProxy("map") %>% 
       clearShapes() %>% 
       addPolylines(data = gcircles_routes(), opacity = 0.9, weight = 3, color = ~pal(count),
                    label = label1,
                    labelOptions = labelOptions(textsize = "11px"),
                    highlight = highlightOptions(weight = 5, color = "red", opacity = 1))
   })
-})
+
+leafletOutput("map")
+
+```
+
