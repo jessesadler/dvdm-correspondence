@@ -6,10 +6,13 @@
 #
 #    http://shiny.rstudio.com/
 #
-
 library(shiny)
 library(tidyverse)
 library(ggplot2)
+
+
+letters <- read_csv("data/dvdm-correspondence-1591.csv")
+letters_clean <- filter(letters, destination != "NA")
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
@@ -38,19 +41,14 @@ ui <- fluidPage(
 # Define server logic required to draw a histogram
 server <- function(input, output) {
 
-  per_destination <- reactive({
-    letters %>%
-    filter(year <= input$dates) %>%
-    group_by(destination) %>%
-    summarise(count = n()) %>%
-    remove_missing() %>%
-    arrange(count)
+  filtered_letters <- reactive({
+    letters_clean[letters_clean$year <= input$dates, ]
   })
     
    output$barPlot <- renderPlot({
        
-     ggplot(per_destination()) +
-       geom_histogram(mapping = aes(x = destination, stat = count)) +
+     ggplot(filtered_letters()) +
+       geom_bar(aes(x = year, fill = destination)) +
        labs(title = "Daniel van der Meulen Correspondence, 1578–1591",
             x = "Year", y = "Letters", fill = "Received\nLocation")
    })
