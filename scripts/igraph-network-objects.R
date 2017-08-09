@@ -1,5 +1,10 @@
 ## Create igraph and network objects ##
 
+### Possible changes ###
+# Could change per_route code to add years, which would add group to links data
+# Could add country for each node from locations data, which would add group to nodes
+# Could add total received and total sent from each location to nodes data
+
 ### igraph object ###
 
 library(tidyverse)

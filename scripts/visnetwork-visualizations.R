@@ -37,3 +37,9 @@ links <- select(links, from, to, everything())
 
 # Plot
 visNetwork(nodes, links)
+
+## Circle network
+nodes$label <- nodes$place
+links$width <- 1+links$count/5
+
+visNetwork(nodes, links) %>% visIgraphLayout(layout = "layout_in_circle") %>% visEdges(arrows = "middle")
