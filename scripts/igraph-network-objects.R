@@ -1,4 +1,6 @@
-## igraph object ##
+## Create igraph and network objects ##
+
+### igraph object ###
 
 library(tidyverse)
 library(igraph)
@@ -36,5 +38,20 @@ links <- select(links, from, to, everything())
 
 # Create igraph object
 routes_network <- graph_from_data_frame(d = links, vertices = nodes, directed = TRUE)
+
+plot(routes_network)
+
+# Circle plot
+circle <- layout_in_circle(routes_network)
+plot(routes_network, layout = circle)
+
+### Network object ###
+
+detach(package:igraph)
+library(network)
+rm(routes_network)
+
+routes_network <- network(links, vertex.attr = nodes, matrix.type = "edgelist", 
+                                  loops = TRUE, multiple = FALSE, ignore.eval = FALSE)
 
 plot(routes_network)
