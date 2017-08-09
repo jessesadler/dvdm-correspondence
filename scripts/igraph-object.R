@@ -1,0 +1,40 @@
+## igraph object ##
+
+library(tidyverse)
+library(igraph)
+
+letters <- read_csv("data/dvdm-correspondence-1591.csv")
+
+per_route <- letters %>%  
+  group_by(source, destination) %>%
+  summarise(count = n()) %>%
+  remove_missing() %>%
+  arrange(desc(count)) %>% 
+  ungroup()
+
+# Distinct sources and destinations into a single tibble with id column as first column
+sources <- per_route %>%
+  distinct(source) %>%
+  rename(place = source)
+
+destinations <- per_route %>%
+  distinct(destination) %>%
+  rename(place = destination)
+
+nodes <- full_join(sources, destinations)
+nodes <- add_column(nodes, id = 1:nrow(nodes))
+nodes <- select(nodes, id, everything())
+
+# Create links with ids for source and destination and bring id columns to beginning of df
+links <- per_route %>% 
+  left_join(nodes, by = c("source" = "place")) %>% 
+  rename(from = id) %>% 
+  left_join(nodes, by = c("destination" = "place")) %>% 
+  rename(to = id)
+
+links <- select(links, from, to, everything())
+
+# Create igraph object
+routes_network <- graph_from_data_frame(d = links, vertices = nodes, directed = TRUE)
+
+plot(routes_network)

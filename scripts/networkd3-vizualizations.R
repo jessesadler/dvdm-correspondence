@@ -1,5 +1,8 @@
 ## Network visualizations ##
 
+# This script is derived from http://personal.tcu.edu/kylewalker/interactive-flow-visualization-in-r.html
+
+# Load packages and data
 library(tidyverse)
 library(networkD3)
 
