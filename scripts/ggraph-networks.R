@@ -54,6 +54,13 @@ ggraph(routes, layout = "fr") +
   geom_edge_loop() + 
   geom_node_point()
 
+ggraph(routes_network, layout = "fr") + 
+  geom_edge_fan(aes(color = destination)) + 
+  geom_edge_loop() + 
+  geom_node_point() + 
+  geom_node_text(aes(label = place))
+
+
 # Arc graph
 ggraph(routes, layout = 'linear') + 
   geom_node_point() +
@@ -72,8 +79,8 @@ ggraph(routes, layout = 'linear') +
   geom_edge_arc(aes(alpha = ..index..)) + 
   scale_edge_alpha('Route direction', guide = 'edge_direction')
 
-# Chord graph
-ggraph(routes, layout = 'linear', circular = TRUE) + 
+# Circle graph
+ggraph(routes_network, layout = 'linear', circular = TRUE) + 
   geom_edge_arc()
 
 ggraph(routes, layout = 'linear', circular = TRUE) + 

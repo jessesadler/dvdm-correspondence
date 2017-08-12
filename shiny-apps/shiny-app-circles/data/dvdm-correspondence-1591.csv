@@ -1,4 +1,4 @@
-Inventory,name,count,source,destination,year,date,r_date
+inventory,writer,count,source,destination,year,date,r_date
 CL_183-19,"Languet, Hubert",1,Cologne,Antwerp,1578,1578-10-09,NA
 CL_183-20,"Languet, Hubert",1,Ghent,Antwerp,1578,1578-12-24,NA
 DvdM_50-01,"Banos, Theophile de",1,Frankfurt,Antwerp,1578,NA,NA
@@ -194,7 +194,7 @@ DvdM_538a-044,"Della Faille, Jacques",1,Haarlem,Bremen,1585,1585-12-27,NA
 DvdM_274-13,"Della Faille, Marten",1,Antwerp,Bremen,1586,1586-01-05,1586-01-26
 DvdM_538a-045/46,"Della Faille, Jacques",1,Haarlem,Bremen,1586,1586-01-18,NA
 DvdM_538a-047,"Della Faille, Jacques",1,Haarlem,Bremen,1586,1586-02-13,NA
-DvdM_593a-102,"Meulen, Andries van der",1,Bremen,"Brunswick, Germany",1586,1586-02-14,NA
+DvdM_593a-102,"Meulen, Andries van der",1,Bremen,Brunswick,1586,1586-02-14,NA
 DvdM_538a-049,"Della Faille, Jacques",1,Haarlem,Bremen,1586,1586-04-16,NA
 DvdM_593a-103,"Meulen, Andries van der",1,Bremen,Haarlem,1586,1586-05-22,NA
 DvdM_538a-050,"Della Faille, Jacques",1,Haarlem,Middelburg,1586,1586-05-30,NA
@@ -367,9 +367,9 @@ DvdM_558-010,"Janssen van der Meulen, Peeter",1,Middelburg,Antwerp,1591,1591-02-
 DvdM_656,"Backer, Andre",1,Halberstadt,Bremen,1591,1591-03-17,NA
 DvdM_296-01,"Pierens, Anna",1,Stade,Bremen,1591,1591-04-11,NA
 DvdM_519-02,"Matzo, Cesaro",1,Leiden,Antwerp,1591,1591-04-16,NA
-DvdM_324,"Bormania, Rinaldo de",1,"Naples, Italy",Bremen,1591,1591-05-25,NA
+DvdM_324,"Bormania, Rinaldo de",1,Naples,Bremen,1591,1591-05-25,NA
 DvdM_530,"Boots, Hans",1,Wesel,Bremen,1591,1591-07-21,NA
-DvdM_558-011,"Janssen van der Meulen, Peeter",1,"Newbury, England",Bremen,1591,1591-08-16,NA
+DvdM_558-011,"Janssen van der Meulen, Peeter",1,Newbury,Bremen,1591,1591-08-16,NA
 DvdM_538a-144,"Della Faille, Jacques",1,Haarlem,Bremen,1591,1591-08-20,1591-08-25
 DvdM_660-004,"Bongars, Jacques",1,Frankfurt,Bremen,1591,1591-08-23,1591-08-28
 DvdM_519-03,"Bellasi, Agostino",1,Verona,Bremen,1591,1591-08-30,1591-09-30
@@ -384,7 +384,7 @@ DvdM_658-05,"Beke, Jan van der",1,Vlissingen,Bremen,1591,1591-09-12,NA
 DvdM_660-006,"Bongars, Jacques",1,Frankfurt,Bremen,1591,1591-09-13,1591-09-20
 DvdM_535-003,"Eeckeren, Francisco van",1,Venice,Bremen,1591,1591-09-14,1591-09-30
 DvdM_538a-145,"Della Faille, Jacques",1,Haarlem,Bremen,1591,1591-09-15,NA
-DvdM_558-012,"Janssen van der Meulen, Peeter",1,"Newbury, England",Bremen,1591,1591-09-17,1591-10-26
+DvdM_558-012,"Janssen van der Meulen, Peeter",1,Newbury,Bremen,1591,1591-09-17,1591-10-26
 DvdM_586-02,"Maillet, Pierre",1,Middelburg,Bremen,1591,1591-09-17,1591-09-28
 DvdM_660-007,"Bongars, Jacques",1,Frankfurt,Bremen,1591,1591-09-18,1591-09-23
 DvdM_553-04,"Hoest, Mattheus de",1,Leiden,Bremen,1591,1591-09-20,NA
@@ -403,7 +403,7 @@ DvdM_553-05,"Hoest, Mattheus de",1,Leiden,Leiden,1591,1591-10-10,NA
 DvdM_519-06,"Bellasi, Agostino",1,Verona,Bremen,1591,1591-10-16,1591-11-04
 DvdM_519-07,"Bellasi, Agostino",1,Verona,Bremen,1591,1591-10-18,1591-11-19
 DvdM_535-007,"Eeckeren, Francisco van",1,Venice,Bremen,1591,1591-10-18,1591-11-04
-DvdM_558-013,"Janssen van der Meulen, Peeter",1,"Newbury, England",Bremen,1591,1591-10-19,1591-11-18
+DvdM_558-013,"Janssen van der Meulen, Peeter",1,Newbury,Bremen,1591,1591-10-19,1591-11-18
 DvdM_519-08,"Bellasi, Agostino",1,Verona,Bremen,1591,1591-10-23,1591-11-26
 DvdM_598-02,"Minau, Balthasar",1,Vicenza,Bremen,1591,1591-10-23,1591-11-09
 DvdM_535-008,"Eeckeren, Francisco van",1,Venice,Bremen,1591,1591-10-25,1591-11-11
@@ -413,13 +413,13 @@ DvdM_602-02,"Neste, Antonio van",1,Venice,Bremen,1591,1591-11-01,1591-11-19
 DvdM_274-33,"Della Faille, Marten",1,Antwerp,Leiden,1591,1591-11-07,1591-11-18
 DvdM_535-009,"Eeckeren, Francisco van",1,Venice,Bremen,1591,1591-11-08,1591-11-26
 DvdM_332,"Bukentop, Hendrick",1,The Hague,Leiden,1591,1591-11-12,NA
-DvdM_558-014,"Janssen van der Meulen, Peeter",1,"Newbury, England",Leiden,1591,1591-11-14,NA
+DvdM_558-014,"Janssen van der Meulen, Peeter",1,Newbury,Leiden,1591,1591-11-14,NA
 DvdM_535-010,"Eeckeren, Francisco van",1,Venice,Bremen,1591,1591-11-15,1591-12-02
 DvdM_598-04,"Minau, Balthasar",1,Vicenza,Bremen,1591,1591-11-15,1591-11-28
 DvdM_468-03,"Reide, Everhard de",1,The Hague,Leiden,1591,1591-11-17,1591-11-23
 DvdM_535-012,"Eeckeren, Francisco van",1,Venice,Bremen,1591,1591-11-22,1591-12-09
 DvdM_598-05,"Minau, Balthasar",1,Vicenza,Bremen,1591,1591-11-22,1591-12-12
 DvdM_278,"Frumault, Robert",1,The Hague,Leiden,1591,1591-12-04,NA
-DvdM_558-015,"Janssen van der Meulen, Peeter",1,"Newbury, England",Leiden,1591,1591-12-08,NA
+DvdM_558-015,"Janssen van der Meulen, Peeter",1,Newbury,Leiden,1591,1591-12-08,NA
 DvdM_274-34,"Della Faille, Marten",1,Antwerp,Leiden,1591,1591-12-10,1591-12-19
 DvdM_502-01,"Eynde, Anneken van den",1,Bergen op Zoom,Bremen,1591,NA,NA

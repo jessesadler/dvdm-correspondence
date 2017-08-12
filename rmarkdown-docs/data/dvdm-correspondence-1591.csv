@@ -1,4 +1,4 @@
-Inventory,name,count,source,destination,year,date,r_date
+inventory,writer,count,source,destination,year,date,r_date
 CL_183-19,"Languet, Hubert",1,Cologne,Antwerp,1578,1578-10-09,NA
 CL_183-20,"Languet, Hubert",1,Ghent,Antwerp,1578,1578-12-24,NA
 DvdM_50-01,"Banos, Theophile de",1,Frankfurt,Antwerp,1578,NA,NA

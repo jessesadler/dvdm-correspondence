@@ -53,7 +53,7 @@ cities <- reactive({
     
   corrs_per <- filtered_letters %>% 
     group_by(source) %>%
-    summarise(correspondents = n_distinct(name)) %>% 
+    summarise(correspondents = n_distinct(writer)) %>% 
     rename(place = source) %>% 
     arrange(desc(correspondents))    
 

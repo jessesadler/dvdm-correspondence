@@ -2,10 +2,8 @@
 
 # Load libraries
 library(tidyverse)
-library(sp)
 library(leaflet)
 library(htmltools)
-library(RColorBrewer)
 
 # Load letters and geographic data
 letters <- read_csv("data/dvdm-correspondence-1591.csv")
@@ -30,7 +28,7 @@ per_destination <- letters %>%
 
 corrs_per <- letters %>%
   group_by(source) %>%
-  summarise(correspondents = n_distinct(name)) %>% 
+  summarise(correspondents = n_distinct(writer)) %>% 
   rename(place = source) %>% 
   arrange(desc(correspondents))
 
@@ -41,7 +39,7 @@ cities <- left_join(cities, corrs_per, by = "place") %>%
   replace_na(list(count.x =0, count.y = 0, correspondents = 0)) # replace NAs with 0s in count columns
 
 # Color palette
-pal <- colorNumeric(palette = "YlOrRd", domain = gcircles_routes$count)
+pal <- colorNumeric(palette = "viridis", domain = gcircles_routes$count, reverse = TRUE)
 
 # Labels
 label1 <- sprintf(
@@ -67,7 +65,7 @@ leaflet(gcircles_routes) %>% addProviderTiles(providers$CartoDB.PositronNoLabels
   addPolylines(opacity = 0.8, weight = 3, color = ~pal(count),
       label = label1,
       labelOptions = labelOptions(textsize = "11px"),
-      highlight = highlightOptions(weight = 5, color = "red", opacity = 1)) %>%
+      highlight = highlightOptions(weight = 5, color = "#ff9600", opacity = 1)) %>%
   addLegend(position = "topright",
       colors = c("#ffd24d", "#addd8e"),
       labels = c("Sent Location", "Received Location"),

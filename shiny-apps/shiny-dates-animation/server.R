@@ -95,7 +95,7 @@ shinyServer(function(input, output, session) {
     corrs_per <- letters %>%
       filter(date <= input$dates) %>% 
       group_by(source) %>%
-      summarise(correspondents = n_distinct(name)) %>% 
+      summarise(correspondents = n_distinct(writer)) %>% 
       rename(place = source) %>% 
       arrange(desc(correspondents))
     
