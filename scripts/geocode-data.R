@@ -38,6 +38,13 @@ locations <- as_tibble(locations_df) %>%
 # Take out country name from places that needed it for geocoding
 locations$place <- str_replace(locations$place, ",.*", "")
 
+# Add historic regions
+historic_regions <- tibble(
+  country = c("Belgium", "France", "Germany", "Italy", "Netherlands", "United Kingdom"),
+  historic_region = c("Spanish Netherlands", "France", "Germany", "Italy", "Dutch Republic", "England"))
+
+locations <- left_join(locations, historic_regions)
+
 # Save as csv
 write_csv(locations, "data/locations-year.csv")
 locations <- read_csv("data/locations.csv")

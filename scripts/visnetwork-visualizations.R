@@ -43,3 +43,16 @@ nodes$label <- nodes$place
 links$width <- 1+links$count/5
 
 visNetwork(nodes, links) %>% visIgraphLayout(layout = "layout_in_circle") %>% visEdges(arrows = "middle")
+
+### Add historic regions to the network graph ###
+
+locations <- read_csv("data/locations-1591.csv")
+
+historic_regions <- tibble(
+  country = c("Belgium", "France", "Germany", "Italy", "Netherlands", "United Kingdom"),
+  historic_region = c("Spanish Netherlands", "France", "Germany", "Italy", "Dutch Republic", "England"))
+locations <- left_join(locations, historic_regions)
+
+nodes <- left_join(nodes, locations)
+
+nodes$color <- nodes$historic_region
