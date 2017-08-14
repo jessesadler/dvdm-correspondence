@@ -55,4 +55,6 @@ locations <- left_join(locations, historic_regions)
 
 nodes <- left_join(nodes, locations)
 
-nodes$color <- nodes$historic_region
+nodes$group <- nodes$historic_region
+
+# Make color of the line as to rather than from or with viridis

@@ -25,7 +25,7 @@ locations <- read_csv("data/locations-1591.csv")
 geo_data <- select(locations, place:lat) # simplify locations data to only necessary variables
 empty_sf <- read_rds("data/empty_sf.rds") # empty sf object of lines to use for periods with no data
 
-# Set baseline for palette to be used for legend
+# Set baseline for palette to be used for map legend
 routes_all <- letters %>% 
   group_by(source, destination) %>%
   summarise(count = n()) %>%
@@ -34,24 +34,27 @@ routes_all <- letters %>%
 
 pal <- colorNumeric(palette = "YlOrRd", domain = routes_all$count)
 
+# Reactive function for filtering letters by date used throughout Shiny app
+filtered_letters <- reactive({
+  letters[letters$date >= input$range[1] & letters$date < input$range[2], ]
+  })
+
 # Cities: Filtering data for source and destination of correspondence
 cities <- reactive({
-  
-  filtered_letters <- letters[letters$date >= input$range[1] & letters$date < input$range[2], ]
     
-  per_source <- filtered_letters %>%
+  per_source <- filtered_letters() %>%
     group_by(source) %>%
     summarise(count = n()) %>%
     remove_missing() %>%
     arrange(count)
 
-  per_destination <- filtered_letters %>%
+  per_destination <- filtered_letters() %>%
     group_by(destination) %>%
     summarise(count = n()) %>%
     remove_missing() %>%
     arrange(count)
     
-  corrs_per <- filtered_letters %>% 
+  corrs_per <- filtered_letters() %>% 
     group_by(source) %>%
     summarise(correspondents = n_distinct(writer)) %>% 
     rename(place = source) %>% 
@@ -72,9 +75,7 @@ cities <- reactive({
 # Routes: Filtering data for routes of correspondence and creating great circles for the routes
 gcircles_routes <- reactive({
     
-  filtered_letters <- letters[letters$date >= input$range[1] & letters$date < input$range[2], ]
-    
-  per_route <- filtered_letters %>%  
+  per_route <- filtered_letters() %>%  
     group_by(source, destination) %>%
     summarise(count = n()) %>%
     remove_missing() %>%
