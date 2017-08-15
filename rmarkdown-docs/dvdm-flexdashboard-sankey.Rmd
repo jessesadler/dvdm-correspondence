@@ -1,0 +1,268 @@
+---
+title: "Daniel van der Meulen Correspondence Network, 1578-1591"
+runtime: shiny
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: fill
+    source_code: https://github.com/jessesadler/dvdm-correspondence/blob/master/dvdm-flexdashboard.Rmd
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(shiny)
+library(tidyverse)
+library(sp)
+library(sf)
+library(geosphere)
+library(leaflet)
+library(htmltools)
+library(RColorBrewer)
+library(networkD3)
+
+# Load letters and geographic data
+letters <- read_csv("data/dvdm-correspondence-1591.csv")
+locations <- read_csv("data/locations-1591.csv")
+geo_data <- select(locations, place:lat) # simplify locations data to only necessary variables
+empty_sf <- read_rds("data/empty_sf.rds") # empty sf object of lines to use for periods with no data
+
+# Set baseline for palette to be used for map legend
+routes_all <- letters %>% 
+  group_by(source, destination) %>%
+  summarise(count = n()) %>%
+  remove_missing() %>%
+  arrange(count)
+
+pal <- colorNumeric(palette = "viridis", domain = routes_all$count, reverse = TRUE)
+
+# Reactive function for filtering letters by date used throughout Shiny app
+filtered_letters <- reactive({
+  letters[letters$date >= input$range[1] & letters$date < input$range[2], ]
+  })
+
+# Cities: Filtering data for source and destination of correspondence
+cities <- reactive({
+    
+  per_source <- filtered_letters() %>%
+    group_by(source) %>%
+    summarise(count = n()) %>%
+    remove_missing() %>%
+    arrange(count)
+
+  per_destination <- filtered_letters() %>%
+    group_by(destination) %>%
+    summarise(count = n()) %>%
+    remove_missing() %>%
+    arrange(count)
+    
+  corrs_per <- filtered_letters() %>% 
+    group_by(source) %>%
+    summarise(correspondents = n_distinct(writer)) %>% 
+    rename(place = source) %>% 
+    arrange(desc(correspondents))    
+
+  # Join filtered data with geographic data and then join together into a single data frame
+  geo_per_destination <- inner_join(geo_data, per_destination, by = c("place" = "destination"))
+  geo_per_source <- inner_join(geo_data, per_source, by = c("place" = "source"))
+  geo_data <- full_join(geo_per_source, geo_per_destination, by = "place")
+        
+  cities <- left_join(geo_data, corrs_per, by = "place") %>% 
+      replace_na(list(count.x = 0, count.y = 0, correspondents = 0)) # replace NAs with 0s in count columns
+  
+  return(cities)
+
+  })  
+
+# Routes: Filtering data for routes of correspondence and creating great circles for the routes
+gcircles_routes <- reactive({
+    
+  per_route <- filtered_letters() %>%  
+    group_by(source, destination) %>%
+    summarise(count = n()) %>%
+    remove_missing() %>%
+    arrange(count) %>% 
+    ungroup()
+    
+  # Skip rest of function and return empty sf lines object if filtered data is empty
+  if(nrow(per_route) < 1) {
+    empty_sf
+    } else {
+  
+  # Remaining part of function creates a SpatialLinesDataFrame so that lines are
+  # drawn over shortest geographical distance
+  
+  # Join filtered data to locations data
+  geo_per_route <- per_route %>%
+    left_join(geo_data, by = c("source" = "place")) %>% 
+    left_join(geo_data, by = c("destination" = "place"))
+  geo_per_route$ID <- as.character(c(1:nrow(geo_per_route))) # create id for each pair
+      
+  # Calculate great circle routes between sources and destinations and return a SpatialLines object
+  source_loc <- select(geo_per_route, lon.x, lat.x)
+  dest_loc <- select(geo_per_route, lon.y, lat.y)
+  
+  routes <- gcIntermediate(source_loc, dest_loc, 100, addStartEnd=TRUE, sp=TRUE)
+      
+  # Convert a SpatialLines object into SpatialLinesDataFrame, so that filtered data can be added
+  ids <- data.frame()
+      
+  for (i in (1:length(routes))) {         
+    id <- data.frame(routes@lines[[i]]@ID)
+    ids <- rbind(ids, id)  }
+      
+    colnames(ids)[1] <- "ID"
+      
+  # Create and return a SpatialLinesDataFramen then merge with filtered data
+  routes <- SpatialLinesDataFrame(routes, data = ids, match.ID = TRUE)
+
+  gcircles_routes <- sp::merge(routes, geo_per_route, by = "ID")
+      
+  return(gcircles_routes)
+    }
+  })
+
+### Sankey Network Graph ###
+
+# Per route reactive function
+per_route <- reactive({
+  per_route <- filtered_letters() %>%  
+    group_by(source, destination) %>%
+    summarise(count = n()) %>%
+    remove_missing() %>%
+    arrange(desc(count)) %>% 
+    ungroup()
+})
+
+# Nodes
+nodes <- reactive({
+  # Distinct sources and destinations into a single tibble with id column
+  sources <- per_route() %>%
+    distinct(source) %>%
+    rename(place = source)
+
+  destinations <- per_route() %>%
+    distinct(destination) %>%
+    rename(place = destination)
+
+  nodes <- full_join(sources, destinations)
+  places <- nrow(nodes)
+  nodes <- add_column(nodes, id = 0:(places -1))
+  
+  return(nodes)
+})
+
+# links
+links <- reactive({
+  links <- per_route() %>%
+    left_join(nodes(), by = c("source" = "place")) %>%
+      rename(from = id) %>%
+    left_join(nodes(), by = c("destination" = "place")) %>%
+      rename(to = id)
+ 
+ return(links)
+})
+
+```
+
+Sidebar {.sidebar data-width=350}
+-----------------------------------------------------------------------
+
+```{r}
+sliderInput("range", "Date Range",
+           min(as.Date("1578-01-01", "%Y-%m-%d")),
+           max(as.Date("1591-12-31", "%Y-%m-%d")),
+           value = range(as.Date("1578-01-01", "%Y-%m-%d"), as.Date("1578-12-31", "%Y-%m-%d")),
+           timeFormat = "%e %b %Y")
+```
+
+This map presents letters received by Daniel van der Meulen from 1578 to the end of 1591. This map is still under development and is part of a larger digital humanities project. The outline of the larger project can be found [here](https://www.jessesadler.com/project/dvdm-correspondence/).
+
+* In order to interact with the map, choose the date range to visualize the letters Daniel van der Meulen received over a specific period.
+* Hover over the routes to see the amount of letters sent along each route.
+* Hover over the cities to see the amount of letters sent from and recieved in the location, as well as the number of correspondents who sent Daniel letters from the location.
+
+Application author: [Jesse Sadler](https://www.jessesadler.com)
+
+Comments on the visualization or code are welcome and greatly appreciated. Any comments can be sent to me at: jsadler@ucla.edu, [Twitter](https://twitter.com/vivalosburros), or [ GitHub](https://github.com/jessesadler/dvdm-correspondence)
+
+Row
+-----------------------------------------------------------------------
+
+### Map
+```{r}
+# Base map and legends
+output$map <- renderLeaflet({
+  leaflet(data = routes_all) %>% addProviderTiles(providers$CartoDB.PositronNoLabels) %>%
+    setView(4.8, 49, zoom = 5) %>%
+    addLegend(position = "topright",
+              colors = c("#ffd24d", "#addd8e"),
+              labels = c("Sent Location", "Received Location"),
+              opacity = 1) %>%
+    addLegend(pal = pal, values = ~count, opacity = 1,
+              title = "Letters<br/>Received")
+  })
+
+# CircleMarkers
+observe({
+  # Return NA for labels if cities function is empty otherwise create labels
+  label2 <- if(nrow(cities()) < 1) {
+    NA
+    } else {
+      
+    sprintf(
+      "<strong>%s</strong><br/>Letters from: %g<br/>Letters to: %g<br/>Correspondents: %g",
+      cities()$place, cities()$count.x, cities()$count.y, cities()$correspondents) %>%
+      lapply(htmltools::HTML)
+    }
+    
+  leafletProxy("map", data = cities()) %>%
+    clearMarkers() %>% 
+    addCircleMarkers(lng = ~lon.y, lat = ~lat.y,
+                    color = "#addd8e", stroke = FALSE, fillOpacity = 1, radius = 8,
+                    label = label2,
+                    labelOptions = labelOptions(textsize = "11px")) %>% 
+    addCircleMarkers(lng = ~lon.x, lat = ~lat.x,
+                    color = "#ffd24d", stroke = FALSE, fillOpacity = 1, radius = 5,
+                    label = label2,
+                    labelOptions = labelOptions(textsize = "11px"))
+  })
+
+# Routes
+observe({
+  # Return NA for labels if routes function is empty otherwise create labels
+  label1 <- if(nrow(gcircles_routes()) < 1) {
+    NA
+    } else {
+      
+    sprintf(
+      "%s to %s<br/>Letters: %g",
+      gcircles_routes()$source, gcircles_routes()$destination, gcircles_routes()$count) %>%
+      lapply(htmltools::HTML)
+    }
+    
+  leafletProxy("map") %>% 
+    clearShapes() %>% 
+    addPolylines(data = gcircles_routes(), opacity = 0.9, weight = 3, color = ~pal(count),
+                label = label1,
+                labelOptions = labelOptions(textsize = "11px"),
+                highlight = highlightOptions(weight = 5, color = "red", opacity = 1))
+  })
+
+leafletOutput("map")
+
+```
+
+Row
+-----------------------------------------------------------------------
+
+### Sankey Network
+```{r}
+output$sankey <- renderSankeyNetwork({
+  sankeyNetwork(Links = links(), Nodes = nodes(), Source = "from", Target = "to", 
+              Value = "count", NodeID = "place", fontSize = 16, unit = "letter(s)")
+})
+
+sankeyNetworkOutput("sankey")
+
+```
+

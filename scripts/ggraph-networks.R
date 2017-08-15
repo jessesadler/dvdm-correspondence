@@ -54,7 +54,7 @@ ggraph(routes, layout = "fr") +
   geom_edge_loop() + 
   geom_node_point()
 
-ggraph(routes_network, layout = "fr") + 
+ggraph(routes, layout = "fr") + 
   geom_edge_fan(aes(color = destination)) + 
   geom_edge_loop() + 
   geom_node_point() + 
@@ -80,7 +80,7 @@ ggraph(routes, layout = 'linear') +
   scale_edge_alpha('Route direction', guide = 'edge_direction')
 
 # Circle graph
-ggraph(routes_network, layout = 'linear', circular = TRUE) + 
+ggraph(routes, layout = 'linear', circular = TRUE) + 
   geom_edge_arc()
 
 ggraph(routes, layout = 'linear', circular = TRUE) + 

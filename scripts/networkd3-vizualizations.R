@@ -31,15 +31,15 @@ nodes <- add_column(nodes, id = 0:(places -1))
 # Create links with ids for source and destination
 links <- per_route %>% 
   left_join(nodes, by = c("source" = "place")) %>% 
-  rename(source_id = id) %>% 
+  rename(from = id) %>% 
   left_join(nodes, by = c("destination" = "place")) %>% 
-  rename(dest_id = id)
+  rename(to = id)
 
 # Forced Network graph
-forceNetwork(Links = links, Nodes = nodes, Source = "source_id", Target = "dest_id", 
+forceNetwork(Links = links, Nodes = nodes, Source = "from", Target = "to", 
              Value = "count", NodeID = "place", Group = "id",
              fontSize = 14, opacity = .8, zoom = TRUE)
 
 # Sankey Graph
-sankeyNetwork(Links = links, Nodes = nodes, Source = "source_id", Target = "dest_id", 
+sankeyNetwork(Links = links, Nodes = nodes, Source = "from", Target = "to", 
               Value = "count", NodeID = "place", fontSize = 16, unit = "letter(s)")
