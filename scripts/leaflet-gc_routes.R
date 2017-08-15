@@ -55,14 +55,14 @@ label2 <- sprintf(
 # Plot
 leaflet(gcircles_routes) %>% addProviderTiles(providers$CartoDB.PositronNoLabels) %>%
   addCircleMarkers(data = cities, lng = ~lon.y, lat = ~lat.y,
-      color = "#addd8e", stroke = FALSE, fillOpacity = 1, radius = 8,
+      color = "#addd8e", stroke = FALSE, fillOpacity = 1, radius = 8, group = "Destinations",
       label = label2,
       labelOptions = labelOptions(textsize = "11px")) %>%
   addCircleMarkers(data = cities, lng = ~lon.x, lat = ~lat.x,
-      color = "#ffd24d", stroke = FALSE, fillOpacity = 1, radius = 5,
+      color = "#ffd24d", stroke = FALSE, fillOpacity = 1, radius = 5, group = "Sources",
       label = label2,
       labelOptions = labelOptions(textsize = "11px")) %>%
-  addPolylines(opacity = 0.8, weight = 3, color = ~pal(count),
+  addPolylines(opacity = 0.8, weight = 3, color = ~pal(count), group = "Routes",
       label = label1,
       labelOptions = labelOptions(textsize = "11px"),
       highlight = highlightOptions(weight = 5, color = "#ff9600", opacity = 1)) %>%
@@ -71,4 +71,7 @@ leaflet(gcircles_routes) %>% addProviderTiles(providers$CartoDB.PositronNoLabels
       labels = c("Sent Location", "Received Location"),
       opacity = 1) %>%
   addLegend(pal = pal, values = ~count, opacity = 1,
-            title = "Letters<br/>Received")
+      title = "Letters<br/>Received") %>% 
+  addLayersControl(position = "bottomright",
+      overlayGroups = c("Destinations", "Sources", "Routes"),
+      options = layersControlOptions(collapsed = FALSE))
