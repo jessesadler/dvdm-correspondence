@@ -32,7 +32,7 @@ routes_all <- letters %>%
   remove_missing() %>%
   arrange(count)
 
-pal <- colorNumeric(palette = "YlOrRd", domain = routes_all$count)
+pal <- colorNumeric(palette = "viridis", domain = routes_all$count, reverse = TRUE)
 
 # Reactive function for filtering letters by date used throughout Shiny app
 filtered_letters <- reactive({
@@ -90,31 +90,24 @@ gcircles_routes <- reactive({
   # Remaining part of function creates a SpatialLinesDataFrame so that lines are
   # drawn over shortest geographical distance
   
-  # Join filtered data to locations data
+  # Join data to locations data and add id for each pair
   geo_per_route <- per_route %>%
     left_join(geo_data, by = c("source" = "place")) %>% 
-    left_join(geo_data, by = c("destination" = "place"))
-  geo_per_route$ID <- as.character(c(1:nrow(geo_per_route))) # create id for each pair
+    left_join(geo_data, by = c("destination" = "place")) %>% 
+    add_column(id = 1:nrow(per_route))
       
   # Calculate great circle routes between sources and destinations and return a SpatialLines object
   source_loc <- select(geo_per_route, lon.x, lat.x)
   dest_loc <- select(geo_per_route, lon.y, lat.y)
   
-  routes <- gcIntermediate(source_loc, dest_loc, 100, addStartEnd=TRUE, sp=TRUE)
+  routes <- gcIntermediate(source_loc, dest_loc, 100, addStartEnd = TRUE, sp = TRUE)
       
   # Convert a SpatialLines object into SpatialLinesDataFrame, so that filtered data can be added
-  ids <- data.frame()
-      
-  for (i in (1:length(routes))) {         
-    id <- data.frame(routes@lines[[i]]@ID)
-    ids <- rbind(ids, id)  }
-      
-    colnames(ids)[1] <- "ID"
-      
-  # Create and return a SpatialLinesDataFramen then merge with filtered data
+  ids <- tibble(id = 1:nrow(geo_per_route))
+
   routes <- SpatialLinesDataFrame(routes, data = ids, match.ID = TRUE)
 
-  gcircles_routes <- sp::merge(routes, geo_per_route, by = "ID")
+  gcircles_routes <- sp::merge(routes, geo_per_route, by = "id")
       
   return(gcircles_routes)
     }
@@ -150,14 +143,17 @@ Row
 ```{r}
 # Base map and legends
 output$map <- renderLeaflet({
-  leaflet(data = routes_all) %>% addProviderTiles(providers$CartoDB.DarkMatterNoLabels) %>%
+  leaflet(data = routes_all) %>% addProviderTiles(providers$CartoDB.PositronNoLabels) %>%
     setView(4.8, 49, zoom = 5) %>%
     addLegend(position = "topright",
-              colors = c("#ffd24d", "#addd8e"),
-              labels = c("Sent Location", "Received Location"),
-              opacity = 1) %>%
+        colors = c("#ffd24d", "#addd8e"),
+        labels = c("Sent Location", "Received Location"),
+        opacity = 1) %>%
     addLegend(pal = pal, values = ~count, opacity = 1,
-              title = "Letters<br/>Received")
+        title = "Letters<br/>Received") %>% 
+    addLayersControl(position = "bottomright",
+        overlayGroups = c("Destinations", "Sources", "Routes"),
+        options = layersControlOptions(collapsed = FALSE))
   })
 
 # CircleMarkers
@@ -176,13 +172,17 @@ observe({
   leafletProxy("map", data = cities()) %>%
     clearMarkers() %>% 
     addCircleMarkers(lng = ~lon.y, lat = ~lat.y,
-                    color = "#addd8e", stroke = FALSE, fillOpacity = 1, radius = 8,
-                    label = label2,
-                    labelOptions = labelOptions(textsize = "11px")) %>% 
+        color = "#addd8e", stroke = FALSE, fillOpacity = 1,
+        radius = 8,
+        group = "Destinations",
+        label = label2,
+        labelOptions = labelOptions(textsize = "11px")) %>% 
     addCircleMarkers(lng = ~lon.x, lat = ~lat.x,
-                    color = "#ffd24d", stroke = FALSE, fillOpacity = 1, radius = 5,
-                    label = label2,
-                    labelOptions = labelOptions(textsize = "11px"))
+        color = "#ffd24d", stroke = FALSE, fillOpacity = 1,
+        radius = 5,
+        group = "Sources",
+        label = label2,
+        labelOptions = labelOptions(textsize = "11px"))
   })
 
 # Routes
@@ -201,9 +201,10 @@ observe({
   leafletProxy("map") %>% 
     clearShapes() %>% 
     addPolylines(data = gcircles_routes(), opacity = 0.9, weight = 3, color = ~pal(count),
-                label = label1,
-                labelOptions = labelOptions(textsize = "11px"),
-                highlight = highlightOptions(weight = 5, color = "red", opacity = 1))
+        group = "Routes",
+        label = label1,
+        labelOptions = labelOptions(textsize = "11px"),
+        highlight = highlightOptions(weight = 5, color = "red", opacity = 1))
   })
 
 leafletOutput("map")

@@ -44,32 +44,26 @@ shinyServer(function(input, output, session) {
       empty_sf
     } else {
     
-    # Join data to locations data
+    # Join data to locations data and add id for each pair
     geo_per_route <- per_route %>%
       left_join(geo_data, by = c("source" = "place")) %>% 
-      left_join(geo_data, by = c("destination" = "place"))
-    geo_per_route$ID <- as.character(c(1:nrow(geo_per_route))) # create id for each pair
+      left_join(geo_data, by = c("destination" = "place")) %>% 
+      add_column(id = 1:nrow(per_route))
     
     source_loc <- select(geo_per_route, lon.x, lat.x)
     dest_loc <- select(geo_per_route, lon.y, lat.y)
     
     # Calculate great circle routes between sources and destinations and return a SpatialLines object
-    routes <- gcIntermediate(source_loc, dest_loc, 100, addStartEnd=TRUE, sp=TRUE)
+    routes <- gcIntermediate(source_loc, dest_loc, 100, addStartEnd = TRUE, sp = TRUE)
     
     # Convert a SpatialLines object into SpatialLinesDataFrame, so that tabular data can be added
     
-    ids <- data.frame()
-
-    for (i in (1:length(routes))) {         
-      id <- data.frame(routes@lines[[i]]@ID)
-      ids <- rbind(ids, id)  }
-    
-    colnames(ids)[1] <- "ID"
+    ids <- tibble(id = 1:nrow(geo_per_route))
     
     routes <- SpatialLinesDataFrame(routes, data = ids, match.ID = TRUE)
     
     # Create and return a SpatialLinesDataFrame
-    sp::merge(routes, geo_per_route, by = "ID")
+    sp::merge(routes, geo_per_route, by = "id")
     }
   })
     

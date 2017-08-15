@@ -43,32 +43,26 @@ shinyServer(function(input, output, session) {
       empty_sf
     } else {
       
-      # Join data to locations data
-      geo_per_route <- per_route %>%
-        left_join(geo_data, by = c("source" = "place")) %>% 
-        left_join(geo_data, by = c("destination" = "place"))
-      geo_per_route$ID <- as.character(c(1:nrow(geo_per_route))) # create id for each pair
+    # Join data to locations data and add id for each pair
+    geo_per_route <- per_route %>%
+      left_join(geo_data, by = c("source" = "place")) %>% 
+      left_join(geo_data, by = c("destination" = "place")) %>% 
+      add_column(id = 1:nrow(per_route))
       
       source_loc <- select(geo_per_route, lon.x, lat.x)
       dest_loc <- select(geo_per_route, lon.y, lat.y)
       
-      # Calculate great circle routes between sources and destinations and return a SpatialLines object
-      routes <- gcIntermediate(source_loc, dest_loc, 100, addStartEnd=TRUE, sp=TRUE)
+    # Calculate great circle routes between sources and destinations and return a SpatialLines object
+    routes <- gcIntermediate(source_loc, dest_loc, 100, addStartEnd = TRUE, sp = TRUE)
       
-      # Convert a SpatialLines object into SpatialLinesDataFrame, so that tabular data can be added
+    # Convert a SpatialLines object into SpatialLinesDataFrame, so that tabular data can be added
       
-      ids <- data.frame()
+    ids <- tibble(id = 1:nrow(geo_per_route))
       
-      for (i in (1:length(routes))) {         
-        id <- data.frame(routes@lines[[i]]@ID)
-        ids <- rbind(ids, id)  }
+    routes <- SpatialLinesDataFrame(routes, data = ids, match.ID = TRUE)
       
-      colnames(ids)[1] <- "ID"
-      
-      routes <- SpatialLinesDataFrame(routes, data = ids, match.ID = TRUE)
-      
-      # Create and return a SpatialLinesDataFrame
-      sp::merge(routes, geo_per_route, by = "ID")
+    # Create and return a SpatialLinesDataFrame
+    sp::merge(routes, geo_per_route, by = "id")
     }
   })
   
@@ -113,7 +107,10 @@ shinyServer(function(input, output, session) {
                 labels = c("Sent Location", "Received Location"),
                 opacity = 1) %>%
       addLegend(pal = pal, values = ~count, opacity = 1,
-                title = "Letters<br/>Received")
+                title = "Letters<br/>Received") %>% 
+      addLayersControl(position = "bottomright",
+                overlayGroups = c("Destinations", "Sources", "Routes"),
+                options = layersControlOptions(collapsed = FALSE))
   })
   
   # CircleMarkers
@@ -133,10 +130,12 @@ shinyServer(function(input, output, session) {
       clearMarkers() %>% 
       addCircleMarkers(lng = ~lon.y, lat = ~lat.y,
                        color = "#addd8e", stroke = FALSE, fillOpacity = 1, radius = 8,
+                       group = "Destinations",
                        label = label2,
                        labelOptions = labelOptions(textsize = "11px")) %>% 
       addCircleMarkers(lng = ~lon.x, lat = ~lat.x,
                        color = "#ffd24d", stroke = FALSE, fillOpacity = 1, radius = 5,
+                       group = "Sources",
                        label = label2,
                        labelOptions = labelOptions(textsize = "11px"))
   })
@@ -157,6 +156,7 @@ shinyServer(function(input, output, session) {
     leafletProxy("map") %>% 
       clearShapes() %>% 
       addPolylines(data = gcircles_routes(), opacity = 0.9, weight = 3, color = ~pal(count),
+                   group = "Routes",
                    label = label1,
                    labelOptions = labelOptions(textsize = "11px"),
                    highlight = highlightOptions(weight = 5, color = "red", opacity = 1))

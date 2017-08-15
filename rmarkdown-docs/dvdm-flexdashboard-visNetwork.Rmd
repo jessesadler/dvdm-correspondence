@@ -93,31 +93,24 @@ gcircles_routes <- reactive({
   # Remaining part of function creates a SpatialLinesDataFrame so that lines are
   # drawn over shortest geographical distance
   
-  # Join filtered data to locations data
+  # Join data to locations data and add id for each pair
   geo_per_route <- per_route %>%
     left_join(geo_data, by = c("source" = "place")) %>% 
-    left_join(geo_data, by = c("destination" = "place"))
-  geo_per_route$ID <- as.character(c(1:nrow(geo_per_route))) # create id for each pair
+    left_join(geo_data, by = c("destination" = "place")) %>% 
+    add_column(id = 1:nrow(per_route))
       
   # Calculate great circle routes between sources and destinations and return a SpatialLines object
   source_loc <- select(geo_per_route, lon.x, lat.x)
   dest_loc <- select(geo_per_route, lon.y, lat.y)
   
-  routes <- gcIntermediate(source_loc, dest_loc, 100, addStartEnd=TRUE, sp=TRUE)
+  routes <- gcIntermediate(source_loc, dest_loc, 100, addStartEnd = TRUE, sp = TRUE)
       
   # Convert a SpatialLines object into SpatialLinesDataFrame, so that filtered data can be added
-  ids <- data.frame()
-      
-  for (i in (1:length(routes))) {         
-    id <- data.frame(routes@lines[[i]]@ID)
-    ids <- rbind(ids, id)  }
-      
-    colnames(ids)[1] <- "ID"
-      
-  # Create and return a SpatialLinesDataFramen then merge with filtered data
+  ids <- tibble(id = 1:nrow(geo_per_route))
+  
   routes <- SpatialLinesDataFrame(routes, data = ids, match.ID = TRUE)
 
-  gcircles_routes <- sp::merge(routes, geo_per_route, by = "ID")
+  gcircles_routes <- sp::merge(routes, geo_per_route, by = "id")
       
   return(gcircles_routes)
     }
