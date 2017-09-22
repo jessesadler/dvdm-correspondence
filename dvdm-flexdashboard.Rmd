@@ -21,8 +21,8 @@ library(RColorBrewer)
 
 # Load letters and geographic data
 letters <- read_csv("data/dvdm-correspondence-1591.csv")
-locations <- read_csv("data/locations-1591.csv")
-geo_data <- select(locations, place:lat) # simplify locations data to only necessary variables
+locations <- read_csv("data/locations-1591.csv") %>% 
+  select(place:lat) # simplify locations data to only necessary variables
 empty_sf <- read_rds("data/empty_sf.rds") # empty sf object of lines to use for periods with no data
 
 # Set baseline for palette to be used for map legend
@@ -36,7 +36,7 @@ pal <- colorNumeric(palette = "viridis", domain = routes_all$count, reverse = TR
 
 # Reactive function for filtering letters by date used throughout Shiny app
 filtered_letters <- reactive({
-  letters[letters$date >= input$range[1] & letters$date < input$range[2], ]
+  letters[letters$date >= input$range[1] & letters$date <= input$range[2], ]
   })
 
 # Cities: Filtering data for source and destination of correspondence
@@ -44,33 +44,30 @@ cities <- reactive({
     
   per_source <- filtered_letters() %>%
     group_by(source) %>%
-    summarise(count = n()) %>%
-    remove_missing() %>%
-    arrange(count)
-
+    rename(place = source) %>% 
+    summarise(source = n()) %>%
+    remove_missing()
+  
   per_destination <- filtered_letters() %>%
     group_by(destination) %>%
-    summarise(count = n()) %>%
-    remove_missing() %>%
-    arrange(count)
-    
-  corrs_per <- filtered_letters() %>% 
+    rename(place = destination) %>% 
+    summarise(destination = n()) %>%
+    remove_missing()
+  
+  corrs_per <- filtered_letters() %>%
     group_by(source) %>%
     summarise(correspondents = n_distinct(writer)) %>% 
-    rename(place = source) %>% 
-    arrange(desc(correspondents))    
-
-  # Join filtered data with geographic data and then join together into a single data frame
-  geo_per_destination <- inner_join(geo_data, per_destination, by = c("place" = "destination"))
-  geo_per_source <- inner_join(geo_data, per_source, by = c("place" = "source"))
-  geo_data <- full_join(geo_per_source, geo_per_destination, by = "place")
-        
-  cities <- left_join(geo_data, corrs_per, by = "place") %>% 
-      replace_na(list(count.x = 0, count.y = 0, correspondents = 0)) # replace NAs with 0s in count columns
+    rename(place = source)
+  
+  # Join the three above data frames together and join with location data
+  cities <- full_join(per_source, per_destination, by = "place") %>% 
+    left_join(corrs_per, by = "place") %>% 
+    left_join(locations, by = "place") %>% 
+    replace_na(list(source = 0, destination = 0, correspondents = 0))
   
   return(cities)
 
-  })  
+  })
 
 # Routes: Filtering data for routes of correspondence and creating great circles for the routes
 gcircles_routes <- reactive({
@@ -92,8 +89,8 @@ gcircles_routes <- reactive({
   
   # Join data to locations data and add id for each pair
   geo_per_route <- per_route %>%
-    left_join(geo_data, by = c("source" = "place")) %>% 
-    left_join(geo_data, by = c("destination" = "place")) %>% 
+    left_join(locations, by = c("source" = "place")) %>% 
+    left_join(locations, by = c("destination" = "place")) %>% 
     add_column(id = 1:nrow(per_route))
       
   # Calculate great circle routes between sources and destinations and return a SpatialLines object
@@ -118,11 +115,11 @@ gcircles_routes <- reactive({
 Sidebar {.sidebar data-width=350}
 -----------------------------------------------------------------------
 
-```{r}
+```{r slider_input}
 sliderInput("range", "Date Range",
            min(as.Date("1578-01-01", "%Y-%m-%d")),
            max(as.Date("1591-12-31", "%Y-%m-%d")),
-           value = range(as.Date("1578-01-01", "%Y-%m-%d"), as.Date("1578-12-31", "%Y-%m-%d")),
+           value = range(as.Date("1584-08-01", "%Y-%m-%d"), as.Date("1585-12-31", "%Y-%m-%d")),
            timeFormat = "%e %b %Y")
 ```
 
@@ -140,7 +137,7 @@ Row
 -----------------------------------------------------------------------
 
 ### Map
-```{r}
+```{r leaflet_map}
 # Base map and legends
 output$map <- renderLeaflet({
   leaflet(data = routes_all) %>% addProviderTiles(providers$CartoDB.PositronNoLabels) %>%
@@ -165,19 +162,19 @@ observe({
       
     sprintf(
       "<strong>%s</strong><br/>Letters from: %g<br/>Letters to: %g<br/>Correspondents: %g",
-      cities()$place, cities()$count.x, cities()$count.y, cities()$correspondents) %>%
+      cities()$place, cities()$source, cities()$destination, cities()$correspondents) %>%
       lapply(htmltools::HTML)
     }
     
   leafletProxy("map", data = cities()) %>%
     clearMarkers() %>% 
-    addCircleMarkers(lng = ~lon.y, lat = ~lat.y,
+    addCircleMarkers(lng = ~lon, lat = ~lat,
         color = "#addd8e", stroke = FALSE, fillOpacity = 1,
         radius = 8,
         group = "Destinations",
         label = label2,
         labelOptions = labelOptions(textsize = "11px")) %>% 
-    addCircleMarkers(lng = ~lon.x, lat = ~lat.x,
+    addCircleMarkers(lng = ~lon, lat = ~lat,
         color = "#ffd24d", stroke = FALSE, fillOpacity = 1,
         radius = 5,
         group = "Sources",

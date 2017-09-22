@@ -7,36 +7,38 @@ library(htmltools)
 
 # Load letters and geographic data
 letters <- read_csv("data/dvdm-correspondence-1591.csv")
-locations <- read_csv("data/locations-1591.csv")
+locations <- read_csv("data/locations-1591.csv") %>% 
+  select(place:lat) # simplify locations data to only necessary variables
 gcircles_routes <- read_rds("data/gcircles_routes_sp.rds")
 
-# Prepare the data
-
-geo_data <- select(locations, place:lat) # simplify locations data to only necessary variables
-
+# Prepare the data to be joined together
+# Calculate number of letters for each variable
+# Rename location columns to place so they can be joined together
+# Name count column after variable they represent
+# Thus, source goes from being a place to a count etc.
 per_source <- letters %>%
   group_by(source) %>%
-  summarise(count = n()) %>%
-  remove_missing() %>%
-  arrange(count)
+  rename(place = source) %>% 
+  summarise(source = n()) %>%
+  remove_missing()
 
 per_destination <- letters %>%
   group_by(destination) %>%
-  summarise(count = n()) %>%
-  remove_missing() %>%
-  arrange(count)
+  rename(place = destination) %>% 
+  summarise(destination = n()) %>%
+  remove_missing()
 
 corrs_per <- letters %>%
   group_by(source) %>%
   summarise(correspondents = n_distinct(writer)) %>% 
-  rename(place = source) %>% 
-  arrange(desc(correspondents))
+  rename(place = source)
 
-geo_per_destination <- inner_join(geo_data, per_destination, by = c("place" = "destination"))
-geo_per_source <- inner_join(geo_data, per_source, by = c("place" = "source"))
-cities <- full_join(geo_per_source, geo_per_destination, by = "place") # keep all items in both tables
-cities <- left_join(cities, corrs_per, by = "place") %>% 
-  replace_na(list(count.x =0, count.y = 0, correspondents = 0)) # replace NAs with 0s in count columns
+# Join the three above data frames together and join with location data
+cities <- full_join(per_source, per_destination, by = "place") %>% # keep all items in both tables
+  left_join(corrs_per, by = "place") %>% 
+  left_join(locations, by = "place") %>% 
+  replace_na(list(source = 0, destination = 0, correspondents = 0))
+    # replace NAs with 0s in count columns
 
 # Color palette
 pal <- colorNumeric(palette = "viridis", domain = gcircles_routes$count, reverse = TRUE)
@@ -49,16 +51,16 @@ label1 <- sprintf(
 
 label2 <- sprintf(
   "<strong>%s</strong><br/>Letters from: %g<br/>Letters to: %g<br/>Correspondents: %g",
-  cities$place, cities$count.x, cities$count.y, cities$correspondents
+  cities$place, cities$source, cities$destination, cities$correspondents
 ) %>% lapply(htmltools::HTML)
 
 # Plot
 leaflet(gcircles_routes) %>% addProviderTiles(providers$CartoDB.PositronNoLabels) %>%
-  addCircleMarkers(data = cities, lng = ~lon.y, lat = ~lat.y,
+  addCircleMarkers(data = cities, lng = ~lon, lat = ~lat,
       color = "#addd8e", stroke = FALSE, fillOpacity = 1, radius = 8, group = "Destinations",
       label = label2,
       labelOptions = labelOptions(textsize = "11px")) %>%
-  addCircleMarkers(data = cities, lng = ~lon.x, lat = ~lat.x,
+  addCircleMarkers(data = cities, lng = ~lon, lat = ~lat,
       color = "#ffd24d", stroke = FALSE, fillOpacity = 1, radius = 5, group = "Sources",
       label = label2,
       labelOptions = labelOptions(textsize = "11px")) %>%

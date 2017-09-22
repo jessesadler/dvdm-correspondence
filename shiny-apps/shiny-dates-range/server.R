@@ -11,9 +11,10 @@ library(RColorBrewer)
 
 # Load letters and geographic data
 letters <- read_csv("data/dvdm-correspondence-1591.csv")
-locations <- read_csv("data/locations-1591.csv")
-geo_data <- select(locations, place:lat) # simplify locations data to only necessary variables
-empty_sf <- read_rds("data/empty_sf.rds") # empty sf object of lines to use for periods with no data
+locations <- read_csv("data/locations-1591.csv") %>% 
+  select(place:lat) # simplify locations data to only necessary variables
+# empty sf object of lines to use for periods with no data
+empty_sf <- read_rds("data/empty_sf.rds")
 
 # Set baseline for palette to be used for legend
 routes_all <- letters %>% 
@@ -45,8 +46,8 @@ shinyServer(function(input, output, session) {
       
     # Join data to locations data and add id for each pair
     geo_per_route <- per_route %>%
-      left_join(geo_data, by = c("source" = "place")) %>% 
-      left_join(geo_data, by = c("destination" = "place")) %>% 
+      left_join(locations, by = c("source" = "place")) %>% 
+      left_join(locations, by = c("destination" = "place")) %>% 
       add_column(id = 1:nrow(per_route))
       
       source_loc <- select(geo_per_route, lon.x, lat.x)
@@ -72,30 +73,29 @@ shinyServer(function(input, output, session) {
     per_source <- letters %>%
       filter(date >= input$range[1] & date <= input$range[2]) %>% 
       group_by(source) %>%
-      summarise(count = n()) %>%
-      remove_missing() %>%
-      arrange(count)
+      rename(place = source) %>% 
+      summarise(source = n()) %>%
+      remove_missing()
     
     per_destination <- letters %>%
       filter(date >= input$range[1] & date <= input$range[2]) %>% 
       group_by(destination) %>%
-      summarise(count = n()) %>%
-      remove_missing() %>%
-      arrange(count)
+      rename(place = destination) %>% 
+      summarise(destination = n()) %>%
+      remove_missing()
     
     corrs_per <- letters %>%
       filter(date >= input$range[1] & date <= input$range[2]) %>% 
       group_by(source) %>%
       summarise(correspondents = n_distinct(writer)) %>% 
-      rename(place = source) %>% 
-      arrange(desc(correspondents))
+      rename(place = source)
     
-    geo_per_destination <- inner_join(geo_data, per_destination, by = c("place" = "destination"))
-    geo_per_source <- inner_join(geo_data, per_source, by = c("place" = "source"))
-    cities_temp <- full_join(geo_per_source, geo_per_destination, by = "place")
+    cities <- full_join(per_source, per_destination, by = "place") %>% 
+      left_join(corrs_per, by = "place") %>% 
+      left_join(locations, by = "place") %>% 
+      replace_na(list(source = 0, destination = 0, correspondents = 0))
     
-    left_join(cities_temp, corrs_per, by = "place") %>% 
-      replace_na(list(count.x = 0, count.y = 0, correspondents = 0)) # replace NAs with 0s in count columns
+    return(cities)
   })
   
  # Output base map with legends
@@ -122,18 +122,18 @@ shinyServer(function(input, output, session) {
       
       sprintf(
         "<strong>%s</strong><br/>Letters from: %g<br/>Letters to: %g<br/>Correspondents: %g",
-        cities()$place, cities()$count.x, cities()$count.y, cities()$correspondents
-      ) %>% lapply(htmltools::HTML)
+        cities()$place, cities()$source, cities()$destination, cities()$correspondents) %>%
+        lapply(htmltools::HTML)
     }
     
     leafletProxy("map", data = cities()) %>%
       clearMarkers() %>% 
-      addCircleMarkers(lng = ~lon.y, lat = ~lat.y,
+      addCircleMarkers(lng = ~lon, lat = ~lat,
                        color = "#addd8e", stroke = FALSE, fillOpacity = 1, radius = 8,
                        group = "Destinations",
                        label = label2,
                        labelOptions = labelOptions(textsize = "11px")) %>% 
-      addCircleMarkers(lng = ~lon.x, lat = ~lat.x,
+      addCircleMarkers(lng = ~lon, lat = ~lat,
                        color = "#ffd24d", stroke = FALSE, fillOpacity = 1, radius = 5,
                        group = "Sources",
                        label = label2,

@@ -74,22 +74,19 @@ shinyServer(function(input, output, session) {
       filter(year >= input$range[1] & year < input$range[2]) %>% 
       group_by(source) %>%
       summarise(count = n()) %>%
-      remove_missing() %>%
-      arrange(count)
+      remove_missing()
     
     per_destination <- letters %>%
       filter(year >= input$range[1] & year < input$range[2]) %>% 
       group_by(destination) %>%
       summarise(count = n()) %>%
-      remove_missing() %>%
-      arrange(count)
+      remove_missing()
     
     corrs_per <- letters %>%
       filter(year >= input$range[1] & year < input$range[2]) %>% 
       group_by(source) %>%
       summarise(correspondents = n_distinct(writer)) %>% 
-      rename(place = source) %>% 
-      arrange(desc(correspondents))
+      rename(place = source)
     
     geo_per_destination <- inner_join(geo_data, per_destination, by = c("place" = "destination"))
     geo_per_source <- inner_join(geo_data, per_source, by = c("place" = "source"))

@@ -1,6 +1,11 @@
 ---
 title: "Setting up Network Visualizations"
-output: html_document
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: cosmo
+    highlight: textmate
 ---
 
 * Need to go back through document

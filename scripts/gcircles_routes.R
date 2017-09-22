@@ -8,8 +8,8 @@ library(geosphere)
 
 # Load letters and geographic data
 letters <- read_csv("data/dvdm-correspondence-1591.csv")
-locations <- read_csv("data/locations-1591.csv")
-geo_data <- select(locations, place:lat) # simplify locations data to only necessary variables
+locations <- read_csv("data/locations-1591.csv") %>% 
+  select(place:lat) # simplify locations data to only necessary variables)
 
 # Data from letters
 per_route <- letters %>%
@@ -22,8 +22,8 @@ per_route <- letters %>%
 
 # Join data to locations data and add id for each pair
 geo_per_route <- per_route %>%
-  left_join(geo_data, by = c("source" = "place")) %>% 
-  left_join(geo_data, by = c("destination" = "place")) %>% 
+  left_join(locations, by = c("source" = "place")) %>% 
+  left_join(locations, by = c("destination" = "place")) %>% 
   add_column(id = 1:nrow(per_route))
 
 # Extract source and destination lat and lon data to be placed into gcIntermediate command
