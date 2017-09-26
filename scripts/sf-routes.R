@@ -1,3 +1,10 @@
+### Create sfc linestring object for routes ###
+
+# Create sfc linestring object from sp gcIntermediate
+# Add routes id column to letters and
+# add distance data to the routes data.
+# This sets up and saves sf data for routes
+
 # Load libraries
 library(tidyverse)
 library(sp)
@@ -9,13 +16,14 @@ letters <- read_csv("data/dvdm-correspondence-1591.csv")
 locations <- read_csv("data/locations-1591.csv") %>% 
   select(place:lat) # simplify locations data to only necessary variables)
 
+# Get tibble of the routes in the data
 routes <- letters %>%
   group_by(source, destination) %>% 
   summarise() %>% 
   remove_missing()
 
 # Create tibble with id column with length of routes
-# Used for both tibble and spatial lines data frame
+# Used for routes and letters tibbles and spatial lines data frame
 ids <- tibble(id = 1:nrow(routes))
 
 routes <- bind_cols(ids, routes)
@@ -32,7 +40,8 @@ geo_routes <- routes %>%
 source_loc <- select(geo_routes, lon.x, lat.x)
 dest_loc <- select(geo_routes, lon.y, lat.y)
 
-# Calculate great circle routes between sources and destinations and return a SpatialLines object
+# Calculate great circle routes between sources and destinations
+# and return a SpatialLines object
 gc_routes <- gcIntermediate(source_loc, dest_loc, 100, addStartEnd = TRUE, sp = TRUE)
 
 # Convert SpatialLines into SpatialLinesDataFrame with id column
@@ -43,7 +52,8 @@ routes_sp <- sp::merge(gc_routes, routes, by = "id")
 
 routes_sf <- st_as_sf(routes_sp)
 
-### Distance
+### Distance ###
+# Add distance data to routes_sf object
 
 distance_vector <- st_length(routes_sf) %>% as.integer()
 # Use as.integer to change vector from class units to integer
@@ -56,20 +66,33 @@ distance <- as_tibble(distance_vector) %>%
   mutate(miles = round(meters/1609)) %>% 
   add_column(id = 1:nrow(routes))
 
-# distance with routes information to have names of cities
+# Distance with routes information to have names of cities
+# This creates distance tibble by itself
 distance_tbl <- left_join(routes, distance, by = "id")
 
-# distance with routes_sf data
-distance_sf <- left_join(routes_sf, distance, by = "id")
+# Add distance data to routes_sf data
+routes_sf <- left_join(routes_sf, distance, by = "id")
+
+### Save data ###
+write_rds(routes_sf, "data/routes_sf.rds")
+write_csv(letters_id, "data/letters_id.csv")
 
 ### Mapping ###
 library(leaflet)
 library(mapview)
 
 mapview(routes_sf)
-leaflet(routes_sf) %>% addProviderTiles(providers$CartoDB.PositronNoLabels) %>% addPolylines()
+
+leaflet(routes_sf) %>% 
+  addProviderTiles(providers$CartoDB.PositronNoLabels) %>% 
+  addPolylines()
 
 ### Add count data ###
+# This shows how to add number of letters for each route
+# Example is given for dealing with a subset by time.
+# The key is to do filtering on letters data and then
+# join it to routes_sf object
+
 per_route <- letters_id %>%
   group_by(id) %>%
   summarise(count = n()) %>%
@@ -86,7 +109,6 @@ in_1585 <- letters_id %>%
   remove_missing()
 
 # Either use right join or left join and remove NA
-
 sf_1585 <- right_join(routes_sf, in_1585, by = "id") %>% 
   arrange(count)
 
@@ -95,7 +117,6 @@ sf_1585 <- left_join(routes_sf, in_1585, by = "id") %>%
   remove_missing()
 
 # Leaflet
-
 pal <- colorNumeric(palette = "viridis", domain = count_sf$count, reverse = TRUE)
 
 label1 <- sprintf(

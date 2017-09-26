@@ -23,12 +23,14 @@ locations <- read_csv("data/locations-1591.csv") %>%
 locations_sf <- st_as_sf(locations, coords = c("lon", "lat"), crs = 4326, agr = "constant")
 
 mapview(locations_sf)
+
 leaflet(locations_sf) %>% 
   addProviderTiles(providers$CartoDB.Positron) %>% 
   addCircleMarkers()
 
 ### Get letters per source and letters per destination ###
 # Join this data to locations_sf to make it an sfc object
+# Then map cities data
 
 per_source <- letters %>%
   group_by(source) %>%
