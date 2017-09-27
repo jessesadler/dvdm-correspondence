@@ -17,12 +17,12 @@ library(sf)
 library(geosphere)
 library(leaflet)
 library(htmltools)
-library(RColorBrewer)
 
 # Load letters and geographic data
-letters <- read_csv("data/dvdm-correspondence-1591.csv")
+letters <- read_csv("data/letters_id.csv")
 locations <- read_csv("data/locations-1591.csv") %>% 
   select(place:lat) # simplify locations data to only necessary variables
+routes_sf <- read_rds("data/routes_sf.rds")
 empty_sf <- read_rds("data/empty_sf.rds") # empty sf object of lines to use for periods with no data
 
 # Set baseline for palette to be used for map legend
@@ -65,43 +65,19 @@ cities <- reactive({
   })
 
 # Routes: Filtering data for routes of correspondence and creating great circles for the routes
-gcircles_routes <- reactive({
+routes <- reactive({
     
   per_route <- filtered_letters() %>%  
-    group_by(source, destination) %>%
+    group_by(id) %>%
     summarise(count = n()) %>%
-    remove_missing() %>%
-    arrange(count) %>% 
-    ungroup()
+    remove_missing()
     
   # Skip rest of function and return empty sf lines object if filtered data is empty
   if(nrow(per_route) < 1) {
     empty_sf
     } else {
-  
-  # Remaining part of function creates a SpatialLinesDataFrame so that lines are
-  # drawn over shortest geographical distance
-  
-  # Join data to locations data and add id for each pair
-  geo_per_route <- per_route %>%
-    left_join(locations, by = c("source" = "place")) %>% 
-    left_join(locations, by = c("destination" = "place")) %>% 
-    add_column(id = 1:nrow(per_route))
-      
-  # Calculate great circle routes between sources and destinations and return a SpatialLines object
-  source_loc <- select(geo_per_route, lon.x, lat.x)
-  dest_loc <- select(geo_per_route, lon.y, lat.y)
-  
-  routes <- gcIntermediate(source_loc, dest_loc, 100, addStartEnd = TRUE, sp = TRUE)
-      
-  # Convert a SpatialLines object into SpatialLinesDataFrame, so that filtered data can be added
-  ids <- tibble(id = 1:nrow(geo_per_route))
-
-  routes <- SpatialLinesDataFrame(routes, data = ids, match.ID = TRUE)
-
-  gcircles_routes <- sp::merge(routes, geo_per_route, by = "id")
-      
-  return(gcircles_routes)
+      right_join(routes_sf, per_route, by = "id") %>% 
+        arrange(count)
     }
   })
 
@@ -118,11 +94,12 @@ sliderInput("range", "Date Range",
            timeFormat = "%e %b %Y")
 ```
 
-This map presents letters received by Daniel van der Meulen from 1578 to the end of 1591. This map is still under development and is part of a larger digital humanities project. The outline of the larger project can be found [here](https://www.jessesadler.com/project/dvdm-correspondence/).
+This map presents letters received by the 16th-century merchant Daniel van der Meulen from 1578 to the end of 1591. This map is still under development and is part of a larger digital humanities project. The outline of the larger project can be found [here](https://www.jessesadler.com/project/dvdm-correspondence/).
 
 * In order to interact with the map, choose the date range to visualize the letters Daniel van der Meulen received over a specific period.
-* Hover over the routes to see the amount of letters sent along each route.
+* Hover over the routes to see the amount of letters sent along each route and the distance of the route. Distance measurements are the shortest geographic distance between the two locations.
 * Hover over the cities to see the amount of letters sent from and recieved in the location, as well as the number of correspondents who sent Daniel letters from the location.
+* The routes, sources, and destinations objects can all be toggled on or off with the controler on the bottom right of the map.
 
 Application author: [Jesse Sadler](https://www.jessesadler.com)
 
@@ -180,19 +157,19 @@ observe({
 # Routes
 observe({
   # Return NA for labels if routes function is empty otherwise create labels
-  label1 <- if(nrow(gcircles_routes()) < 1) {
+  label1 <- if(nrow(routes()) < 1) {
     NA
     } else {
       
     sprintf(
-      "%s to %s<br/>Letters: %g",
-      gcircles_routes()$source, gcircles_routes()$destination, gcircles_routes()$count) %>%
+      "%s to %s<br/>Distance: %g miles<br/>Letters: %g",
+      routes()$source, routes()$destination, routes()$miles, routes()$count) %>%
       lapply(htmltools::HTML)
     }
     
   leafletProxy("map") %>% 
     clearShapes() %>% 
-    addPolylines(data = gcircles_routes(), opacity = 0.9, weight = 3, color = ~pal(count),
+    addPolylines(data = routes(), opacity = 0.9, weight = 3, color = ~pal(count),
         group = "Routes",
         label = label1,
         labelOptions = labelOptions(textsize = "11px"),
@@ -202,4 +179,3 @@ observe({
 leafletOutput("map")
 
 ```
-
