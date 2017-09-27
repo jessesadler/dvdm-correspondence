@@ -23,7 +23,6 @@ letters <- read_csv("data/letters_id.csv")
 locations <- read_csv("data/locations-1591.csv") %>% 
   select(place:lat) # simplify locations data to only necessary variables
 routes_sf <- read_rds("data/routes_sf.rds")
-empty_sf <- read_rds("data/empty_sf.rds") # empty sf object of lines to use for periods with no data
 
 # Set baseline for palette to be used for map legend
 routes_all <- letters %>% 
@@ -55,9 +54,14 @@ cities <- reactive({
     summarise(destination = n()) %>%
     remove_missing()
   
-  # Join the three above data frames together and join with location data
-  cities <- full_join(per_source, per_destination, by = "place") %>% 
-    left_join(locations, by = "place") %>% 
+  # Join geo data to both source and destination, so that cities tibble can
+  # have different sets of columns for source and destination.
+  # This makes it possible to leaflet draw circles from different sets of information
+  geo_per_source <- left_join(per_source, locations, by = "place")
+  geo_per_destination <- left_join(per_destination, locations, by = "place")
+  
+  # Join the geo data frames together
+  cities <- full_join(geo_per_source, geo_per_destination, by = "place") %>% 
     replace_na(list(source = 0, destination = 0, correspondents = 0))
   
   return(cities)
@@ -71,14 +75,10 @@ routes <- reactive({
     group_by(id) %>%
     summarise(count = n()) %>%
     remove_missing()
+  
+  right_join(routes_sf, per_route, by = "id") %>% 
+    arrange(count)
     
-  # Skip rest of function and return empty sf lines object if filtered data is empty
-  if(nrow(per_route) < 1) {
-    empty_sf
-    } else {
-      right_join(routes_sf, per_route, by = "id") %>% 
-        arrange(count)
-    }
   })
 
 ```
@@ -140,13 +140,13 @@ observe({
     
   leafletProxy("map", data = cities()) %>%
     clearMarkers() %>% 
-    addCircleMarkers(lng = ~lon, lat = ~lat,
+    addCircleMarkers(lng = ~lon.y, lat = ~lat.y,
         color = "#addd8e", stroke = FALSE, fillOpacity = 1,
         radius = 8,
         group = "Destinations",
         label = label2,
         labelOptions = labelOptions(textsize = "11px")) %>% 
-    addCircleMarkers(lng = ~lon, lat = ~lat,
+    addCircleMarkers(lng = ~lon.x, lat = ~lat.x,
         color = "#ffd24d", stroke = FALSE, fillOpacity = 1,
         radius = 5,
         group = "Sources",
