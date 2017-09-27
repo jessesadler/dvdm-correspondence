@@ -5,13 +5,20 @@
 # Take out country name from places that need it in letters data
 
 # Load libraries
-library(readr)
 library(dplyr)
 library(stringr)
 library(ggmap)
 
 # Load letters data
-letters <- read_csv("data/dvdm-correspondence-1591.csv")
+# Load as a data frame so it can be geocoded
+letters <- read.csv("data/dvdm-correspondence-1591.csv", stringsAsFactors = FALSE)
+
+# Put ", country name" for necessary places for geocoding
+letters$destination <- str_replace(letters$destination, "Brunswick", "Brunswick, Germany")
+letters$source <- str_replace(letters$source, "Gravesend", "Gravesend, UK")
+letters$source <- str_replace(letters$source, "Newbury", "Newbury, UK")
+letters$source <- str_replace(letters$source, "Naples", "Naples, Italy")
+letters$source <- str_replace(letters$source, "Rombeek", "Rombeek, Netherlands")
 
 # The rest of the code makes a tibble (locations) with the geocoding of all of
 # the places in the letters tibble and saves it as a rds document.
@@ -27,15 +34,10 @@ destinations <- letters %>%
   na.omit(destination) %>%
   rename(place = destination)
 
-places <- full_join(sources, destinations)
-
-# Put ", country name" for necessary places for geocoding
-
-# Make tibble a dataframe because of bug in mutate_geocode
-places_df <- as.data.frame(places)
+places <- full_join(sources, destinations, by = "place")
 
 #Geocode with mutate_geocode
-locations_df <- places_df %>% mutate_geocode(place, output = "more")
+locations_df <- places %>% mutate_geocode(place, output = "more")
 
 # Turn dataframe into tibble, select useful columns, and rename administrative area
 locations <- as_tibble(locations_df) %>% 
