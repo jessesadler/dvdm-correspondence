@@ -74,7 +74,8 @@ shinyServer(function(input, output, session) {
       filter(date >= input$range[1] & date <= input$range[2]) %>% 
       group_by(source) %>%
       rename(place = source) %>% 
-      summarise(source = n()) %>%
+      summarise(source = n(),
+                correspondents = n_distinct(writer)) %>%
       remove_missing()
     
     per_destination <- letters %>%
@@ -84,14 +85,7 @@ shinyServer(function(input, output, session) {
       summarise(destination = n()) %>%
       remove_missing()
     
-    corrs_per <- letters %>%
-      filter(date >= input$range[1] & date <= input$range[2]) %>% 
-      group_by(source) %>%
-      summarise(correspondents = n_distinct(writer)) %>% 
-      rename(place = source)
-    
     cities <- full_join(per_source, per_destination, by = "place") %>% 
-      left_join(corrs_per, by = "place") %>% 
       left_join(locations, by = "place") %>% 
       replace_na(list(source = 0, destination = 0, correspondents = 0))
     

@@ -1,7 +1,13 @@
 ### Geocode correspondence data ###
 
+# Geocode locations in the letters tibble
+# Add historical regions
+# Take out country name from places that need it in letters data
+
 # Load libraries
-library(tidyverse)
+library(readr)
+library(dplyr)
+library(stringr)
 library(ggmap)
 
 # Load letters data

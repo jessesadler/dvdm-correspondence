@@ -73,7 +73,8 @@ shinyServer(function(input, output, session) {
     per_source <- letters %>%
       filter(year >= input$range[1] & year < input$range[2]) %>% 
       group_by(source) %>%
-      summarise(count = n()) %>%
+      summarise(count = n(),
+                correspondents = n_distinct(writer)) %>%
       remove_missing()
     
     per_destination <- letters %>%
@@ -82,18 +83,12 @@ shinyServer(function(input, output, session) {
       summarise(count = n()) %>%
       remove_missing()
     
-    corrs_per <- letters %>%
-      filter(year >= input$range[1] & year < input$range[2]) %>% 
-      group_by(source) %>%
-      summarise(correspondents = n_distinct(writer)) %>% 
-      rename(place = source)
-    
     geo_per_destination <- inner_join(geo_data, per_destination, by = c("place" = "destination"))
     geo_per_source <- inner_join(geo_data, per_source, by = c("place" = "source"))
-    cities_temp <- full_join(geo_per_source, geo_per_destination, by = "place")
-    
-    left_join(cities_temp, corrs_per, by = "place") %>% 
+    cities <- full_join(geo_per_source, geo_per_destination, by = "place") %>% 
       replace_na(list(count.x =0, count.y = 0, correspondents = 0)) # replace NAs with 0s in count columns
+    
+    return(cities)
   })  
  
   # Output base map with legends

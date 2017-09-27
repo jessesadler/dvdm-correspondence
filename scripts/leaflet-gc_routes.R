@@ -19,7 +19,8 @@ gcircles_routes <- read_rds("data/gcircles_routes_sp.rds")
 per_source <- letters %>%
   group_by(source) %>%
   rename(place = source) %>% 
-  summarise(source = n()) %>%
+  summarise(source = n(),
+            correspondents = n_distinct(writer)) %>%
   remove_missing()
 
 per_destination <- letters %>%
@@ -28,14 +29,8 @@ per_destination <- letters %>%
   summarise(destination = n()) %>%
   remove_missing()
 
-corrs_per <- letters %>%
-  group_by(source) %>%
-  summarise(correspondents = n_distinct(writer)) %>% 
-  rename(place = source)
-
 # Join the three above data frames together and join with location data
 cities <- full_join(per_source, per_destination, by = "place") %>% # keep all items in both tables
-  left_join(corrs_per, by = "place") %>% 
   left_join(locations, by = "place") %>% 
   replace_na(list(source = 0, destination = 0, correspondents = 0))
     # replace NAs with 0s in count columns
