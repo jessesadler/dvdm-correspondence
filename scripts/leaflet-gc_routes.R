@@ -35,6 +35,9 @@ cities <- full_join(per_source, per_destination, by = "place") %>% # keep all it
   replace_na(list(source = 0, destination = 0, correspondents = 0))
     # replace NAs with 0s in count columns
 
+sources <- filter(cities, source > 0)
+destinations <- filter(cities, destination > 0)
+
 # Color palette
 pal <- colorNumeric(palette = "viridis", domain = gcircles_routes$count, reverse = TRUE)
 
@@ -51,11 +54,11 @@ label2 <- sprintf(
 
 # Plot
 leaflet(gcircles_routes) %>% addProviderTiles(providers$CartoDB.PositronNoLabels) %>%
-  addCircleMarkers(data = cities, lng = ~lon, lat = ~lat,
+  addCircleMarkers(data = destinations, lng = ~lon, lat = ~lat,
       color = "#addd8e", stroke = FALSE, fillOpacity = 1, radius = 8, group = "Destinations",
       label = label2,
       labelOptions = labelOptions(textsize = "11px")) %>%
-  addCircleMarkers(data = cities, lng = ~lon, lat = ~lat,
+  addCircleMarkers(data = sources, lng = ~lon, lat = ~lat,
       color = "#ffd24d", stroke = FALSE, fillOpacity = 1, radius = 5, group = "Sources",
       label = label2,
       labelOptions = labelOptions(textsize = "11px")) %>%

@@ -14,10 +14,9 @@ locations <- read_csv("data/locations-1591.csv") %>%
 # Data from letters
 per_route <- letters %>%
   group_by(source, destination) %>%
-  filter(source != destination) %>%
   summarise(count = n()) %>%
-  remove_missing() %>%
-  arrange(count) %>%
+  arrange(count) %>% 
+  remove_missing() %>% 
   ungroup()
 
 # Join data to locations data and add id for each pair

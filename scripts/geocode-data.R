@@ -11,7 +11,7 @@ library(stringr)
 library(ggmap)
 
 # Load letters data
-letters <- read_csv("data/dvdm-correspondence-original.csv")
+letters <- read_csv("data/dvdm-correspondence-1591.csv")
 
 # The rest of the code makes a tibble (locations) with the geocoding of all of
 # the places in the letters tibble and saves it as a rds document.
@@ -28,6 +28,8 @@ destinations <- letters %>%
   rename(place = destination)
 
 places <- full_join(sources, destinations)
+
+# Put ", country name" for necessary places for geocoding
 
 # Make tibble a dataframe because of bug in mutate_geocode
 places_df <- as.data.frame(places)
