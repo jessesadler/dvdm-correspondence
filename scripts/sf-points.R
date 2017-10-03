@@ -18,7 +18,8 @@ locations <- read_csv("data/locations-1591.csv")
 # specifies for each non-geometry attribute column how it relates to the geometry.
 # "constant" is used for attributes that are constant throughout the geometry
 
-locations_sf <- st_as_sf(locations, coords = c("lon", "lat"), crs = 4326, agr = "constant")
+locations_sf <- st_as_sf(locations, coords = c("lon", "lat"), crs = 4326)
+# Can also use crs = "+proj=longlat +datum=WGS84"
 
 # Save data
 write_rds(locations_sf, "data/locations_sf.rds")
