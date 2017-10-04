@@ -35,13 +35,15 @@ cities <- full_join(per_source, per_destination, by = "place") %>% # keep all it
   replace_na(list(source = 0, destination = 0, correspondents = 0))
     # replace NAs with 0s in count columns
 
+# Filter cities data frame to have separate data frames with sources and destinations
+# Both data frames have all information for the locations
 sources <- filter(cities, source > 0)
 destinations <- filter(cities, destination > 0)
 
 # Color palette
 pal <- colorNumeric(palette = "viridis", domain = gcircles_routes$count, reverse = TRUE)
 
-# Labels
+# Labels: make separate labels for sources and destinations to avoid mismatches
 label1 <- sprintf(
   "%s to %s<br/>Letters: %g",
   gcircles_routes$source, gcircles_routes$destination, gcircles_routes$count
@@ -49,7 +51,12 @@ label1 <- sprintf(
 
 label2 <- sprintf(
   "<strong>%s</strong><br/>Letters from: %g<br/>Letters to: %g<br/>Correspondents: %g",
-  cities$place, cities$source, cities$destination, cities$correspondents
+  destinations$place, destinations$source, destinations$destination, destinations$correspondents
+) %>% lapply(htmltools::HTML)
+
+label3 <- sprintf(
+  "<strong>%s</strong><br/>Letters from: %g<br/>Letters to: %g<br/>Correspondents: %g",
+  sources$place, sources$source, sources$destination, sources$correspondents
 ) %>% lapply(htmltools::HTML)
 
 # Plot
@@ -60,7 +67,7 @@ leaflet(gcircles_routes) %>% addProviderTiles(providers$CartoDB.PositronNoLabels
       labelOptions = labelOptions(textsize = "11px")) %>%
   addCircleMarkers(data = sources, lng = ~lon, lat = ~lat,
       color = "#ffd24d", stroke = FALSE, fillOpacity = 1, radius = 5, group = "Sources",
-      label = label2,
+      label = label3,
       labelOptions = labelOptions(textsize = "11px")) %>%
   addPolylines(opacity = 0.8, weight = 3, color = ~pal(count), group = "Routes",
       label = label1,
