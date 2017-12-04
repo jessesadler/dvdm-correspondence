@@ -38,7 +38,7 @@ links <- per_route %>%
 # Forced Network graph
 forceNetwork(Links = links, Nodes = nodes, Source = "from", Target = "to", 
              Value = "count", NodeID = "place", Group = "id",
-             fontSize = 14, opacity = .8, zoom = TRUE)
+             fontSize = 14, opacity = 1, zoom = TRUE)
 
 # Sankey Graph
 sankeyNetwork(Links = links, Nodes = nodes, Source = "from", Target = "to", 

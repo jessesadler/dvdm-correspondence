@@ -31,9 +31,12 @@ julian <- new_to_old("1583-02-15")
 ## Mutate functions ##
 old_calendar <- letters %>% mutate(Julian = date - days(10))
 
-# Need tidyeval
-old_calendar_mutate <- function(df) {mutate(df, Julian = date - days(10))}
-new_calendar_mutate <- function(df) {mutate(df, Gregorian = date + days(10))}
+# Mutate column of dates
+# Takes arguments for data frame and date column that defaults to column called "date"
+# First transforms to date class, so needs to be in a form that can be used for lubridate ymd()
+# Creates a new column called Julian or Gregorian
+old_calendar_mutate <- function(df, date = date) {mutate(df, Julian = ymd(date) - days(10))}
+new_calendar_mutate <- function(df, date = date) {mutate(df, Gregorian = ymd(date) + days(10))}
 
 old <- old_calendar_mutate(letters)
 new <- new_calendar_mutate(letters)

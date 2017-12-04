@@ -3,6 +3,7 @@
 library(tidyverse)
 library(igraph)
 library(ggraph)
+library(tidygraph)
 
 ### Create igraph object ###
 
@@ -25,20 +26,22 @@ destinations <- per_route %>%
   rename(place = destination)
 
 nodes <- full_join(sources, destinations)
-nodes <- add_column(nodes, id = 1:nrow(nodes))
-nodes <- select(nodes, id, everything())
+nodes <- add_column(nodes, id = 1:nrow(nodes)) %>% 
+  select(id, everything())
 
 # Create links with ids for source and destination and bring id columns to beginning of df
 links <- per_route %>% 
   left_join(nodes, by = c("source" = "place")) %>% 
   rename(from = id) %>% 
   left_join(nodes, by = c("destination" = "place")) %>% 
-  rename(to = id)
-
-links <- select(links, from, to, everything())
+  rename(to = id) %>% 
+  select(from, to, everything())
 
 # Create igraph object
 routes <- graph_from_data_frame(d = links, vertices = nodes, directed = TRUE)
+
+# Alternatively can create tidygraph object
+routes_tidy <- tbl_graph(nodes = nodes, edges = links, directed = TRUE)
 
 ### ggraph plots ###
 
@@ -49,8 +52,8 @@ set_graph_style()
 ggraph(routes) + geom_edge_link() + geom_node_point()
 
 ggraph(routes, layout = "fr") + 
-  geom_edge_fan(arrow = arrow(length = unit(4, 'mm')), 
-                end_cap = circle(3, 'mm')) + 
+  geom_edge_fan(arrow = arrow(length = unit(1, 'mm')), 
+                end_cap = circle(1, 'mm')) + 
   geom_edge_loop() + 
   geom_node_point()
 
@@ -65,6 +68,10 @@ ggraph(routes, layout = "fr") +
 ggraph(routes, layout = 'linear') + 
   geom_node_point() +
   geom_edge_arc(aes(edge_alpha = count))
+
+ggraph(routes, layout = 'linear') + 
+  geom_node_point() +
+  geom_edge_arc(aes(edge_alpha = count), fold = TRUE)
 
 ggraph(routes, layout = 'linear') + 
   geom_node_point() +
