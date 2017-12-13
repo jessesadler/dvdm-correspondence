@@ -1,4 +1,4 @@
-### Create sfc linestring object for routes ###
+### Create sf linestring object for routes ###
 
 # Create sfc linestring object from sp gcIntermediate
 # Add routes id column to letters and
