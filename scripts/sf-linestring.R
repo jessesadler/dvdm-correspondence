@@ -18,16 +18,16 @@ locations <- read_csv("data/locations-1591.csv") %>%
 ## Routes and create id column
 routes <- letters %>%
   group_by(source, destination) %>% 
-  summarise() %>% 
+  count() %>% 
   remove_missing()
 
-ids <- tibble(id = 1:nrow(routes))
+routes <- add_column(routes, id = 1:nrow(routes))
 
-routes <- bind_cols(ids, routes)
-
-## Gather to make ling tibble
+## Gather to make long tibble
 # Go from source and destination as variables to
-# Place and whether it is source or destination
+# Place and whether it is source or destination.
+# This makes it so there is only one set of long lat
+# columns and so only one sfc column
 routes_long <- routes %>% gather(type, place, -id)
 
 # Add latitude and longitude data
@@ -40,7 +40,8 @@ routes_points <- st_as_sf(routes_geo, coords = c("lon", "lat"), crs = 4326)
 # This keeps order of source and destination,
 # because destination is later in the table
 # do_union = FALSE keeps both points before
-# casting to linestring
+# casting to linestring. It makes geometry a multipoint,
+# which can then be turned into linestring.
 routes_lines <- routes_points %>% 
   group_by(id) %>% 
   summarise(do_union = FALSE) %>% 
@@ -67,3 +68,9 @@ distance <- st_length(routes_gcircles) %>%
   select(id, everything())
 
 routes_distance <- left_join(routes_gcircles, distance, by = "id")
+
+### Plot
+library(mapview)
+
+# Map routes by distance
+mapview(routes_distance, zcol = "miles", legend = TRUE)

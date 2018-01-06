@@ -1,5 +1,8 @@
 ## sp points
 
+library(tidyverse)
+library(sp)
+
 locations <- read_csv("data/locations-1591.csv")
 
 ## Get coordinates: Make a matrix of the coordinates
@@ -15,5 +18,3 @@ data <- locations %>% select(place)
 locations_sp <- SpatialPointsDataFrame(coords = coords,
                                        data = data,  
                                        proj4string = CRS("+proj=longlat +datum=WGS84"))
-
-

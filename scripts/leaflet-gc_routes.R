@@ -20,7 +20,7 @@ per_source <- letters %>%
   group_by(source) %>%
   rename(place = source) %>% 
   summarise(source = n(),
-            correspondents = n_distinct(writer)) %>%
+  correspondents = n_distinct(writer)) %>%
   remove_missing()
 
 per_destination <- letters %>%
