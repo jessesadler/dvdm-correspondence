@@ -30,10 +30,13 @@ geo_per_source <- inner_join(geo_data, per_source, by = c("place" = "source"))
 # Get background map
 bw_map <- get_googlemap(center = c(3.5, 46.5), zoom = 5,
   color = "bw",
-  style = "feature:road|visibility:off&style=element:labels|visibility:off&style=feature:administrative|visibility:off")
+  style = "feature:road|visibility:off&style=element:labels|visibility:off&
+  style=feature:administrative|visibility:off")
 
 dark_map <- get_googlemap(center = c(3.5, 46.5), zoom = 5,
-  style = "feature:road|visibility:off&style=element:labels|visibility:off&style=feature:administrative|visibility:off&style=element:geometry|color:0x023e58&style=feature:landscape.natural|color:0x023e58&style=feature:water|color:0x0e1626")
+  style = "feature:road|visibility:off&style=element:labels|visibility:off&
+  style=feature:administrative|visibility:off&style=element:geometry|color:
+  0x023e58&style=feature:landscape.natural|color:0x023e58&style=feature:water|color:0x0e1626")
 
 ### Map ###
 ggmap(bw_map, extent = "device", legend = "topright") +

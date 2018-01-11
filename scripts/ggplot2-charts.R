@@ -1,4 +1,4 @@
-### Histogram and Bar charts by year/date ###
+### Histogram and bar charts by year/date ###
 
 library(tidyverse)
 
