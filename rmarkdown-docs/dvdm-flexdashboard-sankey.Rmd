@@ -9,6 +9,10 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+knitr::opts_knit$set(root.dir = "..") # Sets working directory to dvmd-correspondence directory
+```
+
+``` {r setting up, include=FALSE}
 library(flexdashboard)
 library(shiny)
 library(tidyverse)

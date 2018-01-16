@@ -19,7 +19,8 @@ locations <- read_csv("data/locations-1591.csv") %>%
 routes <- letters %>%
   group_by(source, destination) %>% 
   count() %>% 
-  remove_missing()
+  remove_missing() %>% 
+  ungroup()
 
 routes <- add_column(routes, id = 1:nrow(routes))
 
