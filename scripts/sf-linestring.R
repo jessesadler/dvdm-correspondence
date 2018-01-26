@@ -18,7 +18,7 @@ locations <- read_csv("data/locations-1591.csv") %>%
 ## Routes and create id column
 routes <- letters %>%
   group_by(source, destination) %>% 
-  count() %>% 
+  summarise() %>% 
   remove_missing() %>% 
   ungroup()
 
@@ -55,8 +55,7 @@ routes_lines <- left_join(routes_lines, routes, by = "id")
 # set_units function is from dfMaxLength argument
 # It gives the maximum length of a segment. The function uses
 # gcIntermediate to calculate actual segmentation
-routes_gcircles <- routes_lines %>% st_segmentize(units::set_units(50, km))
-
+routes_gcircles <- routes_lines %>% st_segmentize(units::set_units(20, km))
 
 ## Distance measurements of routes with units package
 # Rounded totals for km and miles since locations are not exact
