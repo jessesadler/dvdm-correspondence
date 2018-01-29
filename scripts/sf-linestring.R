@@ -1,11 +1,9 @@
 ### Create sf linestring object for routes ###
 
-# Use sf methods to create linestring for routes
-# Key move is to create id column for groups and
-# use gather to have all cities in one column.
-# This makes it possible to then have only one sf
-# geometry column. Lines are made with group_by and
-# summarise, along with st_cast to create linestring
+# Use sf methods to create linestring for routes Key move is to create id column
+# for groups and use gather to have all cities in one column. This makes it
+# possible to have only one sf geometry column. Lines are made with
+# group_by() and summarise(), along with st_cast() to create linestring
 
 library(tidyverse)
 library(sf)
@@ -13,7 +11,7 @@ library(units)
 
 letters <- read_csv("data/dvdm-correspondence-1591.csv")
 locations <- read_csv("data/locations-1591.csv") %>% 
-  select(place:lat) # simplify locations data to only necessary variables)
+  select(place:lat) # simplify locations data to only necessary variables
 
 ## Routes and create id column
 routes <- letters %>%
@@ -24,11 +22,9 @@ routes <- letters %>%
 
 routes <- add_column(routes, id = 1:nrow(routes))
 
-## Gather to make long tibble
-# Go from source and destination as variables to
-# Place and whether it is source or destination.
-# This makes it so there is only one set of long lat
-# columns and so only one sfc column
+## Gather to make long tibble go from source and destination as variables to
+# place and whether it is source or destination. This makes it so there is only
+# one set of longitude and latitude columns and so only one sfc column
 routes_long <- routes %>% gather(type, place, -id)
 
 # Add latitude and longitude data
@@ -37,12 +33,9 @@ routes_geo <- left_join(routes_long, locations, by = "place")
 # Create sf object with sfc points
 routes_points <- st_as_sf(routes_geo, coords = c("lon", "lat"), crs = 4326)
 
-# Make lines through group_by and summarise
-# This keeps order of source and destination,
-# because destination is later in the table
-# do_union = FALSE keeps both points before
-# casting to linestring. It makes geometry a multipoint,
-# which can then be turned into linestring.
+# Make lines through group_by() and summarise() This keeps order of source and
+# destination, because destination is later in the table. do_union = FALSE makes
+# geometry a multipoint, which can then be turned into linestring.
 routes_lines <- routes_points %>% 
   group_by(id) %>% 
   summarise(do_union = FALSE) %>% 

@@ -32,20 +32,18 @@ destinations <- routes %>%
   select(lon:lat) %>% 
   as.matrix()
 
-## Create sfg linestring objects in a list
-linestrings_sfg <- vector("list", nrow(sources))
-for (i in 1:nrow(sources)) {
+# Create sfg linestring objects in a list
+# Access individual sfg objects with [[]] notation
+linestrings_sfg <- vector("list", nrow(routes))
+
+for (i in 1:nrow(routes)) {
   linestrings_sfg[[i]] <- st_linestring(rbind(sources[i, ], destinations[i, ]))
 }
 
-# Create sfc linestring from list
-# Create great circles
+# Create sfc linestring from list, add CRS, and
+# create great circles with st_sementize
 linestrings_sfc <- st_sfc(linestrings_sfg, crs = 4326) %>% 
   st_segmentize(units::set_units(20, km))
 
-# Create id tibble and join with sfc object to create sf object
-linestrings_sf <- tibble(id = 1:length(linestrings_sfc)) %>% 
-  st_sf(geometry = linestrings_sfc)
-
-# Join with original routes tibble to add back information
-routes_sf <- left_join(linestrings_sf, routes, by = "id")
+# Join sfc object with original routes tibble to create sf object
+routes_sf <- st_sf(routes, geometry = linestrings_sfc)
