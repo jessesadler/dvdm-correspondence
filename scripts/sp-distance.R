@@ -14,15 +14,14 @@ locations <- read_csv("data/locations-1591.csv") %>%
 routes <- letters %>%
   group_by(source, destination) %>%
   summarise(count = n()) %>%
-  remove_missing() %>%
+  drop_na() %>%
   ungroup()
 
 # Join data to locations data and add id for each pair
 geo_per_route <- routes %>%
   left_join(locations, by = c("source" = "place")) %>% 
   left_join(locations, by = c("destination" = "place")) %>% 
-  add_column(id = 1:nrow(routes)) %>% 
-  select(id, everything())
+  rowid_to_column("id")
 
 # Extract source and destination lat and lon data to be placed into distance command
 source_loc <- select(geo_per_route, lon.x, lat.x)
@@ -36,6 +35,6 @@ distance <- as_tibble(distance) %>%
   rename(meters = value) %>% 
   mutate(kms = meters/1000) %>% 
   mutate(miles = meters/1609) %>% 
-  add_column(id = 1:nrow(routes))
+  rowid_to_column("id")
 
 routes_distance <- full_join(geo_per_route, distance, by = "id")

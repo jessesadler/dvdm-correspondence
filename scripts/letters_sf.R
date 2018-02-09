@@ -15,9 +15,8 @@ geo_data <- select(locations, place:lat) # simplify locations data to only neces
 
 geo_letters <- letters %>%
   inner_join(geo_data, by = c("source" = "place")) %>% 
-  inner_join(geo_data, by = c("destination" = "place"))
-
-geo_letters <- add_column(geo_letters, id = 1:nrow(geo_letters))
+  inner_join(geo_data, by = c("destination" = "place")) %>% 
+  rowid_to_column("id")
 
 # Extract source and destination latitude and longitude data to be placed into gcIntermediate command
 source_loc <- select(geo_letters, lon.x, lat.x)

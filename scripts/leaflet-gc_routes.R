@@ -21,13 +21,13 @@ per_source <- letters %>%
   rename(place = source) %>% 
   summarise(source = n(),
   correspondents = n_distinct(writer)) %>%
-  remove_missing()
+  drop_na()
 
 per_destination <- letters %>%
   group_by(destination) %>%
   rename(place = destination) %>% 
   summarise(destination = n()) %>%
-  remove_missing()
+  drop_na()
 
 # Join the three above data frames together and join with location data
 cities <- full_join(per_source, per_destination, by = "place") %>% # keep all items in both tables

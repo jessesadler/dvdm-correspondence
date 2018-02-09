@@ -46,19 +46,20 @@ per_source <- letters %>%
   rename(place = source) %>% 
   summarise(source = n(),
             correspondents = n_distinct(writer)) %>% 
-  remove_missing()
+  drop_na()
 
+# Can either use left_join with drop_na() or right_join
 source_sf <- left_join(locations_sf, per_source, by = "place") %>% 
-  remove_missing()
+  drop_na()
 
 per_destination <- letters %>%
   group_by(destination) %>%
   rename(place = destination) %>% 
   summarise(destination = n()) %>% 
-  remove_missing()
+  drop_na()
 
-destination_sf <- left_join(locations_sf, per_destination, by = "place") %>% 
-  remove_missing()
+# Use right_join
+destination_sf <- right_join(locations_sf, per_destination, by = "place")
 
 cities <- full_join(per_source, per_destination, by = "place") %>% 
   replace_na(list(source = 0, destination = 0, correspondents = 0))

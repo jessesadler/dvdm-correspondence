@@ -17,10 +17,9 @@ locations <- read_csv("data/locations-1591.csv") %>%
 routes <- letters %>%
   group_by(source, destination) %>% 
   summarise() %>% 
-  remove_missing() %>% 
-  ungroup()
-
-routes <- add_column(routes, id = 1:nrow(routes))
+  drop_na() %>% 
+  ungroup()%>% 
+  rowid_to_column("id")
 
 ## Gather to make long tibble go from source and destination as variables to
 # place and whether it is source or destination. This makes it so there is only

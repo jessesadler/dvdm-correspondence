@@ -15,7 +15,7 @@ letters <- read_csv("data/dvdm-correspondence-1591.csv")
 per_route <- letters %>%  
   group_by(source, destination) %>%
   summarise(count = n()) %>%
-  remove_missing() %>%
+  drop_na() %>%
   arrange(desc(count)) %>% 
   ungroup()
 
@@ -28,18 +28,16 @@ destinations <- per_route %>%
   distinct(destination) %>%
   rename(place = destination)
 
-nodes <- full_join(sources, destinations)
-nodes <- add_column(nodes, id = 1:nrow(nodes))
-nodes <- select(nodes, id, everything())
+nodes <- full_join(sources, destinations) %>% 
+  rowid_to_column("id")
 
 # Create links with ids for source and destination and bring id columns to beginning of df
 links <- per_route %>% 
   left_join(nodes, by = c("source" = "place")) %>% 
   rename(from = id) %>% 
   left_join(nodes, by = c("destination" = "place")) %>% 
-  rename(to = id)
-
-links <- select(links, from, to, everything())
+  rename(to = id) %>% 
+  select(from, to, everything())
 
 # Create igraph object
 routes_network <- graph_from_data_frame(d = links, vertices = nodes, directed = TRUE)

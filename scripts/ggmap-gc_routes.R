@@ -15,13 +15,13 @@ geo_data <- select(locations, place:lat) # simplify locations data to only neces
 per_source <- letters %>%
   group_by(source) %>%
   summarise(count = n()) %>%
-  remove_missing() %>%
+  drop_na() %>%
   arrange(count)
 
 per_destination <- letters %>%
   group_by(destination) %>%
   summarise(count = n()) %>%
-  remove_missing() %>%
+  drop_na() %>%
   arrange(count)
 
 geo_per_destination <- inner_join(geo_data, per_destination, by = c("place" = "destination"))

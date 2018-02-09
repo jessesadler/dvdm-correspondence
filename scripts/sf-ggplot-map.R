@@ -24,14 +24,14 @@ sources <- letters %>%
   count() %>% 
   rename(place = source) %>% 
   add_column(type = "source") %>% 
-  remove_missing()
+  drop_na()
 
 destinations <- letters %>% 
   group_by(destination) %>% 
   count() %>% 
   rename(place = destination) %>% 
   add_column(type = "destination") %>% 
-  remove_missing()
+  drop_na()
 
 # Use full join to glue the two tibbles together
 points <- full_join(sources, destinations)
@@ -59,11 +59,10 @@ destinations_sf <- destinations %>%
 # and will be added back in to have linestring with the data
 routes <- letters %>%
   group_by(source, destination) %>% 
-  count() %>% 
-  remove_missing() %>% 
-  arrange(n)
-
-routes <- add_column(routes, id = 1:nrow(routes))
+  summarise() %>% 
+  drop_na() %>% 
+  ungroup()%>% 
+  rowid_to_column("id")
 
 # Gather to make long tibble
 # Remove count data since it is not necessary

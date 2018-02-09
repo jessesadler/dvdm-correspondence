@@ -10,7 +10,7 @@ letters <- read_csv("data/dvdm-correspondence-1591.csv")
 per_route <- letters %>%  
   group_by(source, destination) %>%
   summarise(count = n()) %>%
-  remove_missing() %>%
+  drop_na() %>%
   arrange(desc(count)) %>% 
   ungroup()
 
@@ -23,9 +23,8 @@ destinations <- per_route %>%
   distinct(destination) %>%
   rename(place = destination)
 
-nodes <- full_join(sources, destinations)
-nodes <- add_column(nodes, id = 1:nrow(nodes))
-nodes <- select(nodes, id, everything())
+nodes <- full_join(sources, destinations) %>% 
+  rowid_to_column("id")
 
 # Links: Create links with ids for source and destination and bring id columns to beginning of df
 links <- per_route %>% 

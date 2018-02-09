@@ -18,10 +18,9 @@ locations <- read_csv("data/locations-1591.csv") %>%
 routes <- letters %>%
   group_by(source, destination) %>% 
   summarise() %>% 
-  remove_missing() %>% 
-  ungroup()
-
-routes <- add_column(routes, id = 1:nrow(routes))
+  drop_na() %>% 
+  ungroup()%>% 
+  rowid_to_column("id")
 
 # Geo data for sources and destinations
 # Can be either data frame or matrix

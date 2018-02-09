@@ -11,7 +11,7 @@ letters <- read_csv("data/dvdm-correspondence-1591.csv")
 per_route <- letters %>%  
   group_by(source, destination) %>%
   summarise(count = n()) %>%
-  remove_missing() %>%
+  drop_na() %>%
   arrange(desc(count)) %>% 
   ungroup()
 
