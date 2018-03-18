@@ -9,7 +9,6 @@
 library(tidyverse)
 library(sf)
 library(rnaturalearth)
-library(rmapshaper)
 library(ggrepel)
 
 ### Data ###
@@ -18,7 +17,6 @@ locations <- read_csv("data/locations-1591.csv") %>%
   select(place:lat)
 
 ### Set up points data ###
-
 sources <- letters %>% 
   group_by(source) %>% 
   count() %>% 
@@ -59,9 +57,10 @@ destinations_sf <- destinations %>%
 # and will be added back in to have linestring with the data
 routes <- letters %>%
   group_by(source, destination) %>% 
-  summarise() %>% 
+  count() %>% 
   drop_na() %>% 
   ungroup()%>% 
+  arrange(n) %>% 
   rowid_to_column("id")
 
 # Gather to make long tibble
@@ -96,17 +95,9 @@ routes_sf <- left_join(routes_lines, routes, by = "id")
 # The other is countries, creating miultipolygon object
 # The second map can be filled in
 
-# Find bounding box of points_sf
-st_bbox(points_sf)
-bbox <- c(-5, 38, 17, 55)
-
 coastline_sf <- ne_coastline(scale = "medium", returnclass = "sf")
 countries_sf <- ne_countries(scale = "medium", returnclass = "sf") %>% 
   select(sovereignt, continent) # Simplify columns from the default 64 columns
-
-# Use rmapshaper to clip size of maps
-coast_clip_sf <- ms_clip(coastline_sf, bbox = bbox)
-country_clip_sf <- ms_clip(countries_sf, bbox = bbox)
 
 ## Labels of most significant places ##
 labels <- points_geo %>% 
@@ -115,32 +106,33 @@ labels <- points_geo %>%
   distinct(place, .keep_all = TRUE) %>% 
   top_n(n = 5, wt = n)
   
-
 ### Plot map ###
 
 # Coastline map with points_sf
 
 ggplot() + 
-  geom_sf(data = coast_clip_sf) + 
+  geom_sf(data = coastline_sf) + 
   geom_sf(data = points_sf, aes(color = type, size = n), alpha = 0.8, show.legend = "point") + 
   geom_sf(data = routes_sf, size = 0.4, alpha = 0.8, color = "lightgray") + 
   geom_text_repel(data = labels, aes(x = lon, y = lat, label = place)) + 
-  coord_sf(datum = NA) + 
+  coord_sf(xlim = c(-5, 15), ylim = c(40, 55),
+           datum = NA) + 
   theme_void()
 
 # Source and Destination points faceted
 
 ggplot() + 
-  geom_sf(data = coast_clip_sf) + 
+  geom_sf(data = coastline_sf) + 
   geom_sf(data = points_sf, aes(size = n, color = type), alpha = 0.8, show.legend = "point") + 
   facet_wrap(~ type) + 
-  coord_sf(datum = NA) + 
+  coord_sf(xlim = c(-5, 15), ylim = c(40, 55),
+           datum = NA) + 
   theme_void()
 
 # With separate source and destination sf objects
 
 ggplot() + 
-  geom_sf(data = coast_clip_sf) + 
+  geom_sf(data = coastline_sf) + 
   geom_sf(data = destinations_sf, 
           aes(size = n), 
           alpha = 0.8, color = "#1b9e77", show.legend = "point") + 
@@ -148,8 +140,9 @@ ggplot() +
           aes(size = n), 
           alpha = 0.8, color = "#7570b3", show.legend = "point") + 
   geom_sf(data = routes_sf, size = 0.4, alpha = 0.8, aes(color = n)) + 
-  scale_colour_viridis_c(direction = -1, option = "C") + 
-  coord_sf(datum = NA) + 
+  viridis::scale_colour_viridis(direction = -1, option = "C") + 
+  coord_sf(xlim = c(-5, 15), ylim = c(40, 55),
+           datum = NA) + 
   labs(size = "Letters", color = NULL) +
   theme_void()
 
@@ -160,7 +153,7 @@ ggplot() +
 # have `color` and `fill` be the same color
 
 ggplot() + 
-  geom_sf(data = country_clip_sf, color = "gray", fill = "lightgray") + 
+  geom_sf(data = countries_sf, color = "gray", fill = "lightgray") + 
   geom_sf(data = destinations_sf, 
           aes(size = n), 
           alpha = 0.8, color = "#1b9e77", show.legend = "point") + 
@@ -168,7 +161,8 @@ ggplot() +
           aes(size = n), 
           alpha = 0.8, color = "#7570b3", show.legend = "point") + 
   geom_sf(data = routes_sf, size = 0.4, alpha = 0.8, aes(color = n)) + 
-  scale_colour_viridis_c(direction = -1, option = "C") + 
-  coord_sf(datum = NA) + 
+  viridis::scale_colour_viridis(direction = -1, option = "C") + 
+  coord_sf(xlim = c(-5, 15), ylim = c(40, 55),
+           datum = NA) + 
   labs(size = "Letters", color = NULL) +
   theme_void()
