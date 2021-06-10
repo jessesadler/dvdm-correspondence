@@ -60,7 +60,8 @@ label3 <- sprintf(
 ) %>% lapply(htmltools::HTML)
 
 # Plot
-leaflet(gcircles_routes) %>% addProviderTiles(providers$CartoDB.PositronNoLabels) %>%
+leaflet(gcircles_routes) %>% 
+  addProviderTiles(providers$CartoDB.PositronNoLabels) %>%
   addCircleMarkers(data = destinations, lng = ~lon, lat = ~lat,
       color = "#addd8e", stroke = FALSE, fillOpacity = 1, radius = 8, group = "Destinations",
       label = label2,
