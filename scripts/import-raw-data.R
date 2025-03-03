@@ -14,4 +14,4 @@ letters1591 <- filter(letters, year < 1592) %>%
   select(-(language:notes))
 
 # write out data to csv
-write_csv(letters1591, "data/dvdm-correspondence-1591.csv")
+write_csv(letters1591, "data-raw/dvdm-correspondence-1591.csv")

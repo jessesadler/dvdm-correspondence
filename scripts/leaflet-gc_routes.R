@@ -7,7 +7,7 @@ library(leaflet)
 library(htmltools)
 
 # Load letters and geographic data
-letters <- read_csv("data/dvdm-correspondence-1591.csv")
+letters <- read_csv("data-raw/dvdm-correspondence-1591.csv")
 locations <- read_csv("data/locations-1591.csv") |> 
   select(place:lat) # simplify locations data to only necessary variables
 gcircles_routes <- read_sf("data/routes_sf.geojson")

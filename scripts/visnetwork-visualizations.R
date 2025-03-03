@@ -3,7 +3,7 @@
 library(tidyverse)
 library(visNetwork)
 
-letters <- read_csv("data/dvdm-correspondence-1591.csv")
+letters <- read_csv("data-raw/dvdm-correspondence-1591.csv")
 
 ## Creating the links and nodes dataframes is the same as for igraph or network objects ##
 

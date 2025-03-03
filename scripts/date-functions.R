@@ -8,7 +8,7 @@ library(lubridate)
 # The old calendar was 10 days behind
 
 # Load data
-letters <- read_csv("data/dvdm-correspondence-1591.csv")
+letters <- read_csv("data-raw/dvdm-correspondence-1591.csv")
 
 ## Dates ##
 

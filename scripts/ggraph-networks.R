@@ -7,7 +7,7 @@ library(tidygraph)
 
 ### Create igraph object ###
 
-letters <- read_csv("data/dvdm-correspondence-1591.csv")
+letters <- read_csv("data-raw/dvdm-correspondence-1591.csv")
 
 per_route <- letters %>%  
   group_by(source, destination) %>%

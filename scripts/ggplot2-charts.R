@@ -2,7 +2,7 @@
 
 library(tidyverse)
 
-letters <- read_csv("data/dvdm-correspondence-1591.csv")
+letters <- read_csv("data-raw/dvdm-correspondence-1591.csv")
 
 # Histogram of letters with fill by destination
 

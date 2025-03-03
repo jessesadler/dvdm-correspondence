@@ -4,7 +4,7 @@ library(tidyverse)
 library(ggmap)
 
 # Load data
-letters <- read_csv("data/dvdm-correspondence-1591.csv")
+letters <- read_csv("data-raw/dvdm-correspondence-1591.csv")
 locations <- read_csv("data/locations-1591.csv")
 routes <- read_rds("data/gcircles_routes_tb.rds")
 

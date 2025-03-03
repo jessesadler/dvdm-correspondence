@@ -10,7 +10,7 @@ library(dplyr)
 library(opencage)
 library(sf)
 
-letters <- read_csv("data/letters.csv", col_types = list(
+letters <- read_csv("data-raw/letters.csv", col_types = list(
   date = col_date("%Y%m%d"),
   rec_date = col_date("%Y%m%d"),
   resp_date = col_date("%Y%m%d")

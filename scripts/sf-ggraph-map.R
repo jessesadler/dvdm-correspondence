@@ -7,7 +7,7 @@ library(sf)
 library(rnaturalearth)
 
 ### Create tbl_graph object of routes ###
-letters <- read_csv("data/dvdm-correspondence-1591.csv")
+letters <- read_csv("data-raw/dvdm-correspondence-1591.csv")
 nodes <- read_csv("data/locations-1591.csv") %>% 
   select(1:3, x = lon, y = lat) %>% 
   rowid_to_column("id")

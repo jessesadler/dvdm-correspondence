@@ -38,7 +38,7 @@ leaflet(locations_sf) %>%
 # With leaflet map, cities sf object still necessary
 # to give info for labels.
 
-letters <- read_csv("data/dvdm-correspondence-1591.csv")
+letters <- read_csv("data-raw/dvdm-correspondence-1591.csv")
 locations_sf <- select(locations_sf, place, geometry) # simplify locations data
 
 per_source <- letters %>%
