@@ -1,0 +1,1881 @@
+inventory,writer,source,destination,year,date,rec_date,resp_date,language,notes
+CL_183-02,"Lempereur, Antonio",Cologne,Antwerp,1584,15840130,NA,NA,French,
+CL_183-03,"Lempereur, Antonio",Cologne,Antwerp,1584,15840205,NA,NA,French,
+CL_183-04,"Lempereur, Antonio",Cologne,Antwerp,1584,15840226,NA,NA,French,
+CL_183-05,"Lempereur, Antonio",Cologne,Antwerp,1584,15841120,NA,NA,French,RGP-42
+CL_183-19,"Languet, Hubert",Cologne,Antwerp,1578,15781009,NA,NA,French,
+CL_183-20,"Languet, Hubert",Ghent,Antwerp,1578,15781224,NA,NA,French,"Location is unclear, but must be from Cologne where other letter was from"
+CL_186-004,"Meulen, Andries van der",Antwerp,Delft,1584,15840907,NA,NA,Dutch,RGP-8
+DvdM_157-02a,"Wale, Jan de",Venice,Haarlem,1585,15850623,NA,NA,Dutch,RGP-140. No listed destination. Letter is a copy. Deals with the rekening of the wool sold in Venice.
+DvdM_157-02b,"Wale, Jan de",Venice,Haarlem,1585,15850830,NA,NA,Dutch,RGP-167. No listed destination. Letter is a copy. Deals with the rekening of the wool sold in Venice.
+DvdM_218-020,Burgemeesters of Antwerp,Antwerp,The Hague,1585,15850619,NA,NA,Dutch,"RGP-138. No listed destination, but the States General was in The Hague"
+DvdM_237-02,Staten van Brabant,Antwerp,Middelburg,1584,15840824,NA,NA,Dutch,RGP-3
+DvdM_237-03,Staten van Brabant,Antwerp,Middelburg,1584,15840908,NA,NA,Dutch,RGP-10
+DvdM_237-04,Staten van Brabant,Antwerp,Middelburg,1584,15840922,NA,NA,Dutch,RGP-12. Instructions for Daniel at the States of Zeeland.
+DvdM_237-05,Staten van Brabant,Antwerp,Delft,1584,15840922,NA,NA,Dutch,RGP-11. Instructions for Daniel at the States of Holland and the States General.
+DvdM_238-01,Staten van Brabant,Antwerp,Delft,1584,15840906,NA,NA,French,RGP-7
+DvdM_238-02,Staten van Brabant,Antwerp,Delft,1584,15840907,NA,NA,French,RGP-9
+DvdM_238-03,Staten van Brabant,Antwerp,Delft,1584,15841119,NA,NA,Dutch,RGP-41
+DvdM_239-08,"Lare, J. van",Middelburg,Middelburg,1584,15840829,NA,NA,NA,RGP-4. Sent Daniel a letter while he was in Middelburg acting as representative of States of Brabant.
+DvdM_239-11,Staten van Brabant,Antwerp,Middelburg,1584,15840901,NA,NA,Dutch,RGP-5
+DvdM_239-12,Staten van Brabant,Antwerp,Middelburg,1584,15840903,NA,NA,French,RGP-6
+DvdM_239-19,Staten van Brabant,Antwerp,Delft,1584,15840928,NA,NA,Dutch,RGP-13
+DvdM_239-20,Staten van Brabant,Antwerp,Delft,1584,15841002,NA,NA,Dutch,RGP-15
+DvdM_239-26,Staten van Brabant,Antwerp,Delft,1584,15841007,NA,NA,Dutch,RGP-18
+DvdM_239-27,Burgemeesters of Antwerp,Antwerp,Delft,1584,15841014,NA,NA,Dutch,RGP-21
+DvdM_239-43,"Anraet, Thomas",Antwerp,Delft,1585,15850427,NA,NA,Dutch,RGP-114
+DvdM_239-45,Staten van Brabant,Antwerp,The Hague,1585,15850613,NA,NA,Dutch,"RGP-135. No listed address, but the States General was in The Hague"
+DvdM_258-01,"Beke, Katerina van der",Leiden,Leiden,1596,15961022,NA,NA,Dutch,No address
+DvdM_259-01,"Frumault, Hester",Venice,Leiden,1598,15981030,15981204,15990108,Dutch,Signs letters as Hester van Eeckeren
+DvdM_259-02,"Frumault, Hester",Venice,Leiden,1600,16000225,16000312,NA,Dutch,"This letter is wrongly dated by Hester as from 1599, but on the back it says that it is from 1600, and 259-4 says that her last letter is from 25 Frebruary, confirmimng this is from 1600."
+DvdM_259-03,"Frumault, Hester",Venice,Leiden,1599,15990305,15990319,NA,Dutch,
+DvdM_259-04,"Frumault, Hester",Venice,Leiden,1600,16000512,16000602,NA,Dutch,
+DvdM_259-05,"Frumault, Hester",Venice,Leiden,1600,16000519,16000613,NA,Dutch,
+DvdM_261-01,"Eeckeren, Jan van",Hamburg,Leiden,1597,15970421,15970507,NA,Dutch,
+DvdM_261-02,"Eeckeren, Jan van",Venice,Leiden,1597,15971024,15971113,NA,Dutch,
+DvdM_261-03,"Eeckeren, Jan van",Venice,Leiden,1598,15980410,15980429,NA,Dutch,DvdM 261-3 contains a letter by Melchior Noirot and a separate letter by Jan van Eeckeren. I am including both in the database as separate letters even if they are on the same piece of paper.
+DvdM_261-03,"Noirot, Melchior",Venice,Leiden,1598,15980408,15980429,NA,Dutch,DvdM 261-3 contains a letter by Melchior Noirot and a separate letter by Jan van Eeckeren. I am including both in the database as separate letters even if they are on the same piece of paper.
+DvdM_262-01,"Eeckeren, Robert van",Antwerp,Bremen,1587,15870620,NA,NA,Dutch,
+DvdM_262-02,"Eeckeren, Robert van",Antwerp,Bremen,1588,15880309,NA,NA,Dutch,
+DvdM_262-03,"Eeckeren, Robert van",Antwerp,Leiden,1598,15980305,15980320,15980325,Dutch,"Sent date is approximate. Not clear to me what date is, but may be a v before March, so I guessed 5."
+DvdM_262-04,"Eeckeren, Robert van",Antwerp,Leiden,1598,15980407,15980414,NA,Dutch,
+DvdM_262-05,"Eeckeren, Robert van",Antwerp,Leiden,1598,15980729,15980802,15980803,Dutch,
+DvdM_262-06,"Eeckeren de Jonge, Robert van",Antwerp,Leiden,1599,15990310,15990317,NA,Dutch,
+DvdM_262-07,"Eeckeren de Jonge, Robert van",Antwerp,Leiden,1600,16000112,16000119,16000305,Dutch,"There are two different hands in the letter, but both refer to Daniel as uncle"
+DvdM_263-01,"Eynde, Willem van den",NA,Leiden,1599,15990308,15990311,NA,Dutch,No statement of where it is sent from.
+DvdM_265-01,"Della Faille, Andries",Middelburg,Leiden,1595,15950324,15950328,NA,Dutch,
+DvdM_265-02,"Della Faille, Andries",Middelburg,Leiden,1595,15950414,15950422,NA,Dutch,
+DvdM_265-03,"Della Faille, Andries",Middelburg,Leiden,1595,15950426,15950428,NA,Dutch,
+DvdM_265-04,"Della Faille, Andries",Middelburg,Leiden,1595,15950428,NA,NA,Dutch,
+DvdM_265-05,"Della Faille, Andries",Middelburg,Leiden,1595,15950616,15950619,NA,Dutch,
+DvdM_265-06,"Della Faille, Andries",Middelburg,Leiden,1595,15951020,15950227,NA,Dutch,
+DvdM_265-07,"Della Faille, Andries",Middelburg,Leiden,1595,15951025,15951027,NA,Dutch,
+DvdM_265-08,"Della Faille, Andries",Middelburg,Leiden,1595,15951130,15951207,NA,Dutch,
+DvdM_265-09,"Della Faille, Andries",Middelburg,Leiden,1597,15970716,15970723,NA,Dutch,
+DvdM_265-10,"Della Faille, Andries",Moree,Leiden,1598,15981217,15990722,NA,Dutch,"From Guinea voor Maure. See https://en.wikipedia.org/wiki/Fort_Nassau,_Ghana on Fort Nassau."
+DvdM_265-11,"Della Faille, Andries","Cape Lopez",Leiden,1599,15990324,15990724,NA,Dutch,From Cape Lopez Gonsalves. Named after the Portuguese explorer Lopes Gonçalves.  https://en.wikipedia.org/wiki/Cape_Lopez
+DvdM_265-12,"Della Faille, Andries",Amsterdam,Leiden,1599,15991020,15991020,NA,Dutch,
+DvdM_265-13,"Della Faille, Andries",Leiden,Middelburg,1600,16000405,16000409,NA,Dutch,
+DvdM_266,"Della Faille, Charles",Rotterdam,Leiden,1596,15960310,15960310,NA,French,
+DvdM_267-01,"Della Faille, David",Delft,Leiden,1598,15980212,15980220,NA,Dutch,
+DvdM_267-02,"Della Faille, David",Delft,Leiden,1598,15980603,NA,NA,Dutch,
+DvdM_267-03,"Della Faille, David",Delft,Leiden,1598,15980619,15980619,NA,Dutch,Addressed to Abraham Berrewijns
+DvdM_268,"Della Faille, Joris",Antwerp,Leiden,1600,16000110,16000119,NA,Dutch,
+DvdM_269-01,"Della Faille, Hester",Leiden,Antwerp,1592,15921015,NA,NA,Dutch,
+DvdM_269-02,"Della Faille, Hester",Leiden,Haarlem,1593,15930202,15930202,NA,Dutch,
+DvdM_269-04,"Della Faille, Hester",Leiden,Bremen,1593,15930921,15931005,NA,Dutch,Changed received date to old style
+DvdM_269-05,"Della Faille, Hester",Leiden,Antwerp,1594,15940827,NA,NA,Dutch,
+DvdM_269-06,"Della Faille, Hester",Leiden,Antwerp,1594,15940904,NA,NA,Dutch,
+DvdM_269-07,"Della Faille, Hester",Leiden,Antwerp,1594,15940921,15940928,NA,Dutch,
+DvdM_269-08,"Della Faille, Hester",Leiden,Antwerp,1594,15941005,NA,NA,Dutch,
+DvdM_269-09,"Della Faille, Hester",Leiden,Antwerp,1594,15941012,NA,NA,Dutch,
+DvdM_269-10,"Della Faille, Hester",Leiden,Bremen,1594,15941219,15941230,NA,Dutch,Changed received date to old style
+DvdM_269-11,"Della Faille, Hester",Leiden,Haarlem,1595,15950918,15950918,NA,Dutch,
+DvdM_269-12,"Della Faille, Hester",Leiden,Haarlem,1596,15960422,15960422,NA,Dutch,
+DvdM_269-13,"Della Faille, Hester",Leiden,Antwerp,1598,15980101,NA,NA,Dutch,No exact date
+DvdM_269-14,"Della Faille, Hester",Leiden,Amsterdam,1599,15990430,NA,NA,Dutch,
+DvdM_269-15,"Della Faille, Hester",Leiden,Cologne,1599,15990603,15990609,NA,Dutch,Did not change received date to old style
+DvdM_270-01/02,"Della Faille, Jan",Leiden,Bremen,1587,15870503,NA,NA,Dutch,
+DvdM_270-03,"Della Faille, Jan",NA,NA,NA,NA,NA,NA,Dutch,Unclear when this letter was written.
+DvdM_270-04,"Della Faille, Gio",Antwerp,Leiden,1593,15931031,NA,NA,Italian,
+DvdM_270-05,"Della Faille, Gio",Antwerp,Leiden,1593,15931130,15931207,NA,Italian,
+DvdM_270-06,"Della Faille, Gio",Antwerp,Leiden,1593,15931212,15931215,NA,Italian,
+DvdM_270-07,"Della Faille, Gio",Antwerp,Leiden,1594,15940526,NA,NA,Italian,
+DvdM_270-08,"Della Faille de Oude, Jacques",Antwerp,Leiden,1594,15940609,NA,NA,Dutch,Letter is small and signed by Jacques della Faille. It say ‘u oom’ so must be Jacques de Oude
+DvdM_270-09,"Della Faille, Gio",Antwerp,Leiden,1594,15940623,15940701,NA,Italian,
+DvdM_270-10,"Della Faille, Gio",Antwerp,Leiden,1594,15940721,NA,NA,Italian,
+DvdM_270-11,"Della Faille, Gio",Antwerp,Leiden,1594,15941020,15941027,NA,Italian,
+DvdM_270-12,"Della Faille, Gio",Antwerp,Leiden,1595,15950415,15950422,NA,Dutch,
+DvdM_270-13,"Della Faille, Gio",Antwerp,Leiden,1595,15950906,15950912,NA,Dutch,
+DvdM_270-14,"Della Faille, Gio",Antwerp,Leiden,1596,15960112,15960120,NA,Dutch,
+DvdM_270-15,"Della Faille, Gio",Antwerp,Leiden,1597,15970301,15970305,NA,Dutch,
+DvdM_270-16,"Della Faille, Gio",Antwerp,Leiden,1597,15970331,15970406,NA,Dutch,
+DvdM_270-17,"Della Faille, Gio",Antwerp,Leiden,1597,15970429,15970507,NA,Dutch,
+DvdM_270-18,"Della Faille, Gio",Antwerp,Leiden,1598,15980103,NA,NA,Dutch,
+DvdM_270-19,"Della Faille, Gio",Antwerp,Leiden,1598,15980205,15980211,NA,Dutch,
+DvdM_270-20,"Della Faille, Gio",Antwerp,Leiden,1598,15980407,15980421,NA,Dutch,Letter was begun on 30 March
+DvdM_270-21,"Della Faille, Gio",Antwerp,Leiden,1598,15980629,15980707,NA,Dutch,
+DvdM_270-22,"Della Faille, Gio",Antwerp,Leiden,1598,15980722,15980726,NA,Italian,
+DvdM_270-23,"Della Faille, Gio",Antwerp,Leiden,1598,15980805,15980809,NA,Italian,
+DvdM_270-24,"Della Faille, Gio",Antwerp,Leiden,1598,15980819,15980824,NA,Italian,
+DvdM_270-25,"Della Faille, Gio",Antwerp,Leiden,1598,15981112,15981118,NA,Italian,
+DvdM_270-26,"Wale, Jan de",NA,NA,NA,NA,NA,NA,Italian,No date on the letter
+DvdM_270-27,"Della Faille, Gio",Antwerp,Leiden,1599,15990505,15990511,NA,Dutch,Signed Joan Giorgio della Faille
+DvdM_270-28,"Della Faille, Gio",Antwerp,Leiden,1599,15990714,15990723,NA,Dutch,
+DvdM_270-29,"Della Faille, Gio",Antwerp,Leiden,1600,16000717,16000725,NA,Italian,
+DvdM_271-01,"Della Faille, Jan de Carlo",Antwerp,Leiden,1595,15950403,15950407,NA,Dutch,
+DvdM_271-02,"Della Faille, Jan de Carlo",Antwerp,Leiden,1595,15951231,15960111,NA,Dutch,
+DvdM_271-03,"Della Faille, Jan de Carlo",Antwerp,Leiden,1596,15960307,15960313,NA,Dutch,
+DvdM_271-04,"Della Faille, Jan de Carlo",Antwerp,Leiden,1596,15960610,NA,NA,Dutch,
+DvdM_271-05,"Della Faille, Jan de Carlo",Antwerp,Leiden,1596,15961206,15961214,NA,Dutch,
+DvdM_271-06,"Della Faille, Jan de Carlo",Antwerp,Leiden,1597,15970225,15970302,NA,Dutch,
+DvdM_271-07,"Della Faille, Jan de Carlo",Antwerp,Leiden,1597,15970801,15970807,NA,Dutch,
+DvdM_271-08,"Della Faille, Jan de Carlo",Antwerp,Leiden,1597,15970812,15970824,NA,Dutch,received date somewhat ambiguous
+DvdM_271-09,"Della Faille, Jan de Carlo",Antwerp,Leiden,1597,15970926,15971002,NA,Dutch,
+DvdM_271-10,"Della Faille, Jan de Carlo",Antwerp,Leiden,1597,15971028,15971108,NA,Dutch,
+DvdM_271-14,"Della Faille, Jan de Carlo",Antwerp,Leiden,1598,15980219,15980224,NA,Dutch,
+DvdM_271-15,"Della Faille, Jan de Carlo",Antwerp,Leiden,1598,15980222,15980227,NA,Dutch,
+DvdM_271-16,"Della Faille, Jan de Carlo",Cologne,Leiden,1598,15980418,NA,NA,Dutch,
+DvdM_271-17,"Della Faille, Jan de Carlo",Antwerp,Leiden,1598,15980603,15980610,NA,Dutch,
+DvdM_271-18,"Della Faille, Jan de Carlo",Antwerp,Leiden,1600,16000328,16000409,NA,Dutch,
+DvdM_272,"Della Faille, Jeronimus",Ghent,Leiden,1593,15930901,15930927,NA,Dutch,
+DvdM_273-01,"Della Faille, Maria",NA,Leiden,1594,15940307,NA,NA,Dutch,Need to look at letter and find where it was from and where it was sent.
+DvdM_273-02,"Della Faille, Maria",Verona,Leiden,1598,15980522,15980612,NA,Dutch,
+DvdM_274-07,"Della Faille, Marten",Antwerp,Haarlem,1585,15850124,NA,NA,Dutch,RGP-73
+DvdM_274-08,"Della Faille, Marten",Antwerp,Haarlem,1585,15850328,NA,NA,Dutch,RGP-103
+DvdM_274-10a,"Della Faille, Marten",Antwerp,Delft,1585,15850509,NA,NA,Dutch,RGP-120. No listed destination.
+DvdM_274-10b,"Della Faille, Marten",Antwerp,Delft,1585,15850528,NA,NA,Dutch,RGP-126. No listed destination.
+DvdM_274-11,"Della Faille, Marten",Antwerp,Delft,1585,15850916,NA,NA,Dutch,RGP-179
+DvdM_274-12,"Della Faille, Marten",Antwerp,Delft,1585,15850917,NA,NA,Dutch,RGP-180
+DvdM_274-13,"Della Faille, Marten",Antwerp,Bremen,1586,15860105,15860126,NA,Dutch,
+DvdM_274-14,"Della Faille, Marten",Antwerp,London,1586,15860821,15860830,NA,Dutch,
+DvdM_274-15,"Della Faille, Marten",Antwerp,London,1586,15860912,NA,NA,Dutch,
+DvdM_274-16,"Della Faille, Marten",Antwerp,London,1586,15860928,NA,NA,Dutch,
+DvdM_274-18,"Della Faille, Marten",Antwerp,Bremen,1587,15870726,NA,NA,Dutch,Same day Marten also sent a letter to Hester 274-17
+DvdM_274-19,"Della Faille, Marten",Antwerp,Bremen,1588,15880803,NA,NA,Dutch,
+DvdM_274-20,"Della Faille, Marten",Antwerp,Bremen,1588,15880810,NA,NA,Dutch,
+DvdM_274-21,"Della Faille, Marten",Antwerp,Bremen,1588,15880827,NA,NA,Dutch,
+DvdM_274-22,"Della Faille, Marten",Antwerp,Bremen,1589,15890614,15890621,NA,Dutch,
+DvdM_274-23,"Della Faille, Marten",Antwerp,Bremen,1589,15890816,15890827,NA,Dutch,
+DvdM_274-24,"Della Faille, Marten",Antwerp,Bremen,1589,15891020,NA,NA,Dutch,"Letter is not in Marten's handwriting, but it is from Marten."
+DvdM_274-25,"Della Faille, Marten",Antwerp,Bremen,1589,15891031,15891112,NA,Dutch,
+DvdM_274-26,"Della Faille, Marten",Antwerp,Bremen,1589,15891229,15900106,NA,Dutch,
+DvdM_274-27,"Della Faille, Marten",Antwerp,Bremen,1590,15900103,15900116,NA,Dutch,
+DvdM_274-28,"Della Faille, Marten",Antwerp,Bremen,1590,15900221,15900304,NA,Dutch,
+DvdM_274-29,"Della Faille, Marten",Antwerp,Frankfurt,1590,15900404,15900416,NA,Dutch,
+DvdM_274-30,"Della Faille, Marten",Antwerp,Frankfurt,1590,15900428,15900508,NA,Dutch,
+DvdM_274-31,"Della Faille, Marten",Antwerp,Bremen,1590,15900801,15900812,NA,Dutch,
+DvdM_274-32,"Della Faille, Marten",Antwerp,Bremen,1590,15900822,15900901,NA,Dutch,
+DvdM_274-33,"Della Faille, Marten",Antwerp,Leiden,1591,15911107,15911118,NA,Dutch,
+DvdM_274-34,"Della Faille, Marten",Antwerp,Leiden,1591,15911210,15911219,NA,Dutch,Full letter in DvdM 325-7 with address page in DvdM 274-34
+DvdM_274-35,"Della Faille, Marten",Antwerp,Leiden,1592,15920221,15920312,NA,Dutch,
+DvdM_274-36,"Della Faille, Marten",Antwerp,Leiden,1592,15920402,NA,NA,Dutch,
+DvdM_274-37,"Della Faille, Marten",Antwerp,Leiden,1592,15920627,15920709,NA,Dutch,
+DvdM_274-38,"Della Faille, Marten",Antwerp,Leiden,1592,15921224,15930123,NA,Dutch,DvdM_274-39 is a copy of this letter.
+DvdM_274-40,"Della Faille, Marten",Antwerp,Leiden,1593,15930512,15930522,NA,Dutch,
+DvdM_274-41,"Della Faille, Marten",Antwerp,Leiden,1593,15930813,15930820,NA,Dutch,
+DvdM_274-42,"Della Faille, Marten",Antwerp,Leiden,1593,15930928,15931001,NA,Dutch,
+DvdM_274-43,"Della Faille, Marten",Antwerp,Leiden,1593,15931207,15931211,NA,Dutch,
+DvdM_274-44,"Della Faille, Marten",Antwerp,Leiden,1594,15940211,15940223,NA,Dutch,
+DvdM_274-45,"Della Faille, Marten",Antwerp,Leiden,1594,15940605,15940609,NA,Dutch,
+DvdM_274-46,"Della Faille, Marten",Brussels,Antwerp,1594,15940926,15940927,NA,Dutch,Daniel responds to this letter with DvdM 274-47 with a letter to Brussels.
+DvdM_274-48,"Della Faille, Marten",Antwerp,Leiden,1594,15941028,15941109,NA,Dutch,
+DvdM_274-49,"Della Faille, Marten",Antwerp,Leiden,1594,15941031,15941109,NA,Dutch,
+DvdM_274-50,"Della Faille, Marten",Antwerp,Leiden,1594,15941107,15941118,NA,Dutch,
+DvdM_274-51,"Della Faille, Marten",Antwerp,Leiden,1595,15950222,15950226,NA,Dutch,
+DvdM_274-52,"Della Faille, Marten",Antwerp,Leiden,1595,15950425,15950502,NA,Dutch,
+DvdM_274-53/54,"Della Faille, Marten",Antwerp,Leiden,1595,15951101,15951106,NA,Dutch,
+DvdM_274-55,"Della Faille, Marten",Ghent,Leiden,1596,15960226,15960308,NA,Dutch,
+DvdM_274-56,"Della Faille, Marten",Antwerp,Leiden,1597,15971229,15980109,NA,Dutch,
+DvdM_274-57,"Della Faille, Marten",Brussels,Antwerp,1598,15980116,NA,NA,Dutch,
+DvdM_274-58,"Della Faille, Marten",Brussels,Leiden,1598,15980223,15980305,NA,Dutch,
+DvdM_274-59,"Della Faille, Marten",Brussels,Leiden,1598,15980307,15980320,NA,Dutch,
+DvdM_274-60,"Della Faille, Marten",Brussels,Leiden,1598,15980318,15980326,NA,Dutch,
+DvdM_274-61,"Della Faille, Marten",Brussels,Leiden,1598,15980602,15980610,NA,Dutch,
+DvdM_274-62,"Della Faille, Marten",Brussels,Leiden,1598,15980718,15980726,NA,Dutch,Written on 17 and 18 July 1598
+DvdM_274-63,"Della Faille, Marten",Brussels,Leiden,1598,15980822,15980902,NA,Dutch,
+DvdM_274-64,"Della Faille, Marten",Brussels,Leiden,1598,15980908,15980924,NA,Dutch,
+DvdM_274-65,"Della Faille, Marten",Brussels,Leiden,1598,15981006,15981016,NA,Dutch,
+DvdM_274-66,"Della Faille, Marten",Brussels,Leiden,1599,15990113,15990128,NA,Dutch,"Not clear where letter is sent from, but I am guessing Brussels."
+DvdM_274-67,"Della Faille, Marten",Ghent,Leiden,1599,15990312,15990319,NA,Dutch,
+DvdM_274-68/69,"Della Faille, Marten",Brussels,Leiden,1599,15990415,15990426,NA,Dutch,
+DvdM_274-70,"Della Faille, Marten",Brussels,Leiden,1599,15990507,15990610,NA,Dutch,
+DvdM_274-72,"Della Faille, Marten",Antwerp,Leiden,1599,15990521,15990610,NA,Dutch,
+DvdM_274-73,"Della Faille, Marten",Brussels,Cologne,1599,15990625,NA,NA,Dutch,
+DvdM_274-74,"Della Faille, Marten",Brussels,Leiden,1599,15990710,15990724,NA,Dutch,
+DvdM_274-75,"Della Faille, Marten",Brussels,Leiden,1599,15991010,15991018,NA,Dutch,
+DvdM_274-76,"Della Faille, Marten",Brussels,Leiden,1599,15991112,15991127,NA,Dutch,
+DvdM_274-77,"Della Faille, Marten",Brussels,Leiden,1600,16000119,16000203,NA,Dutch,
+DvdM_274-78,"Della Faille, Marten",Brussels,Leiden,1600,16000425,16000430,NA,Dutch,
+DvdM_274-79/80,"Della Faille, Marten",Brussels,Leiden,1600,16000718,16000822,NA,Dutch,
+DvdM_275-01,"Della Faille, David",Delft,Leiden,1596,15961106,15961108,NA,Dutch,
+DvdM_275-02,"Della Faille, David",Delft,Leiden,1596,15961118,NA,NA,Dutch,
+DvdM_275-04,"Della Faille, David",Delft,Leiden,1597,15970306,15970308,NA,Dutch,
+DvdM_276,"Della Faille, Pieter",NA,Leiden,NA,NA,NA,NA,Dutch,"No date, but sent to Leiden and written on 28 August."
+DvdM_277-01,"Frumault, Hester",Venice,Leiden,1599,15990806,NA,NA,Dutch,Letter signed as Hester Frumault
+DvdM_278,"Frumault, Robert",The Hague,Leiden,1591,15911204,NA,NA,Dutch,
+DvdM_279-02,"Gerritsz, Jan",Delft,Leiden,1598,15981003,15981003,NA,Dutch,
+DvdM_279-03,"Gerritsz, Jan",Delft,Leiden,1598,15981005,15981006,NA,Dutch,
+DvdM_281-01,"Hoest, Andries de",Leiden,Leiden,1597,15971125,15971125,NA,Dutch,
+DvdM_281-02,"Hoest, Andries de",Delft,Leiden,1597,15971205,15971205,NA,Dutch,
+DvdM_281-04,"Hoest, Andries de",Delft,Leiden,1598,15980520,15980520,NA,Dutch,
+DvdM_281-05,"Hoest, Andries de",Leiden,Leiden,1598,15981028,15981029,NA,Dutch,
+DvdM_283-01,"Janssen, Mayken",Middelburg,Leiden,1595,15951022,NA,NA,Dutch,
+DvdM_283-02,"Janssen, Mayken",Middelburg,Leiden,1596,15960220,15960222,NA,Dutch,
+DvdM_284-01,"Hevere, Josyne de",NA,Leiden,1595,15951201,NA,NA,French,"Letter was sent in December, but exact date is approximate. Not clear where letter is from."
+DvdM_284-02,"Hevere, Josyne de",Middelburg,Leiden,1596,15960127,15960130,15960221,French,"Unclear where it is from, but reception date shows that it was close to Leiden."
+DvdM_284-03,"Hevere, Josyne de",Middelburg,Leiden,1596,15960305,NA,NA,French,
+DvdM_284-04,"Hevere, Josyne de",Middelburg,Leiden,1596,15960312,15960315,NA,French,
+DvdM_284-05,"Hevere, Josyne de",Middelburg,Leiden,1596,15960325,15960430,NA,French,"This letter clearly says from Middelburg, showing that the earlier letters are also from Middelburg."
+DvdM_284-06,"Hevere, Josyne de",NA,Leiden,1596,15961105,15961125,NA,French,
+DvdM_284-07,"Hevere, Josyne de",NA,Leiden,1597,15970127,15970311,NA,French,Might be from Rouen
+DvdM_284-08,"Hevere, Josyne de",Paris,Leiden,1597,15970326,15970420,NA,French,
+DvdM_284-09,"Hevere, Josyne de",Paris,Leiden,1597,15970515,15970604,NA,French,
+DvdM_284-10,"Hevere, Josyne de",Paris,Leiden,1597,NA,NA,NA,French,From 1597 but exact day is unclear.
+DvdM_285-01,"Clerck, Hans de",Middelburg,Leiden,1600,16000728,16000731,NA,Dutch,This letter was sent after Daniel's death.
+DvdM_286-01,"Corput, Hansken van den",The Hague,Leiden,1594,15940804,NA,NA,Dutch,
+DvdM_286-02,"Corput, Hansken van den",The Hague,Leiden,1594,15940920,15940920,15940921,Dutch,
+DvdM_286-04,"Corput, Hansken van den",The Hague,Leiden,1594,15941026,NA,NA,Dutch,
+DvdM_286-05,"Corput, Hansken van den",The Hague,Leiden,1594,15941028,NA,NA,Dutch,
+DvdM_286-06,"Corput, Hansken van den",The Hague,Leiden,1594,15941125,15941126,15941126,Dutch,
+DvdM_286-07,"Corput, Hansken van den",The Hague,Leiden,1594,15941210,15941210,NA,Dutch,
+DvdM_286-08,"Corput, Hansken van den",The Hague,Bremen,1594,15941226,15950106,NA,Dutch,Did not change received date. Not sure if it is new or old style.
+DvdM_286-09,"Corput, Hansken van den",The Hague,Leiden,1595,15950301,15950301,NA,Dutch,
+DvdM_286-11,"Corput, Hansken van den",The Hague,Leiden,1595,15950308,NA,NA,Dutch,
+DvdM_286-11,"Corput, Hansken van den",The Hague,Leiden,1595,15950320,15950320,NA,Dutch,
+DvdM_286-12,"Corput, Hansken van den",The Hague,Leiden,1595,15950701,15950702,NA,Dutch,
+DvdM_286-13,"Corput, Hansken van den",The Hague,Leiden,1595,15950823,NA,NA,Dutch,
+DvdM_286-14,"Corput, Hansken van den",The Hague,Leiden,1595,15951024,15951024,NA,Dutch,
+DvdM_286-15,"Corput, Hansken van den",Bremen,Leiden,1596,15960509,15960516,NA,Dutch,Changed sent date to new style
+DvdM_287-01,"Corput, Hansken van den",Paris,Leiden,1597,15970309,15970401,NA,French,
+DvdM_287-02,"Corput, Hansken van den",Paris,Leiden,1597,15970311,15970420,NA,French,
+DvdM_287-03,"Corput, Hansken van den",Paris,Leiden,1597,15970410,15970502,NA,French,
+DvdM_287-04,"Corput, Hansken van den",Paris,Leiden,1597,15970506,15970601,NA,French,
+DvdM_287-05,"Corput, Hansken van den",Paris,Leiden,1597,15970603,15970612,NA,French,
+DvdM_287-06,"Corput, Hansken van den",Middelburg,Leiden,1597,15970922,15970928,15971005,French,
+DvdM_287-07,"Corput, Hansken van den",Middelburg,Leiden,1597,15971011,15971015,NA,French,
+DvdM_287-08,"Corput, Hansken van den",Bremen,Leiden,1598,15980102,15980110,NA,French,
+DvdM_287-09,"Corput, Hansken van den",Rotterdam,Leiden,1598,15980413,15980420,15980422,French,
+DvdM_287-10,"Corput, Hansken van den",Rotterdam,Leiden,1598,15980519,15980520,NA,French,
+DvdM_287-11,"Corput, Hansken van den",Rotterdam,Leiden,1598,15980521,15980521,NA,French,
+DvdM_287-12,"Corput, Hansken van den",Goedereede,Leiden,1598,15980627,15980702,NA,French,Sent location from article on Hansken
+DvdM_287-13,"Corput, Hansken van den",South Downs,Leiden,1598,15980709,15980716,NA,French,Sent location from article on Hansken
+DvdM_287-14,"Corput, Hansken van den","Cape Lopez",Leiden,1598,15981209,15990611,NA,French,
+DvdM_288-01,"Losschaert, Gaspar",Haarlem,Leiden,1592,15920209,15920210,NA,Italian,
+DvdM_288-02,"Losschaert, Gaspar",Haarlem,Leiden,1592,15920317,15920318,NA,Italian,
+DvdM_288-03,"Losschaert, Gaspar",Haarlem,Leiden,1596,15960111,15960111,NA,Dutch,
+DvdM_288-04,"Losschaert, Gaspar",Haarlem,Leiden,1596,15961116,NA,NA,Dutch,
+DvdM_288-05,"Losschaert, Gaspar",Haarlem,Leiden,1599,15990125,15990126,NA,Dutch,
+DvdM_289-01,"Malapert, Johannes",Aachen,Leiden,1597,15970512,15970518,NA,Latin,
+DvdM_290-01,"Malapert, Louis",Haarlem,Leiden,1598,15980503,NA,NA,French,Received date is unclear
+DvdM_290-06,"Malapert, Louis",Cologne,Leiden,1599,15990703,15990707,15990725,French,I think received and response dates are correct
+DvdM_292-01,"Meulen, Hans van der",Middelburg,Leiden,1594,15940422,15940426,15940618,Dutch,
+DvdM_292-02,"Meulen, Hans van der",Middelburg,Leiden,1594,15940513,15940516,15940618,Dutch,
+DvdM_292-03,"Meulen, Hans van der",Middelburg,Leiden,1594,15940604,15940607,15940618,Dutch,
+DvdM_292-04,"Meulen, Hans van der",Middelburg,Leiden,1594,15941022,15941025,NA,Dutch,
+DvdM_292-05,"Meulen, Hans van der",Middelburg,Leiden,1594,15941111,15941115,15941125,Dutch,
+DvdM_292-06,"Meulen, Hans van der",Middelburg,Leiden,1595,15950329,15950416,NA,Dutch,
+DvdM_292-07,"Meulen, Hans van der",Middelburg,Leiden,1600,16000307,16000311,NA,Dutch,
+DvdM_293-01,"Meulen, Hester van der",Middelburg,Leiden,NA,NA,NA,NA,Dutch,Written on 23 December. 
+DvdM_294-01,"Meulen, Cornelia van der",Haarlem,Leiden,NA,NA,NA,NA,Dutch,"No date. No sent location, but probably Haarlem"
+DvdM_294-02,"Meulen, Cornelia van der",Haarlem,Leiden,1597,15970728,15970729,NA,Dutch,
+DvdM_294-04,"Meulen, Cornelia van der",Haarlem,Leiden,1599,15990216,NA,NA,Dutch,"No sent location, but probably Haarlem"
+DvdM_294-05,"Meulen, Cornelia van der",Haarlem,Leiden,1599,NA,NA,NA,Dutch,No date
+DvdM_294-07,"Meulen, Cornelia van der",Haarlem,Leiden,1599,15991231,15991231,16000108,French,Date sent is not very clear
+DvdM_295-01,"Meulen, Sara van der",Antwerp,Delft,1584,15841029,NA,NA,Dutch,RGP-28
+DvdM_295-02,"Meulen, Sara van der",Antwerp,Delft,1584,15841105,NA,NA,Dutch,RGP-33
+DvdM_295-03,"Meulen, Sara van der",Cologne,Bremen,1588,15880915,NA,NA,Dutch,
+DvdM_295-04,"Meulen, Sara van der",Bremen,Leiden,1592,15921011,15921019,NA,Dutch,Changed date to new style
+DvdM_295-05,"Meulen, Sara van der",Bremen,Leiden,1592,15921217,15921223,NA,Dutch,Changed date to new style
+DvdM_295-07,"Meulen, Sara van der",Utrecht,Leiden,1599,15990722,15990802,NA,French,
+DvdM_295-08,"Meulen, Sara van der",Amsterdam,Leiden,1600,16000104,16000115,NA,Dutch,"No address, but must be sent to Leiden"
+DvdM_295-09,"Meulen, Sara van der",Utrecht,Leiden,1600,16000109,16000120,NA,French,
+DvdM_295-11,"Meulen, Sara van der",Utrecht,Leiden,1600,16000415,16000415,NA,Dutch,
+DvdM_296-01,"Pierens, Anna",Stade,Bremen,1591,15910411,NA,NA,French,
+DvdM_296-02,"Pierens, Anna",Stade,Leiden,1592,15920529,15920605,NA,French,
+DvdM_297-01,"Pierens, Francois",Bremen,Leiden,1592,15920327,15920403,NA,Dutch,Changed date to new style
+DvdM_297-02,"Pierens, Francois",Bremen,Leiden,1592,15920529,15920605,NA,Dutch,Changed date to new style
+DvdM_297-03,"Pierens, Francois",Bremen,Leiden,1592,15920619,15920626,NA,Dutch,Changed date to new style
+DvdM_297-04–5,"Pierens, Francois",Bremen,Leiden,1592,15920730,NA,NA,Dutch,Changed date to new style
+DvdM_297-06,"Pierens, Francois",Bremen,Leiden,1592,15920829,15920905,NA,Dutch,Changed date to new style
+DvdM_297-07,"Pierens, Francois",Bremen,Leiden,1592,15921121,15921203,NA,Dutch,Changed date to new style
+DvdM_297-08,"Pierens, Francois",Bremen,Leiden,1593,15930125,15930206,NA,Dutch,Changed date to new style
+DvdM_297-09,"Pierens, Francois",Bremen,Leiden,1593,15930224,15930307,NA,Dutch,Changed date to new style
+DvdM_297-10,"Pierens, Francois",Bremen,Leiden,1593,15930416,15930423,NA,Dutch,Changed date to new style
+DvdM_297-11,"Pierens, Francois",Bremen,Leiden,1593,15930809,15930817,NA,Dutch,Changed date to new style
+DvdM_297-12,"Pierens, Francois",Bremen,Leiden,1593,15931220,NA,NA,Dutch,Changed date to new style
+DvdM_297-13,"Pierens, Francois",Bremen,Leiden,1594,15940218,15940310,NA,Dutch,Changed date to new style
+DvdM_297-14,"Pierens, Francois",Bremen,Leiden,1594,15940526,15940602,NA,Dutch,Changed date to new style
+DvdM_297-15,"Pierens, Francois",Bremen,Leiden,1594,15941106,15941128,NA,Dutch,"Changed date to new style. Received on 28 ditto, which must be November and not October."
+DvdM_297-16,"Pierens, Francois",Bremen,Leiden,1595,15950428,15950508,NA,Dutch,Changed date to new style
+DvdM_297-17,"Pierens, Francois",Bremen,Leiden,1595,15950607,15950616,NA,Dutch,Changed date to new style
+DvdM_297-18,"Pierens, Francois",Bremen,Leiden,1596,15960109,15960118,NA,Dutch,Changed date to new style
+DvdM_297-19,"Pierens, Francois",Bremen,Leiden,1596,15960509,15960516,NA,Dutch,Changed date to new style
+DvdM_297-20,"Pierens, Francois",Bremen,Leiden,1597,15970515,15970521,NA,Dutch,Changed date to new style
+DvdM_297-21,"Pierens, Francois",Bremen,Leiden,1597,15970715,15970719,NA,Dutch,Changed date to new style
+DvdM_297-22,"Pierens, Francois",Bremen,Leiden,1597,15970911,15970919,NA,Dutch,Changed date to new style
+DvdM_297-23,"Pierens, Francois",Bremen,Leiden,1597,15971030,15971108,NA,Dutch,Changed date to new style
+DvdM_297-25,"Lempereur, Antoine",Bremen,Leiden,1594,15940219,15940308,NA,French,Changed date to new style
+DvdM_298-01,"Roelofts, Wijnant",Amsterdam,Leiden,1596,15960206,15960207,NA,Dutch,
+DvdM_299-01,"Seghers, Ann",Leiden,Bremen,1595,15950109,15950117,NA,Dutch,
+DvdM_300-01,"Seghers, Jacques",Zoutkamp,Leiden,1592,15920801,15920815,NA,Dutch,One of his sons became a servant of Daniel
+DvdM_301-01,"Seghers, Jan",Delft,Leiden,1591,15911106,NA,NA,Dutch,
+DvdM_301-02,"Seghers, Jan",Delft,Leiden,1592,15921029,15921029,NA,Dutch,
+DvdM_301-03,"Seghers, Jan",Haarlem,Leiden,1596,15960225,15960227,NA,Dutch,
+DvdM_302-01,NA,NA,NA,NA,NA,NA,NA,Dutch,Says letter from nicht Hester. No information about what it is about.
+DvdM_303-01,"d’Aerssen, Cornelis",The Hague,Leiden,1596,15960225,15960227,NA,French,
+DvdM_303-02,"d’Aerssen, Cornelis",The Hague,Leiden,1597,15970516,15970517,15970519,French,
+DvdM_303-03,"d’Aerssen, Cornelis",The Hague,Leiden,1598,15981019,15981019,15981020,French,
+DvdM_303-04,"d’Aerssen, Cornelis",The Hague,Leiden,1599,15990802,15990803,15990803,French,
+DvdM_303-05,"d’Aerssen, Cornelis",The Hague,Leiden,1599,15991123,15991123,NA,French,
+DvdM_303-06,"d’Aerssen, Cornelis",The Hague,Leiden,1600,16000524,16000525,NA,French,
+DvdM_304-01,"Aertssen, Johan",The Hague,Leiden,1598,15980824,15980825,NA,Dutch,
+DvdM_305-01,"Albada, Aggaeus de",Cologne,Antwerp,1582,15820318,NA,NA,Latin,
+DvdM_305-02,"Albada, Aggaeus de",Cologne,Antwerp,1582,15820729,NA,NA,Latin,
+DvdM_305-03,"Albada, Aggaeus de",Cologne,Antwerp,1582,15821028,NA,NA,Latin,
+DvdM_305-04,"Albada, Aggaeus de",Cologne,Antwerp,1582,15821223,NA,NA,Latin,
+DvdM_305-05,"Albada, Aggaeus de",Cologne,Antwerp,1583,15830127,NA,NA,Latin,
+DvdM_305-06,"Albada, Aggaeus de",Spieren,Leiden,1598,15980414,15980727,NA,Latin,
+DvdM_306-01,"Aldegonde, Marnix van St",The Hague,Leiden,1593,15930201,15930204,15930206,Latin,
+DvdM_306-02,"Aldegonde, Marnix van St",The Hague,Leiden,1593,15930211,15930212,NA,Latin,Sent location unclear
+DvdM_306-03,"Aldegonde, Marnix van St",West-Souburg,Leiden,1593,15930312,15930316,NA,French,"Letters says Souburg, which must refer to his land in West-Souburg in Vlissingen."
+DvdM_306-04,"Aldegonde, Marnix van St",West-Souburg,Leiden,1593,15931121,15931201,15931211,French,
+DvdM_306-05,"Aldegonde, Marnix van St",West-Souburg,Leiden,1594,15940112,15940123,15940130,French,
+DvdM_306-06,"Aldegonde, Marnix van St",West-Souburg,Leiden,1594,15940208,15940219,NA,French,
+DvdM_306-07,"Aldegonde, Marnix van St",West-Souburg,Leiden,1594,15940527,NA,NA,French,
+DvdM_306-08,"Aldegonde, Marnix van St",West-Souburg,Leiden,1594,15940713,15940720,NA,French,
+DvdM_306-09,"Aldegonde, Marnix van St",Rouen,Leiden,1597,15970126,NA,NA,French,"Says it was sent from Rotomagi, which is Latin for Rouen"
+DvdM_306-10,"Aldegonde, Marnix van St",Nîmes,Leiden,1597,15970813,15971009,NA,French,Aldegonde was in Nîmes serving Maurits in Orange
+DvdM_307-01,"Ancelmo, Antonio",Staden,Leiden,1593,15930206,15930221,NA,Dutch,Changed date to new style
+DvdM_308-01,"Andriessen, Nicolaes",Breda,Leiden,1598,15980330,NA,NA,Dutch,
+DvdM_308-02,"Andriessen, Nicolaes",Breda,Leiden,1598,15981017,NA,NA,Dutch,
+DvdM_309-01,"Anthonissen, Dierick",Haarlem,Leiden,1595,15950412,15950412,NA,Dutch,
+DvdM_309-02,"Anthonissen, Dierick",Haarlem,Leiden,1599,15990317,15990317,NA,Dutch,
+DvdM_310-01,"Artsen, Dirck",Dordrecht,Leiden,1593,15930404,15930409,NA,Dutch,
+DvdM_310-02,"Artsen, Dirck",Dordrecht,Leiden,1593,15930415,15930420,NA,Dutch,
+DvdM_311-01,"d’Audenfort, Gomar",Amsterdam,Bremen,1590,15900725,NA,NA,French,
+DvdM_312-01,"Balochius, Franciscus",Salins-les-Bains,Leiden,1596,15960325,NA,NA,Dutch,
+DvdM_313-01,"Bastingius, Jeremias",Dordrecht,Bremen,1590,15901210,NA,NA,Latin,
+DvdM_314-01,"Battus, Carel",Dordrecht,Leiden,1592,15920412,NA,NA,Dutch,No sent address but should be from Dordrecht and no year but likely 1592
+DvdM_314-02,"Battus, Carel",Dordrecht,Leiden,1592,15920506,NA,NA,Latin,
+DvdM_314-03,"Battus, Carel",Dordrecht,Leiden,1592,15920519,NA,NA,Latin,
+DvdM_314-04,"Battus, Carel",Dordrecht,Leiden,1593,15930822,NA,NA,Dutch,
+DvdM_314-05,"Battus, Carel",Dordrecht,Leiden,1595,15950328,15950401,NA,Dutch,
+DvdM_315-01,"Beaulieu, Charles de",The Hague,Leiden,1596,15960314,NA,NA,French,
+DvdM_315-02,"Beaulieu, Charles de",The Hague,Leiden,1596,15960315,NA,NA,French,"Received date is unclear, so I left it as NA."
+DvdM_316-01,"Becker, Samuel",The Hague,Leiden,1599,15990101,NA,NA,French,
+DvdM_316-03,"Becker, Samuel",Middelburg,Leiden,1600,16000702,16000704,NA,French,
+DvdM_317-01,"Bentheim, Luder von",Bremen,Leiden,1597,15971029,15971108,NA,German,Changed date to new style
+DvdM_318-01,"Boudewijns Berlicom, François",Delft,Leiden,1594,15940626,15940628,NA,Dutch,Cannot read date of response. St 2 is a copy of the letter.
+DvdM_319-01,"Oldenbarnevelt, Johan van",The Hague,Leiden,1598,15980215,15980215,15980216,Dutch,
+DvdM_320-01,"Belderbeke, Henry de",Cologne,Leiden,1600,16000205,16000216,NA,French,
+DvdM_321-01,"Blom, Hans",NA,Leiden,1598,15980902,15980925,NA,Latin,Unclear where it is sent from and not sure it is in Latin.
+DvdM_322-01,"Boningsman, Gerardt van",Rotterdam,Leiden,1598,15980320,NA,NA,Dutch,
+DvdM_323-01,"Bontius, Johannes",Rotterdam,Leiden,1600,16000427,16000428,NA,Latin,
+DvdM_324-01,"Bormania, Rinaldo de",Naples,Bremen,1591,15910525,NA,NA,Dutch,
+DvdM_325-01,"Borne, Jan",Antwerp,Bremen,1587,15871003,15871101,NA,Dutch,
+DvdM_325-02,"Borne, Jan",Antwerp,Bremen,1589,15890503,NA,NA,Dutch,
+DvdM_325-03,"Borne, Jan",Antwerp,Bremen,1589,15890524,NA,NA,Dutch,
+DvdM_325-04,"Borne, Jan",Antwerp,Bremen,1589,15890607,NA,NA,Dutch,Includes a copy of previous letter 325-3.
+DvdM_325-05,"Borne, Jan",Haarlem,Leiden,1591,15911128,15911129,15911129,Dutch,
+DvdM_325-07,"Della Faille, Marten",Antwerp,Leiden,1591,15911210,NA,NA,Dutch,
+DvdM_325-09,"Borne, Jan",Antwerp,Leiden,1592,15920102,15920115,15920206,Dutch,
+DvdM_325-10,"Borne, Jan",Antwerp,Leiden,1592,15920220,15920312,15920318,Dutch,
+DvdM_325-11,"Borne, Jan",Antwerp,Leiden,1592,15920321,NA,NA,Dutch,
+DvdM_325-12,"Borne, Jan",Antwerp,Leiden,1592,15920401,NA,NA,Dutch,
+DvdM_325-13,"Borne, Jan",Antwerp,Leiden,1592,15920418,NA,NA,Dutch,
+DvdM_325-14,"Borne, Jan",Antwerp,Leiden,1592,15920711,15920718,NA,Dutch,Not clear if this letter is from June or July
+DvdM_325-15,"Borne, Jan",Antwerp,Leiden,1592,15920718,15920723,NA,Dutch,
+DvdM_325-16,"Borne, Jan",Antwerp,Leiden,1592,15920814,15920901,15920902,Dutch,
+DvdM_325-17,"Borne, Jan",Antwerp,Leiden,1592,15920930,15921004,15921005,Dutch,
+DvdM_325-18,"Borne, Jan",Antwerp,Leiden,1592,15921012,15921020,NA,Dutch,
+DvdM_325-19,"Borne, Jan",Antwerp,Leiden,1592,15921121,15921129,NA,Dutch,
+DvdM_325-20,"Borne, Jan",Antwerp,Leiden,1593,15930327,15930409,NA,Dutch,
+DvdM_325-21,"Borne, Jan",Antwerp,Leiden,1593,15930714,15930720,NA,Dutch,"The back of the letter says this was from June, but contents of the letter make it more likely to be from July."
+DvdM_325-22,"Borne, Jan",Ghent,Leiden,1593,15930925,15930930,NA,Dutch,
+DvdM_325-23,"Borne, Jan",Ghent,Leiden,1593,15931108,NA,15931216,Dutch,
+DvdM_325-24,"Borne, Jan",Antwerp,Leiden,1594,15940605,15940611,NA,Dutch,
+DvdM_325-25,"Borne, Jan",Ghent,Leiden,1594,15940630,15940709,15940724,Dutch,
+DvdM_325-26,"Borne, Jan",Ghent,Antwerp,1594,15940903,NA,NA,Dutch,
+DvdM_325-28,"Borne, Jan",Ghent,Leiden,1595,15950808,15950812,NA,Dutch,
+DvdM_325-29,"Borne, Jan",Antwerp,Leiden,1595,15950821,15950827,15950827,Dutch,
+DvdM_325-30–31,"Borne, Jan",Ghent,Leiden,1595,15950926,15951016,15951216,Dutch,
+DvdM_325-32,"Borne, Jan",Ghent,Leiden,1596,15960218,15960227,15960306,Dutch,
+DvdM_325-33,"Borne, Jan",Ghent,Leiden,1596,15960224,15960304,15960506,Dutch,Begins with a copy of st 32
+DvdM_325-34a,"Borne, Jan",Verona,Leiden,1596,15960605,NA,NA,Dutch,Two letters the first being a copy
+DvdM_325-34b,"Borne, Jan",Verona,Leiden,1596,15960621,15960715,NA,Dutch,
+DvdM_325-35,"Borne, Jan",Antwerp,Leiden,1598,15981201,15981209,NA,Italian,
+DvdM_325-36,"Borne, Jan",Ghent,Leiden,1599,15990119,15990128,NA,Dutch,
+DvdM_325-37a,"Borne, Jan",Antwerp,Leiden,1599,15990405,15990409,NA,Dutch,"Stuk has two letters on it, one from Borne and one from Van den Beke"
+DvdM_325-37b,"Beke, Jan van den",Amsterdam,Leiden,1599,15990408,NA,NA,Dutch,"Stuk has two letters on it, one from Borne and one from Van den Beke"
+DvdM_325-38,"Borne, Jan",Amsterdam,Leiden,1600,16000112,16000115,NA,Dutch,
+DvdM_325-39,"Borne, Jan",Amsterdam,Leiden,1600,16000127,16000131,NA,Dutch,
+DvdM_325-40,"Borne, Jan",Stade,Leiden,1600,16000303,16000316,NA,Dutch,
+DvdM_326-01,"Bondaeus, Melchior",Amsterdam,Leiden,1595,15951106,NA,NA,Dutch,
+DvdM_327-01,"Boudewijns Berlicom, François",Stade,Leiden,1600,16000325,16000409,16000523,Dutch,Changed date to new style. Not easy to tell if date is 15 or 25 March.
+DvdM_328-01,"Bredius, Franciscus",The Hague,Leiden,1594,15940513,15940513,NA,Dutch,
+DvdM_328-03,"Bredius, Franciscus",The Hague,Leiden,1594,15940619,15940619,NA,Latin,
+DvdM_328-04,"Bredius, Franciscus",The Hague,Haarlem,1595,15951007,15951009,NA,Latin,
+DvdM_328-05,"Bredius, Franciscus",The Hague,Leiden,1594,15941111,15941111,NA,Latin,
+DvdM_329-01,"Hallet, Antoine",Cologne,Leiden,1598,15980411,15980415,15980424,French,
+DvdM_331-01,"Bruusen, Brun",Bremen,Leiden,1597,15970611,15970610,NA,Dutch,Changed date to new style
+DvdM_332-01,"Bukentop, Hendrick",The Hague,Leiden,1591,15911112,NA,NA,Dutch,Servant of Jacques della Faille
+DvdM_333-01,"Burcht, Gerrit van der",The Hague,Leiden,1594,15941105,15941105,NA,Dutch,
+DvdM_333-02,"Burcht, Gerrit van der",The Hague,Leiden,1595,15950530,15950531,NA,Dutch,
+DvdM_333-03,"Burcht, Gerrit van der",The Hague,Leiden,1595,15950613,NA,NA,Dutch,
+DvdM_333-04,"Burcht, Gerrit van der",The Hague,Leiden,1595,15950617,15950617,15950628,Dutch,
+DvdM_333-05,"Burcht, Gerrit van der",The Hague,Leiden,1597,15970812,15970812,NA,Dutch,
+DvdM_333-06,"Burcht, Gerrit van der",The Hague,Leiden,1597,15971124,15971125,NA,Dutch,
+DvdM_333-07,"Burcht, Gerrit van der",The Hague,Leiden,1507,15971231,15980102,15980103,Dutch,
+DvdM_334-01,"Burmania, Dominiques de",Duisburg,Cologne,1580,15801010,NA,NA,French,
+DvdM_334-02,"Burmania, Dominiques de",Haarlem,Antwerp,1582,15820923,NA,NA,French,
+DvdM_334-03,"Burmania, Dominiques de",Haarlem,Antwerp,1582,15821218,NA,NA,Latin,
+DvdM_335-01,"Dael, Jacop van den",Delft,Leiden,1595,15950324,NA,NA,Dutch,
+DvdM_336-01,"Busschuysen, Marya van",Utrecht,Leiden,1592,15920930,15920930,NA,Dutch,
+DvdM_337-01,"Chambi, Henrie de",Gorkum,Leiden,1593,15931026,15931028,NA,Dutch,Exact date received is a bit unclear
+DvdM_338-01,"Charrier, Guillaume and Maturin Sailler",Lyon,Leiden,1597,15970830,15971009,NA,French,
+DvdM_338-02,"Charrier, Guillaume and Maturin Sailler",Lyon,Leiden,1597,15970905,15971009,NA,French,
+DvdM_339-01,"Dimmer, J.",The Hague,Leiden,1592,15921010,15921010,NA,Dutch,
+DvdM_339-02,"Dimmer, J.",The Hague,Leiden,1594,15940203,15940203,NA,Dutch,
+DvdM_340-01,"Duyvoet, Marcus",NA,Leiden,1597,15970502,NA,NA,Dutch,
+DvdM_340-02,"Duyvoet, Marcus",NA,Leiden,1598,15981202,NA,NA,Dutch,
+DvdM_341-01,"During, Otto van",Bremen,Leiden,1591,15911102,15911109,NA,Latin,Changed date to new style
+DvdM_341-02,"During, Otto van",Bremen,Leiden,1592,15920208,15920216,NA,Latin,Changed date to new style
+DvdM_341-03,"During, Otto van",Bremen,Leiden,1592,15920502,NA,NA,Latin,Changed date to new style
+DvdM_341-04,"During, Otto van",Bremen,Leiden,1594,15940824,NA,NA,Latin,Changed date to new style
+DvdM_341-05,"During, Otto van",Bremen,Leiden,1594,15941110,NA,NA,Latin,Changed date to new style. Not totally sure on the month.
+DvdM_341-06,"During, Otto van",Bremen,Leiden,1595,15950716,15950729,15960227,Latin,Changed date to new style
+DvdM_341-07,"During, Otto van",Bremen,Leiden,1596,15960415,15960419,NA,Latin,Changed date to new style
+DvdM_341-08,"During, Otto van",Bremen,Leiden,1597,15970714,15970719,NA,Latin,Changed date to new style
+DvdM_342-01,"Eeckeren, Michiel van",Verona,Leiden,1599,15990729,NA,NA,Italian,
+DvdM_342-02,"Eeckeren, Michiel van",Verona,Leiden,1600,16000207,16000312,NA,Italian,
+DvdM_343-01,"Erpe, Arnout van",Amsterdam,Leiden,1593,15930501,15930502,NA,Dutch,
+DvdM_343-02,"Erpe, Arnout van",Amsterdam,Leiden,1593,15931111,15931113,NA,Dutch,
+DvdM_344-01,"Esprinchard, Jacques",Frankfurt,Leiden,1597,15970402,NA,NA,French,Changed date to new style. Received just says May.
+DvdM_344-02,"Esprinchard, Jacques",Leipzig,Leiden,1597,15970511,15970604,NA,French,Changed date to new style
+DvdM_344-03,"Esprinchard, Jacques",Prague,Leiden,1597,15970629,15970723,NA,French,
+DvdM_344-04,"Esprinchard, Jacques",Heidelberg,Leiden,1597,15970801,15970813,NA,French,
+DvdM_345-01,"Della Faille, Carlo",Dordrecht,Leiden,1592,15920122,15920124,NA,Dutch,
+DvdM_345-02/03,"Della Faille, Carlo",Dordrecht,Leiden,1592,15920210,15920212,NA,Dutch,
+DvdM_346-01,"Della Faille, Cornelis",Staden,Leiden,1596,15961025,15970124,NA,Italian,Changed sent date to new style
+DvdM_346-02,"Della Faille, Cornelis",Haarlem,Leiden,1598,15981101,15981113,NA,Italian,Sent date is approximate
+DvdM_347-01,"Della Faille, Steven",Haarlem,Leiden,1594,15940704,15940704,NA,Dutch,Daniel answered this letter ‘met woorden’
+DvdM_348-01,"Flory, Anthonis van",The Hague,Leiden,1595,15950129,15950129,15950130,Dutch,
+DvdM_349-01,"Fons, Mayritius de la",Amsterdam,Leiden,1595,15950507,15950507,NA,French,
+DvdM_349-02,"Fons, Mayritius de la",Amsterdam,Leiden,1600,16000404,16000405,16000504,French,
+DvdM_350-01,"Oudenforte, R.",Lier,Antwerp,1580,15800402,NA,NA,French,
+DvdM_352-01,"Fransz, Heinrich",Segeberg,NA,1594,15941111,NA,NA,German,Unclear where the letter was sent to and even who it was sent to. In Holstein.
+DvdM_353-01,"Fremin, George de",Liege,Leiden,1592,15920412,NA,NA,French,
+DvdM_353-02,"Fremin, George de",Liege,Leiden,1592,15921016,15921022,15921116,French,
+DvdM_353-03,"Fremin, George de",Liege,Leiden,1592,15921211,15921216,NA,French,
+DvdM_353-04,"Fremin, George de",Augsburg,Leiden,1595,15950223,15950322,NA,French,
+DvdM_353-05,"Fremin, George de",Cologne,Leiden,1596,15960607,15960613,15960726,French,
+DvdM_354-01,"Fijssen Maller, Bernart",Haarlem,Leiden,1596,15960412,15960413,NA,Dutch,Letter sent along with some goods sent to Daniel
+DvdM_355-01,"Gleser, Daniel",Noordwijk,Leiden,1596,15960116,NA,NA,French,
+DvdM_355-02,"Gleser, Daniel",Noordwijk,Leiden,1596,15960410,NA,NA,French,
+DvdM_355-03,"Gleser, Daniel",Noordwijk,Leiden,1596,15960701,15960703,NA,French,
+DvdM_355-04,"Gleser, Daniel",Dordrecht,Leiden,1597,15970508,15970508,NA,Dutch,
+DvdM_356-01,"Godin, Jacques",Aachen,Leiden,1594,15940613,15940622,15940622,French,
+DvdM_357-01,"Gourque, M. de",Paris,Leiden,1594,15941028,15941125,NA,French,
+DvdM_358-01,"Grabius, Joseph",NA,NA,1589,15890428,NA,NA,Latin,
+DvdM_358-03,"Grabius, Joseph",NA,NA,1589,15890503,NA,NA,Latin,
+DvdM_359-01,"Grammaye, Thomas",Antwerp,Leiden,1595,15950419,15950428,NA,French,About the children of Carlo
+DvdM_359-02,"Grammaye, Thomas",Antwerp,Leiden,1595,15950427,15950615,NA,French,About the children of Carlo
+DvdM_360-01,"Gilpin, Geo",NA,Leiden,1597,15970404,NA,NA,French,Date is pretty much a guess
+DvdM_361-01,"Grijse, Jacques de",The Hague,Leiden,1597,15970118,15970119,15970120,French,
+DvdM_363-01,"Haer, Floris van der",Antwerp,Leiden,1597,15971007,15971029,15971101,French,
+DvdM_363-02,"Haer, Floris van der",Lille,Leiden,1597,15971104,15971117,NA,French,
+DvdM_363-03,"Haer, Floris van der",Leiden,Haarlem,1598,15980106,15980106,NA,French,
+DvdM_364-01,"Haghe, Jan van der",Bremen,Leiden,1598,15980801,15980816,NA,Dutch,No exact sent date
+DvdM_364-02,"Haghe, Jan van der",Staden,Leiden,1598,15980901,15980914,NA,French,
+DvdM_365-01,"Haghen, Pieter van der",Rotterdam,Leiden,1598,15980309,15980309,15980310,Dutch,
+DvdM_365-02,"Haghen, Pieter van der",Amsterdam,Leiden,1599,15990427,NA,NA,Dutch,
+DvdM_366-01,"Hardy, Petit du Claux",Middelburg,Leiden,1594,15940524,NA,NA,French,
+DvdM_366-02,"Hardy, Petit du Claux",Middelburg,Leiden,1594,15940602,NA,NA,French,
+DvdM_366-03,"Hardy, Petit du Claux",Dieppe,Leiden,1594,15940615,15940630,NA,French,
+DvdM_366-04,"Hardy, Petit du Claux",Rouen,Leiden,1594,15940622,NA,NA,French,
+DvdM_366-05,"Hardy, Petit du Claux",Paris,Leiden,1594,15940724,NA,NA,French,
+DvdM_366-06,"Hardy, Petit du Claux",Paris,Leiden,1594,15940808,NA,NA,French,
+DvdM_366-08,"Hardy, Petit du Claux",Paris,Leiden,1594,15940911,NA,NA,French,
+DvdM_366-09,"Hardy, Petit du Claux",Paris,Leiden,1594,15940902,15941102,NA,French,
+DvdM_366-10,"Hardy, Petit du Claux",Paris,Leiden,1594,15941018,15941124,NA,French,
+DvdM_366-12,"Hardy, Petit du Claux",Rouen,Leiden,1594,15941123,15950118,NA,French,
+DvdM_366-13,"Hardy, Petit du Claux",Rouen,Leiden,1594,15941220,NA,NA,French,
+DvdM_366-14,"Hardy, Petit du Claux",Paris,Leiden,1595,15950131,15950310,15950503,French,
+DvdM_366-15,"Hardy, Petit du Claux",Paris,Leiden,1595,15950401,15950430,15950530,French,
+DvdM_366-16,"Hardy, Petit du Claux",Paris,Leiden,1595,15950422,15950510,NA,French,
+DvdM_366-18,"Hardy, Petit du Claux",Paris,Leiden,1595,15950528,15950623,NA,French,
+DvdM_366-19,"Hardy, Petit du Claux",Paris,Leiden,1595,15950617,15950705,NA,French,
+DvdM_366-20,"Hardy, Petit du Claux",Paris,Leiden,1595,15950624,15950723,NA,French,
+DvdM_366-21,"Hardy, Petit du Claux",Paris,Leiden,1595,15950727,15950827,NA,French,
+DvdM_366-23,"Hardy, Petit du Claux",Paris,Leiden,1595,15950805,15950827,NA,French,
+DvdM_366-24,"Hardy, Petit du Claux",Paris,Leiden,1595,15951010,NA,NA,French,
+DvdM_366-25,"Hardy, Petit du Claux",Paris,Leiden,1595,15951210,NA,NA,French,
+DvdM_367-01,"Hartius, Otto",Brussels,Antwerp,1594,15950910,15950911,15950912,French,Sent to the house of Marten della Faille.
+DvdM_368-01,"Hecke, Oliver van",Cologne,Leiden,1593,15930403,15930409,NA,Dutch,
+DvdM_369-01,"Heeften, Herbert van",Utrecht,Leiden,1597,15970521,15970522,NA,Dutch,
+DvdM_370-01,"Hellerus, Christophorus",Utrecht,Leiden,1599,15990805,15990806,NA,Latin,
+DvdM_370-02,"Hellerus, Christophorus",Bremen,Leiden,1599,15991104,15991114,15991119,Latin,
+DvdM_370-03,"Hellerus, Christophorus",Bremen,Leiden,1599,15991106,NA,NA,Latin,
+DvdM_370-04,"Hellerus, Christophorus",Bremen,Leiden,1599,NA,NA,NA,Latin,
+DvdM_370-05,"Hellerus, Christophorus",Bremen,Leiden,1600,16000407,16000415,NA,Latin,
+DvdM_370-06,"Hellerus, Christophorus",Bremen,Leiden,1600,16000623,NA,NA,Latin,
+DvdM_401-01,"Corput, Hendrik van de",Dordrecht,Leiden,1592,15921206,15921212,NA,Dutch,
+DvdM_401-02,"Corput, Hendrik van de",Dordrecht,Leiden,1592,15921211,15921214,NA,Dutch,
+DvdM_401-03,"Corput, Hendrik van de",Dordrecht,Leiden,1593,15930419,15930419,15930420,Dutch,
+DvdM_401-04,"Corput, Hendrik van de",Dordrecht,The Hague,1594,15940305,NA,NA,Dutch,
+DvdM_401-06,"Corput, Hendrik van de",Dordrecht,Leiden,1594,15940323,15940327,NA,Dutch,
+DvdM_401-07,"Corput, Hendrik van de",Dordrecht,Leiden,1594,15940412,NA,NA,Dutch,The date is not easy to read. Written in haste.
+DvdM_401-08,"Corput, Hendrik van de",Dordrecht,Leiden,1594,15940413,NA,NA,Dutch,
+DvdM_401-09,"Corput, Hendrik van de",Dordrecht,Leiden,1594,15940428,15940430,15940430,Dutch,
+DvdM_401-10,"Corput, Hendrik van de",Dordrecht,Leiden,1594,15940529,15940529,NA,Dutch,
+DvdM_401-11,"Corput, Hendrik van de",Dordrecht,Leiden,1594,15940531,15940603,NA,Dutch,
+DvdM_401-14,"Corput, Hendrik van de",Dordrecht,Leiden,1594,15940812,15940812,NA,Dutch,Answered in person
+DvdM_401-15,"Corput, Hendrik van de",Dordrecht,Leiden,1594,15941019,15941026,15941105,Dutch,
+DvdM_401-16,"Corput, Hendrik van de",Dordrecht,Leiden,1594,15941024,15941027,NA,Dutch,
+DvdM_401-17,"Corput, Hendrik van de",Dordrecht,Leiden,1594,15941108,15941110,NA,Dutch,
+DvdM_401-18,"Corput, Hendrik van de",Dordrecht,Leiden,1595,15950206,15950208,NA,Dutch,
+DvdM_401-21,"Corput, Hendrik van de",Dordrecht,Leiden,1595,15951127,NA,NA,Dutch,
+DvdM_401-22,"Corput, Hendrik van de",Dordrecht,Leiden,1597,15970723,NA,NA,Dutch,
+DvdM_401-23,"Corput, Hendrik van de",Dordrecht,Leiden,1597,15971107,15971109,NA,Dutch,
+DvdM_401-24,"Corput, Hendrik van de",Dordrecht,Leiden,1598,15980308,15980309,NA,Dutch,
+DvdM_412,"Lesten, Elias",The Hague,Haarlem,1592,15921118,NA,NA,NA,
+DvdM_424-01,"Maerschalck, Francois de",Delft,Bremen,1589,15890511,NA,NA,NA,
+DvdM_432-01,"Meganck, Louis",Delft,Bremen,1589,15890628,NA,NA,French,
+DvdM_434-01/02,"Meteren, Emanuel van",London,Leiden,1592,15920309,NA,NA,Dutch,Written on 2 and 9 March 1592. Sent to Daniel through Guerard Becker in Middelburg.
+DvdM_434-03,"Meteren, Emanuel van",London,Leiden,1592,15920603,NA,NA,Dutch,Written on 24 May and 3 June 1592
+DvdM_434-04,"Meteren, Emanuel van",The Hague,Leiden,1599,15990115,NA,NA,Dutch,
+DvdM_438-01,"Moyen, Rodericus der",NA,Antwerp,1583,15830202,NA,NA,Latin,Sent from an unknown location
+DvdM_439-01,"Moliart, Pieter",The Hague,Leiden,1592,15920529,15920529,NA,NA,
+DvdM_439-02,"Moliart, Pieter",The Hague,Leiden,1592,15920531,15920531,NA,NA,
+DvdM_439-03,"Moliart, Pieter",The Hague,Leiden,1592,15920622,15920622,NA,NA,
+DvdM_439-04,"Moliart, Pieter",The Hague,Leiden,1592,15921015,15921016,NA,NA,
+DvdM_448,"Pampius, Albertus",Helmstedt,Bremen,1590,15900618,NA,NA,Latin,In Brunswick. Signed as Professor.
+DvdM_453-01,"Pierens, Gillis",Amsterdam,Leiden,1593,15931223,15931228,NA,Dutch,
+DvdM_453-02,"Pierens, Gillis",Amsterdam,Leiden,1594,15940105,NA,NA,Dutch,
+DvdM_453-03,"Pierens, Gillis",Amsterdam,Leiden,1594,15940112,15940113,NA,Dutch,
+DvdM_453-04,"Pierens, Gillis",Amsterdam,Leiden,1594,15940130,15940201,NA,Dutch,
+DvdM_453-05,"Pierens, Gillis",Amsterdam,Leiden,1594,15940227,15940227,NA,Dutch,
+DvdM_453-06,"Pierens, Gillis",Amsterdam,Leiden,1594,15940723,15940723,NA,French,
+DvdM_453-07,"Della Faille, Jacques",Haarlem,Leiden,1594,15940815,15940815,NA,Dutch,Not clear how Gillis Pierens is involved in the letter.
+DvdM_453-08,"Pierens, Gillis",Haarlem,Leiden,1594,15940919,15940919,NA,Dutch,Addressed to Hester. Not clear how Gillis Pierens is involved in the letter.
+DvdM_453-09,"Pierens, Gillis",Huisduinen,Bremen,1594,15941129,NA,NA,Dutch,
+DvdM_454-01,Pittavin,Caen,Bremen,1590,15900115,NA,NA,NA,
+DvdM_454-02,Pittavin,Caen,Bremen,1591,15911003,NA,NA,NA,
+DvdM_465-3,"Queecborne, Daniel van den",NA,Leiden,NA,NA,NA,NA,Dutch,"Unknown date or source location. Likely from The Hague, which is where he lived after 1594."
+DvdM_468-01,"Reide, Everhard de",The Hague,Bremen,1590,15900806,NA,NA,Latin,
+DvdM_468-03,"Reide, Everhard de",The Hague,Leiden,1591,15911117,15911123,NA,Latin,
+DvdM_468-04,"Reide, Everhard de",Leeuwarden,Leiden,1594,15940322,15940411,NA,Latin,
+DvdM_480-1,"Sixtinus, R.",Marburg,Bremen,1588,15880716,NA,NA,Latin,
+DvdM_480-2,"Sixtinus, R.",Marburg,Bremen,1588,15880727,NA,NA,Latin,
+DvdM_480-3,"Sixtinus, R.",Frankfurt,Leiden,1592,15920502,15920510,NA,Latin,
+DvdM_50-01,"Banos, Theophile de",Frankfurt,Antwerp,1578,NA,NA,NA,French,DvdM_50 is from 1578 . It is addressed to Daniel ‘maintenant’ in Antwerp. The letter concerns military situation. Not clear that it is from Frankfurt.
+DvdM_502-01,"Eynde, Anneken van den",Bergen op Zoom,Bremen,1591,NA,NA,NA,NA,No clear date.
+DvdM_504,"Warck, Reynerus van de ",Marburg,Frankfurt,1590,15900811,NA,NA,Latin,
+DvdM_513,"Achelen, Aelken van",Haarlem,Bremen,1588,15880401,NA,NA,Dutch,
+DvdM_514-01,"Ancelmo, Gilles",Middelburg,Leiden,1597,15971114,15971118,NA,Dutch,
+DvdM_514-02,"Ancelmo, Gilles",Middelburg,Leiden,1598,15980905,15980909,NA,Dutch,
+DvdM_514-03,"Ancelmo, Gilles",Middelburg,Leiden,1598,15980907,15980912,NA,Dutch,
+DvdM_514-04,"Ancelmo, Gilles",Middelburg,Leiden,1598,15981113,15981120,NA,Dutch,
+DvdM_514-05,"Ancelmo, Gilles",Middelburg,Leiden,1599,15990113,15990120,NA,Dutch,
+DvdM_514-06,"Ancelmo, Gilles",Middelburg,Leiden,1599,15990216,15990227,NA,Dutch,
+DvdM_516-01,"Baerle, Jan van",Amsterdam,Leiden,1598,15980129,15980131,NA,NA,
+DvdM_516-02,"Baerle, Jan van",Amsterdam,Leiden,1598,15980203,NA,NA,NA,
+DvdM_516-03,"Baerle, Jan van",Amsterdam,Leiden,1598,15981007,15981008,NA,NA,
+DvdM_517-01,"Beaulieu, Daniel de",Amsterdam,Leiden,1596,15961224,15970102,NA,Dutch,
+DvdM_519-01,"Bellasi, Agostino",London,Antwerp,1591,15910207,NA,NA,NA,
+DvdM_519-02,"Matzo, Cesaro",Leiden,Antwerp,1591,15910416,NA,NA,NA,
+DvdM_519-03,"Bellasi, Agostino",Verona,Bremen,1591,15910830,15910930,NA,NA,Sent to Andries and Daniel
+DvdM_519-04,"Bellasi, Agostino",Verona,Bremen,1591,15910911,15910930,NA,NA,Sent to Andries and Daniel
+DvdM_519-05,"Bellasi, Agostino",Verona,Bremen,1591,15911009,NA,NA,NA,"Received in Leiden, Sent to Andries and Daniel"
+DvdM_519-06,"Bellasi, Agostino",Verona,Bremen,1591,15911016,15911104,NA,NA,Sent to Andries and Daniel
+DvdM_519-07,"Bellasi, Agostino",Verona,Bremen,1591,15911018,15911119,NA,NA,Sent to Andries and Daniel
+DvdM_519-08,"Bellasi, Agostino",Verona,Bremen,1591,15911023,15911126,NA,NA,
+DvdM_521-01,"Bernaert, Hans",Delft,Leiden,1592,15921025,15921026,NA,French,
+DvdM_521-02,"Bernaert, Hans",Delft,Leiden,1593,15930113,15930114,NA,French,
+DvdM_521-04,"Bernaert, Hans",The Hague,Leiden,1593,15930209,15930210,15930211,French,
+DvdM_521-05,"Bernaert, Hans",The Hague,Leiden,1593,15930307,15930308,NA,French,
+DvdM_521-07,"Bernaert, Hans",The Hague,Leiden,1593,15930720,NA,NA,French,"No explicit sent location, but likely from The Hague."
+DvdM_521-08,"Bernaert, Hans",The Hague,Leiden,1593,15930826,15930826,NA,French,
+DvdM_521-09,"Bernaert, Hans",The Hague,Leiden,1593,15930826,15930826,NA,French,
+DvdM_521-10,"Vasseur, Hubert le",The Hague,Leiden,1593,15930519,15930519,NA,French,"No explicit source location for the letter, but Vasseur was likely in The Hague at this time with Bernaerts, as both were in trouble for debts."
+DvdM_524-01,"Berrewijns, Hans",Hamburg,Bremen,1590,15900816,15900822,NA,Dutch,
+DvdM_530-01,"Boots, Hans",Wesel,Bremen,1591,15910721,NA,NA,Dutch,Changed date to new style
+DvdM_530-02,"Boots, Hans",Haarlem,Leiden,1598,15980829,15980909,NA,Dutch,
+DvdM_535-001,"Eeckeren, Francisco van",Venice,Bremen,1590,15901005,15901021,NA,Dutch,Sent to Andries and Daniel in Bremen. Changed received date to new style.
+DvdM_535-003,"Eeckeren, Francisco van",Venice,Bremen,1591,15910914,15910930,NA,NA,Sent to Andries and Daniel in Bremen. Changed received date to new style.
+DvdM_535-004/5,"Eeckeren, Francisco van",Venice,Bremen,1591,15910927,15911014,NA,NA,Sent to Andries and Daniel in Bremen. Changed received date to new style.
+DvdM_535-006,"Eeckeren, Francisco van",Venice,Bremen,1591,15911004,15911021,NA,NA,Sent to Andries and Daniel in Bremen. Changed received date to new style.
+DvdM_535-007,"Eeckeren, Francisco van",Venice,Bremen,1591,15911018,15911104,NA,NA,Sent to Andries and Daniel in Bremen. Changed received date to new style.
+DvdM_535-008,"Eeckeren, Francisco van",Venice,Bremen,1591,15911025,15911111,NA,NA,
+DvdM_535-009,"Eeckeren, Francisco van",Venice,Bremen,1591,15911108,15911126,NA,NA,
+DvdM_535-010,"Eeckeren, Francisco van",Venice,Bremen,1591,15911115,15911202,NA,NA,
+DvdM_535-012,"Eeckeren, Francisco van",Venice,Bremen,1591,15911122,15911209,NA,NA,
+DvdM_536-01,"Eeckeren, Robert van",Antwerp,Bremen,1587,15870906,NA,NA,Dutch,
+DvdM_536-02,"Eeckeren, Robert van",Antwerp,Bremen,1587,15871130,15880128,NA,Dutch,
+DvdM_536-03,"Eeckeren, Robert van",Antwerp,Bremen,1588,15880629,NA,NA,Dutch,
+DvdM_536-04,"Eeckeren, Robert van",Antwerp,Bremen,1588,15880701,NA,NA,Dutch,Date is approximate. No clear date other than July 1588.
+DvdM_536-05,"Eeckeren, Robert van",Antwerp,Bremen,1588,15880727,NA,NA,Dutch,
+DvdM_536-06,"Eeckeren, Robert van",Antwerp,Bremen,1588,15880803,NA,NA,Dutch,
+DvdM_536-07,"Eeckeren, Robert van",Antwerp,Bremen,1588,15880824,NA,NA,Dutch,
+DvdM_536-08,"Eeckeren, Robert van",Antwerp,Bremen,1589,15890315,NA,NA,Dutch,
+DvdM_536-09,"Eeckeren, Robert van",Antwerp,Bremen,1589,15890927,15891007,NA,Dutch,
+DvdM_536-10,"Eeckeren, Robert van",Antwerp,Bremen,1589,15891004,15891015,NA,Dutch,
+DvdM_536-11,"Eeckeren, Robert van",Antwerp,Bremen,1589,15891025,15891105,NA,Dutch,
+DvdM_536-12,"Eeckeren, Robert van",Antwerp,Bremen,1589,15891122,NA,NA,Dutch,
+DvdM_536-13,"Eeckeren, Robert van",Antwerp,Bremen,1589,15891220,NA,NA,Dutch,
+DvdM_536-14,"Eeckeren, Robert van",Antwerp,Bremen,1590,15900117,15900129,NA,Dutch,
+DvdM_536-15,"Eeckeren, Robert van",Antwerp,Bremen,1590,15900207,NA,NA,Dutch,
+DvdM_536-16,"Eeckeren, Robert van",Antwerp,Bremen,1590,15900221,15900304,NA,Dutch,
+DvdM_536-17,"Eeckeren, Robert van",Antwerp,Bremen,1590,15900321,15900331,NA,Dutch,
+DvdM_536-18,"Eeckeren, Robert van",Antwerp,Bremen,1590,15900411,15900428,NA,Dutch,
+DvdM_536-19,"Eeckeren, Robert van",Antwerp,Frankfurt,1590,15900425,NA,NA,Dutch,
+DvdM_536-20,"Eeckeren, Robert van",Antwerp,Frankfurt,1590,15900430,15900513,NA,Dutch,
+DvdM_536-21,"Eeckeren, Robert van",Antwerp,Bremen,1590,15900627,NA,NA,Dutch,
+DvdM_536-22,"Eeckeren, Robert van",Antwerp,Bremen,1590,15900825,NA,NA,Dutch,
+DvdM_536-23,"Eeckeren, Robert van",Antwerp,Frankfurt,1590,15900923,NA,NA,Dutch,
+DvdM_536-24,"Eeckeren, Robert van",Antwerp,Bremen,1590,15901017,NA,NA,Dutch,
+DvdM_536-25,"Eeckeren, Robert van",Antwerp,Bremen,1591,15910904,15910915,NA,Dutch,
+DvdM_536-26,"Eeckeren, Robert van",Antwerp,Bremen,1591,15910911,NA,NA,Dutch,
+DvdM_536-27,"Eeckeren, Robert van",Antwerp,Bremen,1591,15911002,NA,NA,Dutch,Letter actually received in Leiden
+DvdM_536-28,"Eeckeren, Robert van",Antwerp,Bremen,1591,15911009,NA,NA,Dutch,Letter actually received in Leiden
+DvdM_536-29,"Eeckeren, Robert van",Antwerp,Bremen,1591,15911026,NA,NA,Dutch,Letter written in a different hand except at the end
+DvdM_536-30,"Eeckeren, Robert van",Antwerp,Leiden,1591,15911101,15911109,NA,Dutch,Addressed to Leiden oft daer hy is. tot Leyden op het Pieters kerckgracht
+DvdM_536-31,"Eeckeren, Robert van",Antwerp,Leiden,1591,15911112,15911122,15911124,Dutch,
+DvdM_536-32,"Eeckeren, Robert van",Antwerp,Leiden,1592,15920227,15920304,15920304,Dutch,"Says it is answered on 3 March, but that it was received on 4 March"
+DvdM_536-34,"Eeckeren, Robert van",Antwerp,Leiden,1592,15920307,15920314,NA,Dutch,"Two different hands with the first hand writing a full letter and then Van Eeckeren’s hand. Says letter was answered on 3 March, but this cannot be correct."
+DvdM_536-35,"Eeckeren, Robert van",Antwerp,Leiden,1592,15920717,15920725,15920803,Dutch,Two different hands
+DvdM_536-36/37,"Eeckeren, Robert van",Antwerp,Leiden,1592,15920917,15921002,NA,Dutch,Two different hands
+DvdM_536-38,"Eeckeren, Robert van",Antwerp,Leiden,1593,15930906,15930927,NA,Dutch,
+DvdM_536-39,"Eeckeren, Robert van",Antwerp,Leiden,1594,15940823,NA,NA,Dutch,
+DvdM_536-40,"Eeckeren, Robert van",Antwerp,Leiden,1594,15941105,15941108,NA,Dutch,Two different hands. Received date is not totally clear
+DvdM_536-41/42,"Eeckeren, Robert van",Antwerp,Leiden,1595,15950222,15950226,15950403,Dutch,
+DvdM_536-43,"Eeckeren, Robert van",Antwerp,Leiden,1595,15950322,15950401,15950403,Dutch,Two different hands
+DvdM_536-44,"Eeckeren, Robert van",Antwerp,Leiden,1596,15960113,15960120,15960124,Dutch,
+DvdM_536-45/46,"Eeckeren, Robert van",Antwerp,Leiden,1596,15960201,15960215,15960220,Dutch,Seems to have been written over multiple days.
+DvdM_536-47,"Eeckeren, Robert van",Antwerp,Leiden,1596,15960309,15960315,NA,Dutch,
+DvdM_536-48,"Eeckeren, Robert van",Antwerp,Leiden,1596,15960902,15960907,NA,Dutch,
+DvdM_536-49,"Eeckeren, Robert van",Antwerp,Leiden,1596,15960925,15961017,NA,Dutch,Not in Robert’s hand
+DvdM_536-50,"Eeckeren, Robert van",Antwerp,Leiden,1597,15970109,15970120,15970130,Dutch,Extract of a letter written by Robert van Eeckeren and Jan della Faille.
+DvdM_536-51/52,"Eeckeren, Robert van",Antwerp,Leiden,1597,15970225,15970302,15970403,Dutch,
+DvdM_536-53,"Eeckeren, Robert van",Antwerp,Leiden,1597,15970315,15970322,15970403,Dutch,Two different hands
+DvdM_536-54/55,"Eeckeren, Robert van",Antwerp,Leiden,1597,15971003,15971009,15980103,Dutch,
+DvdM_537-01,"Della Faille, Gillis",Haarlem,Leiden,1594,15940423,15940423,NA,Dutch,
+DvdM_537-02,"Della Faille, Gillis",Haarlem,Leiden,1594,15940512,15940512,NA,Dutch,
+DvdM_537-03,"Della Faille, Gillis",Gravesend,Leiden,1595,15950824,15950831,NA,Dutch,
+DvdM_537-04,"Della Faille, Gillis",Haarlem,Leiden,1596,15960528,15960529,NA,Dutch,
+DvdM_537-05,"Della Faille, Gillis",Haarlem,Leiden,1596,15960607,15960607,NA,Dutch,
+DvdM_537-06,"Della Faille, Gillis",Amsterdam,Leiden,1597,15970123,15970125,NA,Dutch,
+DvdM_537-07,"Della Faille, Gillis",Amsterdam,Leiden,1597,15970429,15970429,NA,Dutch,
+DvdM_537-08,"Della Faille, Gillis",Amsterdam,Leiden,1597,15970502,15970502,NA,Dutch,
+DvdM_537-09,"Della Faille, Gillis",Amsterdam,Leiden,1597,15970624,NA,NA,Dutch,
+DvdM_537-10,"Della Faille, Gillis",Amsterdam,Leiden,1597,15970702,NA,NA,Dutch,
+DvdM_537-11,"Della Faille, Gillis",Leiden,Leiden,1597,15970906,NA,NA,Dutch,
+DvdM_537-12,"Della Faille, Gillis",Haarlem,Leiden,1597,15970928,15970928,NA,Dutch,
+DvdM_537-13,"Della Faille, Gillis",The Hague,Leiden,1597,15971015,15971016,NA,Dutch,"Gillis signs stukken 12–23 as from Haege, which I am fairly sure is The Hague"
+DvdM_537-14,"Della Faille, Gillis",The Hague,Leiden,1597,15971027,15971027,NA,Dutch,
+DvdM_537-15,"Della Faille, Gillis",The Hague,Leiden,1597,15971104,15971104,NA,Dutch,
+DvdM_537-16,"Della Faille, Gillis",The Hague,Leiden,1597,15971108,15971108,NA,Dutch,
+DvdM_537-17,"Della Faille, Gillis",The Hague,Leiden,1597,15971118,15971118,NA,Dutch,
+DvdM_537-18,"Della Faille, Gillis",The Hague,Leiden,1597,15971120,15971120,NA,Dutch,
+DvdM_537-19,"Della Faille, Gillis",The Hague,Leiden,1597,15971126,NA,NA,Dutch,
+DvdM_537-20,"Della Faille, Gillis",The Hague,Leiden,1598,15980304,15980305,NA,Dutch,
+DvdM_537-21,"Della Faille, Gillis",The Hague,Leiden,1598,15980306,15980308,NA,Dutch,
+DvdM_537-22,"Della Faille, Gillis",The Hague,Leiden,1598,15980311,15980311,NA,Dutch,
+DvdM_537-23,"Della Faille, Gillis",The Hague,Leiden,1598,15980521,NA,NA,Dutch,
+DvdM_538a-001,"Della Faille, Jacques",Haarlem,The Hague,1584,15841212,NA,NA,Dutch,RGP-58
+DvdM_538a-003,"Della Faille, Jacques",Haarlem,The Hague,1585,15850220,NA,NA,Dutch,RGP-82
+DvdM_538a-004,"Della Faille, Jacques",Haarlem,Delft,1585,15850210,NA,NA,Dutch,RGP-78
+DvdM_538a-005,"Della Faille, Jacques",Haarlem,Delft,1585,15850221,NA,NA,Dutch,RGP-83
+DvdM_538a-006,"Della Faille, Jacques",Haarlem,Delft,1585,15850312,NA,NA,Dutch,RGP-93
+DvdM_538a-007,"Della Faille, Jacques",Haarlem,Delft,1585,15850314,NA,NA,Dutch,RGP-96
+DvdM_538a-008,"Della Faille, Jacques",Haarlem,Delft,1585,15850325,NA,NA,Dutch,RGP-101
+DvdM_538a-009,"Della Faille, Jacques",Haarlem,Delft,1585,15850501,NA,NA,Dutch,RGP-117
+DvdM_538a-011,"Della Faille, Jacques",Haarlem,Delft,1585,15850508,NA,NA,Dutch,RGP-119
+DvdM_538a-012,"Della Faille, Jacques",Haarlem,Delft,1585,15850512,NA,NA,Dutch,RGP-123
+DvdM_538a-013,"Della Faille, Jacques",Haarlem,Delft,1585,15850520,NA,NA,Dutch,RGP-125. Letter addressed to Hester.
+DvdM_538a-014,"Della Faille, Jacques",Haarlem,Delft,1585,15850528,NA,NA,Dutch,RGP-127
+DvdM_538a-015,"Della Faille, Jacques",Haarlem,Middelburg,1585,15850611,NA,NA,Dutch,RGP-134
+DvdM_538a-016,"Della Faille, Jacques",Haarlem,NA,1585,15850617,NA,NA,Dutch,RGP-137. 
+DvdM_538a-018,"Della Faille, Jacques",Lisse,Delft,1585,15850729,NA,NA,Dutch,RGP-151. Lisse is a town between Haarlem and Leiden
+DvdM_538a-019,"Della Faille, Jacques",Haarlem,Delft,1585,15850802,NA,NA,Dutch,RGP-153
+DvdM_538a-020,"Della Faille, Jacques",Haarlem,Delft,1585,15850806,NA,NA,Dutch,RGP-155
+DvdM_538a-022,"Della Faille, Jacques",Haarlem,Delft,1585,15850807,NA,NA,Dutch,RGP-156
+DvdM_538a-023,"Della Faille, Jacques",Haarlem,Delft,1585,15850809,NA,NA,Dutch,RGP-159
+DvdM_538a-024,"Della Faille, Jacques",Haarlem,Delft,1585,15850812,NA,NA,Dutch,RGP-161. Letter addressed to Hester or Daniel.
+DvdM_538a-025,"Della Faille, Jacques",Haarlem,Delft,1585,15850818,NA,NA,Dutch,RGP-164. Date is approximate.
+DvdM_538a-027,"Della Faille, Jacques",Haarlem,Delft,1585,15850822,NA,NA,Dutch,RGP-165
+DvdM_538a-029,"Della Faille, Jacques",Haarlem,Delft,1585,15850902,NA,NA,Dutch,RGP-169. No listed destination.
+DvdM_538a-030,"Della Faille, Jacques",Haarlem,Delft,1585,15850903,NA,NA,Dutch,RGP-170
+DvdM_538a-031,"Della Faille, Jacques",Haarlem,Delft,1585,15850906,NA,NA,Dutch,RGP-172
+DvdM_538a-033,"Della Faille, Jacques",Haarlem,Delft,1585,15850907,NA,NA,Dutch,RGP-174
+DvdM_538a-034,"Della Faille, Jacques",Haarlem,Delft,1585,15850908,NA,NA,Dutch,RGP-175
+DvdM_538a-036,"Della Faille, Jacques",Haarlem,Delft,1585,15850910,NA,NA,Dutch,RGP-177
+DvdM_538a-037,"Della Faille, Jacques",Haarlem,Delft,1585,15850914,NA,NA,Dutch,RGP-178
+DvdM_538a-039,"Della Faille, Jacques",Het Vlie,Bremen,1585,15851021,NA,NA,Dutch,Jacques was on his way to Hamburg. For geolocation I could use Oost-Vlie.
+DvdM_538a-040,"Della Faille, Jacques",Hamburg,Bremen,1585,15851030,NA,NA,Dutch,"Did not change date, because it is not listed as old style."
+DvdM_538a-041,"Della Faille, Jacques",Emden,Bremen,1585,15851130,NA,NA,Dutch,Changed date to new style. No destination specified in letter.
+DvdM_538a-042,"Noirot, Jacques",Haarlem,Bremen,1585,15851216,NA,NA,Dutch,Letter from Jacques Noirot in service to Jacques della Faille
+DvdM_538a-043,"Noirot, Jacques",Amsterdam,Bremen,1585,15851220,NA,NA,Dutch,Letter from Jacques Noirot in service to Jacques della Faille
+DvdM_538a-044,"Della Faille, Jacques",Haarlem,Bremen,1585,15851227,NA,NA,Dutch,
+DvdM_538a-045/46,"Della Faille, Jacques",Haarlem,Bremen,1586,15860118,NA,NA,Dutch,
+DvdM_538a-047,"Della Faille, Jacques",Haarlem,Bremen,1586,15860213,NA,NA,Dutch,"Addressed to Hester and sent with 538-48, which was a letter from Josina to Hester. Did not include second letter."
+DvdM_538a-049,"Della Faille, Jacques",Haarlem,Bremen,1586,15860416,NA,NA,Dutch,
+DvdM_538a-050,"Della Faille, Jacques",Haarlem,Middelburg,1586,15860530,NA,NA,Dutch,
+DvdM_538a-051,"Della Faille, Jacques",The Hague,Delft,1586,15860601,NA,NA,Dutch,Delft (house of Jacob Schot or to Middelburg
+DvdM_538a-052,"Della Faille, Jacques",The Hague,Delft,1586,15860601,NA,NA,Dutch,Sent along with 538a-51
+DvdM_538a-053,"Della Faille, Jacques",Haarlem,Utrecht,1586,15860601,NA,NA,Dutch,No exact date.
+DvdM_538a-054,"Della Faille, Jacques",London,Bremen,1586,15861106,NA,NA,Dutch,Jacques to Hester
+DvdM_538a-055–57,"Della Faille, Jacques",London,Bremen,1586,15861209,NA,NA,Dutch,Written between 16 November 1586 and 9 December 1586.
+DvdM_538a-058,"Della Faille, Jacques",London,Bremen,1586,15861217,NA,NA,Dutch,
+DvdM_538a-059,"Hamels, Josina",Haarlem,Bremen,1587,15870102,NA,NA,Dutch,Copy of letter Jacques sent to Josina on 17 December. Same date as 538a-58
+DvdM_538a-060/61,"Della Faille, Jacques",London,Bremen,1587,15870128,NA,NA,Dutch,
+DvdM_538a-062,"Hamels, Josina",Haarlem,Bremen,1587,15870213,NA,NA,Dutch,
+DvdM_538a-063,"Della Faille, Jacques",London,Bremen,1587,15870306,NA,NA,Dutch,
+DvdM_538a-064–68,"Della Faille, Jacques",Haarlem,Bremen,1587,15870709,15870719,NA,Dutch,Written 29 June - 9 July
+DvdM_538a-069,"Della Faille, Jacques",Haarlem,Bremen,1587,15870901,15870915,NA,Dutch,Changed received date to new style
+DvdM_538a-071–73,"Della Faille, Jacques",Haarlem,Bremen,1587,15871004,NA,NA,Dutch,Written 1 to 4 October.
+DvdM_538a-074/75,"Della Faille, Jacques",Haarlem,Bremen,1587,15871218,15880113,NA,Dutch,538a-70 was sent along with this letter.
+DvdM_538a-077–83,"Della Faille, Jacques",Haarlem,Bremen,1588,15880208,15880229,NA,Dutch,Written on 7–8 February
+DvdM_538a-084/85,"Hamels, Josina",Haarlem,Leiden,1592,NA,NA,NA,Dutch,"No date, but sent to Pieterskerk, so year is approximate"
+DvdM_538a-087/88,"Della Faille, Jacques",Haarlem,Bremen,1588,15880406,NA,NA,Dutch,Josina wrote a letter to Hester on the same day 538a-86
+DvdM_538a-089,"Della Faille, Jacques",Haarlem,Bremen,1588,15880417,NA,NA,Dutch,
+DvdM_538a-090/91,"Della Faille, Jacques",Haarlem,Bremen,1588,15880508,NA,NA,Dutch,
+DvdM_538a-095/96,"Della Faille, Jacques",Haarlem,Bremen,1588,15880611,NA,NA,Dutch,Written on 10 and 11 June
+DvdM_538a-097,"Della Faille, Jacques",Haarlem,Bremen,1588,15880715,NA,NA,Dutch,Date is approximate. Written after 9 July 1588.
+DvdM_538a-098/99,"Della Faille, Jacques",Haarlem,Bremen,1588,15880704,NA,NA,Dutch,
+DvdM_538a-100,"Della Faille, Jacques",Haarlem,Bremen,1588,15880709,NA,NA,Dutch,
+DvdM_538a-101/102,"Della Faille, Jacques",Haarlem,Bremen,1588,15881107,NA,NA,Dutch,
+DvdM_538a-103/104,"Della Faille, Jacques",Haarlem,Bremen,1589,15890414,NA,NA,Dutch,
+DvdM_538a-105/106,"Della Faille, Jacques",Haarlem,Bremen,1589,15890828,NA,NA,Dutch,
+DvdM_538a-107,"Della Faille, Jacques",Haarlem,Bremen,1589,15890902,NA,NA,Dutch,
+DvdM_538a-108/109,"Della Faille, Jacques",Haarlem,Bremen,1589,15890904,15891017,NA,Dutch,Changed received date to new style
+DvdM_538a-110,"Della Faille, Jacques",Haarlem,Bremen,1589,15890910,15890923,NA,Dutch,Changed received date to new style
+DvdM_538a-111/112,"Della Faille, Jacques",Haarlem,Bremen,1589,15890923,15891102,NA,Dutch,
+DvdM_538a-113,"Della Faille, Jacques",Haarlem,Bremen,1589,15891019,15891025,NA,Dutch,
+DvdM_538a-114,"Della Faille, Jacques",Amsterdam,Bremen,1589,15891101,NA,NA,Dutch,
+DvdM_538a-115,"Della Faille, Jacques",Haarlem,Bremen,1589,15891114,15891204,NA,Dutch,
+DvdM_538a-116,"Della Faille, Jacques",Haarlem,Bremen,1589,15891114,NA,NA,Dutch,
+DvdM_538a-117,"Della Faille, Jacques",Haarlem,Bremen,1589,15891121,NA,NA,Dutch,
+DvdM_538a-118/119,"Della Faille, Jacques",Haarlem,Bremen,1589,15891212,15891223,NA,Dutch,
+DvdM_538a-120,"Della Faille, Jacques",Amsterdam,Bremen,1589,15891114,NA,NA,Dutch,
+DvdM_538a-121,"Della Faille, Jacques",Haarlem,Bremen,1589,15891217,15900105,NA,Dutch,
+DvdM_538a-122,"Della Faille, Jacques",Haarlem,Bremen,1590,15900114,15900205,NA,Dutch,
+DvdM_538a-123/124,"Della Faille, Jacques",Haarlem,Bremen,1590,15900205,15900217,NA,Dutch,Changed received date to new style
+DvdM_538a-125,"Della Faille, Jacques",Haarlem,Bremen,1590,15900116,15900205,NA,Dutch,
+DvdM_538a-126/127,"Della Faille, Jacques",Haarlem,Bremen,1590,15900220,15900301,NA,Dutch,
+DvdM_538a-128,"Della Faille, Jacques",Haarlem,Bremen,1590,15900308,15900319,NA,Dutch,
+DvdM_538a-129,"Della Faille, Jacques",Haarlem,Bremen,1590,15900309,NA,NA,Dutch,
+DvdM_538a-130,"Della Faille, Jacques",Haarlem,Frankfurt,1590,15900406,NA,NA,Dutch,
+DvdM_538a-131,"Della Faille, Jacques",Haarlem,Bremen,1590,15900418,15900427,NA,Dutch,Sent to Andries
+DvdM_538a-132/133,"Della Faille, Jacques",Haarlem,Bremen,1590,15900420,NA,NA,Dutch,
+DvdM_538a-134,"Della Faille, Jacques",Haarlem,Bremen,1590,15900703,NA,NA,Dutch,
+DvdM_538a-135,"Della Faille, Jacques",Haarlem,Bremen,1590,15900724,15900729,NA,Dutch,
+DvdM_538a-136/137,"Della Faille, Jacques",Haarlem,Bremen,1590,15900807,15900812,NA,Dutch,
+DvdM_538a-138,"Della Faille, Jacques",Haarlem,Bremen,1590,15900814,15900819,NA,Dutch,
+DvdM_538a-139,"Della Faille, Jacques",Haarlem,Bremen,1590,15900821,15900827,NA,Dutch,
+DvdM_538a-140,"Della Faille, Jacques",Haarlem,Bremen,1590,15900828,15900902,NA,Dutch,
+DvdM_538a-141/142,"Della Faille, Jacques",Haarlem,Bremen,1590,15900911,15900925,NA,Dutch,
+DvdM_538a-143,"Della Faille, Jacques",Haarlem,Bremen,1590,15900918,15900925,NA,Dutch,
+DvdM_538a-144,"Della Faille, Jacques",Haarlem,Bremen,1591,15910820,15910825,NA,Dutch,
+DvdM_538a-145,"Della Faille, Jacques",Haarlem,Bremen,1591,15910915,NA,NA,Dutch,
+DvdM_538a-146,"Della Faille, Jacques",Haarlem,Bremen,1591,15910924,NA,NA,Dutch,
+DvdM_538a-147,"Della Faille, Jacques",Haarlem,Leiden,1591,15911012,NA,NA,Dutch,
+DvdM_538a-149,"Della Faille, Jacques",Haarlem,Leiden,1591,15911020,15911021,NA,Dutch,
+DvdM_538a-150,"Della Faille, Jacques",Haarlem,Amsterdam,1591,15911028,15911028,NA,Dutch,
+DvdM_538a-151,"Della Faille, Jacques",Haarlem,Amsterdam,1591,15911030,15911031,NA,Dutch,
+DvdM_538a-152,"Della Faille, Jacques",Haarlem,Leiden,1591,15911102,NA,NA,Dutch,
+DvdM_538a-153,"Della Faille, Jacques",Haarlem,Leiden,1591,15911105,15911105,NA,Dutch,
+DvdM_538a-155,"Della Faille, Jacques",Haarlem,Leiden,1591,15911111,15911112,NA,Dutch,
+DvdM_538a-156,"Della Faille, Jacques",Haarlem,Leiden,1591,15911113,15911113,NA,Dutch,
+DvdM_538a-157,"Della Faille, Jacques",Haarlem,Leiden,1591,15911116,NA,NA,Dutch,
+DvdM_538a-158,"Della Faille, Jacques",Haarlem,Leiden,1591,15911129,15911130,NA,Dutch,the letter was mistakenly dated from 30 November by Jacques
+DvdM_538a-159,"Della Faille, Jacques",Haarlem,Leiden,1591,15911216,15911218,NA,Dutch,
+DvdM_538a-160,"Della Faille, Jacques",Haarlem,Leiden,1591,15911222,15911223,NA,Dutch,
+DvdM_538a-161,"Della Faille, Jacques",Haarlem,Leiden,1591,15911228,15911228,NA,Dutch,
+DvdM_538a-162,"Della Faille, Jacques",Haarlem,Leiden,1591,15911229,NA,NA,Dutch,
+DvdM_538a-163,"Della Faille, Jacques",Haarlem,Leiden,1592,15920102,15920102,NA,Dutch,
+DvdM_538a-165,"Della Faille, Jacques",Haarlem,Leiden,1592,15920115,15920116,NA,Dutch,
+DvdM_538a-166,"Della Faille, Jacques",Haarlem,Leiden,1592,15920112,15920113,NA,Dutch,
+DvdM_538a-167,"Della Faille, Jacques",Haarlem,Leiden,1592,15920123,15920123,NA,Dutch,
+DvdM_538a-168,"Della Faille, Jacques",Haarlem,Leiden,1592,15920216,15920216,NA,Dutch,
+DvdM_538a-169,"Della Faille, Jacques",Haarlem,Leiden,1592,15920220,15920223,NA,Dutch,
+DvdM_538a-170,"Della Faille, Jacques",Haarlem,Leiden,1592,15920309,15920311,NA,Dutch,
+DvdM_538a-171,"Della Faille, Jacques",Haarlem,Leiden,1592,15920311,15920312,NA,Dutch,
+DvdM_538a-172,"Della Faille, Jacques",Haarlem,Leiden,1592,15920319,15920320,NA,Dutch,
+DvdM_538a-173,"Della Faille, Jacques",Haarlem,Leiden,1592,15920320,15920322,NA,Dutch,
+DvdM_538a-175,"Della Faille, Jacques",The Hague,Leiden,1592,15920412,NA,NA,Dutch,
+DvdM_538a-176,"Della Faille, Jacques",Haarlem,Leiden,1592,15920506,15920507,NA,Dutch,
+DvdM_538a-177,"Della Faille, Jacques",Haarlem,Leiden,1592,15920510,15920510,NA,Dutch,
+DvdM_538a-178,"Della Faille, Jacques",Haarlem,Leiden,1592,15920515,15920515,NA,Dutch,
+DvdM_538a-180,"Della Faille, Jacques",Haarlem,Leiden,1592,15920528,15920529,NA,Dutch,
+DvdM_538a-181,"Della Faille, Jacques",Haarlem,Leiden,1592,15920718,15920720,NA,Dutch,Copy of a letter from Aertsen to Jacques from 1 June 1592 (old style)
+DvdM_538a-182,"Della Faille, Jacques",Haarlem,Leiden,1592,15920603,15920603,NA,Dutch,
+DvdM_538a-183,"Della Faille, Jacques",Haarlem,Leiden,1592,15920618,15920619,NA,Dutch,
+DvdM_538a-184,"Della Faille, Jacques",Haarlem,Leiden,1592,15920627,15920628,NA,Dutch,
+DvdM_538a-185,"Della Faille, Jacques",Haarlem,Leiden,1592,15920702,15920703,NA,Dutch,
+DvdM_538a-186,"Della Faille, Jacques",Haarlem,Leiden,1592,15920714,15920715,NA,Dutch,
+DvdM_538a-187,"Della Faille, Jacques",Haarlem,Leiden,1592,15920724,15920724,NA,Dutch,
+DvdM_538a-188,"Wissele, Hendrick van",Haarlem,Leiden,1592,15920727,15920728,NA,Dutch,
+DvdM_538a-189,"Della Faille, Jacques",Haarlem,Leiden,1592,15920802,15920803,NA,Dutch,
+DvdM_538a-190,"Monicx, Willem",Haarlem,Leiden,1592,15920828,15920829,NA,Dutch,
+DvdM_538a-191,"Della Faille, Jacques",Haarlem,Leiden,1592,15920906,15920906,NA,Dutch,
+DvdM_538a-192–93,"Della Faille, Jacques",Haarlem,Leiden,1592,15920911,15920906,NA,Dutch,
+DvdM_538a-196,"Della Faille, Jacques",Haarlem,Leiden,1592,15920929,15920929,NA,Dutch,
+DvdM_538a-197,"Della Faille, Jacques",Haarlem,Leiden,1592,15921003,15921004,NA,Dutch,
+DvdM_538a-198,"Della Faille, Jacques",Haarlem,Leiden,1592,15921102,15921103,NA,Dutch,
+DvdM_538a-199,"Della Faille, Jacques",Haarlem,Leiden,1592,15921106,15921106,NA,Dutch,
+DvdM_538a-200,"Della Faille, Jacques",Haarlem,Leiden,1592,15921116,15921116,NA,Dutch,
+DvdM_538a-201,"Della Faille, Jacques",Haarlem,Leiden,1592,15921126,15921128,NA,Dutch,
+DvdM_538a-202,"Della Faille, Jacques",Haarlem,Leiden,1592,15921203,15921203,NA,Dutch,
+DvdM_538a-203,"Della Faille, Jacques",Haarlem,Leiden,1592,15921212,15921212,NA,Dutch,
+DvdM_538a-204,"Della Faille, Jacques",Haarlem,Leiden,1592,15921215,15921216,NA,Dutch,
+DvdM_538a-206,"Della Faille, Jacques",Haarlem,Leiden,1592,15921226,15921228,NA,Dutch,
+DvdM_538a-207,"Della Faille, Jacques",Haarlem,Leiden,1592,15921229,15921230,NA,Dutch,
+DvdM_538a-208,"Della Faille, Jacques",Haarlem,Leiden,1592,15921230,15921230,NA,Dutch,
+DvdM_538b-001,"Della Faille, Jacques",Haarlem,Leiden,1593,15930111,15930112,15930117,Dutch,
+DvdM_538b-002,"Della Faille, Jacques",Haarlem,Leiden,1593,15930116,15930116,15930117,Dutch,
+DvdM_538b-003,"Della Faille, Jacques",Haarlem,Delft,1593,15930123,15930123,NA,Dutch,
+DvdM_538b-004,"Della Faille, Jacques",Haarlem,Leiden,1593,15930126,15930126,NA,Dutch,
+DvdM_538b-005,"Della Faille, Jacques",Haarlem,Leiden,1593,15930206,15930206,NA,Dutch,
+DvdM_538b-006,"Della Faille, Jacques",Haarlem,Leiden,1593,15930210,15930210,NA,Dutch,
+DvdM_538b-007,"Della Faille, Jacques",Haarlem,Leiden,1593,15930212,15930213,NA,Dutch,
+DvdM_538b-008,"Della Faille, Jacques",Haarlem,Leiden,1593,15930216,15930216,NA,Dutch,
+DvdM_538b-009,"Della Faille, Jacques",Haarlem,Leiden,1593,15930217,15930218,15930219,Dutch,
+DvdM_538b-010,"Della Faille, Jacques",Haarlem,Leiden,1593,15930219,15930219,NA,Dutch,
+DvdM_538b-011,"Della Faille, Jacques",Haarlem,Leiden,1593,15930306,15930306,15930308,Dutch,
+DvdM_538b-012,"Della Faille, Jacques",Haarlem,Leiden,1593,15930313,15930313,NA,Dutch,
+DvdM_538b-013,"Della Faille, Jacques",Haarlem,Leiden,1593,15930315,15930316,NA,Dutch,
+DvdM_538b-014,"Della Faille, Jacques",Haarlem,Leiden,1593,15930315,15930316,NA,Dutch,
+DvdM_538b-015,"Della Faille, Jacques",Haarlem,Leiden,1593,15930318,15930318,NA,Dutch,
+DvdM_538b-016,"Della Faille, Jacques",Haarlem,Leiden,1593,15930322,15930323,NA,Dutch,"Front of letter says 22 March, but back says it was sent on 23 March."
+DvdM_538b-017,"Della Faille, Jacques",Haarlem,Leiden,1593,15930403,15830403,15830406,Dutch,
+DvdM_538b-019,"Della Faille, Jacques",Haarlem,Leiden,1593,15930412,15830412,NA,Dutch,
+DvdM_538b-020,"Della Faille, Jacques",Haarlem,Leiden,1593,15930425,15830425,NA,Dutch,
+DvdM_538b-021,"Della Faille, Jacques",Haarlem,Leiden,1593,15930503,15930503,NA,Dutch,
+DvdM_538b-022,"Della Faille, Jacques",Haarlem,Leiden,1593,15930513,15930513,15930515,Dutch,
+DvdM_538b-023/24,"Della Faille, Jacques",Haarlem,Leiden,1593,15930603,15930603,NA,Dutch,
+DvdM_538b-025,"Della Faille, Jacques",Haarlem,Leiden,1593,15930604,15930605,15930605,Dutch,
+DvdM_538b-026,"Della Faille, Jacques",Haarlem,Leiden,1593,15930608,15930608,15930611,Dutch,
+DvdM_538b-027,"Della Faille, Jacques",Haarlem,Leiden,1593,15930610,15930610,15930610,Dutch,
+DvdM_538b-028,"Della Faille, Jacques",Haarlem,Leiden,1593,15930610,15930610,15930611,Dutch,
+DvdM_538b-029,"Della Faille, Jacques",Haarlem,Leiden,1593,15930611,15930611,15930612,Dutch,
+DvdM_538b-030/31,"Della Faille, Jacques",Haarlem,Leiden,1593,15930618,15930618,NA,Dutch,
+DvdM_538b-033,"Della Faille, Jacques",Haarlem,Leiden,1593,15930630,15930630,NA,Dutch,
+DvdM_538b-035,"Della Faille, Jacques",Haarlem,Leiden,1593,15930706,15930706,NA,Dutch,
+DvdM_538b-036,"Della Faille, Jacques",Haarlem,Leiden,1593,15930715,15930715,NA,Dutch,
+DvdM_538b-037,"Della Faille, Jacques",Haarlem,Leiden,1593,15930720,15930720,NA,Dutch,
+DvdM_538b-039/40,"Della Faille, Jacques",Haarlem,Leiden,1593,15930723,15930724,15930726,Dutch,
+DvdM_538b-042,"Della Faille, Jacques",Haarlem,Leiden,1593,15930803,15930803,NA,Dutch,
+DvdM_538b-043,"Della Faille, Jacques",Haarlem,Leiden,1593,15930813,15930814,NA,Dutch,
+DvdM_538b-044,"Della Faille, Jacques",Haarlem,Bremen,1593,15930907,15930912,15930913,Dutch,Received date and response dates changed to new style
+DvdM_538b-045,"Della Faille, Jacques",Haarlem,Bremen,1593,15930922,15930926,15930927,Dutch,
+DvdM_538b-046,"Della Faille, Jacques",Haarlem,Amsterdam,1593,15931014,15931014,NA,Dutch,
+DvdM_538b-047,"Della Faille, Jacques",Haarlem,Leiden,1593,15931021,15931022,NA,Dutch,
+DvdM_538b-048,"Della Faille, Jacques",Haarlem,Leiden,1593,15931103,15931103,NA,Dutch,
+DvdM_538b-050,"Della Faille, Jacques",Haarlem,Leiden,1593,15931109,15931110,15931111,Dutch,
+DvdM_538b-051,"Hamels, Josina",Haarlem,Leiden,1593,15931201,NA,NA,Dutch,No dates and so sent date is approximate and based on place within archive.
+DvdM_538b-053,"Della Faille, Jacques",Haarlem,Leiden,1593,15931207,15931209,NA,Dutch,
+DvdM_538b-054,"Della Faille, Jacques",Haarlem,Leiden,1593,15931212,15931213,NA,Dutch,
+DvdM_538b-055/56,"Della Faille, Jacques",Haarlem,Leiden,1593,15931222,15931223,15931228,Dutch,
+DvdM_538b-057,"Della Faille, Jacques",Haarlem,Leiden,1593,15931227,15931228,NA,Dutch,
+DvdM_538b-058/59,"Della Faille, Jacques",Haarlem,Leiden,1593,15931229,15931229,15940104,Dutch,
+DvdM_538b-060,"Della Faille, Jacques",Haarlem,Leiden,1594,15940104,NA,NA,Dutch,
+DvdM_538b-061,"Della Faille, Jacques",Haarlem,Leiden,1594,15940108,15940109,15940112,Dutch,
+DvdM_538b-062,"Della Faille, Jacques",Haarlem,Leiden,1594,15940114,15940114,15940115,Dutch,
+DvdM_538b-063,"Della Faille, Jacques",Haarlem,Leiden,1594,15940115,15940115,15940116,Dutch,
+DvdM_538b-064,"Della Faille, Jacques",Haarlem,Leiden,1594,15940122,15940122,15940126,Dutch,
+DvdM_538b-065,"Della Faille, Jacques",Haarlem,Leiden,1594,15940127,15940127,NA,Dutch,
+DvdM_538b-066,"Della Faille, Jacques",Haarlem,Leiden,1594,15940208,15940209,15940211,Dutch,
+DvdM_538b-067,"Della Faille, Jacques",Haarlem,Leiden,1594,15940218,15940219,15940220,Dutch,
+DvdM_538b-068,"Della Faille, Jacques",Haarlem,Leiden,1594,15940308,15940308,15940313,Dutch,
+DvdM_538b-069,"Della Faille, Jacques",Haarlem,Leiden,1594,15940330,15940330,NA,Dutch,
+DvdM_538b-070,"Della Faille, Jacques",Haarlem,Leiden,1594,15940411,15940412,NA,Dutch,
+DvdM_538b-071,"Della Faille, Jacques",Haarlem,Leiden,1594,15940414,15940414,15940415,Dutch,
+DvdM_538b-072,"Della Faille, Jacques",Haarlem,Leiden,1594,15940414,15940415,15940415,Dutch,
+DvdM_538b-073,"Della Faille, Jacques",Haarlem,Leiden,1594,15940415,15940416,15940418,Dutch,
+DvdM_538b-074,"Della Faille, Jacques",Haarlem,Leiden,1594,15940416,15940416,15940418,Dutch,
+DvdM_538b-075/76,"Della Faille, Jacques",Haarlem,Leiden,1594,15940423,15940423,15940428,Dutch,
+DvdM_538b-077,"Reyniers, Jacques",NA,Leiden,1594,15940511,15940511,NA,Dutch,Not sure where it was sent from.
+DvdM_538b-078,"Della Faille, Jacques",Haarlem,Leiden,1594,15940511,15940511,15940513,Dutch,
+DvdM_538b-079/80,"Della Faille, Jacques",Haarlem,Leiden,1594,15940513,15940514,15940514,Dutch,
+DvdM_538b-081,"Della Faille, Jacques",Haarlem,Leiden,1594,15940514,15940514,15940515,Dutch,
+DvdM_538b-083,"Della Faille, Jacques",Haarlem,Leiden,1594,15940518,NA,15940524,Dutch,This letter seems to be a direct response to Daniel’s letter from 15 May 1594 (DvdM_538b-082) and written on it
+DvdM_538b-084,"Della Faille, Jacques",Leiden,The Hague,1594,15940531,15940531,NA,Dutch,
+DvdM_538b-085,"Della Faille, Jacques",Haarlem,Leiden,1594,15940604,15940604,NA,Dutch,
+DvdM_538b-086,"Della Faille, Jacques",Haarlem,Leiden,1594,15940611,15940611,15940616,Dutch,
+DvdM_538b-087,"Della Faille, Jacques",Haarlem,Leiden,1594,15940614,15940615,NA,Dutch,
+DvdM_538b-088,"Della Faille, Jacques",Haarlem,Leiden,1594,15940615,15940615,15940616,Dutch,
+DvdM_538b-089,"Della Faille, Jacques",Haarlem,Leiden,1594,15940616,15940616,15940616,Dutch,
+DvdM_538b-090,"Della Faille, Jacques",Haarlem,Leiden,1594,15940618,15940618,15940621,Dutch,
+DvdM_538b-091,"Della Faille, Jacques",Haarlem,Leiden,1594,15940620,15940620,15940621,Dutch,
+DvdM_538b-092,"Della Faille, Jacques",Haarlem,Leiden,1594,15940622,15940622,NA,Dutch,Sent to ‘teghen over het Princeren hoff’
+DvdM_538b-093,"Della Faille, Jacques",Haarlem,Leiden,1594,15940704,15940705,NA,Dutch,Sent to Rapenburg
+DvdM_538b-094,"Della Faille, Jacques",Haarlem,Leiden,1594,15940708,15940709,15940711,Dutch,Sent to Rapenburg
+DvdM_538b-096,"Della Faille, Jacques",Haarlem,Leiden,1594,15940710,15940710,NA,Dutch,Sent to ‘teghen over het Princeren hoff’
+DvdM_538b-097,"Della Faille, Jacques",Haarlem,Leiden,1594,15940715,15940715,15940716,Dutch,Sent to Rapenburg
+DvdM_538b-098,"Della Faille, Jacques",Haarlem,Leiden,1594,15940721,15940721,15940722,Dutch,Sent to ‘teghen over het Princeren hoff’
+DvdM_538b-099,"Della Faille, Jacques",Haarlem,Leiden,1594,15940723,15940723,NA,Dutch,
+DvdM_538b-100,"Della Faille, Jacques",Haarlem,Leiden,1594,15940727,15940727,15940731,Dutch,Sent to Rapenburg
+DvdM_538b-101,"Della Faille, Jacques",Haarlem,Leiden,1594,15940729,15940727,15940731,Dutch,
+DvdM_538b-102,"Della Faille, Jacques",Haarlem,Leiden,1594,15940730,15940730,15940731,Dutch,
+DvdM_538b-103,"Della Faille, Jacques",Haarlem,Leiden,1594,15940803,15940803,15940805,Dutch,
+DvdM_538b-104,"Della Faille, Jacques",Haarlem,Leiden,1594,15940809,15940810,NA,Dutch,
+DvdM_538b-105,"Della Faille, Jacques",Haarlem,Leiden,1594,15940811,15940812,15940813,Dutch,
+DvdM_538b-107,"Della Faille, Jacques",Haarlem,Antwerp,1594,15940910,15940915,15940918,Dutch,
+DvdM_538b-108,"Della Faille, Jacques",Haarlem,NA,1594,15941001,NA,NA,Dutch,Sent to “where he is”
+DvdM_538b-109,"Della Faille, Jacques",Haarlem,Leiden,1594,15941023,15941023,NA,Dutch,
+DvdM_538b-110,"Della Faille, Jacques",Haarlem,Leiden,1594,15941028,NA,NA,Dutch,
+DvdM_538b-111,"Della Faille, Jacques",Haarlem,Leiden,1594,15941030,NA,NA,Dutch,
+DvdM_538b-112,"Della Faille, Jacques",Haarlem,Leiden,1594,15941106,15941106,15941107,Dutch,
+DvdM_538b-113,"Della Faille, Jacques",Haarlem,Leiden,1594,15941109,15941109,15941110,Dutch,
+DvdM_538b-114,"Della Faille, Jacques",Haarlem,Leiden,1594,15941115,15941115,NA,Dutch,
+DvdM_538b-115/116,"Della Faille, Jacques",Haarlem,Bremen,1594,15941229,15950112,15950113,Dutch,
+DvdM_538c-001/2,"Della Faille, Jacques",Haarlem,Bremen,1595,15950103,15950112,15950123,Dutch,
+DvdM_538c-004,"Della Faille, Jacques",Haarlem,Leiden,1595,15950216,15950216,15950217,Dutch,
+DvdM_538c-005,"Della Faille, Jacques",Haarlem,Leiden,1595,15950220,15950220,15950221,Dutch,
+DvdM_538c-006,"Della Faille, Jacques",Haarlem,Leiden,1595,15950227,15950228,NA,Dutch,
+DvdM_538c-007,"Della Faille, Jacques",Haarlem,Leiden,1595,15950304,15950305,NA,Dutch,
+DvdM_538c-008,"Della Faille, Jacques",Haarlem,Leiden,1595,15950314,15950314,NA,Dutch,
+DvdM_538c-009,"Della Faille, Jacques",Haarlem,Leiden,1595,15950316,15950316,15950322,Dutch,
+DvdM_538c-010,"Della Faille, Jacques",Haarlem,Leiden,1595,15950319,15950320,15950322,Dutch,
+DvdM_538c-011,"Della Faille, Jacques",Haarlem,Leiden,1595,15950323,15950324,NA,Dutch,
+DvdM_538c-012,"Della Faille, Jacques",Haarlem,Leiden,1595,15950401,15950401,15950403,Dutch,
+DvdM_538c-013,"Della Faille, Jacques",Haarlem,Leiden,1595,15950405,15950405,15950408,Dutch,
+DvdM_538c-014,"Della Faille, Jacques",Haarlem,Leiden,1595,15950413,15950414,15950415,Dutch,
+DvdM_538c-016,"Della Faille, Jacques",Haarlem,Leiden,1595,15950415,15950415,NA,Dutch,
+DvdM_538c-017,"Beuckelaer, Melchior",Haarlem,Leiden,1595,15950420,15950420,NA,Dutch,
+DvdM_538c-018,"Della Faille, Jacques",Haarlem,Leiden,1595,15950422,15950422,15950423,Dutch,"Received date is not totally clear, but seems to be 22."
+DvdM_538c-019,"Della Faille, Jacques",Haarlem,Leiden,1595,15950504,15950505,15950506,Dutch,
+DvdM_538c-020,"Della Faille, Jacques",Haarlem,Leiden,1595,15950505,NA,NA,Dutch,
+DvdM_538c-021,"Della Faille, Jacques",Haarlem,Leiden,1595,15950509,NA,NA,Dutch,"This is a really long letter. There is no address on it, so I assume it was sent to Leiden."
+DvdM_538c-022,"Della Faille, Jacques",Haarlem,Leiden,1595,15950518,15950520,15950521,Dutch,
+DvdM_538c-023,"Della Faille, Jacques",Haarlem,Leiden,1595,15950523,15950523,15950524,Dutch,
+DvdM_538c-024,"Della Faille, Jacques",Haarlem,Leiden,1595,15950606,15950606,NA,Dutch,
+DvdM_538c-025,"Della Faille, Jacques",Haarlem,Leiden,1595,15950611,15950611,NA,Dutch,
+DvdM_538c-027,"Della Faille, Jacques",Haarlem,Leiden,1595,15950620,15950620,15950622,Dutch,
+DvdM_538c-028,"Della Faille, Jacques",Haarlem,Leiden,1595,15950626,15950626,15950627,Dutch,
+DvdM_538c-029,"Della Faille, Jacques",Haarlem,Leiden,1595,15950629,15950629,15950702,Dutch,
+DvdM_538c-030,"Della Faille, Jacques",Haarlem,Leiden,1595,15950702,15950703,15950703,Dutch,
+DvdM_538c-031,"Della Faille, Jacques",Haarlem,Leiden,1595,15950708,15950711,15950712,Dutch,
+DvdM_538c-032,"Della Faille, Jacques",Haarlem,Leiden,1595,15950712,15950712,NA,Dutch,
+DvdM_538c-033,"Della Faille, Jacques",Haarlem,Leiden,1595,15950712,15950712,15950712,Dutch,
+DvdM_538c-035,"Della Faille, Jacques",Haarlem,Leiden,1595,15950714,15950714,15950714,Dutch,
+DvdM_538c-036,"Della Faille, Jacques",Haarlem,Leiden,1595,15950717,15950718,15950719,Dutch,
+DvdM_538c-037,"Della Faille, Jacques",Haarlem,Leiden,1595,15950720,15950720,NA,Dutch,
+DvdM_538c-038,"Della Faille, Jacques",Haarlem,Leiden,1595,15950803,15950803,15950803,Dutch,
+DvdM_538c-040,"Della Faille, Jacques",Haarlem,Leiden,1595,15950806,15950807,15950809,Dutch,
+DvdM_538c-041,"Della Faille, Jacques",Haarlem,Leiden,1595,15950816,15950816,15950820,Dutch,
+DvdM_538c-042,"Della Faille, Jacques",Haarlem,Leiden,1595,15950810,15950810,15950811,Dutch,
+DvdM_538c-043,"Della Faille, Jacques",Haarlem,Leiden,1595,15950818,15950818,15950820,Dutch,
+DvdM_538c-044,"Della Faille, Jacques",Haarlem,Leiden,1595,15950831,15950831,NA,Dutch,
+DvdM_538c-045,"Della Faille, Jacques",Haarlem,Leiden,1595,15950915,15950916,NA,Dutch,
+DvdM_538c-046,"Della Faille, Jacques",Haarlem,Leiden,1595,15951003,15951003,NA,Dutch,
+DvdM_538c-047,"Della Faille, Jacques",Haarlem,Leiden,1595,15951007,15951007,NA,Dutch,
+DvdM_538c-048,"Della Faille, Jacques",Haarlem,Leiden,1595,15951019,15951019,NA,Dutch,
+DvdM_538c-049,"Della Faille, Jacques",Haarlem,Leiden,1595,15951022,15951023,15951024,Dutch,
+DvdM_538c-050,"Della Faille, Jacques",Haarlem,Leiden,1595,15951026,15951026,NA,Dutch,
+DvdM_538c-051,"Della Faille, Jacques",Haarlem,Leiden,1595,15951025,15951025,NA,Dutch,
+DvdM_538c-052,"Della Faille, Jacques",Haarlem,Leiden,1595,15951029,15951030,15951101,Dutch,
+DvdM_538c-053,"Della Faille, Jacques",Haarlem,Leiden,1595,15951102,15951102,15951103,Dutch,
+DvdM_538c-054,"Della Faille, Jacques",Haarlem,Leiden,1595,15951103,15951103,NA,Dutch,
+DvdM_538c-055,"Della Faille, Jacques",Haarlem,Leiden,1595,15951107,15951107,15951107,Dutch,
+DvdM_538c-056,"Della Faille, Jacques",Haarlem,Leiden,1595,15951111,15951112,15951115,Dutch,
+DvdM_538c-057,"Della Faille, Gillis",Haarlem,Leiden,1595,15951112,NA,NA,Dutch,
+DvdM_538c-058,"Della Faille, Jacques",Haarlem,Leiden,1595,15951116,15951116,15951118,Dutch,
+DvdM_538c-059,"Della Faille, Jacques",Haarlem,Leiden,1595,15951117,15951117,15951118,Dutch,
+DvdM_538c-060,"Della Faille, Jacques",Haarlem,Leiden,1595,15951127,15951127,15951130,Dutch,
+DvdM_538c-061,"Della Faille, Jacques",Haarlem,Leiden,1595,15951206,15951206,NA,Dutch,
+DvdM_538c-062,"Della Faille, Jacques",Haarlem,Leiden,1595,15951215,15951216,NA,Dutch,Contains an account for a total of £247.5.7 from 25 October 1595
+DvdM_538c-063,"Della Faille, Jacques",Haarlem,Leiden,1595,15951218,15951219,15951221,Dutch,
+DvdM_538c-064,"Della Faille, Jacques",Haarlem,Leiden,1595,15951221,15951221,15951221,Dutch,
+DvdM_538c-065,"Della Faille, Jacques",Haarlem,Leiden,1595,15951226,15951226,15951227,Dutch,
+DvdM_538c-066,"Della Faille, Jacques",Haarlem,Leiden,1595,15951229,15951229,15960101,Dutch,
+DvdM_538c-067,"Della Faille, Jacques",Haarlem,Leiden,1596,15960101,NA,NA,Dutch,
+DvdM_538c-068,"Della Faille, Gillis",Haarlem,Leiden,1596,15960105,15960105,15960106,Dutch,
+DvdM_538c-069,"Della Faille, Jacques",Haarlem,Leiden,1596,15960108,15960109,15960114,Dutch,
+DvdM_538c-070,"Della Faille, Jacques",Haarlem,Leiden,1596,15960112,15960112,15960114,Dutch,
+DvdM_538c-071,"Della Faille, Jacques",Haarlem,Leiden,1596,15960113,15960113,15960114,Dutch,
+DvdM_538c-072,"Della Faille, Jacques",Haarlem,Leiden,1596,15960115,15960115,NA,Dutch,
+DvdM_538c-073,"Della Faille, Jacques",Haarlem,Leiden,1596,15960116,15960116,15960117,Dutch,
+DvdM_538c-074,"Della Faille, Jacques",Haarlem,Leiden,1596,15960122,15960126,15960127,Dutch,
+DvdM_538c-075,"Della Faille, Jacques",Haarlem,Leiden,1596,15960124,15960124,15960127,Dutch,
+DvdM_538c-076,"Della Faille, Jacques",Haarlem,Leiden,1596,15960126,15960127,15960127,Dutch,
+DvdM_538c-077,"Reyniers, Jacques",Haarlem,Leiden,1596,15960129,15960131,15960204,Dutch,
+DvdM_538c-078,"Della Faille, Jacques",Haarlem,Leiden,1596,15960131,15960131,15960204,Dutch,
+DvdM_538c-079,"Della Faille, Jacques",Haarlem,Leiden,1596,15960204,15960204,15960205,Dutch,
+DvdM_538c-080,"Della Faille, Jacques",Haarlem,Leiden,1596,15960205,15960206,15960210,Dutch,
+DvdM_538c-081,"Della Faille, Jacques",Haarlem,Leiden,1596,15960206,15960206,15960210,Dutch,
+DvdM_538c-082,"Della Faille, Jacques",Haarlem,Leiden,1596,15960209,15960209,15960210,Dutch,
+DvdM_538c-083,"Della Faille, Jacques",Haarlem,Leiden,1596,15960213,15960213,15960214,Dutch,
+DvdM_538c-084,"Della Faille, Jacques",Haarlem,Leiden,1596,15960216,15960216,NA,Dutch,
+DvdM_538c-085,"Della Faille, Jacques",Haarlem,Leiden,1596,15960220,15960220,NA,Dutch,
+DvdM_538c-086,"Della Faille, Jacques",Haarlem,Leiden,1596,15960224,15960227,NA,Dutch,
+DvdM_538c-087,"Della Faille, Jacques",Haarlem,Leiden,1596,15960303,15960304,15960305,Dutch,
+DvdM_538c-088,"Della Faille, Jacques",Haarlem,Leiden,1596,15960306,15960306,NA,Dutch,
+DvdM_538c-089,"Della Faille, Jacques",Haarlem,Leiden,1596,15960310,15960310,NA,Dutch,
+DvdM_538c-090,"Della Faille, Jacques",Haarlem,Leiden,1596,15960319,15960320,NA,Dutch,
+DvdM_538c-091,"Hamels, Josina",Haarlem,Leiden,1596,15960320,15960322,NA,Dutch,
+DvdM_538c-092,"Della Faille, Jacques",Haarlem,Leiden,1596,15960320,15960321,NA,Dutch,
+DvdM_538c-093,"Della Faille, Jacques",Haarlem,Leiden,1596,15960320,15960320,NA,Dutch,
+DvdM_538c-094,"Della Faille, Jacques",Haarlem,Leiden,1596,15960322,15960322,15960324,Dutch,
+DvdM_538c-095,"Della Faille, Jacques",Haarlem,Leiden,1596,15960323,15960324,15960324,Dutch,
+DvdM_538c-096,"Della Faille, Jacques",Haarlem,Leiden,1596,15960404,15960404,NA,Dutch,
+DvdM_538c-097,"Della Faille, Jacques",Haarlem,Leiden,1596,15960430,15960430,15960501,Dutch,
+DvdM_538c-098,"Della Faille, Jacques",Haarlem,Leiden,1596,15960502,15960502,15960503,Dutch,
+DvdM_538c-099,"Della Faille, Jacques",Haarlem,Leiden,1596,15960504,15960504,15960513,Dutch,
+DvdM_538c-100,"Della Faille, Jacques",Haarlem,Leiden,1596,15960515,15960516,15960519,Dutch,
+DvdM_538c-101,"Della Faille, Jacques",Haarlem,Leiden,1596,15960521,15960521,15960526,Dutch,
+DvdM_538c-102,"Della Faille, Jacques",Haarlem,Leiden,1596,15960523,15960523,15960526,Dutch,
+DvdM_538c-103,"Della Faille, Jacques",Haarlem,Leiden,1596,15960525,15960525,15960526,Dutch,
+DvdM_538c-104,"Della Faille, Jacques",Haarlem,Leiden,1596,15960528,15960528,NA,Dutch,
+DvdM_538c-105,"Della Faille, Jacques",Haarlem,Leiden,1596,15960529,15960531,15960531,Dutch,
+DvdM_538c-106,"Della Faille, Jacques",Haarlem,Leiden,1596,15960601,15960603,NA,Dutch,Contains an account
+DvdM_538c-107,"Reyniers, Jacques",Haarlem,The Hague,1596,15960604,15960604,NA,Dutch,At the house of Raatheer Meerganck
+DvdM_538c-108,"Della Faille, Jacques",Haarlem,Leiden,1596,15960607,15960607,NA,Dutch,
+DvdM_538c-109,"Della Faille, Jacques",Haarlem,Leiden,1596,15960607,15960607,NA,Dutch,
+DvdM_538c-110,"Hamels, Josina",Haarlem,Leiden,1596,15960608,15960608,NA,Dutch,
+DvdM_538c-111,"Della Faille, Jacques",Haarlem,Leiden,1596,15960608,15960608,NA,Dutch,
+DvdM_538c-112,"Della Faille, Jacques",Haarlem,Leiden,1596,15960618,15960618,15960620,Dutch,
+DvdM_538c-113,"Della Faille, Jacques",Haarlem,Leiden,1596,15960703,15960703,15960704,Dutch,
+DvdM_538c-114,"Della Faille, Jacques",Haarlem,Leiden,1596,15960705,15960705,NA,Dutch,
+DvdM_538c-115,"Della Faille, Jacques",Haarlem,Leiden,1596,15960719,15960719,15960727,Dutch,
+DvdM_538c-116,"Della Faille, Jacques",Haarlem,Leiden,1596,15960724,15960724,15960727,Dutch,
+DvdM_538c-117,"Della Faille, Jacques",Haarlem,Leiden,1596,15960728,15960728,15960803,Dutch,
+DvdM_538c-118,"Della Faille, Jacques",Haarlem,Leiden,1596,15960801,15960801,15960807,Dutch,
+DvdM_538c-119,"Della Faille, Jacques",Haarlem,Leiden,1596,15960807,15960807,15960807,Dutch,
+DvdM_538c-120,"Della Faille, Jacques",Haarlem,Leiden,1596,15960808,15960808,NA,Dutch,
+DvdM_538c-121,"Della Faille, Jacques",Haarlem,Leiden,1596,15960820,15960820,NA,Dutch,
+DvdM_538c-122,"Della Faille, Jacques",Haarlem,Leiden,1596,15960902,15960902,NA,Dutch,
+DvdM_538c-123,"Della Faille, Jacques",Haarlem,Leiden,1596,15960903,15960903,NA,Dutch,
+DvdM_538c-124,"Della Faille, Jacques",Haarlem,Leiden,1596,15960914,15960917,15960917,Dutch,
+DvdM_538c-125,"Della Faille, Jacques",Haarlem,Leiden,1596,15960919,15960919,15960924,Dutch,
+DvdM_538c-126,"Della Faille, Jacques",Haarlem,Leiden,1596,15960920,15960921,15960924,Dutch,
+DvdM_538c-127,"Della Faille, Jacques",Haarlem,Leiden,1596,15960923,NA,15960924,Dutch,
+DvdM_538c-128,"Della Faille, Jacques",Haarlem,Leiden,1596,15960925,NA,NA,Dutch,
+DvdM_538c-129,"Della Faille, Jacques",Haarlem,Leiden,1596,15960929,15961001,15961001,Dutch,
+DvdM_538c-130,"Della Faille, Jacques",Haarlem,Leiden,1596,15961007,15961007,15961020,Dutch,
+DvdM_538c-131,"Della Faille, Jacques",Haarlem,Leiden,1596,15961008,15961009,15961020,Dutch,
+DvdM_538c-132,"Della Faille, Jacques",Haarlem,Leiden,1596,15961014,15961014,15961020,Dutch,
+DvdM_538c-133,"Della Faille, Jacques",Haarlem,Leiden,1596,15961015,15961015,15961020,Dutch,
+DvdM_538c-134,"Della Faille, Jacques",Haarlem,Leiden,1596,15961017,15961017,15961020,Dutch,
+DvdM_538c-135,"Della Faille, Jacques",Haarlem,Leiden,1596,15961021,15961022,NA,Dutch,
+DvdM_538c-136,"Della Faille, Jacques",Haarlem,Leiden,1596,15961028,15961028,NA,Dutch,
+DvdM_538c-137,"Della Faille, Jacques",Haarlem,Leiden,1596,15961101,15961101,NA,Dutch,
+DvdM_538c-138,"Della Faille, Jacques",Haarlem,Leiden,1596,15961111,15961111,15961112,Dutch,
+DvdM_538c-139,"Della Faille, Jacques",Haarlem,Leiden,1596,15961113,NA,15961113,Dutch,
+DvdM_538c-140,"Della Faille, Jacques",Haarlem,Leiden,1596,15961114,15961115,15961117,Dutch,
+DvdM_538c-141,"Della Faille, Jacques",Haarlem,Leiden,1596,15961118,15961118,NA,Dutch,
+DvdM_538c-142,"Della Faille, Jacques",Haarlem,Leiden,1596,15961122,15961122,NA,Dutch,
+DvdM_538c-143,"Della Faille, Jacques",Haarlem,Leiden,1596,15961125,15961125,NA,Dutch,
+DvdM_538c-144,"Della Faille, Jacques",Haarlem,Leiden,1596,15961127,15961128,NA,Dutch,
+DvdM_538c-145,"Della Faille, Jacques",Haarlem,Leiden,1596,15961128,15961201,15961201,Dutch,
+DvdM_538c-146,"Della Faille, Jacques",Haarlem,Leiden,1596,15961201,NA,NA,Dutch,
+DvdM_538c-147,"Della Faille, Hester",Haarlem,Leiden,1596,15961201,NA,NA,Dutch,
+DvdM_538c-149,"Della Faille, Jacques",Haarlem,Leiden,1596,15961203,15961203,NA,Dutch,
+DvdM_538c-150,"Della Faille, Jacques",Haarlem,Leiden,1596,15961204,15961204,NA,Dutch,
+DvdM_538c-151,"Della Faille, Jacques",Haarlem,Leiden,1596,15961207,15961208,NA,Dutch,
+DvdM_538c-152,"Della Faille, Jacques",Haarlem,Leiden,1596,15961219,15961220,15961222,Dutch,
+DvdM_538c-153,"Della Faille, Jacques",Haarlem,Leiden,1596,15961221,15961221,15961222,Dutch,
+DvdM_538c-154,"Della Faille, Jacques",Haarlem,Leiden,1596,15961223,15961223,NA,Dutch,"There is a date for response, but I cannot read it."
+DvdM_538c-155,"Della Faille, Jacques",Haarlem,Leiden,1596,15961225,15961225,NA,Dutch,
+DvdM_538c-156/157,"Della Faille, Jacques",Haarlem,Leiden,1596,15961225,15961226,15970111,Dutch,
+DvdM_538c-158,"Della Faille, Jacques",Haarlem,Leiden,1597,15970104,15970104,15970105,Dutch,
+DvdM_538c-159,"Della Faille, Jacques",Haarlem,Leiden,1597,15970106,15970106,15970111,Dutch,
+DvdM_538c-160,"Della Faille, Jacques",Haarlem,Leiden,1597,15970109,15970109,15970111,Dutch,
+DvdM_538c-161,"Della Faille, Jacques",Haarlem,Leiden,1597,15970113,15970113,15970116,Dutch,
+DvdM_538c-162,"Della Faille, Jacques",Haarlem,Leiden,1597,15970114,15970115,15970116,Dutch,
+DvdM_538c-163,"Della Faille, Jacques",Haarlem,Leiden,1597,15970117,15970117,15970117,Dutch,
+DvdM_538c-164,"Della Faille, Jacques",Haarlem,Leiden,1597,15970122,15970122,NA,Dutch,
+DvdM_538c-165,"Della Faille, Jacques",Haarlem,Leiden,1597,15970124,15970124,NA,Dutch,
+DvdM_538c-166,"Della Faille, Jacques",Haarlem,Leiden,1597,15970129,15970129,15970210,Dutch,
+DvdM_538c-167,"Della Faille, Jacques",Haarlem,Leiden,1597,15970131,15970131,15970201,Dutch,
+DvdM_538c-168,"Della Faille, Jacques",Haarlem,Leiden,1597,15970204,15970204,15970212,Dutch,
+DvdM_538c-169,"Della Faille, Jacques",Haarlem,Leiden,1597,15970207,15970208,15970210,Dutch,
+DvdM_538c-170,"Della Faille, Jacques",Haarlem,Leiden,1597,15970212,15970212,15970215,Dutch,
+DvdM_538c-171,"Della Faille, Jacques",Haarlem,Leiden,1597,15970217,15970217,15970219,Dutch,
+DvdM_538c-172,"Della Faille, Jacques",Haarlem,Leiden,1597,15970218,15970218,15970219,Dutch,
+DvdM_538c-173,"Della Faille, Jacques",Haarlem,Leiden,1597,15970221,15970221,NA,Dutch,"There is a date for response, but I cannot read it."
+DvdM_538c-174,"Della Faille, Jacques",Haarlem,Leiden,1597,15970228,15970302,NA,Dutch,
+DvdM_538c-175,"Della Faille, Jacques",Haarlem,Leiden,1597,15970306,15970307,15970312,Dutch,
+DvdM_538c-176,"Della Faille, Jacques",Haarlem,Leiden,1597,15970311,15970311,15970312,Dutch,
+DvdM_538c-177,"Della Faille, Jacques",Haarlem,Leiden,1597,15970313,15970313,15970319,Dutch,
+DvdM_538c-178,"Della Faille, Jacques",Haarlem,Leiden,1597,15970330,15970401,NA,Dutch,
+DvdM_538c-179,"Della Faille, Jacques",Haarlem,Amsterdam,1597,15970424,15970424,NA,Dutch,
+DvdM_538c-180,"Della Faille, Jacques",Haarlem,Leiden,1597,15970427,15970427,15970502,Dutch,
+DvdM_538c-181,"Della Faille, Jacques",Haarlem,Leiden,1597,15970501,15970502,15970502,Dutch,
+DvdM_538c-182,"Della Faille, Jacques",Haarlem,Leiden,1597,15970506,15970506,NA,Dutch,
+DvdM_538c-183,"Della Faille, Jacques",Haarlem,Leiden,1597,15970511,15970511,NA,Dutch,
+DvdM_538c-184,"Della Faille, Jacques",Haarlem,Leiden,1597,15970519,NA,NA,Dutch,
+DvdM_538c-185,"Della Faille, Jacques",Haarlem,Leiden,1597,15970525,15970526,NA,Dutch,
+DvdM_538c-186,"Della Faille, Jacques",Haarlem,Leiden,1597,15970606,15970606,15970607,Dutch,
+DvdM_538c-187,"Della Faille, Jacques",Haarlem,Leiden,1597,15970607,15970607,NA,Dutch,
+DvdM_538c-188,"Della Faille, Jacques",Haarlem,Leiden,1597,15970608,15970608,NA,Dutch,
+DvdM_538c-189,"Della Faille, Jacques",Haarlem,Leiden,1597,15970610,15970611,NA,Dutch,
+DvdM_538c-190,"Della Faille, Jacques",Haarlem,Leiden,1597,15970617,15970617,NA,Dutch,"Date sent is not noted, but there is a date for received, so I just made sent date the same."
+DvdM_538c-191,"Della Faille, Jacques",Haarlem,Leiden,1597,15970621,15970621,NA,Dutch,
+DvdM_538c-192,"Della Faille, Jacques",Haarlem,Leiden,1597,15970703,15970703,NA,Dutch,
+DvdM_538c-193,"Della Faille, Jacques",Haarlem,Leiden,1597,15970718,15970718,NA,Dutch,
+DvdM_538c-194,"Della Faille, Jacques",Haarlem,Leiden,1597,15970723,15970723,NA,Dutch,
+DvdM_538c-195,"Della Faille, Jacques",Haarlem,Leiden,1597,15970729,15970729,NA,Dutch,
+DvdM_538c-196,"Della Faille, Jacques",Haarlem,Leiden,1597,15970802,15970802,NA,Dutch,
+DvdM_538c-197,"Della Faille, Jacques",Rotterdam,Amsterdam,1597,15970821,15970822,NA,Dutch,Sent to the house of Alart Sicx
+DvdM_538c-198,"Della Faille, Jacques",Haarlem,Leiden,1597,15970907,15970907,NA,Dutch,
+DvdM_538c-199a,"Della Faille, Jacques",Haarlem,Amsterdam,1597,15970911,15970911,NA,Dutch,
+DvdM_538c-199b,"Della Faille, Jacques",Haarlem,Amsterdam,1597,15970919,15970920,15970921,Dutch,
+DvdM_538c-200,"Della Faille, Jacques",Haarlem,Leiden,1597,15971013,15971014,15971017,Dutch,
+DvdM_538c-201,"Della Faille, Jacques",Haarlem,Leiden,1597,15971020,15971020,NA,Dutch,
+DvdM_538c-202,"Della Faille, Jacques",Haarlem,Leiden,1597,15971104,15971104,15971105,Dutch,
+DvdM_538c-203,"Della Faille, Jacques",The Hague,Leiden,1597,15971105,15971105,NA,Dutch,
+DvdM_538c-204,"Della Faille, Jacques",The Hague,Leiden,1597,15971106,15971106,NA,Dutch,
+DvdM_538c-205,"Della Faille, Jacques",Haarlem,Leiden,1597,15971109,15971109,NA,Dutch,
+DvdM_538c-207,"Della Faille, Jacques",Haarlem,Leiden,1597,15971120,15971120,NA,Dutch,
+DvdM_538c-208,"Della Faille, Jacques",Haarlem,Leiden,1597,15971205,15971205,15971206,Dutch,This letter does not have the date at the top like Jacques usually does. It also does not have an address.
+DvdM_538c-209,"Arele, Jacques van ",Haarlem,Leiden,1597,15971208,15971208,NA,Dutch,"Must have been written on behalf of Jacques della Faille, because it says Jacques della Faille on the back."
+DvdM_538c-210,"Della Faille, Jacques",Haarlem,Leiden,1597,15971209,15971210,NA,Dutch,
+DvdM_538c-211,"Della Faille, Jacques",Haarlem,Leiden,1597,15971222,15971222,NA,Dutch,
+DvdM_538c-212,"Della Faille, Jacques",Haarlem,Leiden,1597,15971226,15971226,NA,Dutch,
+DvdM_538d-002,"Della Faille, Jacques",Haarlem,Antwerp,1598,15980112,15980129,NA,Dutch,This is in response to Daniel leaving to go see Marten after he said that he was sick.
+DvdM_538d-004,"Della Faille, Jacques",Haarlem,Leiden,1598,15980212,15980212,NA,Dutch,
+DvdM_538d-005,"Della Faille, Jacques",Amsterdam,Leiden,1598,15980216,15980217,NA,Dutch,
+DvdM_538d-006,"Della Faille, Jacques",Haarlem,Leiden,1598,15980221,15980221,NA,Dutch,
+DvdM_538d-007,"Della Faille, Jacques",Haarlem,Leiden,1598,15980225,15980225,NA,Dutch,
+DvdM_538d-008,"Della Faille, Jacques",Haarlem,Leiden,1598,15980321,15980322,NA,Dutch,
+DvdM_538d-009,"Della Faille, Jacques",Haarlem,Leiden,1598,15980408,NA,NA,Dutch,
+DvdM_538d-010,"Della Faille, Jacques",Haarlem,Leiden,1598,15980419,15980419,NA,Dutch,
+DvdM_538d-011,"Della Faille, Jacques",Haarlem,Leiden,1598,15980426,15980427,NA,Dutch,
+DvdM_538d-013,"Della Faille, Jacques",Haarlem,Leiden,1598,15980503,NA,NA,Dutch,
+DvdM_538d-014,"Reyniers, Jacques",Haarlem,Leiden,1598,15980509,NA,NA,Dutch,
+DvdM_538d-015,"Della Faille, Jacques",Haarlem,Leiden,1598,15980516,15980516,NA,Dutch,
+DvdM_538d-016,"Della Faille, Jacques",Haarlem,Leiden,1598,15980531,NA,NA,Dutch,
+DvdM_538d-017,"Della Faille, Jacques",Haarlem,Amsterdam,1598,15980609,NA,NA,Dutch,
+DvdM_538d-018,"Della Faille, Jacques",Haarlem,Leiden,1598,15980613,15980613,NA,Dutch,
+DvdM_538d-019,"Della Faille, Jacques",Haarlem,Leiden,1598,15980722,NA,NA,Dutch,
+DvdM_538d-021/22,"Della Faille, Jacques",Haarlem,Leiden,1598,15980809,15980809,15980812,Dutch,
+DvdM_538d-023,"Della Faille, Jacques",Haarlem,Leiden,1598,15980819,15980819,15980822,Dutch,
+DvdM_538d-024,"Della Faille, Jacques",Haarlem,Leiden,1598,15980908,NA,NA,Dutch,
+DvdM_538d-025,"Della Faille, Jacques",Haarlem,Leiden,1598,15980913,15980913,15980914,Dutch,
+DvdM_538d-026,"Della Faille, Jacques",Haarlem,Leiden,1598,15980925,15980925,NA,Dutch,
+DvdM_538d-027,"Della Faille, Jacques",Haarlem,The Hague,1598,15980929,15980929,NA,Dutch,
+DvdM_538d-028,"Della Faille, Jacques",Haarlem,Leiden,1598,15981031,NA,NA,Dutch,
+DvdM_538d-029,"Della Faille, Jacques",Haarlem,Leiden,1598,15981114,15981115,NA,Dutch,
+DvdM_538d-030,"Della Faille, Jacques",Haarlem,Leiden,1598,15981123,15981124,15981124,Dutch,
+DvdM_538d-031,"Della Faille, Jacques",Haarlem,Leiden,1598,15981126,15981126,NA,Dutch,"No date on the letter, but it says it was sent 3 days after the previous letter st 30."
+DvdM_538d-032,"Della Faille, Jacques",Haarlem,Leiden,1598,15981127,NA,NA,Dutch,
+DvdM_538d-034,"Della Faille, Jacques",Haarlem,Leiden,1598,15981208,NA,NA,Dutch,
+DvdM_538d-035,"Della Faille, Jacques",Haarlem,Leiden,1598,15981209,NA,NA,Dutch,
+DvdM_538d-036,"Della Faille, Jacques",Haarlem,Leiden,1598,15981216,NA,NA,Dutch,
+DvdM_538d-038,"Della Faille, Jacques",Haarlem,Leiden,1598,15981217,15981217,NA,Dutch,
+DvdM_538d-039,"Della Faille, Jacques",Haarlem,Leiden,1598,15981219,NA,NA,Dutch,
+DvdM_538d-040,"Della Faille, Jacques",Haarlem,Leiden,1598,15981226,15981227,15981227,Dutch,
+DvdM_538d-041,"Della Faille, Jacques",Haarlem,Leiden,1599,15990103,15990104,15990104,Dutch,
+DvdM_538d-041a,"Della Faille, Jacques",Haarlem,Leiden,1599,15990105,NA,NA,Dutch,
+DvdM_538d-042,"Della Faille, Jacques",Haarlem,Leiden,1599,15990109,15990110,NA,Dutch,Letter contains an account
+DvdM_538d-043,"Della Faille, Jacques",Haarlem,Leiden,1599,15990120,15990120,NA,Dutch,
+DvdM_538d-044,"Della Faille, Jacques",Haarlem,Amsterdam,1599,15990130,15990130,NA,Dutch,
+DvdM_538d-045,"Della Faille, Jacques",Haarlem,Leiden,1599,15990205,15990206,15990206,Dutch,
+DvdM_538d-046,"Della Faille, Jacques",Haarlem,Leiden,1599,15990206,15990206,15990208,Dutch,
+DvdM_538d-047/48,"Della Faille, Jacques",Haarlem,Leiden,1599,15990311,15990311,NA,Dutch,
+DvdM_538d-049,"Della Faille, Jacques",Haarlem,Leiden,1599,15990316,15990316,15990317,Dutch,
+DvdM_538d-051,"Della Faille, Jacques",Haarlem,Leiden,1599,15990318,15990318,15990322,Dutch,
+DvdM_538d-052,"Della Faille, Jacques",Haarlem,Leiden,1599,15990321,15990323,15990324,Dutch,
+DvdM_538d-053,"Della Faille, Jacques",Haarlem,Leiden,1599,15990328,15990329,15990329,Dutch,
+DvdM_538d-054,"Della Faille, Jacques",Haarlem,Leiden,1599,15990330,NA,NA,Dutch,
+DvdM_538d-055,"Della Faille, Jacques",Haarlem,Leiden,1599,15990409,15990409,NA,Dutch,"There is no date on this letter, but I put the date received as the date sent."
+DvdM_538d-056,"Della Faille, Jacques",Haarlem,Leiden,1599,15990414,NA,NA,Dutch,
+DvdM_538d-057,"Della Faille, Jacques",Haarlem,Leiden,1599,15990419,15990419,NA,Dutch,
+DvdM_538d-058,"Della Faille, Jacques",Haarlem,Leiden,1599,15990424,NA,NA,Dutch,
+DvdM_538d-059,"Della Faille, Jacques",Haarlem,Leiden,1599,15990425,15990425,NA,Dutch,
+DvdM_538d-061/62,"Della Faille, Jacques",Haarlem,Amsterdam,1599,15990515,NA,NA,Dutch,
+DvdM_538d-063,"Della Faille, Jacques",Haarlem,Leiden,1599,15990525,NA,NA,Dutch,"Directed to Hester, but addressed to Daniel"
+DvdM_538d-064,"Della Faille, Jacques",Haarlem,Leiden,1599,15990527,NA,NA,Dutch,"Directed to Hester, but addressed to Daniel"
+DvdM_538d-065,"Della Faille, Jacques",Haarlem,Leiden,1599,15990604,NA,NA,Dutch,"Directed to Hester, but addressed to Daniel"
+DvdM_538d-066,"Della Faille, Jacques",Haarlem,Leiden,1599,15990723,15990724,15990726,Dutch,
+DvdM_538d-067,"Della Faille, Jacques",Haarlem,Leiden,1599,15990728,15990728,NA,Dutch,
+DvdM_538d-068,"Della Faille, Jacques",Haarlem,Leiden,1599,15990730,15990801,NA,Dutch,
+DvdM_538d-070,"Della Faille, Jacques",Haarlem,Leiden,1599,15990803,15990803,NA,Dutch,
+DvdM_538d-071,"Della Faille, Jacques",Haarlem,Leiden,1599,15990808,15990808,NA,Dutch,
+DvdM_538d-073,"Della Faille, Jacques",Haarlem,Leiden,1599,15990905,15990905,15990915,Dutch,
+DvdM_538d-074,"Della Faille, Jacques",Haarlem,Leiden,1599,15990923,15990923,15991006,Dutch,
+DvdM_538d-075,"Della Faille, Jacques",Haarlem,Leiden,1599,15991007,15991010,15991010,Dutch,
+DvdM_538d-076,"Della Faille, Jacques",Haarlem,Leiden,1599,15991106,15991108,15991109,Dutch,
+DvdM_538d-078,"Hamels, Josina",Haarlem,Leiden,1599,15991108,NA,15991109,Dutch,
+DvdM_538d-079,"Della Faille, Jacques",Haarlem,Leiden,1599,15991109,15991109,15991110,Italian,
+DvdM_538d-080,"Della Faille, Jacques",Haarlem,Leiden,1599,15991112,15991112,NA,Dutch,
+DvdM_538d-081,"Della Faille, Jacques",Haarlem,Leiden,1599,15991113,15991113,NA,Dutch,
+DvdM_538d-082,"Della Faille, Jacques",Haarlem,Leiden,1599,15991115,15991116,15991117,Dutch,
+DvdM_538d-083,"Della Faille, Jacques",Haarlem,Leiden,1599,15991204,15991211,15991215,Dutch,
+DvdM_538d-084,"Della Faille, Jacques",Haarlem,Middelburg,1599,15991211,15991224,NA,Dutch,
+DvdM_538d-086,"Della Faille, Jacques",Haarlem,Leiden,1599,15991224,15991224,15991228,Dutch,
+DvdM_538d-087,"Della Faille, Jacques",Haarlem,Leiden,1600,16000103,16000103,16000104,Dutch,Back of the letter says that it was noch geschreven on 8 January
+DvdM_538d-088,"Della Faille, Jacques",Haarlem,Leiden,1600,16000113,16000114,NA,Dutch,
+DvdM_538d-089,"Della Faille, Jacques",Haarlem,Leiden,1600,16000131,16000201,NA,Dutch,"No specific date, but it seems to be from last day of January, because it says 1 February on the back."
+DvdM_538d-090,"Wissel, Hendrick van",Haarlem,Leiden,1600,16000302,16000302,NA,Dutch,
+DvdM_538d-091,"Della Faille, Jacques",Haarlem,Leiden,1600,16000302,16000302,NA,Dutch,
+DvdM_538d-092,"Hamels, Josina",Haarlem,Bremen,1600,16000316,16000615,NA,Dutch,"Addressed to Leiden, but actually sent to Bremen. Not sure why there was such a delay."
+DvdM_538d-093/94,"Della Faille, Jacques",Haarlem,Leiden,1600,16000323,16000325,NA,Dutch,
+DvdM_538d-095,"Della Faille, Jacques",Haarlem,Leiden,1600,16000325,16000326,NA,Dutch,
+DvdM_538d-096,"Della Faille, Jacques",Haarlem,Middelburg,1600,16000327,16000407,NA,Dutch,
+DvdM_538d-097,"Della Faille, Jacques",Haarlem,Leiden,1600,16000422,16000424,16000504,Dutch,
+DvdM_538d-098,"Della Faille, Jacques",Haarlem,Leiden,1600,16000429,16000429,NA,Dutch,
+DvdM_538d-099/100,"Della Faille, Jacques",Haarlem,Leiden,1600,16000509,NA,16000511,Dutch,
+DvdM_538d-101,"Della Faille, Jacques",Haarlem,Leiden,1600,16000523,16000523,NA,Dutch,
+DvdM_538d-102,"Della Faille, Jacques",Haarlem,Leiden,1600,16000527,NA,NA,Dutch,
+DvdM_538d-103,"Poll, Cornelis van den",The Hague,Leiden,1600,16000531,NA,NA,Dutch,Cornelis van den Poll was the attorney of Jacques in DFL 8-29. Also sent to Jacques.
+DvdM_538d-104,"Wissel, Hendrick van",Haarlem,Leiden,1600,16000601,16000601,16000603,Dutch,
+DvdM_538d-105,"Wissel, Hendrick van",Haarlem,Leiden,1600,16000605,16000605,NA,Dutch,Also includes writing from Josina Hamels at the bottom.
+DvdM_538d-106,"Wissel, Hendrick van",Haarlem,Leiden,1600,16000607,16000607,NA,Dutch,
+DvdM_538d-107,"Hamels, Josina",Haarlem,Amsterdam,1600,16000612,16000612,NA,Dutch,
+DvdM_538d-108,"Hamels, Josina",Haarlem,Amsterdam,1600,16000613,16000613,NA,Dutch,
+DvdM_538d-110,"Della Faille, Jacques",Haarlem,Leiden,1600,16000627,16000627,NA,Dutch,
+DvdM_538d-111,"Della Faille, Jacques",Haarlem,Leiden,1600,16000702,NA,NA,Dutch,
+DvdM_538d-112,"Della Faille, Jacques",Haarlem,Leiden,1600,16000708,16000708,16000720,Dutch,
+DvdM_538d-113,"Della Faille, Jacques",Haarlem,Leiden,1600,16000716,16000716,16000720,Dutch,
+DvdM_538d-114,"Hamels, Josina",Haarlem,Leiden,1600,16000729,NA,NA,Dutch,
+DvdM_539-01,"Della Faille, Joris",Dordrecht,Haarlem,1585,15850325,NA,NA,Dutch,RGP-100. Son of Marten. Likely from Dordrecht.
+DvdM_539-02,"Malapert, Nicolas",Frankfurt,Leiden,1600,16000515,NA,NA,NA,Changed date to new style. Received date is unclear.
+DvdM_540,"Della Faille, Piat",Verona,Leiden,1598,15980530,15980615,NA,Italian,Must have been sent along with letter from Maria della Faille (273-2)
+DvdM_548-01,"Goyvaerts, Hendrick",Frankfurt,Antwerp,1582,15820922,NA,NA,NA,
+DvdM_553-01,"Hoest, Mattheus de",Antwerp,Delft,1584,15841110,NA,NA,Dutch,RGP-37
+DvdM_553-02,"Hoest, Mattheus de",Antwerp,Middelburg,1588,15881102,NA,NA,Dutch,
+DvdM_553-03,"Hoest, Mattheus de",Leiden,Antwerp,1591,15910212,NA,NA,Dutch,
+DvdM_553-04,"Hoest, Mattheus de",Leiden,Bremen,1591,15910920,NA,NA,Dutch,
+DvdM_553-05,"Hoest, Mattheus de",Leiden,Leiden,1591,15911010,NA,NA,NA,
+DvdM_553-06,"Hoest, Mattheus de",Leiden,Antwerp,1594,15940829,15940910,NA,Dutch,
+DvdM_553-07,"Hoest, Mattheus de",Leiden,Antwerp,1594,15940916,15940923,NA,Dutch,
+DvdM_553-08,"Hoest, Mattheus de",Leiden,Bremen,1595,15950120,15950201,NA,Dutch,
+DvdM_553-09,"Hoest, Mattheus de",Leiden,Haarlem,1595,15950705,NA,NA,Dutch,To the house of Jacques della Faille
+DvdM_553-10,"Hoest, Mattheus de",Leiden,Middelburg,1599,15991212,15991216,NA,Dutch,
+DvdM_558-001,"Janssen van der Meulen, Peeter",Antwerp,Delft,1584,15841029,NA,NA,Dutch,RGP-29
+DvdM_558-001a,"Janssen van der Meulen, Peeter",Antwerp,Delft,1584,15841109,NA,NA,Dutch,RGP-35
+DvdM_558-002,"Janssen van der Meulen, Peeter",Antwerp,Delft,1584,15841210,NA,NA,Dutch,RGP-57
+DvdM_558-003,"Janssen van der Meulen, Peeter",Antwerp,Delft,1584,15841230,NA,NA,Dutch,RGP-63
+DvdM_558-004,"Janssen van der Meulen, Peeter",Antwerp,Delft,1585,15850904,NA,NA,Dutch,RGP-171. No listed destination.
+DvdM_558-005,"Janssen van der Meulen, Peeter",Antwerp,Delft,1585,15850906,NA,NA,Dutch,RGP-LXV. Addressed to Andries
+DvdM_558-006,"Janssen van der Meulen, Peeter",Stade,Bremen,1589,15890618,15890619,NA,Dutch,
+DvdM_558-007,"Janssen van der Meulen, Peeter",Stade,Bremen,1589,15890806,NA,NA,NA,
+DvdM_558-008,"Janssen van der Meulen, Peeter",Lille,Vlissingen,1589,15901216,NA,NA,Dutch,In the fleet to Lille.
+DvdM_558-009,"Janssen van der Meulen, Peeter",Middelburg,Antwerp,1591,15910213,NA,NA,Dutch,St 9-10: 13 February 1591 and 25 February 1591
+DvdM_558-010,"Janssen van der Meulen, Peeter",Middelburg,Antwerp,1591,15910225,NA,NA,Dutch,
+DvdM_558-011,"Janssen van der Meulen, Peeter",Newbury,Bremen,1591,15910816,NA,NA,Dutch,Changed date to new style
+DvdM_558-012,"Janssen van der Meulen, Peeter",Newbury,Bremen,1591,15910917,15911026,NA,Dutch,Changed both dates to new style
+DvdM_558-013,"Janssen van der Meulen, Peeter",Newbury,Bremen,1591,15911019,15911118,NA,Dutch,Changed both dates to new style
+DvdM_558-014,"Janssen van der Meulen, Peeter",Newbury,Leiden,1591,15911114,NA,NA,NA,Changed date to new style. Addressed to Bremen but received in Leiden.
+DvdM_558-015,"Janssen van der Meulen, Peeter",Newbury,Leiden,1591,15911208,NA,NA,Dutch,Changed date to new style. Addressed to Bremen but received in Leiden.
+DvdM_558-016,"Janssen van der Meulen, Peeter",Newbury,Leiden,1591,15911224,15920105,NA,Dutch,Changed date to new style
+DvdM_558-017,"Janssen van der Meulen, Peeter",Newbury,Leiden,1592,15920203,15920224,NA,Dutch,Changed date to new style
+DvdM_558-018,"Janssen van der Meulen, Peeter",Newbury,Leiden,1592,15920219,15920315,NA,Dutch,Changed date to new style
+DvdM_558-019,"Janssen van der Meulen, Peeter",Newbury,Leiden,1592,15920311,15920322,NA,Dutch,Changed date to new style
+DvdM_558-020,"Janssen van der Meulen, Peeter",Newbury,Leiden,1592,15920414,NA,NA,Dutch,Changed date to new style
+DvdM_558-021,"Janssen van der Meulen, Peeter",Newbury,Leiden,1592,15920510,15920601,NA,Dutch,Changed date to new style
+DvdM_558-022,"Janssen van der Meulen, Peeter",Newbury,Leiden,1592,15920623,15920702,NA,Dutch,Changed date to new style
+DvdM_558-023,"Janssen van der Meulen, Peeter",Newbury,Leiden,1592,15920810,15920925,NA,Dutch,Changed date to new style
+DvdM_558-024,"Janssen van der Meulen, Peeter",Newbury,Leiden,1592,15920922,15921013,NA,Dutch,Changed date to new style
+DvdM_558-025–6,"Janssen van der Meulen, Peeter",London,Leiden,1592,15921031,15921108,NA,Dutch,Changed date to new style
+DvdM_558-027,"Janssen van der Meulen, Peeter",London,Leiden,1592,15921122,15921208,NA,Dutch,Changed date to new style
+DvdM_558-028,"Janssen van der Meulen, Peeter",Leiden,Delft,1593,15930121,15930121,NA,Dutch,
+DvdM_558-029,"Janssen van der Meulen, Peeter",Leiden,Delft,1593,15930124,15930124,NA,Dutch,
+DvdM_558-031,"Janssen van der Meulen, Peeter",Leiden,Haarlem,1593,15930325,NA,NA,Dutch,
+DvdM_558-032,"Janssen van der Meulen, Peeter",Middelburg,Leiden,1593,15930505,15930509,NA,Dutch,
+DvdM_558-034,"Janssen van der Meulen, Peeter",Middelburg,Leiden,1593,15930515,15930517,NA,Dutch,
+DvdM_558-042,"Janssen van der Meulen, Peeter",Leiden,Amsterdam,1593,15930903,NA,NA,Dutch,
+DvdM_558-043,"Janssen van der Meulen, Peeter",Leiden,Bremen,1593,15930907,NA,NA,Dutch,Sent a letter once a week to Daniel in Bremen for 5 straight weeks
+DvdM_558-045,"Janssen van der Meulen, Peeter",Leiden,Bremen,1593,15930914,NA,NA,Dutch,
+DvdM_558-046,"Janssen van der Meulen, Peeter",Leiden,Bremen,1593,15930921,NA,NA,Dutch,
+DvdM_558-047,"Janssen van der Meulen, Peeter",Leiden,Bremen,1593,15930928,NA,NA,Dutch,
+DvdM_558-048,"Janssen van der Meulen, Peeter",Leiden,Bremen,1593,15931005,NA,NA,Dutch,
+DvdM_558-049,"Janssen van der Meulen, Peeter",Leiden,Amsterdam,1593,15931012,NA,NA,Dutch,
+DvdM_558-050,"Janssen van der Meulen, Peeter",Leiden,Amsterdam,1593,15931015,NA,NA,Dutch,
+DvdM_558-051,"Janssen van der Meulen, Peeter",Leiden,The Hague,1593,15931029,15931029,NA,Dutch,
+DvdM_558-053,"Janssen van der Meulen, Peeter",Harlingen,Leiden,1593,15931121,15931127,NA,Dutch,
+DvdM_558-054,"Janssen van der Meulen, Peeter",Emden,Leiden,1593,15931121,15931219,NA,Dutch,
+DvdM_558-055,"Janssen van der Meulen, Peeter",Bremen,Leiden,1593,15931207,15931215,NA,Dutch,Changed date to new style
+DvdM_558-056,"Janssen van der Meulen, Peeter",Middelburg,Leiden,1594,15940205,15940209,NA,Dutch,
+DvdM_558-057,"Janssen van der Meulen, Peeter",Middelburg,Leiden,1594,15940213,15940219,NA,Dutch,
+DvdM_558-058,"Janssen van der Meulen, Peeter",Middelburg,Leiden,1594,15940218,15940223,NA,Dutch,
+DvdM_558-059,"Janssen van der Meulen, Peeter",Middelburg,Leiden,1594,15940219,15940223,NA,Dutch,
+DvdM_558-060,"Janssen van der Meulen, Peeter",Middelburg,Leiden,1594,15940226,15940306,NA,Dutch,
+DvdM_558-062,"Janssen van der Meulen, Peeter",Middelburg,Leiden,1594,15940302,15940306,NA,Dutch,
+DvdM_558-063,"Janssen van der Meulen, Peeter",Middelburg,Leiden,1594,15940303,15940308,NA,Dutch,
+DvdM_558-064,"Janssen van der Meulen, Peeter",Middelburg,Leiden,1594,15940308,15940310,NA,Dutch,
+DvdM_558-065–66,"Janssen van der Meulen, Peeter",Middelburg,Leiden,1594,15940315,15940318,NA,Dutch,
+DvdM_558-067,"Janssen van der Meulen, Peeter",Middelburg,Leiden,1594,15940322,15940325,NA,Dutch,
+DvdM_558-068,"Janssen van der Meulen, Peeter",Middelburg,Leiden,1594,15940325,15940330,NA,Dutch,
+DvdM_558-069,"Janssen van der Meulen, Peeter",Middelburg,Leiden,1594,15940401,NA,NA,Dutch,
+DvdM_558-070,"Janssen van der Meulen, Peeter",Middelburg,Leiden,1594,15940408,15940411,NA,Dutch,
+DvdM_558-071,"Janssen van der Meulen, Peeter",Middelburg,Leiden,1594,15940415,15940420,NA,Dutch,
+DvdM_558-073,"Janssen van der Meulen, Peeter",Middelburg,Leiden,1594,15940423,15940425,NA,Dutch,
+DvdM_558-074,"Janssen van der Meulen, Peeter",Middelburg,Leiden,1594,15940429,15940502,NA,Dutch,
+DvdM_558-075,"Janssen van der Meulen, Peeter",Middelburg,Leiden,1594,15940507,15940511,NA,Dutch,
+DvdM_558-076,"Janssen van der Meulen, Peeter",Middelburg,Leiden,1594,15940513,15940516,NA,Dutch,
+DvdM_558-079,"Janssen van der Meulen, Peeter",Amsterdam,Leiden,1594,15940530,15940531,NA,Dutch,
+DvdM_558-080,"Janssen van der Meulen, Peeter",Amsterdam,Leiden,1594,15940531,15940531,NA,Dutch,
+DvdM_558-082,"Janssen van der Meulen, Peeter",Amsterdam,Leiden,1594,15940603,15940603,NA,Dutch,
+DvdM_558-083,"Janssen van der Meulen, Peeter",Amsterdam,Dordrecht,1594,15940604,15940606,NA,Dutch,
+DvdM_558-085,"Janssen van der Meulen, Peeter",Amsterdam,Leiden,1594,15940608,15940611,NA,Dutch,"Letter was probably not sent until June 11th, because that is date listed on back"
+DvdM_558-086,"Janssen van der Meulen, Peeter",Amsterdam,Leiden,1594,15940609,15940610,NA,Dutch,Letter contains letters from both Peeter Janssen and Baptista Oyens
+DvdM_558-086,"Oyens, Baptista",Amsterdam,Leiden,1594,15940609,15940610,NA,Dutch,Letter contains letters from both Peeter Janssen and Baptista Oyens
+DvdM_558-088,"Janssen van der Meulen, Peeter",Amsterdam,Leiden,1594,15940610,15940611,NA,Dutch,
+DvdM_558-089,"Janssen van der Meulen, Peeter",Amsterdam,Leiden,1594,15940611,15940611,NA,Dutch,
+DvdM_558-090,"Janssen van der Meulen, Peeter",Amsterdam,Leiden,1594,15940619,15940620,NA,Dutch,
+DvdM_558-091,"Janssen van der Meulen, Peeter",Amsterdam,Leiden,1594,15940621,15940621,NA,Dutch,
+DvdM_558-092,"Janssen van der Meulen, Peeter",Haarlem,Leiden,1594,15940622,15940622,NA,Dutch,
+DvdM_558-093,"Janssen van der Meulen, Peeter",Haarlem,Leiden,1594,15940629,15940629,NA,Dutch,
+DvdM_558-095,"Janssen van der Meulen, Peeter",Amsterdam,Leiden,1594,15940705,15940706,NA,Dutch,
+DvdM_558-096,"Janssen van der Meulen, Peeter",Amsterdam,Leiden,1594,15940706,15940706,NA,Dutch,
+DvdM_558-097,"Janssen van der Meulen, Peeter",Amsterdam,Leiden,1594,15940707,15940707,NA,Dutch,
+DvdM_558-098–99,"Janssen van der Meulen, Peeter",Stockholm,Leiden,1594,15941014,15941104,NA,Dutch,
+DvdM_56-03,"Eeckeren, Robert van",Haarlem,Delft,1585,15850411,NA,NA,Dutch,RGP-110
+DvdM_567,"Kindt, P.A.",Frankfurt,Bremen,1590,15900824,NA,NA,NA,
+DvdM_569-01,"Klamp, Johann",Bremen,Antwerp,1591,15910216,NA,NA,NA,Changed date to new style
+DvdM_579-05,"Lempereur, Antonio",Amsterdam,Bremen,1591,15910903,NA,NA,NA,St 5: Sent to Bremen on 3 September 1591 to Daniel and Andries
+DvdM_582-1,"Lincklaes, Wynant",Leiden,Amsterdam,1596,15960313,15960314,NA,Dutch,
+DvdM_582-2,"Lincklaes, Wynant",The Hague,Leiden,1596,15960715,15960715,NA,Dutch,
+DvdM_582-3,"Lincklaes, Wynant",The Hague,Leiden,1596,15960716,15960716,NA,Dutch,
+DvdM_586-01,"Maillet, Pierre",Middelburg,Bremen,1591,15910906,15910928,NA,French,Changed received date to new style
+DvdM_586-02,"Maillet, Pierre",Middelburg,Bremen,1591,15910917,15910928,NA,NA,Changed received date to new style
+DvdM_589-01,"Mandernach, Nicolas",Dordrecht,Bremen,1589,15890426,15890515,NA,NA,
+DvdM_589-02,"Mandernach, Nicolas",Dordrecht,Leiden,1591,15911108,15911110,15911112,Dutch,
+DvdM_589-03,"Mandernach, Nicolas",Dordrecht,Leiden,1591,15911111,NA,NA,Dutch,
+DvdM_589-04,"Mandernach, Nicolas",Dordrecht,Leiden,1591,15911115,NA,NA,Dutch,
+DvdM_589-05,"Mandernach, Nicolas",Dordrecht,Leiden,1591,15911202,NA,NA,Dutch,
+DvdM_589-06,"Mandernach, Nicolas",Dordrecht,Leiden,1591,15911220,NA,15911226,Dutch,
+DvdM_589-07,"Mandernach, Nicolas",Dordrecht,Leiden,1592,15920106,15920109,NA,Dutch,
+DvdM_589-08,"Mandernach, Nicolas",Dordrecht,Leiden,1592,15920118,15920121,NA,Dutch,
+DvdM_589-09,"Mandernach, Nicolas",Dordrecht,Leiden,1592,15920423,NA,NA,Dutch,
+DvdM_589-10,"Mandernach, Nicolas",Dordrecht,Leiden,1592,15920427,NA,15920501,Dutch,
+DvdM_589-11,"Mandernach, Nicolas",Dordrecht,Leiden,1592,15920504,NA,NA,Dutch,
+DvdM_589-12,"Mandernach, Nicolas",Dordrecht,Leiden,1592,15920511,15920513,15920514,Dutch,
+DvdM_589-13,"Mandernach, Nicolas",Dordrecht,Leiden,1592,15920515,NA,NA,Dutch,
+DvdM_589-14,"Mandernach, Nicolas",Dordrecht,Leiden,1592,15920518,NA,NA,Dutch,
+DvdM_589-15,"Mandernach, Nicolas",Dordrecht,Leiden,1592,15920604,15920606,15920612,Dutch,
+DvdM_589-16,"Mandernach, Nicolas",Dordrecht,Leiden,1592,15920706,15920715,15920717,Dutch,
+DvdM_589-17,"Mandernach, Nicolas",Dordrecht,Leiden,1592,15920806,15920810,15920813,Dutch,
+DvdM_589-18,"Mandernach, Nicolas",Dordrecht,Leiden,1592,15920818,15920905,NA,Dutch,
+DvdM_589-19,"Mandernach, Nicolas",Dordrecht,Leiden,1592,15921030,15921107,NA,Dutch,
+DvdM_589-20,"Mandernach, Nicolas",Dordrecht,Leiden,1592,15921217,15921221,NA,Dutch,
+DvdM_589-21,"Mandernach, Nicolas",Dordrecht,Leiden,1593,15930318,15930325,15930327,Dutch,
+DvdM_589-22,"Mandernach, Nicolas",Dordrecht,Leiden,1593,15930405,15930411,NA,Dutch,
+DvdM_589-23,"Mandernach, Nicolas",Dordrecht,Leiden,1593,15930420,15930421,NA,Dutch,
+DvdM_589-24,"Mandernach, Nicolas",Dordrecht,Leiden,1593,15930429,15930501,NA,Dutch,
+DvdM_589-25,"Mandernach, Nicolas",Dordrecht,Leiden,1593,15930611,15930614,NA,Dutch,
+DvdM_589-26,"Mandernach, Nicolas",Dordrecht,Leiden,1593,15930727,15930729,NA,Dutch,
+DvdM_589-27,"Mandernach, Nicolas",Dordrecht,Leiden,1594,15940224,NA,NA,Dutch,
+DvdM_589-28,"Mandernach, Nicolas",Dordrecht,Leiden,1595,15950517,15950518,NA,Dutch,
+DvdM_593a-001,"Meulen, Andries van der",Antwerp,Delft,1584,15841003,NA,NA,Dutch,RGP-16
+DvdM_593a-002,"Meulen, Andries van der",Antwerp,Delft,1584,15841005,NA,NA,Dutch,RGP-17
+DvdM_593a-003,"Meulen, Andries van der",Antwerp,Delft,1584,15841010,NA,NA,Dutch,RGP-19
+DvdM_593a-004,"Meulen, Andries van der",Antwerp,Delft,1584,15841012,NA,NA,Dutch,RGP-20
+DvdM_593a-005,"Meulen, Andries van der",Antwerp,Delft,1584,15841016,NA,NA,Dutch,RGP-22
+DvdM_593a-006,"Meulen, Andries van der",Antwerp,Delft,1584,15841017,NA,NA,Dutch,RGP-23
+DvdM_593a-007,"Meulen, Andries van der",Antwerp,Delft,1584,15841018,NA,NA,Dutch,RGP-24
+DvdM_593a-008,"Meulen, Andries van der",Antwerp,Delft,1584,15841024,NA,NA,Dutch,RGP-25
+DvdM_593a-009,"Meulen, Andries van der",Antwerp,Delft,1584,15841025,NA,NA,Dutch,RGP-26
+DvdM_593a-010,"Meulen, Andries van der",Antwerp,Delft,1584,15841027,NA,NA,Dutch,RGP-27
+DvdM_593a-011,"Meulen, Andries van der",Antwerp,Delft,1584,15841103,NA,NA,Dutch,RGP-30
+DvdM_593a-012,"Meulen, Andries van der",Antwerp,Delft,1584,15841105,NA,NA,Dutch,RGP-31. Sent over land by express.
+DvdM_593a-013,"Meulen, Andries van der",Antwerp,Delft,1584,15841105,NA,NA,Dutch,RGP-32. Sent by sea.
+DvdM_593a-014,"Meulen, Andries van der",Antwerp,Delft,1584,15841108,NA,NA,Dutch,RGP-34. Written on 7–8 November.
+DvdM_593a-015,"Meulen, Andries van der",Antwerp,Delft,1584,15841110,NA,NA,Dutch,RGP-36. Written on 9_10 November.
+DvdM_593a-016,"Meulen, Andries van der",Antwerp,Delft,1584,15841112,NA,NA,Dutch,RGP-38. Sent to ‘Delft oft daer hij is.”
+DvdM_593a-017,"Meulen, Andries van der",Antwerp,Delft,1584,15841117,NA,NA,Dutch,RGP-39
+DvdM_593a-018,"Meulen, Andries van der",Antwerp,Delft,1584,15841118,NA,NA,Dutch,RGP-40
+DvdM_593a-019,"Meulen, Andries van der",Antwerp,Delft,1584,15841124,NA,NA,Dutch,RGP-43
+DvdM_593a-020,"Meulen, Andries van der",Antwerp,Delft,1584,15841124,NA,NA,Dutch,RGP-44
+DvdM_593a-021,"Meulen, Andries van der",Antwerp,Delft,1584,15841125,NA,NA,Dutch,RGP-45. Letter not sent till 28 November.
+DvdM_593a-022,"Meulen, Andries van der",Antwerp,Delft,1584,15841128,NA,NA,Dutch,RGP-46
+DvdM_593a-023,"Meulen, Andries van der",Antwerp,Delft,1584,15841128,NA,NA,Dutch,RGP-47
+DvdM_593a-024,"Meulen, Andries van der",Antwerp,Delft,1584,15841202,NA,NA,Dutch,RGP-48
+DvdM_593a-025/26,"Meulen, Andries van der",Antwerp,Haarlem,1584,15841204,NA,NA,Dutch,RGP-50
+DvdM_593a-027,"Meulen, Andries van der",Antwerp,Haarlem,1584,15841205,NA,NA,Dutch,RGP-51
+DvdM_593a-028/29,"Meulen, Andries van der",Antwerp,Haarlem,1584,15841207,NA,NA,Dutch,RGP-52
+DvdM_593a-030,"Meulen, Andries van der",Antwerp,Haarlem,1584,15841208,NA,NA,Dutch,RGP-53
+DvdM_593a-031/32,"Meulen, Andries van der",Antwerp,Haarlem,1584,15841208,NA,NA,Dutch,RGP-54/55
+DvdM_593a-033,"Meulen, Andries van der",Antwerp,Haarlem,1584,15841210,NA,NA,Dutch,RGP-56
+DvdM_593a-034,"Meulen, Andries van der",Antwerp,Haarlem,1584,15841213,NA,NA,Dutch,RGP-59
+DvdM_593a-035,"Meulen, Andries van der",Antwerp,Haarlem,1584,15841217,NA,NA,Dutch,RGP-60
+DvdM_593a-036,"Meulen, Andries van der",Antwerp,Haarlem,1584,15841225,NA,NA,Dutch,RGP-61
+DvdM_593a-037,"Meulen, Andries van der",Antwerp,Haarlem,1584,15841229,NA,NA,Dutch,RGP-62. Written on 28–29 December.
+DvdM_593a-038,"Meulen, Andries van der",Antwerp,Haarlem,1584,15841230,NA,NA,Dutch,RGP-64. Written on 30–31 December.
+DvdM_593a-039,"Meulen, Andries van der",Antwerp,Delft,1585,15850103,NA,NA,Dutch,RGP-65. Sent to Delft or where he is.
+DvdM_593a-040,"Meulen, Andries van der",Antwerp,Haarlem,1585,15850109,NA,NA,Dutch,RGP-66. Sent to Haarlem or where he is.
+DvdM_593a-041,"Meulen, Andries van der",Antwerp,Haarlem,1585,15850111,NA,NA,Dutch,RGP-67. Sent with the messenger from Amsterdam.
+DvdM_593a-042,"Meulen, Andries van der",Antwerp,Delft,1585,15850112,NA,NA,Dutch,RGP-68. Written on 11–12 January. Sent to Delft or where he is.
+DvdM_593a-043,"Meulen, Andries van der",Antwerp,Haarlem,1585,15850112,NA,NA,Dutch,RGP-69
+DvdM_593a-044,"Meulen, Andries van der",Antwerp,Delft,1585,15850117,NA,NA,Dutch,RGP-70
+DvdM_593a-045,"Meulen, Andries van der",Antwerp,Delft,1585,15850122,NA,NA,Dutch,RGP-71
+DvdM_593a-046,"Meulen, Andries van der",Antwerp,Delft,1585,15850123,NA,NA,Dutch,RGP-72
+DvdM_593a-047,"Meulen, Andries van der",Antwerp,Delft,1585,15850128,NA,NA,Dutch,RGP-74
+DvdM_593a-048,"Meulen, Andries van der",Antwerp,Delft,1585,15850130,NA,NA,Dutch,RGP-75. Sent to Delft or Haarlem.
+DvdM_593a-049,"Meulen, Andries van der",Antwerp,Delft,1585,15850205,NA,NA,Dutch,RGP-76
+DvdM_593a-050,"Meulen, Andries van der",Antwerp,Delft,1585,15850207,NA,NA,Dutch,RGP-77
+DvdM_593a-051,"Meulen, Andries van der",Antwerp,Delft,1585,15850211,NA,NA,Dutch,RGP-79
+DvdM_593a-052,"Meulen, Andries van der",Antwerp,Delft,1585,15850216,NA,NA,Dutch,RGP-80
+DvdM_593a-053,"Meulen, Andries van der",Antwerp,Delft,1585,15850220,NA,NA,Dutch,RGP-81
+DvdM_593a-054,"Meulen, Andries van der",Antwerp,Delft,1585,15850222,NA,NA,Dutch,RGP-84. Written on 21–22 February.
+DvdM_593a-055,"Meulen, Andries van der",Antwerp,Delft,1585,15850225,NA,NA,Dutch,RGP-85
+DvdM_593a-056,"Meulen, Andries van der",Antwerp,Delft,1585,15850226,NA,NA,Dutch,RGP-87
+DvdM_593a-057,"Meulen, Andries van der",Antwerp,Delft,1585,15850227,NA,NA,Dutch,RGP-88. No listed destination.
+DvdM_593a-058,"Meulen, Andries van der",Antwerp,Delft,1585,15850302,NA,NA,Dutch,RGP-89
+DvdM_593a-059,"Meulen, Andries van der",Antwerp,Delft,1585,15850305,NA,NA,Dutch,RGP-90
+DvdM_593a-060,"Meulen, Andries van der",Antwerp,Delft,1585,15850309,NA,NA,Dutch,RGP-91
+DvdM_593a-061,"Meulen, Andries van der",Antwerp,Delft,1585,15850311,NA,NA,Dutch,RGP-92
+DvdM_593a-062,"Meulen, Andries van der",Antwerp,Delft,1585,15850313,NA,NA,Dutch,RGP-94
+DvdM_593a-063,"Meulen, Andries van der",Antwerp,Delft,1585,15850314,NA,NA,Dutch,RGP-95
+DvdM_593a-064,Staten van Brabant,Antwerp,Delft,1585,15850314,NA,NA,Dutch,RGP-97
+DvdM_593a-066,"Meulen, Andries van der",Antwerp,Delft,1585,15850315,NA,NA,Dutch,RGP-98
+DvdM_593a-066,"Meulen, Andries van der",Antwerp,Delft,1585,15850319,NA,NA,Dutch,RGP-99
+DvdM_593a-067,"Meulen, Andries van der",Antwerp,Delft,1585,15850325,NA,NA,Dutch,RGP-102. Letter not sent until 28 March 1585. 'Godt beware den bode'
+DvdM_593a-068,"Meulen, Andries van der",Antwerp,Delft,1585,15850328,NA,NA,Dutch,RGP-104
+DvdM_593a-069,"Meulen, Andries van der",Antwerp,Delft,1585,15850330,NA,NA,Dutch,RGP-105
+DvdM_593a-070,"Meulen, Andries van der",Antwerp,Delft,1585,15850331,NA,NA,Dutch,RGP-106
+DvdM_593a-071,"Meulen, Andries van der",Antwerp,Delft,1585,15850406,NA,NA,Dutch,RGP-107
+DvdM_593a-072,"Meulen, Andries van der",Antwerp,Delft,1585,15850410,NA,NA,Dutch,RGP-108
+DvdM_593a-073,"Meulen, Andries van der",Antwerp,Delft,1585,15850411,NA,NA,Dutch,RGP-109
+DvdM_593a-074,"Meulen, Andries van der",Antwerp,Delft,1585,15850419,NA,NA,Dutch,RGP-111
+DvdM_593a-075,"Meulen, Andries van der",Antwerp,Delft,1585,15850424,NA,NA,Dutch,RGP-113
+DvdM_593a-076,"Meulen, Andries van der",Antwerp,Delft,1585,15850428,NA,NA,Dutch,RGP-115
+DvdM_593a-077,"Meulen, Andries van der",Antwerp,Delft,1585,15850430,NA,NA,Dutch,RGP-116. Daniel was actually in Middelburg at this time.
+DvdM_593a-078,"Meulen, Andries van der",Antwerp,Middelburg,1585,15850504,NA,NA,Dutch,RGP-118
+DvdM_593a-079,"Meulen, Andries van der",Antwerp,Delft,1585,15850509,NA,NA,Dutch,RGP-121
+DvdM_593a-080,"Meulen, Andries van der",Antwerp,Delft,1585,15850511,NA,NA,Dutch,RGP-122
+DvdM_593a-081,"Meulen, Andries van der",Antwerp,Delft,1585,15850517,NA,NA,Dutch,RGP-124
+DvdM_593a-082,"Meulen, Andries van der",Antwerp,Delft,1585,15850528,NA,NA,Dutch,RGP-128
+DvdM_593a-083,"Meulen, Andries van der",Antwerp,Delft,1585,15850528,NA,NA,Dutch,RGP-129
+DvdM_593a-084,"Meulen, Andries van der",Antwerp,Delft,1585,15850530,NA,NA,Dutch,RGP-130
+DvdM_593a-085,"Meulen, Andries van der",Antwerp,Delft,1585,15850601,NA,NA,Dutch,RGP-131
+DvdM_593a-086,"Meulen, Andries van der",Antwerp,Delft,1585,15850604,NA,NA,Dutch,RGP-133
+DvdM_593a-087,"Meulen, Andries van der",Antwerp,Delft,1585,15850614,NA,NA,Dutch,RGP-136. Written on 13–14 June
+DvdM_593a-088,"Meulen, Andries van der",Antwerp,Delft,1585,15850620,NA,NA,Dutch,RGP-139
+DvdM_593a-089,"Meulen, Andries van der",Antwerp,Delft,1585,15850629,NA,NA,Dutch,RGP-141
+DvdM_593a-090,"Meulen, Andries van der",Antwerp,Delft,1585,15850705,NA,NA,Dutch,RGP-143. Sent on 10 July along with a letter from 9 July (nr 144)
+DvdM_593a-091,"Meulen, Andries van der",Antwerp,Delft,1585,15850709,NA,NA,Dutch,RGP-144
+DvdM_593a-092,"Meulen, Andries van der",Antwerp,Delft,1585,15850712,NA,NA,Dutch,RGP-146
+DvdM_593a-093,"Meulen, Andries van der",Antwerp,Delft,1585,15850713,NA,NA,Dutch,RGP-147
+DvdM_593a-094,"Meulen, Andries van der",Antwerp,Delft,1585,15850719,NA,NA,Dutch,RGP-148
+DvdM_593a-095,"Meulen, Andries van der",Antwerp,Delft,1585,15850725,NA,NA,Dutch,RGP-149
+DvdM_593a-096,"Meulen, Andries van der",Antwerp,Delft,1585,15850727,NA,NA,Dutch,RGP-150
+DvdM_593a-097a,"Meulen, Andries van der",Antwerp,Delft,1585,15850731,NA,NA,Dutch,RGP-152. This letter was sent on 1 August after being added to with text of nr 153.
+DvdM_593a-097b,"Meulen, Andries van der",Antwerp,Delft,1585,15850801,NA,NA,Dutch,RGP-152a
+DvdM_593a-098,"Meulen, Andries van der",Antwerp,Delft,1585,15850808,NA,NA,Dutch,RGP-158
+DvdM_593a-099,"Meulen, Andries van der",Antwerp,Delft,1585,15850812,NA,NA,Dutch,RGP-160
+DvdM_593a-100,"Meulen, Andries van der",Antwerp,Delft,1585,15850816,NA,NA,Dutch,RGP-163
+DvdM_593a-101,"Meulen, Andries van der",Antwerp,Delft,1585,15850822,NA,NA,Dutch,RGP-166
+DvdM_593a-102,"Meulen, Andries van der",Bremen,Brunswick,1586,15860214,NA,NA,Dutch,
+DvdM_593a-103,"Meulen, Andries van der",Bremen,Haarlem,1586,15860522,NA,NA,Dutch,
+DvdM_593a-104,"Meulen, Andries van der",Bremen,Middelburg,1586,15860531,NA,NA,Dutch,
+DvdM_593a-105,"Meulen, Andries van der",Bremen,Middelburg,1586,15860604,NA,NA,Dutch,
+DvdM_593a-107,"Meulen, Andries van der",Bremen,London,1586,15860612,NA,NA,Dutch,
+DvdM_593a-108,"Meulen, Andries van der",Bremen,London,1586,15860617,NA,NA,Dutch,
+DvdM_593a-109,"Meulen, Andries van der",Bremen,London,1586,15860625,NA,NA,Dutch,
+DvdM_593a-110,"Meulen, Andries van der",Bremen,London,1586,15860710,NA,NA,Dutch,
+DvdM_593a-111,"Meulen, Andries van der",Bremen,London,1586,15860719,15860826,NA,Dutch,
+DvdM_593a-112,"Meulen, Andries van der",Bremen,London,1586,15860722,NA,NA,Dutch,
+DvdM_593a-113,"Meulen, Andries van der",Bremen,London,1586,15860725,NA,NA,Dutch,"Addressed to Haarlem, but Daniel was still in London."
+DvdM_593a-114,"Meulen, Andries van der",Bremen,London,1586,15860729,NA,NA,Dutch,"Addressed to Middelburg, but Daniel was still in London."
+DvdM_593a-115/116,"Meulen, Andries van der",Bremen,London,1586,15860726,NA,NA,Dutch,"Addressed to Middelburg, but Daniel was still in London."
+DvdM_593a-117,"Meulen, Andries van der",Bremen,London,1586,15860826,NA,NA,Dutch,
+DvdM_593a-118/119,"Meulen, Andries van der",Bremen,London,1586,15860915,NA,NA,Dutch,
+DvdM_593a-119a,"Meulen, Andries van der",Bremen,NA,1586,15861011,NA,NA,Dutch,Partial letters 1–12
+DvdM_593a-119b,"Meulen, Andries van der",Bremen,NA,1586,15861031,NA,NA,Dutch,Partial letters pages 13–25
+DvdM_593a-119c,"Meulen, Andries van der",Bremen,NA,1586,15861104,NA,NA,Dutch,Partial letters pages 26–29
+DvdM_593a-120,"Meulen, Andries van der",Bremen,Leiden,1592,15920111,15920119,NA,Dutch,
+DvdM_593a-121,"Meulen, Andries van der",Bremen,Leiden,1592,15920704,15920713,NA,Dutch,
+DvdM_593a-122,"Meulen, Andries van der",Bremen,Leiden,1592,15920725,15920812,NA,Dutch,
+DvdM_593a-123,"Meulen, Andries van der",Bremen,Leiden,1592,15920821,15920829,NA,Dutch,
+DvdM_593a-124,"Meulen, Andries van der",Bremen,Leiden,1592,15920912,15920919,NA,Dutch,
+DvdM_593a-125,"Meulen, Andries van der",Bremen,Leiden,1592,15921209,15921218,NA,Dutch,
+DvdM_593a-126,"Meulen, Andries van der",Bremen,Leiden,1592,15921216,15921226,NA,Dutch,
+DvdM_593a-127,"Meulen, Andries van der",Bremen,Leiden,1592,15921219,NA,NA,Dutch,
+DvdM_593a-128/129,"Meulen, Andries van der",Bremen,Leiden,1592,15921225,15930105,NA,Dutch,
+DvdM_593a-130,"Meulen, Andries van der",Bremen,Leiden,1593,15930101,15930112,NA,Dutch,
+DvdM_593a-131,"Meulen, Andries van der",Bremen,Leiden,1593,15930102,15930112,NA,Dutch,
+DvdM_593b-01,"Meulen, Andries van der",Bremen,Leiden,1593,15930326,15930401,15930405,Dutch,Changed date to new style
+DvdM_593b-02,"Meulen, Andries van der",Bremen,Leiden,1593,15930402,NA,NA,Dutch,Changed date to new style. Answered date is unclear.
+DvdM_593b-03,"Meulen, Andries van der",Bremen,Leiden,1593,15930504,15930510,15930518,Dutch,Changed date to new style
+DvdM_593b-04,"Meulen, Andries van der",Bremen,Leiden,1593,15930517,15930527,NA,Dutch,Changed date to new style
+DvdM_593b-05,"Meulen, Andries van der",Bremen,Leiden,1593,15930525,15930530,15930531,Dutch,Changed date to new style. Responded on 31 May and 8 June.
+DvdM_593b-06,"Meulen, Andries van der",Bremen,Leiden,1593,15930601,15930608,NA,Dutch,Changed date to new style
+DvdM_593b-07,"Meulen, Andries van der",Bremen,Leiden,1593,15930607,15930614,15930615,Dutch,Changed date to new style
+DvdM_593b-08,"Meulen, Andries van der",Bremen,Leiden,1593,15930615,15930620,15930622,Dutch,Changed date to new style
+DvdM_593b-09,"Meulen, Andries van der",Bremen,Leiden,1593,15930621,15930628,NA,Dutch,Changed date to new style
+DvdM_593b-10,"Meulen, Andries van der",Bremen,Leiden,1593,15930628,15930704,15930706,Dutch,Changed date to new style
+DvdM_593b-11,"Meulen, Andries van der",Bremen,Leiden,1593,15930705,15930710,15930713,Dutch,Changed date to new style
+DvdM_593b-12/13,"Meulen, Andries van der",Bremen,Leiden,1593,15930612,15930618,15930618,Dutch,Changed date to new style
+DvdM_593b-14,"Meulen, Andries van der",Bremen,Leiden,1593,15930719,15930726,15930727,Dutch,Changed date to new style
+DvdM_593b-15,"Meulen, Andries van der",Bremen,Leiden,1593,15930726,15930801,15930804,Dutch,Changed date to new style
+DvdM_593b-16,"Meulen, Andries van der",Bremen,Leiden,1593,15930728,15930805,NA,Dutch,Changed date to new style
+DvdM_593b-17,"Meulen, Andries van der",Bremen,Leiden,1593,15930730,15930808,NA,Dutch,Changed date to new style
+DvdM_593b-18,"Meulen, Andries van der",Hamburg,Leiden,1593,15930810,15930817,NA,Dutch,Changed date to new style
+DvdM_593b-19/20,"Meulen, Andries van der",Staden,Leiden,1593,15930815,NA,NA,Dutch,Changed date to new style
+DvdM_593b-21,"Meulen, Andries van der",Staden,Leiden,1593,15930821,15930829,NA,Dutch,Changed date to new style
+DvdM_593b-22,"Meulen, Andries van der",Staden,Leiden,1593,15930828,15930905,NA,Dutch,Changed date to new style
+DvdM_593b-23,"Meulen, Andries van der",Staden,Leiden,1593,15930904,15930912,NA,Dutch,Changed date to new style
+DvdM_593b-24,"Meulen, Andries van der",Bremen,Leiden,1593,15931004,15931012,NA,Dutch,Changed date to new style
+DvdM_593b-25,"Meulen, Andries van der",Bremen,Leiden,1593,15931012,15931122,NA,Dutch,Changed date to new style
+DvdM_593b-26,"Meulen, Andries van der",Bremen,Leiden,1593,15931019,15931027,15931102,Dutch,Changed date to new style
+DvdM_593b-27,"Meulen, Andries van der",Bremen,Leiden,1593,15931026,15931102,NA,Dutch,Changed date to new style
+DvdM_593b-28,"Meulen, Andries van der",Bremen,Leiden,1593,15931102,15931108,15931109,Dutch,Changed date to new style
+DvdM_593b-29,"Meulen, Andries van der",Bremen,Leiden,1593,15931110,15931118,NA,Dutch,Changed date to new style
+DvdM_593b-30/31,"Meulen, Andries van der",Bremen,Leiden,1593,15931116,15931122,15931123,Dutch,Changed date to new style
+DvdM_593b-32,"Meulen, Andries van der",Bremen,Leiden,1593,15931129,15931204,15931207,Dutch,Changed date to new style
+DvdM_593b-33,"Meulen, Andries van der",Bremen,Leiden,1593,15931130,15931208,15931221,Dutch,Changed date to new style
+DvdM_593b-34,"Meulen, Andries van der",Bremen,Leiden,1593,15931207,15931209,NA,Dutch,Changed date to new style. Difficult to read the dates from this letter.
+DvdM_593b-35/36,"Meulen, Andries van der",Bremen,Leiden,1593,15931217,15940102,15940104,Dutch,Changed date to new style
+DvdM_593b-37/38,"Meulen, Andries van der",Bremen,Leiden,1593,15931224,15940103,15940104,Dutch,Changed date to new style
+DvdM_593b-39,"Meulen, Andries van der",Bremen,Leiden,1593,15931231,15940121,15940125,Dutch,Changed date to new style
+DvdM_593b-40/41,"Meulen, Andries van der",Bremen,Leiden,1594,15940111,15940121,15940125,Dutch,Changed date to new style
+DvdM_593b-42/43,"Meulen, Andries van der",Bremen,Leiden,1594,15940117,NA,15940201,Dutch,Changed date to new style. Responded on 1 February and 8 February.
+DvdM_593b-44,"Meulen, Andries van der",Bremen,Leiden,1594,15940123,15940201,15940208,Dutch,Changed date to new style
+DvdM_593b-45/46,"Meulen, Andries van der",Bremen,Leiden,1594,15940129,15940209,15940216,Dutch,Changed date to new style
+DvdM_593b-47/48,"Meulen, Andries van der",Bremen,Leiden,1594,15940205,15940214,15940216,Dutch,Changed date to new style
+DvdM_593b-49,"Meulen, Andries van der",Bremen,Leiden,1594,15940212,15940225,NA,Dutch,Changed date to new style
+DvdM_593b-50/51,"Meulen, Andries van der",Bremen,Leiden,1594,15940219,15940319,NA,Dutch,Changed date to new style
+DvdM_593b-52/53,"Meulen, Andries van der",Bremen,Leiden,1594,15940226,15940306,NA,Dutch,Changed date to new style
+DvdM_593b-54/55,"Meulen, Andries van der",Bremen,Leiden,1594,15940305,15940313,NA,Dutch,Changed date to new style
+DvdM_593b-56,"Meulen, Andries van der",Bremen,Leiden,1594,15940312,15940414,NA,Dutch,Changed date to new style
+DvdM_593b-57/58,"Meulen, Andries van der",Bremen,Leiden,1594,15940319,15940326,15940407,Dutch,Changed date to new style
+DvdM_593b-59,"Meulen, Andries van der",Bremen,Leiden,1594,15940326,15940403,15940407,Dutch,Changed date to new style
+DvdM_593b-60,"Meulen, Andries van der",Bremen,Leiden,1594,15940331,15940412,NA,Dutch,Changed date to new style
+DvdM_593b-61,"Meulen, Andries van der",Bremen,Leiden,1594,15940812,15940821,NA,Dutch,Changed date to new style. Copy of a letter by Abraham Berrewijns.
+DvdM_593b-62,"Meulen, Andries van der",Bremen,Leiden,1594,15940818,15940826,NA,Dutch,Changed date to new style. Copy of a letter by Abraham Berrewijns.
+DvdM_593b-63,"Meulen, Andries van der",Bremen,Leiden,1595,15951013,15951022,15951031,Dutch,Changed date to new style
+DvdM_593b-64/65,"Meulen, Andries van der",Bremen,Leiden,1595,15951020,15951028,15951031,Dutch,Changed date to new style
+DvdM_593b-66,"Meulen, Andries van der",Bremen,Leiden,1595,15951025,15951105,15951107,Dutch,Changed date to new style
+DvdM_593b-67,"Meulen, Andries van der",Bremen,Leiden,1595,15951102,15951113,15951121,Dutch,Changed date to new style
+DvdM_593b-68/69,"Meulen, Andries van der",Bremen,Leiden,1595,15951110,15951117,15951121,Dutch,Changed date to new style
+DvdM_593b-70,"Meulen, Andries van der",Bremen,Leiden,1595,15951117,15951126,15951128,Dutch,Changed date to new style
+DvdM_593b-7172,"Meulen, Andries van der",Bremen,Leiden,1595,15951201,15951210,15951226,Dutch,Changed date to new style
+DvdM_593b-73/74,"Meulen, Andries van der",Bremen,Leiden,1595,15951208,15951218,15951226,Dutch,Changed date to new style
+DvdM_593b-75/76,"Meulen, Andries van der",Bremen,Leiden,1595,15951215,15951228,15960102,Dutch,Changed date to new style
+DvdM_593b-77,"Meulen, Andries van der",Bremen,Leiden,1595,15951215,15951228,15960102,Dutch,Changed date to new style
+DvdM_593b-78,"Meulen, Andries van der",Bremen,Leiden,1595,15951218,15951228,15960102,Dutch,Changed date to new style
+DvdM_593b-79,"Meulen, Andries van der",Bremen,Leiden,1595,15951222,15960109,NA,Dutch,Changed date to new style
+DvdM_593b-80,"Meulen, Andries van der",Bremen,Leiden,1595,15951229,15960109,NA,Dutch,Changed date to new style
+DvdM_593b-81,"Meulen, Andries van der",Bremen,Leiden,1595,15951230,15960109,NA,Dutch,Changed date to new style
+DvdM_593b-82,"Meulen, Andries van der",Bremen,Leiden,1596,15960105,15960118,15960123,Dutch,Changed date to new style
+DvdM_593c-01-03,"Meulen, Andries van der",Bremen,Leiden,1596,15960112,NA,15960130,Dutch,Changed date to new style. Cannot read received date.
+DvdM_593c-04,"Meulen, Andries van der",Bremen,Leiden,1596,15960119,NA,15960206,Dutch,Changed date to new style. Cannot read received date.
+DvdM_593c-05/06,"Meulen, Andries van der",Bremen,Leiden,1596,15960126,15960206,15960213,Dutch,Changed date to new style
+DvdM_593c-07,"Meulen, Andries van der",Bremen,Leiden,1596,15960203,15960214,15960220,Dutch,Changed date to new style
+DvdM_593c-10,"Meulen, Andries van der",Bremen,Leiden,1596,15960210,15960223,15960227,Dutch,Changed date to new style
+DvdM_593c-11,"Meulen, Andries van der",Bremen,Leiden,1596,15960216,15960227,NA,Dutch,Changed date to new style
+DvdM_593c-12,"Meulen, Andries van der",Bremen,Leiden,1596,15960217,15960227,NA,Dutch,Changed date to new style
+DvdM_593c-13,"Meulen, Andries van der",Bremen,Leiden,1596,15960223,15960304,15960306,Dutch,Changed date to new style
+DvdM_593c-14,"Meulen, Andries van der",Bremen,Leiden,1596,15960224,15960304,NA,Dutch,Changed date to new style
+DvdM_593c-15/16,"Meulen, Andries van der",Bremen,Leiden,1596,15960301,15960308,15960314,Dutch,Changed date to new style. First written on 29 February 
+DvdM_593c-17,"Meulen, Andries van der",Bremen,Leiden,1596,15960307,15960314,NA,Dutch,Changed date to new style
+DvdM_593c-18,"Meulen, Andries van der",Bremen,Leiden,1596,15960309,15960324,NA,Dutch,Changed date to new style
+DvdM_593c-19,"Meulen, Andries van der",Bremen,Leiden,1596,15960314,15960322,15960326,Dutch,Changed date to new style
+DvdM_593c-20/21,"Meulen, Andries van der",Bremen,Leiden,1596,15960321,15960329,NA,Dutch,Changed date to new style
+DvdM_593c-24/25,"Meulen, Andries van der",Bremen,Leiden,1596,15960327,15960403,15960417,Dutch,Changed date to new style
+DvdM_593c-26/27,"Meulen, Andries van der",Bremen,Leiden,1596,15960404,15960413,15960417,Dutch,Changed date to new style
+DvdM_593c-28,"Meulen, Andries van der",Bremen,Leiden,1596,15960412,15960418,15960429,Dutch,Changed date to new style
+DvdM_593c-30,"Meulen, Andries van der",Bremen,Leiden,1596,15960417,15960425,15960430,Dutch,Changed date to new style
+DvdM_593c-31/32,"Meulen, Andries van der",Bremen,Leiden,1596,15960426,15960502,15960507,Dutch,Changed date to new style
+DvdM_593c-33/34,"Meulen, Andries van der",Bremen,Leiden,1596,15960502,15960509,15960514,Dutch,Changed date to new style
+DvdM_593c-35,"Meulen, Andries van der",Bremen,Leiden,1596,15960509,15960516,15960517,Dutch,Changed date to new style
+DvdM_593c-36,"Meulen, Andries van der",Bremen,Leiden,1596,15960509,15960516,NA,Dutch,Changed date to new style
+DvdM_593c-38/39,"Meulen, Andries van der",Bremen,Leiden,1596,15960517,15960522,15960528,Dutch,Changed date to new style
+DvdM_593c-40,"Meulen, Andries van der",Bremen,Leiden,1596,15960524,15960601,15960604,Dutch,Changed date to new style
+DvdM_593c-41/42,"Meulen, Andries van der",Bremen,Leiden,1596,15960530,15960605,15960614,Dutch,Changed date to new style
+DvdM_593c-43,"Meulen, Andries van der",Bremen,Leiden,1596,15960605,15960612,15960617,Dutch,"Changed date to new style. Sent date is not easy to read, but I followed the date on the back."
+DvdM_593c-44/45,"Meulen, Andries van der",Bremen,Leiden,1596,15960607,15960614,15960702,Dutch,Changed date to new style
+DvdM_593c-46,"Meulen, Andries van der",Bremen,Leiden,1596,15960620,15960627,15960702,Dutch,Changed date to new style
+DvdM_593c-47,"Meulen, Andries van der",Bremen,Leiden,1596,15960624,15960701,15960702,Dutch,Changed date to new style
+DvdM_593c-48,"Meulen, Andries van der",Bremen,Leiden,1596,15960701,15960706,NA,Dutch,Changed date to new style
+DvdM_593c-49,"Meulen, Andries van der",Bremen,Leiden,1596,15960708,15960715,15960716,Dutch,Changed date to new style
+DvdM_593c-50/51,"Meulen, Andries van der",Bremen,Leiden,1596,15960710,15960718,15960723,Dutch,Changed date to new style
+DvdM_593c-54,"Meulen, Andries van der",Bremen,Leiden,1596,15960715,15960723,15960723,Dutch,Changed date to new style
+DvdM_593c-55,"Meulen, Andries van der",Bremen,Leiden,1596,15960717,15960725,NA,Dutch,Changed date to new style
+DvdM_593c-56,"Meulen, Andries van der",Bremen,Leiden,1596,15960722,15960729,15960730,Dutch,Changed date to new style
+DvdM_593c-59,"Meulen, Andries van der",Bremen,Leiden,1596,15960724,15960801,15960806,Dutch,Changed date to new style
+DvdM_593c-60,"Meulen, Andries van der",Bremen,Leiden,1596,15960730,15960805,15960806,Dutch,Changed date to new style
+DvdM_593c-61,"Meulen, Andries van der",Bremen,Leiden,1596,15960801,15960808,NA,Dutch,Changed date to new style
+DvdM_593c-62,"Meulen, Andries van der",Bremen,Leiden,1596,15960805,15960812,15960813,Dutch,Changed date to new style
+DvdM_593c-63/64,"Meulen, Andries van der",Bremen,Leiden,1596,15960812,15960820,NA,Dutch,Changed date to new style
+DvdM_593c-65,"Meulen, Andries van der",Bremen,Leiden,1596,15960815,15960825,15960827,Dutch,Changed date to new style
+DvdM_593c-66,"Meulen, Andries van der",Bremen,Leiden,1596,15960822,15960831,NA,Dutch,Changed date to new style
+DvdM_593c-67,"Meulen, Andries van der",Bremen,Leiden,1596,15960826,15960903,NA,Dutch,Changed date to new style
+DvdM_593c-68,"Meulen, Andries van der",Bremen,Leiden,1596,15960829,15960909,15960910,Dutch,Changed date to new style
+DvdM_593c-69,"Meulen, Andries van der",Bremen,Leiden,1596,15960905,15960913,15960917,Dutch,"Changed date to new style. Received date looks like 23, but I think it must be 13, because answered date says 17."
+DvdM_593c-70,"Meulen, Andries van der",Bremen,Leiden,1596,15960909,15960917,15960924,Dutch,Changed date to new style
+DvdM_593c-71,"Meulen, Andries van der",Bremen,Leiden,1596,15960916,15960921,15961001,Dutch,Changed date to new style
+DvdM_593c-72,"Meulen, Andries van der",Bremen,Leiden,1596,15960923,15961006,NA,Dutch,Changed date to new style
+DvdM_593c-73,"Meulen, Andries van der",Bremen,Leiden,1596,15960926,15961006,NA,Dutch,Changed date to new style
+DvdM_593c-74,"Meulen, Andries van der",Bremen,Leiden,1596,15961003,15961013,15961015,Dutch,Changed date to new style
+DvdM_593c-75,"Meulen, Andries van der",Bremen,Leiden,1596,15961008,15961013,15961015,Dutch,Changed date to new style
+DvdM_593c-76,"Meulen, Andries van der",Bremen,Leiden,1596,15961012,15961026,15961029,Dutch,Changed date to new style
+DvdM_593c-77,"Meulen, Andries van der",Bremen,Leiden,1596,15961029,15961105,15961106,Dutch,Changed date to new style
+DvdM_593c-79,"Meulen, Andries van der",Bremen,Leiden,1596,15961105,15961111,15961122,Dutch,Changed date to new style
+DvdM_593c-80,"Meulen, Andries van der",Bremen,Leiden,1596,15961108,15961118,15961119,Dutch,Changed date to new style
+DvdM_593c-81,"Meulen, Andries van der",Bremen,Leiden,1596,15961113,15961119,15961203,Dutch,Changed date to new style
+DvdM_593c-82/83,"Meulen, Andries van der",Bremen,Leiden,1596,15961120,15961201,NA,Dutch,Changed date to new style. St 82 was written on 19 November and then st 83 was added one day later.
+DvdM_593c-84,"Meulen, Andries van der",Bremen,Leiden,1596,15961121,15961215,NA,Dutch,Changed date to new style
+DvdM_593c-85,"Meulen, Andries van der",Bremen,Leiden,1596,15961126,15961211,15961217,Dutch,Changed date to new style. Received date and response date not easy to read.
+DvdM_593c-86,"Meulen, Andries van der",Bremen,Leiden,1596,15961204,15961211,15961217,Dutch,Changed date to new style
+DvdM_593c-87,"Meulen, Andries van der",Bremen,Leiden,1596,15961204,NA,NA,Dutch,Changed date to new style. Not easy to tell if it is Nov. 24 or 29.
+DvdM_593c-88,"Meulen, Andries van der",Bremen,Leiden,1596,15961205,15961217,15961224,Dutch,Changed date to new style
+DvdM_593c-89/90,"Meulen, Andries van der",Bremen,Leiden,1596,15961211,15961218,15961224,Dutch,Changed date to new style
+DvdM_593c-91,"Meulen, Andries van der",Bremen,Leiden,1596,15961217,15970103,15970103,Dutch,Changed date to new style. Cannot tell what day the letter was received easily but seems to be 3 January.
+DvdM_593c-92,"Meulen, Andries van der",Bremen,Leiden,1596,15961217,15970103,15970103,Dutch,Changed date to new style
+DvdM_593c-93,"Meulen, Andries van der",Bremen,Leiden,1596,15961226,15970105,15970107,Dutch,Changed date to new style
+DvdM_593c-95,"Meulen, Andries van der",Bremen,Leiden,1597,15970102,15970115,15970122,Dutch,Changed date to new style
+DvdM_593c-96,"Meulen, Andries van der",Bremen,Leiden,1597,15970110,15970124,15970128,Dutch,Changed date to new style
+DvdM_593d-01,"Meulen, Andries van der",Bremen,Leiden,1597,15970117,15970128,15970128,Dutch,Changed date to new style
+DvdM_593d-02,"Meulen, Andries van der",Bremen,Leiden,1597,15970122,NA,NA,Dutch,Changed date to new style. Last part of the letter is in French. Does not seem to have an address page.
+DvdM_593d-03,"Meulen, Andries van der",Bremen,Leiden,1597,15970123,15970203,15970204,French,Changed date to new style
+DvdM_593d-04,"Meulen, Andries van der",Bremen,Leiden,1597,15970131,15970208,15970211,French,Changed date to new style
+DvdM_593d-05,"Meulen, Andries van der",Bremen,Leiden,1597,15970204,15970217,15970218,Dutch,Changed date to new style
+DvdM_593d-06,"Meulen, Andries van der",Bremen,Leiden,1597,15970205,15970217,15970218,Dutch,Changed date to new style
+DvdM_593d-07,"Meulen, Andries van der",Bremen,Leiden,1597,15970213,15970224,NA,Dutch,Changed date to new style. Second half of the letter is in French.
+DvdM_593d-08,"Meulen, Andries van der",Bremen,Leiden,1597,15970222,15970303,15970304,Dutch,Changed date to new style
+DvdM_593d-09,"Meulen, Andries van der",Bremen,Leiden,1597,15970228,15970308,15970311,Dutch,Changed date to new style
+DvdM_593d-10,"Meulen, Andries van der",Bremen,Leiden,1597,15970305,15970322,15970325,Dutch,Changed date to new style
+DvdM_593d-11,"Meulen, Andries van der",Bremen,Leiden,1597,15970314,15970324,15970325,Dutch,Changed date to new style
+DvdM_593d-12,"Meulen, Andries van der",Bremen,Leiden,1597,15970320,15970320,15970402,Dutch,Changed date to new style
+DvdM_593d-13/14,"Meulen, Andries van der",Bremen,Leiden,1597,15970328,15970406,15970409,Dutch,Changed date to new style. St 13 and 14 were sent together.
+DvdM_593d-15,"Meulen, Andries van der",Bremen,Leiden,1597,15970403,15970411,NA,Dutch,Changed date to new style
+DvdM_593d-16,"Meulen, Andries van der",Bremen,Leiden,1597,15970407,15970416,NA,Dutch,Changed date to new style
+DvdM_593d-17,"Meulen, Andries van der",Bremen,Leiden,1597,15970410,15970417,NA,Dutch,Changed date to new style
+DvdM_593d-18,"Meulen, Andries van der",Bremen,Leiden,1597,15970417,15970423,15970429,Dutch,Changed date to new style
+DvdM_593d-19,"Meulen, Andries van der",Bremen,Leiden,1597,15970424,15970503,15970506,Dutch,Changed date to new style
+DvdM_593d-20,"Meulen, Andries van der",Bremen,Leiden,1597,15070430,15970508,15970513,Dutch,"Changed date to new style. Date comes from st 21, which says it was written eight days after this letter."
+DvdM_593d-21,"Meulen, Andries van der",Bremen,Leiden,1597,15970508,15970516,15970520,Dutch,Changed date to new style
+DvdM_593d-22,"Meulen, Andries van der",Bremen,Leiden,1597,15970515,15970521,15970521,Dutch,Changed date to new style
+DvdM_593d-23,"Meulen, Andries van der",Bremen,Leiden,1597,15970522,15970528,15970603,Dutch,Changed date to new style
+DvdM_593d-24,"Meulen, Andries van der",Bremen,Leiden,1597,15970529,15970605,15970610,Dutch,Changed date to new style
+DvdM_593d-25,"Meulen, Andries van der",Bremen,Leiden,1597,15970531,NA,NA,Dutch,Changed date to new style
+DvdM_593d-26,"Meulen, Andries van der",Bremen,Leiden,1597,15970605,15970611,15970617,Dutch,Changed date to new style
+DvdM_593d-27,"Meulen, Andries van der",Bremen,Leiden,1597,15970611,15970621,NA,Dutch,Changed date to new style
+DvdM_593d-28,"Meulen, Andries van der",Bremen,Leiden,1597,15970612,15970619,15970624,Dutch,Changed date to new style
+DvdM_593d-29,"Meulen, Andries van der",Bremen,Leiden,1597,15970618,15970625,NA,Dutch,Changed date to new style
+DvdM_593d-30,"Meulen, Andries van der",Bremen,Leiden,1597,15970626,15970701,NA,Dutch,"Changed date to new style. Date comes from st 31, which says when this letter was written."
+DvdM_593d-31,"Meulen, Andries van der",Bremen,Leiden,1597,15970707,15970716,NA,Dutch,Changed date to new style
+DvdM_593d-32,"Meulen, Andries van der",Bremen,Leiden,1597,15970710,15970716,NA,French,Changed date to new style
+DvdM_593d-33,"Meulen, Andries van der",Bremen,Leiden,1597,15970714,15970720,NA,Dutch,Changed date to new style
+DvdM_598-01,"Minau, Balthasar",Vicenza,Bremen,1591,15911001,NA,NA,NA,No exact date
+DvdM_598-02,"Minau, Balthasar",Vicenza,Bremen,1591,15911023,15911109,NA,NA,"Did not change received date, because it probably went to Leiden"
+DvdM_598-03,"Minau, Balthasar",Vicenza,Bremen,1591,15911031,15911119,NA,NA,"Did not change received date, because it probably went to Leiden"
+DvdM_598-04,"Minau, Balthasar",Vicenza,Bremen,1591,15911115,15911128,NA,NA,"Did not change received date, because it probably went to Leiden"
+DvdM_598-05,"Minau, Balthasar",Vicenza,Bremen,1591,15911122,15911212,NA,NA,"Did not change received date, because it probably went to Leiden"
+DvdM_60-12,"Della Faille, Jacques",Haarlem,Bremen,1587,15870412,NA,NA,Dutch,
+DvdM_602-01,"Neste, Antonio van",Venice,Bremen,1591,15910927,15911014,NA,NA,Sent to Andries and Daniel in Bremen. Changed received date to new style.
+DvdM_602-02,"Neste, Antonio van",Venice,Bremen,1591,15911101,15911119,NA,NA,Sent to Andries and Daniel in Bremen. Changed received date to new style.
+DvdM_602-03,"Neste, Antonio van",Venice,Bremen,1592,15920103,15920205,NA,NA,Sent to Andries and Daniel in Bremen. Changed received date to new style.
+DvdM_602-04,"Neste, Antonio van",Venice,Leiden,1592,15920313,15920320,NA,NA,
+DvdM_602-05,"Neste, Antonio van",Venice,Leiden,1592,15920313,15920320,NA,NA,
+DvdM_606-01,"Eeckeren, Hester van",Dordrecht,Bremen,1587,15870617,NA,NA,Dutch,
+DvdM_606-02,"Eeckeren, Hester van",Dordrecht,Bremen,1588,15880401,NA,NA,NA,
+DvdM_606-03,"Eeckeren, Hester van",Dordrecht,Bremen,1588,15880906,NA,NA,Dutch,
+DvdM_606-04,"Eeckeren, Hester van",Haarlem,Bremen,1590,15900128,NA,NA,Dutch,
+DvdM_607-001,"Noirot, Melchior",Frankfurt,Bremen,1588,15880409,NA,NA,Dutch,St 1: 30 March 1588
+DvdM_612,"Perger, Marttin Enrus",Hamburg,Bremen,1590,15901023,NA,NA,NA,Not sure on the month that the letter was sent.
+DvdM_614-01,"Pierens, Gillis",Amsterdam,Leiden,1592,15920702,15920705,NA,Dutch,
+DvdM_614-02,"Pierens, Gillis",Amsterdam,Leiden,1592,15921018,15921019,NA,Dutch,
+DvdM_614-03,"Pierens, Gillis",Amsterdam,Leiden,1593,15930209,15930220,NA,Dutch,
+DvdM_614-04,"Pierens, Gillis",Amsterdam,Leiden,1593,15930302,15930303,NA,Dutch,
+DvdM_614-05,"Pierens, Gillis",Amsterdam,Leiden,1593,15930317,15930320,NA,Dutch,
+DvdM_614-07,"Pierens, Gillis",Amsterdam,Leiden,1593,15930325,15930326,NA,Dutch,
+DvdM_615,"Pierens, Gillis",Tangier,Leiden,1595,15950317,NA,NA,Dutch,"Sent location is from Morocco, so exact location is not known."
+DvdM_618,Richardot,Brussels,Leiden,1598,15980717,15980725,NA,NA,
+DvdM_621-10,"Schot de Oude, Jacques",Delft,Bremen,1589,15890212,NA,NA,Dutch,
+DvdM_622-001,"Schot, Hans",Staden,Leiden,NA,NA,NA,NA,Dutch,
+DvdM_622-002,"Schot, Hans",Staden,Leiden,1593,15930426,15930511,NA,Dutch,
+DvdM_622-003,"Schot, Hans",Staden,Bremen,1593,15930914,15930918,NA,Dutch,
+DvdM_622-004,"Schot, Hans",Amsterdam,Leiden,1593,15931018,15931018,NA,Dutch,
+DvdM_622-005,"Schot, Hans",Haarlem,Leiden,1593,15931128,15931128,NA,Dutch,
+DvdM_622-006,"Schot, Hans",Haarlem,Leiden,1593,15931201,15931202,NA,Dutch,
+DvdM_622-007,"Schot, Hans",Haarlem,Leiden,1593,15931212,15931213,NA,Dutch,
+DvdM_622-008,"Schot, Hans",Haarlem,Leiden,1593,15931224,15931226,NA,Dutch,
+DvdM_622-009,"Schot, Hans",Haarlem,Leiden,1593,15931230,15931231,NA,Dutch,
+DvdM_622-010,"Schot, Hans",Haarlem,Leiden,1594,15940122,15940123,NA,Dutch,
+DvdM_622-011,"Schot, Hans",Haarlem,Leiden,1594,15940127,15940128,NA,Dutch,
+DvdM_622-012,"Schot, Hans",Haarlem,Leiden,1594,15940318,15940318,NA,Dutch,
+DvdM_622-013,"Schot, Hans",Haarlem,Leiden,1594,15940511,15940511,NA,Dutch,
+DvdM_622-014,"Schot, Hans",Haarlem,Leiden,1594,15940712,NA,NA,Dutch,
+DvdM_622-015,"Schot, Hans",Haarlem,Leiden,1594,15940716,15940716,NA,Dutch,
+DvdM_622-016,"Schot, Hans",Haarlem,Leiden,1594,15940725,15940725,NA,Dutch,
+DvdM_622-017,"Schot, Hans",Haarlem,Leiden,1594,15940726,15940726,NA,Dutch,
+DvdM_622-018,"Schot, Hans",Haarlem,Antwerp,1594,15940831,15940908,NA,Dutch,
+DvdM_622-019,"Schot, Hans",Haarlem,Antwerp,1594,15940918,15940926,NA,Dutch,
+DvdM_622-020/21,"Schot, Hans",Haarlem,Leiden,1594,15941109,15941109,NA,Dutch,
+DvdM_622-023,"Schot, Hans",Haarlem,Bremen,1594,15941214,15941228,NA,Dutch,
+DvdM_622-024,"Schot, Hans",The Hague,Leiden,1595,15950321,15950321,NA,Dutch,
+DvdM_622-025,"Schot, Hans",Middelburg,Leiden,1595,15950412,15950416,NA,Dutch,
+DvdM_622-026,"Schot, Hans",Middelburg,Leiden,1595,15950526,15950528,NA,Dutch,
+DvdM_622-027,"Schot, Hans",Middelburg,Leiden,1595,15950615,15950617,NA,Dutch,
+DvdM_622-028,"Schot, Hans",Middelburg,Leiden,1595,15950624,15950627,NA,Dutch,
+DvdM_622-029,"Schot, Hans",Middelburg,Leiden,1595,15950628,15950629,NA,Dutch,
+DvdM_622-030/31,"Schot, Hans",Middelburg,Leiden,1595,15950713,15950720,NA,Dutch,
+DvdM_622-032,"Schot, Hans",Middelburg,Leiden,1595,15950713,15950717,NA,Dutch,
+DvdM_622-033/34,"Schot, Hans",Middelburg,Leiden,1595,15950715,15950720,NA,Dutch,
+DvdM_622-035,"Schot, Hans",Middelburg,Leiden,1595,15950719,15950720,NA,Dutch,
+DvdM_622-036,"Schot, Hans",Middelburg,Leiden,1595,15950812,15950817,NA,Dutch,
+DvdM_622-037,"Schot, Hans",Middelburg,Leiden,1595,15950812,15950812,NA,Dutch,
+DvdM_622-038,"Schot, Hans",Middelburg,Leiden,1595,15950818,15950819,NA,Dutch,
+DvdM_622-039,"Schot, Hans",Middelburg,Leiden,1595,15950818,15950819,NA,Dutch,
+DvdM_622-040,"Schot, Hans",Middelburg,Leiden,1595,15950819,NA,NA,Dutch,
+DvdM_622-041,"Schot, Hans",Middelburg,Leiden,1595,15950825,15950826,NA,Dutch,
+DvdM_622-042,"Schot, Hans",Middelburg,Leiden,1595,15950901,15950911,NA,Dutch,
+DvdM_622-043,"Schot, Hans",Middelburg,Leiden,1595,15950901,15950911,NA,Dutch,
+DvdM_622-044,"Schot, Hans",Middelburg,Leiden,1595,15950902,15950904,NA,Dutch,
+DvdM_622-045,"Schot, Hans",Middelburg,Leiden,1595,15950908,15950911,NA,Dutch,
+DvdM_622-046,"Schot, Hans",Middelburg,Leiden,1595,15950922,15950927,NA,Dutch,
+DvdM_622-047,"Schot, Hans",Middelburg,Leiden,1595,15951004,15951006,NA,Dutch,
+DvdM_622-048,"Schot, Hans",Middelburg,Leiden,1595,15951015,15951019,NA,Dutch,
+DvdM_622-049,"Schot, Hans",Middelburg,Leiden,1595,15951019,15951025,NA,Dutch,
+DvdM_622-050,"Schot, Hans",Middelburg,Leiden,1595,15951025,15951027,NA,Dutch,
+DvdM_622-051,"Schot, Hans",Middelburg,Leiden,1595,15951030,15951108,NA,Dutch,
+DvdM_622-052,"Schot, Hans",Middelburg,Leiden,1595,15951109,15951112,NA,Dutch,
+DvdM_622-053,"Schot, Hans",Middelburg,Leiden,1595,15951112,15951116,NA,Dutch,
+DvdM_622-054,"Schot, Hans",Middelburg,Leiden,1595,15951116,15951120,NA,Dutch,
+DvdM_622-055,"Schot, Hans",Middelburg,Leiden,1595,15951123,NA,NA,Dutch,
+DvdM_622-056,"Schot, Hans",Middelburg,Leiden,1595,15951125,15951129,NA,Dutch,
+DvdM_622-057,"Schot, Hans",Middelburg,Leiden,1595,15951128,15951201,NA,Dutch,
+DvdM_622-058,"Schot, Hans",Middelburg,Leiden,1595,15951202,15951206,NA,Dutch,
+DvdM_622-059,"Schot, Hans",Middelburg,Leiden,1595,15951205,NA,NA,Dutch,
+DvdM_622-060,"Schot, Hans",Middelburg,Leiden,1595,15951211,15951215,NA,Dutch,
+DvdM_622-061,"Schot, Hans",Middelburg,Leiden,1595,15951213,15951219,NA,Dutch,
+DvdM_622-062,"Schot, Hans",Middelburg,Leiden,1595,15951213,15951219,NA,Dutch,
+DvdM_622-063,"Schot, Hans",Middelburg,Leiden,1595,15951223,15951230,NA,Dutch,
+DvdM_622-064,"Schot, Hans",Middelburg,Leiden,1595,15951224,15951230,NA,Dutch,
+DvdM_622-065,"Schot, Hans",Middelburg,Leiden,1596,15960102,15960104,NA,Dutch,
+DvdM_622-066,"Schot, Hans",Middelburg,Leiden,1596,15960108,15960113,NA,Dutch,
+DvdM_622-067,"Schot, Hans",Middelburg,Leiden,1596,15960111,15960116,NA,Dutch,
+DvdM_622-068,"Schot, Hans",Middelburg,Leiden,1596,15960113,15960116,NA,Dutch,
+DvdM_622-069,"Schot, Hans",Middelburg,Leiden,1596,15960113,15960116,NA,Dutch,
+DvdM_622-070,"Schot, Hans",Middelburg,Leiden,1596,15960120,15960122,NA,Dutch,
+DvdM_622-071,"Schot, Hans",Middelburg,Leiden,1596,NA,15960126,NA,Dutch,
+DvdM_622-072,"Schot, Hans",Middelburg,Leiden,1596,15960124,15960128,NA,Dutch,
+DvdM_622-073,"Schot, Hans",Middelburg,Leiden,1596,15960131,15960204,NA,Dutch,
+DvdM_622-074,"Schot, Hans",Middelburg,Leiden,1596,15960201,15960211,NA,Dutch,
+DvdM_622-076/77,"Schot, Hans",Middelburg,Leiden,1596,15960207,15960211,NA,Dutch,
+DvdM_622-078,"Schot, Hans",Middelburg,Leiden,1596,15960209,15960211,NA,Dutch,
+DvdM_622-079,"Schot, Hans",Middelburg,Leiden,1596,15960215,15960218,NA,Dutch,
+DvdM_622-080,"Schot, Hans",Middelburg,Leiden,1596,15960220,15960222,NA,Dutch,
+DvdM_622-081,"Schot, Hans",Middelburg,Leiden,1596,15960227,15960308,NA,Dutch,
+DvdM_622-082,"Schot, Hans",Middelburg,Leiden,1596,15960229,NA,NA,Dutch,
+DvdM_622-083,"Schot, Hans",Middelburg,Leiden,1596,15960302,15960302,NA,Dutch,
+DvdM_622-084,"Schot, Hans",Middelburg,Leiden,1596,15960310,15960313,NA,Dutch,
+DvdM_622-085,"Schot, Hans",Middelburg,Leiden,1596,15960313,15960318,NA,Dutch,
+DvdM_622-086,"Schot, Hans",Middelburg,Leiden,1596,15960314,15960316,NA,Dutch,
+DvdM_622-087,"Schot, Hans",Middelburg,Leiden,1596,15960317,15960320,NA,Dutch,
+DvdM_622-088,"Schot, Hans",Middelburg,Leiden,1596,15960319,15960322,NA,Dutch,
+DvdM_622-089,"Schot, Hans",Middelburg,Leiden,1596,15960324,15960327,NA,Dutch,
+DvdM_622-090,"Schot, Hans",Middelburg,Leiden,1596,15960328,15960331,NA,Dutch,
+DvdM_622-091,"Schot, Hans",Middelburg,Leiden,1596,15960330,15960403,NA,Dutch,
+DvdM_622-092,"Schot, Hans",Middelburg,Leiden,1596,15960409,15960410,NA,Dutch,
+DvdM_622-093,"Schot, Hans",Middelburg,Leiden,1596,15960418,15960421,NA,Dutch,
+DvdM_622-094,"Schot, Hans",Middelburg,Leiden,1596,15960421,15960423,NA,Dutch,
+DvdM_622-095,"Schot, Hans",Middelburg,Leiden,1596,15960425,15960428,NA,Dutch,
+DvdM_622-096,"Schot, Hans",Middelburg,Leiden,1596,15960426,15960428,NA,Dutch,
+DvdM_622-097,"Schot, Hans",Middelburg,Leiden,1596,15960510,15960511,NA,Dutch,
+DvdM_622-098,"Schot, Hans",Middelburg,Leiden,1596,15960517,15960522,NA,Dutch,
+DvdM_622-099,"Schot, Hans",Middelburg,Leiden,1596,15960517,15960527,NA,Dutch,
+DvdM_622-100,"Schot, Hans",Middelburg,Leiden,1596,15960519,15960522,NA,Dutch,
+DvdM_622-101,"Schot, Hans",Middelburg,Leiden,1596,15960530,NA,NA,Dutch,
+DvdM_622-102,"Schot, Hans",Middelburg,Leiden,1596,15960603,15960604,NA,Dutch,
+DvdM_622-103,"Schot, Hans",Middelburg,Leiden,1596,15960612,15960615,NA,Dutch,
+DvdM_622-104,"Schot, Hans",Middelburg,Leiden,1596,15960614,15960615,NA,Dutch,
+DvdM_622-105,"Schot, Hans",Middelburg,Leiden,1596,15960616,NA,NA,Dutch,
+DvdM_622-108,"Schot, Hans",Middelburg,Leiden,1596,15960619,15960623,NA,Dutch,
+DvdM_622-109,"Schot, Hans",Middelburg,Leiden,1596,15960623,15960626,NA,Dutch,
+DvdM_622-110,"Schot, Hans",Middelburg,Leiden,1596,15960629,15960701,NA,Dutch,
+DvdM_622-111,"Schot, Hans",Middelburg,Leiden,1596,15960713,15960714,NA,Dutch,
+DvdM_622-112,"Schot, Hans",Middelburg,Leiden,1596,15960714,15960718,NA,Dutch,
+DvdM_622-113,"Schot, Hans",Middelburg,Leiden,1596,15960716,15960718,NA,Dutch,
+DvdM_622-114,"Schot, Hans",Middelburg,Leiden,1596,15960720,15960725,NA,Dutch,
+DvdM_622-115,"Schot, Hans",Haarlem,Leiden,1596,15960725,15960725,NA,Dutch,
+DvdM_622-116,"Schot, Hans",Amsterdam,Leiden,1596,15960726,15960726,NA,Dutch,
+DvdM_622-117,"Schot, Hans",Amsterdam,Leiden,1596,15960726,15960726,NA,Dutch,
+DvdM_622-118,"Schot, Hans",Amsterdam,Leiden,1596,15960729,15960730,NA,Dutch,
+DvdM_622-119,"Schot, Hans",Haarlem,Leiden,1596,15960803,15960803,NA,Dutch,
+DvdM_622-120,"Schot, Hans",Middelburg,Leiden,1596,15960817,15960820,NA,Dutch,
+DvdM_622-121,"Schot, Hans",Middelburg,Leiden,1596,15960823,15960825,NA,Dutch,
+DvdM_622-122,"Schot, Hans",Middelburg,Leiden,1596,15960824,15960826,NA,Dutch,
+DvdM_622-123/124,"Schot, Hans",Middelburg,Leiden,1596,15960905,15960907,NA,Dutch,
+DvdM_622-125,"Schot, Hans",Middelburg,Leiden,1596,15960907,15960909,NA,Dutch,
+DvdM_622-126,"Schot, Hans",Middelburg,Leiden,1596,15960912,15960916,NA,Dutch,
+DvdM_622-127/128,"Schot, Hans",Middelburg,Leiden,1596,15960923,15960924,NA,Dutch,
+DvdM_622-129,"Schot, Hans",Middelburg,Leiden,1596,15960928,15960930,NA,Dutch,
+DvdM_622-130,"Schot, Hans",Middelburg,Leiden,1596,15960929,15961004,NA,Dutch,
+DvdM_622-131/132,"Schot, Hans",Middelburg,Leiden,1596,15961002,15961005,NA,Dutch,
+DvdM_622-133,"Schot, Hans",Middelburg,Leiden,1596,15961005,15961011,NA,Dutch,
+DvdM_622-134,"Schot, Hans",Middelburg,Leiden,1596,15961008,15961010,NA,Dutch,
+DvdM_622-135,"Schot, Hans",Middelburg,Leiden,1596,15961018,15961021,NA,Dutch,
+DvdM_622-136,"Schot, Hans",Middelburg,Leiden,1596,15961022,15961025,NA,Dutch,
+DvdM_622-137,"Schot, Hans",Middelburg,Leiden,1596,15961024,15961028,NA,Dutch,
+DvdM_622-138,"Schot, Hans",Middelburg,Leiden,1596,15961028,15961102,NA,Dutch,
+DvdM_622-139,"Schot, Hans",Middelburg,Leiden,1596,15961106,15961109,NA,Dutch,
+DvdM_622-140,"Schot, Hans",Middelburg,Leiden,1596,15961107,15961111,NA,Dutch,
+DvdM_622-141,"Schot, Hans",Middelburg,Leiden,1596,15961113,15961117,NA,Dutch,
+DvdM_622-142,"Schot, Hans",Middelburg,Leiden,1596,15961130,15961203,NA,Dutch,
+DvdM_622-143,"Schot, Hans",Middelburg,Leiden,1596,15961202,15961205,NA,Dutch,
+DvdM_622-144,"Schot, Hans",Middelburg,Leiden,1596,15961206,15961209,NA,Dutch,
+DvdM_622-145,"Schot, Hans",Middelburg,Leiden,1596,15961212,15961215,NA,Dutch,
+DvdM_622-146,"Schot, Hans",Middelburg,Leiden,1596,15961216,15961218,NA,Dutch,
+DvdM_622-147,"Schot, Hans",Middelburg,Leiden,1596,15961229,15970103,NA,Dutch,
+DvdM_622-148,"Schot, Hans",Middelburg,Leiden,1597,15970110,15970112,NA,Dutch,
+DvdM_622-149,"Schot, Hans",Middelburg,Leiden,1597,15970121,15970124,NA,Dutch,
+DvdM_622-150,"Schot, Hans",Middelburg,Leiden,1597,15970125,15970127,NA,Dutch,
+DvdM_622-151,"Schot, Hans",Middelburg,Leiden,1597,15970130,15970203,NA,Dutch,
+DvdM_622-152,"Schot, Hans",Middelburg,Leiden,1597,15970205,15970207,NA,Dutch,
+DvdM_622-153,"Schot, Hans",Middelburg,Leiden,1597,15970210,15970216,NA,Dutch,
+DvdM_622-154,"Schot, Hans",Middelburg,Leiden,1597,15970215,15970219,NA,Dutch,
+DvdM_622-155,"Schot, Hans",Middelburg,Leiden,1597,15970223,15970301,NA,Dutch,
+DvdM_622-156,"Schot, Hans",Middelburg,Leiden,1597,15970228,15970303,NA,Dutch,
+DvdM_622-157,"Schot, Hans",Middelburg,Leiden,1597,15970304,15970304,NA,Dutch,
+DvdM_622-159,"Schot, Hans",Middelburg,Leiden,1597,15970311,15970314,NA,Dutch,
+DvdM_622-160,"Schot, Hans",Middelburg,Leiden,1597,15970319,15970324,NA,Dutch,
+DvdM_622-161,"Schot, Hans",Middelburg,Leiden,1597,15970322,15970325,NA,Dutch,
+DvdM_622-162,"Schot, Hans",Middelburg,Leiden,1597,15970414,15970417,NA,Dutch,
+DvdM_622-163,"Schot, Hans",Middelburg,Leiden,1597,15970417,15970422,NA,Dutch,
+DvdM_622-164,"Schot, Hans",Middelburg,Leiden,1597,15970428,NA,NA,Dutch,
+DvdM_622-165,"Schot, Hans",Middelburg,Leiden,1597,15970428,15970503,NA,Dutch,
+DvdM_622-166,"Schot, Hans",Middelburg,Leiden,1597,15970509,15970511,NA,Dutch,
+DvdM_622-167,"Schot, Hans",Middelburg,Leiden,1597,15970512,15970515,NA,Dutch,
+DvdM_622-168,"Schot, Hans",Middelburg,Leiden,1597,15970520,15970522,NA,Dutch,
+DvdM_622-169,"Schot, Hans",Middelburg,Leiden,1597,15970528,15970601,NA,Dutch,
+DvdM_622-170,"Schot, Hans",Middelburg,Leiden,1597,15970530,15970603,NA,Dutch,
+DvdM_622-171,"Schot, Hans",Middelburg,Leiden,1597,15970604,15970605,NA,Dutch,
+DvdM_622-172,"Schot, Hans",Middelburg,Leiden,1597,15970610,15970613,NA,Dutch,
+DvdM_622-173,"Schot, Hans",Middelburg,Leiden,1597,15970611,15970616,NA,Dutch,
+DvdM_622-174,"Schot, Hans",Middelburg,Leiden,1597,15970618,15970621,NA,Dutch,
+DvdM_622-175,"Schot, Hans",Middelburg,Leiden,1597,15970626,15970629,NA,Dutch,
+DvdM_622-176,"Schot, Hans",Middelburg,Leiden,1597,15970701,15970703,NA,Dutch,
+DvdM_622-177,"Schot, Hans",Middelburg,Leiden,1597,NA,15970723,NA,Dutch,
+DvdM_622-178,"Schot, Hans",Middelburg,Leiden,1597,15970710,15970713,NA,Dutch,
+DvdM_622-179,"Schot, Hans",Middelburg,Leiden,1597,15970720,15970723,NA,Dutch,
+DvdM_622-180,"Schot, Hans",Middelburg,Leiden,1597,15970724,15970727,NA,Dutch,
+DvdM_622-181,"Schot, Hans",Middelburg,Leiden,1597,15970801,15970803,NA,Dutch,
+DvdM_622-182,"Schot, Hans",Middelburg,Leiden,1597,15970810,15970812,NA,Dutch,
+DvdM_622-183,"Schot, Hans",Middelburg,Leiden,1597,15970821,15970824,NA,Dutch,
+DvdM_622-184,"Schot, Hans",Middelburg,Leiden,1597,15970925,15970928,NA,Dutch,
+DvdM_622-185,"Schot, Hans",Middelburg,Leiden,1597,15970928,15970930,NA,Dutch,
+DvdM_622-186,"Schot, Hans",Middelburg,Leiden,1597,15971002,15971006,NA,Dutch,
+DvdM_622-187,"Schot, Hans",Middelburg,Leiden,1597,15971005,15971007,NA,Dutch,
+DvdM_622-188,"Schot, Hans",Middelburg,Leiden,1597,15971011,15971015,NA,Dutch,
+DvdM_622-189,"Schot, Hans",Middelburg,Leiden,1597,15971012,15971015,NA,Dutch,
+DvdM_628-01,"Stiger, Hans de",Nuremberg,Bremen,1590,15900828,NA,NA,NA,
+DvdM_638-001,"Vogele, Joos de",Haarlem,Bremen,1591,15910831,NA,NA,NA,
+DvdM_649-01,"Wolf, Jan de",Haarlem,Bremen,1589,15890817,NA,NA,NA,
+DvdM_649-02,"Wolf, Jan de",Haarlem,Bremen,1590,15900626,NA,NA,NA,
+DvdM_649-03,"Wolf, Jan de",Haarlem,Bremen,1590,15900924,15901007,NA,NA,
+DvdM_652-01,"d’Aerssen, Cornelis",The Hague,Leiden,1593,15931102,NA,NA,French,Received date is obscured
+DvdM_654,Aneel,Nuremberg,Leiden,1594,15940102,15940110,NA,NA,Changed date to new style
+DvdM_655-01,"Badonere, J.",Frankfurt,Leiden,1596,15961018,15961108,NA,NA,
+DvdM_655-02,"Badonere, J.",Paris,Leiden,1597,15971220,15980117,NA,NA,
+DvdM_655-03,"Badonere, J.",Rouen,Leiden,1596,15961228,15970114,NA,NA,
+DvdM_656,"Backer, Andre",Halberstadt,Bremen,1591,15910317,NA,NA,French,
+DvdM_657-01,"Banos, Theophile de",Frankfurt,Antwerp,1583,15830929,NA,NA,French,Old style
+DvdM_657-02,"Banos, Theophile de",Frankfurt,Bremen,1589,15890619,15890625,NA,French,Changed both dates to new style
+DvdM_657-03,"Banos, Theophile de",Frankfurt,Bremen,1591,15911003,15911024,NA,French,Changed both dates to new style
+DvdM_658-01,"Beke, Jan van der",Vlissingen,Bremen,1589,15890416,NA,NA,NA,
+DvdM_658-02–4,"Beke, Jan van der",Vlissingen,Bremen,1590,15901006,NA,NA,NA,
+DvdM_658-05,"Beke, Jan van der",Vlissingen,Bremen,1591,15910912,NA,NA,NA,
+DvdM_660-001,"Bongars, Jacques",Frankfurt,Bremen,1589,15890417,NA,NA,NA,
+DvdM_660-002,"Bongars, Jacques",Frankfurt,Bremen,1589,15890514,NA,NA,NA,
+DvdM_660-003,"Bongars, Jacques",Frankfurt,Bremen,1589,15890514,NA,NA,Latin,
+DvdM_660-004,"Bongars, Jacques",Frankfurt,Bremen,1591,15910823,15910828,NA,NA,
+DvdM_660-005,"Bongars, Jacques",Frankfurt,Bremen,1591,15910906,NA,NA,NA,
+DvdM_660-006,"Bongars, Jacques",Frankfurt,Bremen,1591,15910913,15910920,NA,NA,
+DvdM_660-007,"Bongars, Jacques",Frankfurt,Bremen,1591,15910918,15910923,NA,NA,
+DvdM_661-01,Staten van Brabant,Antwerp,Delft,1585,15850225,NA,NA,Dutch,RGP-86
+DvdM_661-02,Staten van Brabant,Antwerp,Delft,1585,15850226,NA,NA,Dutch,RGP-86a
+DvdM_671-26,"Hardy, Petit du Claux",Paris,Leiden,1596,15960214,15960305,NA,French,
+DvdM_671-27,"Hardy, Petit du Claux",Paris,Leiden,1596,15960311,15960527,NA,French,
+DvdM_671-28,"Hardy, Petit du Claux",Paris,Leiden,1596,15960902,NA,NA,French,
+DvdM_671-29,"Hardy, Petit du Claux",Rouen,Leiden,1597,15970127,15970301,NA,French,
+DvdM_671-30,"Hardy, Petit du Claux",Paris,Leiden,1597,15970520,15970606,NA,French,
+DvdM_671-32,"Hardy, Petit du Claux",Paris,Leiden,1597,15970810,NA,NA,French,
+DvdM_671-33,"Hardy, Petit du Claux",Paris,Leiden,1597,15971021,15971117,15971207,French,
+DvdM_671-34,"Hardy, Petit du Claux",Paris,Leiden,1597,15970210,15970228,NA,French,
+DvdM_671-35,"Hardy, Petit du Claux",Paris,Leiden,1598,15980515,15980620,NA,French,
+DvdM_671-36,"Hardy, Petit du Claux",Paris,Leiden,1598,15981011,15981118,NA,French,
+DvdM_671-37,"Hardy, Petit du Claux",Paris,Leiden,1599,15990422,NA,NA,French,
+DvdM_674-01,"Calvart, Jacques",Haarlem,Delft,1585,15850806,NA,NA,French,RGP-154. This is 674-1 and 239-48.
+DvdM_677-01,"Montens, Godevart",Bremen,Antwerp,1591,15910219,NA,NA,NA,St 1: Sent to Antwerp on 19 February 1591
+DvdM_677-02,"Montens, Godevart",Leiden,Bremen,1591,15910922,NA,NA,NA,St 2: 22 September 1591. Sent to Bremen
+DvdM_680-01,"Palavicino, Oratie",London,Leiden,1592,15920308,15920315,NA,French,
+DvdM_684-01,NA,Dieppe,NA,1590,15901001,NA,NA,NA,

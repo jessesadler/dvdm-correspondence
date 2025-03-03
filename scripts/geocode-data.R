@@ -5,63 +5,77 @@
 # Take out country name from places that need it in letters data
 
 # Load libraries
+library(readr)
 library(dplyr)
-library(stringr)
-library(ggmap)
+library(opencage)
+library(sf)
 
-# Load letters data
-# Load as a data frame so it can be geocoded
-letters <- read.csv("data/dvdm-correspondence-1591.csv", stringsAsFactors = FALSE)
+letters <- read_csv("data/letters.csv", col_types = list(
+  date = col_date("%Y%m%d"),
+  rec_date = col_date("%Y%m%d"),
+  resp_date = col_date("%Y%m%d")
+))
 
-# Put ", country name" for necessary places for geocoding
-letters$destination <- str_replace(letters$destination, "Brunswick", "Brunswick, Germany")
-letters$source <- str_replace(letters$source, "Gravesend", "Gravesend, UK")
-letters$source <- str_replace(letters$source, "Newbury", "Newbury, UK")
-letters$source <- str_replace(letters$source, "Naples", "Naples, Italy")
-letters$source <- str_replace(letters$source, "Rombeek", "Rombeek, Netherlands")
+locations <- sort(unique(c(letters$source, letters$destination)))
 
-# The rest of the code makes a tibble (locations) with the geocoding of all of
-# the places in the letters tibble and saves it as a rds document.
+geo <- oc_forward_df(locations,
+              bounds = oc_bbox(-29, -10, 24, 60),
+              output = "all")
 
-# Distinct sources and destinations into a single tibble
-sources <- letters %>%
-  distinct(source) %>%
-  na.omit(source) %>%
-  rename(place = source)
+# Het Vlie to Vlieland
+vlie <- oc_forward_df("Vlieland, Netherlands", output = "all")
+vlie[1,1] <- "Het Vlie"
 
-destinations <- letters %>%
-  distinct(destination) %>%
-  na.omit(destination) %>%
-  rename(place = destination)
+geo <- geo |> 
+  filter(placename != "Het Vlie") |> 
+  bind_rows(vlie)
 
-places <- full_join(sources, destinations, by = "place")
+geo |> 
+  select(placename:oc_lng, oc_formatted, oc_country, oc_state) |> 
+  sf::st_as_sf(coords = c("oc_lng", "oc_lat"), crs = 4326) |> 
+  mapview::mapview()
 
-#Geocode with mutate_geocode
-locations_df <- places %>% mutate_geocode(place, output = "more")
+# Liege is wrong
+liege <- oc_forward_df("Liege", output = "all", limit = 3)
+liege <- liege |> 
+  filter(oc_type == "city")
 
-# Turn dataframe into tibble, select useful columns, and rename administrative area
-locations <- as_tibble(locations_df) %>% 
-  select(-(type:administrative_area_level_2)) %>% 
-  select(place:country) %>% 
-  rename(admin_area = administrative_area_level_1)
+geo <- geo |> 
+  filter(placename != "Liege") |> 
+  bind_rows(liege)
 
-# Take out country name from places that needed it for geocoding
-locations$place <- str_replace(locations$place, ",.*", "")
+# check
+geo |> 
+  select(placename:oc_lng, oc_formatted, oc_country, oc_state) |> 
+  sf::st_as_sf(coords = c("oc_lng", "oc_lat"), crs = 4326) |> 
+  mapview::mapview()
+
+# Select columns
+geo <- geo |> 
+  select(placename, lat = oc_lat, lng = oc_lng, oc_formatted, oc_country, oc_state)
 
 # Add historic regions
-historic_regions <- tibble(
-  country = c("Belgium", "France", "Germany", "Italy", "Netherlands", "United Kingdom"),
-  historic_region = c("Spanish Netherlands", "France", "Germany", "Italy", "Dutch Republic", "England"))
 
-locations <- left_join(locations, historic_regions)
+geo <- geo |> 
+  mutate(historic_region = case_when(
+    oc_country == "Belgium" ~ "Spanish Netherlands",
+    oc_country == "Czechia" ~ "Holy Roman Empire",
+    oc_country == "France" ~ "France",
+    oc_country == "Gabon" ~ "Africa",
+    oc_country == "Germany" ~ "Holy Roman Empire",
+    oc_country == "Ghana" ~ "Africa",
+    oc_country == "Italy" ~ "Italy",
+    oc_country == "Morocco" ~ "Africa",
+    oc_country == "Netherlands" ~ "Dutch Republic",
+    oc_country == "Sweden" ~ "Sweden",
+    oc_country == "United Kingdom" ~ "England",
+  ))
 
-# Save as csv
-write_csv(locations, "data/locations-year.csv")
-locations <- read_csv("data/locations.csv")
 
-# Take out country name from places that needed it for geocoding in letters data
-letters$source <- str_replace(letters$source, ",.*", "")
-letters$destination <- str_replace(letters$destination, ",.*", "")
+# Create sf locations
+geo_sf <- geo |> 
+  sf::st_as_sf(coords = c("lng", "lat"), crs = 4326)
 
-# Save cleaned letters data as csv
-write_csv(letters, "data/dvdm-correspondence-year.csv")
+# Save data
+write_csv(geo, "data/locations-geo.csv")
+st_write(geo_sf, "data/locations-sf.geojson")
