@@ -14,55 +14,48 @@ locations <- read_csv("data/locations-1591.csv") %>%
   select(place:lat) # simplify locations data to only necessary variables
 
 ## Routes and create id column
-routes <- letters %>%
-  group_by(source, destination) %>% 
-  summarise() %>% 
-  drop_na() %>% 
-  ungroup()%>% 
+routes <- letters |> 
+  count(source, destination) |>  
+  drop_na() |>  
   rowid_to_column("id")
 
 ## Gather to make long tibble go from source and destination as variables to
 # place and whether it is source or destination. This makes it so there is only
 # one set of longitude and latitude columns and so only one sfc column
-routes_long <- routes %>% gather(type, place, -id)
+routes_long <- routes |> 
+  pivot_longer(cols = c(source, destination), names_to = "type", values_to = "place")
+
 
 # Add latitude and longitude data
-routes_geo <- left_join(routes_long, locations, by = "place")
+sf_points <- routes_long |> 
+  left_join(locations, by = "place") |> 
+  st_as_sf(coords = c("lon", "lat"), crs = 4326)
 
-# Create sf object with sfc points
-routes_points <- st_as_sf(routes_geo, coords = c("lon", "lat"), crs = 4326)
-
-# Make lines through group_by() and summarise() This keeps order of source and
-# destination, because destination is later in the table. do_union = FALSE makes
-# geometry a multipoint, which can then be turned into linestring.
-routes_lines <- routes_points %>% 
-  group_by(id) %>% 
-  summarise(do_union = FALSE) %>% 
-  st_cast("LINESTRING")
+# Create sf great circles
+routes_sf <- sf_points |> 
+  group_by(id) |>  
+  summarise(do_union = FALSE) |> 
+  st_cast("LINESTRING") |> 
+  st_segmentize(units::set_units(20, km))
 
 # Add back in source and destination columns with city names
-routes_lines <- left_join(routes_lines, routes, by = "id")
+routes_sf <- routes_sf |> 
+  left_join(routes, by = "id") |> 
+  select(id, source, destination, n, geometry) # Rearrange columns
 
-# Make great circles
-# set_units function is from dfMaxLength argument
-# It gives the maximum length of a segment. The function uses
-# gcIntermediate to calculate actual segmentation
-routes_gcircles <- routes_lines %>% st_segmentize(units::set_units(20, km))
+# Distance
+routes_sf <- routes_sf |> 
+  mutate(meters = st_length(geometry),
+         miles = round(units::set_units(meters, miles)),
+         .after = n)
 
-## Distance measurements of routes with units package
-# Rounded totals for km and miles since locations are not exact
-distance <- st_length(routes_gcircles) %>% 
-  as_tibble() %>% 
-  add_column(id = 1:nrow(routes)) %>% 
-  rename(meters = value) %>% 
-  mutate(km = round(set_units(meters, km)),
-         miles = round(set_units(meters, miles))) %>% 
-  select(id, everything())
-
-routes_distance <- left_join(routes_gcircles, distance, by = "id")
 
 ### Plot
 library(mapview)
 
 # Map routes by distance
-mapview(routes_distance, zcol = "miles", legend = TRUE)
+mapview(routes_sf, zcol = "miles", legend = TRUE)
+mapview(routes_sf, zcol = "n", legend = TRUE)
+
+# Write out data
+write_sf(routes_sf, "data/routes_sf.geojson")
