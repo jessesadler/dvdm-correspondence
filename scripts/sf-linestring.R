@@ -5,33 +5,43 @@
 # possible to have only one sf geometry column. Lines are made with
 # group_by() and summarise(), along with st_cast() to create linestring
 
-library(tidyverse)
+library(readr)
+library(tibble)
+library(dplyr)
+library(tidyr)
 library(sf)
 library(units)
 
-letters <- read_csv("data-raw/dvdm-correspondence-1591.csv")
-locations <- read_csv("data/locations-1591.csv") %>% 
-  select(place:lat) # simplify locations data to only necessary variables
+letters <- read_csv("data-raw/letters.csv", col_types = list(
+  date = col_date("%Y%m%d"),
+  rec_date = col_date("%Y%m%d"),
+  resp_date = col_date("%Y%m%d")
+))
 
-## Routes and create id column
+# Use of csv locations makes final data frame nicer
+locations <- read_csv("data/locations-geo.csv")
+
+## Routes with id column
 routes <- letters |> 
-  count(source, destination) |>  
-  drop_na() |>  
+  group_by(source, destination) |> 
+  summarise(.groups = "drop") |> 
+  drop_na() |> 
   rowid_to_column("id")
 
 ## Gather to make long tibble go from source and destination as variables to
 # place and whether it is source or destination. This makes it so there is only
 # one set of longitude and latitude columns and so only one sfc column
 routes_long <- routes |> 
-  pivot_longer(cols = c(source, destination), names_to = "type", values_to = "place")
+  pivot_longer(cols = c(source, destination),
+               names_to = "type",
+               values_to = "place")
 
-
-# Add latitude and longitude data
+# Create sf points
 sf_points <- routes_long |> 
-  left_join(locations, by = "place") |> 
-  st_as_sf(coords = c("lon", "lat"), crs = 4326)
+  left_join(locations, by = join_by(place == placename)) |> 
+  st_as_sf(coords = c("lng", "lat"), crs = 4326)
 
-# Create sf great circles
+# Create sf great circle lines
 routes_sf <- sf_points |> 
   group_by(id) |>  
   summarise(do_union = FALSE) |> 
@@ -41,21 +51,17 @@ routes_sf <- sf_points |>
 # Add back in source and destination columns with city names
 routes_sf <- routes_sf |> 
   left_join(routes, by = "id") |> 
-  select(id, source, destination, n, geometry) # Rearrange columns
+  select(id, source, destination, geometry) # Rearrange columns
 
 # Distance
 routes_sf <- routes_sf |> 
   mutate(meters = st_length(geometry),
          miles = round(units::set_units(meters, miles)),
-         .after = n)
+         .after = destination)
 
-
-### Plot
-library(mapview)
 
 # Map routes by distance
-mapview(routes_sf, zcol = "miles", legend = TRUE)
-mapview(routes_sf, zcol = "n", legend = TRUE)
+mapview::mapview(routes_sf, zcol = "miles", legend = TRUE)
 
 # Write out data
-write_sf(routes_sf, "data/routes_sf.geojson")
+write_sf(routes_sf, "data/routes-sf.geojson", delete_dsn = TRUE)
