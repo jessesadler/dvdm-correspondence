@@ -71,11 +71,11 @@ geo <- geo |>
     oc_country == "United Kingdom" ~ "England",
   ))
 
-
 # Create sf locations
 geo_sf <- geo |> 
   sf::st_as_sf(coords = c("lng", "lat"), crs = 4326)
 
 # Save data
 write_csv(geo, "data/locations-geo.csv")
-st_write(geo_sf, "data/locations-sf.geojson")
+write_sf(geo_sf, "data/locations-sf.geojson",
+         delete_dsn = TRUE)

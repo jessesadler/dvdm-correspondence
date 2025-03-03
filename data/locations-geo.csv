@@ -1,69 +1,69 @@
-placename,lat,lng,oc_formatted,oc_country,oc_state
-Aachen,50.776351,6.083862,"Aachen, North Rhine-Westphalia, Germany",Germany,North Rhine-Westphalia
-Amsterdam,52.3730796,4.8924534,"Amsterdam, North Holland, Netherlands",Netherlands,North Holland
-Antwerp,51.2211097,4.3997081,"Antwerp, Belgium",Belgium,Antwerp
-Augsburg,48.3690341,10.8979522,"Augsburg, Bavaria, Germany",Germany,Bavaria
-Bergen op Zoom,51.4944756,4.2871541,"Bergen op Zoom, North Brabant, Netherlands",Netherlands,North Brabant
-Breda,51.5887845,4.7760237,"Breda, North Brabant, Netherlands",Netherlands,North Brabant
-Bremen,53.0758196,8.8071646,"Bremen, Germany",Germany,Bremen
-Brunswick,52.2646577,10.5236066,"Brunswick, Lower Saxony, Germany",Germany,Lower Saxony
-Brussels,50.8465573,4.351697,"Brussels, Brussels-Capital, Belgium",Belgium,NA
-Caen,49.1813403,-0.3635615,"Caen, Calvados, France",France,Normandy
-Cape Lopez,-0.62106,8.71507,"l’Ogooué-Maritime, Gabon",Gabon,l’Ogooué-Maritime
-Cologne,50.938361,6.959974,"Cologne, North Rhine-Westphalia, Germany",Germany,North Rhine-Westphalia
-Delft,52.0114017,4.35839,"Delft, South Holland, Netherlands",Netherlands,South Holland
-Dieppe,49.9246182,1.0791444,"Dieppe, Seine-Maritime, France",France,Normandy
-Dordrecht,51.814429,4.6692438,"Dordrecht, South Holland, Netherlands",Netherlands,South Holland
-Duisburg,51.434999,6.759562,"Duisburg, North Rhine-Westphalia, Germany",Germany,North Rhine-Westphalia
-Emden,53.3670541,7.2058304,"Emden, Lower Saxony, Germany",Germany,Lower Saxony
-Frankfurt,50.1106444,8.6820917,"Frankfurt, Hesse, Germany",Germany,Hesse
-Ghent,51.0538286,3.7250121,"Ghent, Gent, Belgium",Belgium,East Flanders
-Goedereede,51.8181316,3.9776752,"Goedereede, South Holland, Netherlands",Netherlands,South Holland
-Gorkum,51.8296133,4.9738743,"Gorinchem, South Holland, Netherlands",Netherlands,South Holland
-Gravesend,51.4424747,0.3694468,"Gravesend, Kent, England, United Kingdom",United Kingdom,England
-Haarlem,52.3885317,4.6388048,"Haarlem, North Holland, Netherlands",Netherlands,North Holland
-Halberstadt,51.8953514,11.0520563,"38820 Halberstadt, Germany",Germany,Saxony-Anhalt
-Hamburg,53.550341,10.000654,"Hamburg, Germany",Germany,Hamburg
-Harlingen,53.1752103,5.4141998,"Harlingen, Frisia, Netherlands",Netherlands,Frisia
-Heidelberg,49.4093582,8.694724,"Heidelberg, Baden-Württemberg, Germany",Germany,Baden-Württemberg
-Helmstedt,52.2277037,11.0104702,"Helmstedt, Lower Saxony, Germany",Germany,Lower Saxony
-Huisduinen,52.9439933,4.7217783,"Huisduinen, Den Helder, North Holland, Netherlands",Netherlands,North Holland
-Leeuwarden,53.2005936,5.7918548,"Leeuwarden, Frisia, Netherlands",Netherlands,Frisia
-Leiden,52.1594747,4.4908843,"Leiden, South Holland, Netherlands",Netherlands,South Holland
-Leipzig,51.3406321,12.3747329,"Leipzig, Saxony, Germany",Germany,Saxony
-Lier,51.131069,4.5696516,"2500 Lier, Belgium",Belgium,Antwerp
-Lille,50.6365654,3.0635282,"Lille, Nord, France",France,Hauts-de-France
-Lisse,52.2576098,4.5630329,"Lisse, South Holland, Netherlands",Netherlands,South Holland
-London,51.5074456,-0.1277653,"London, United Kingdom",United Kingdom,England
-Lyon,45.7578137,4.8320114,"Lyon, Métropole de Lyon, France",France,Auvergne-Rhône-Alpes
-Marburg,50.8090106,8.7704695,"Marburg, Hesse, Germany",Germany,Hesse
-Middelburg,51.4996784,3.6137371,"Middelburg, Zeeland, Netherlands",Netherlands,Zeeland
-Moree,5.1301756,-1.2039271,"Moree, Abura/Asebu/Kwamankese District, Ghana",Ghana,Central Region
-Naples,40.8358846,14.2487679,"Naples, Italy",Italy,Campania
-Newbury,51.4020243,-1.3242212,"Shaw, Newbury, Berkshire, England, United Kingdom",United Kingdom,England
-Nîmes,43.8374249,4.3600687,"Nîmes, Gard, France",France,Occitania
-Noordwijk,52.2410856,4.4461969,"Noordwijk, South Holland, Netherlands",Netherlands,South Holland
-Nuremberg,49.453872,11.077298,"Nuremberg, Bavaria, Germany",Germany,Bavaria
-Paris,48.8534951,2.3483915,"Paris, France",France,Ile-de-France
-Prague,50.0874654,14.4212535,"Prague, Czechia",Czechia,Prague
-Rotterdam,51.9244424,4.47775,"Rotterdam, South Holland, Netherlands",Netherlands,South Holland
-Rouen,49.4404591,1.0939658,"Rouen, Seine-Maritime, France",France,Normandy
-Salins-les-Bains,46.9402176,5.8779343,"39110 Salins-les-Bains, France",France,Bourgogne – Franche-Comté
-Segeberg,53.9232287,10.1612312,"23826 Segeberg, Germany",Germany,Schleswig-Holstein
-South Downs,50.2227168,-5.2164433,"South Downs, Lanner, TR15 2NW, United Kingdom",United Kingdom,England
-Spieren,51.1994275,5.0095,"Spieren, 2440 Geel, Belgium",Belgium,Antwerp
-Stade,53.599794,9.475438,"Stade, Lower Saxony, Germany",Germany,Lower Saxony
-Staden,50.9747148,3.0145726,"8840 Staden, Belgium",Belgium,West Flanders
-Stockholm,59.3251172,18.0710935,"Stockholm, Stockholm County, Sweden",Sweden,NA
-Tangier,35.7625681,-5.8295062,"Tangier, Pachalik de Tanger باشوية طنجة, Morocco",Morocco,NA
-The Hague,52.0799838,4.3113461,"The Hague, South Holland, Netherlands",Netherlands,South Holland
-Utrecht,52.0907006,5.1215634,"Utrecht, Netherlands",Netherlands,Utrecht
-Venice,45.4371908,12.3345898,"Venice, Venezia, Italy",Italy,Veneto
-Verona,45.4424977,10.9857377,"Verona, Italy",Italy,Veneto
-Vicenza,45.6348591,11.4063543,"Vicenza, Italy",Italy,Veneto
-Vlissingen,51.4480929,3.5697992,"Vlissingen, Zeeland, Netherlands",Netherlands,Zeeland
-Wesel,51.6576909,6.617087,"Wesel, North Rhine-Westphalia, Germany",Germany,North Rhine-Westphalia
-West-Souburg,51.4664495,3.5893695,"Vlissingen, Zeeland, Netherlands",Netherlands,Zeeland
-Zoutkamp,53.3369602,6.3011339,"Zoutkamp, Groningen, Netherlands",Netherlands,Groningen
-Het Vlie,53.202995,4.9949134,"Vlieland, Frisia, Netherlands",Netherlands,Frisia
-Liege,50.6450944,5.5736112,"Liège, Belgium",Belgium,Liège
+placename,lat,lng,oc_formatted,oc_country,oc_state,historic_region
+Aachen,50.776351,6.083862,"Aachen, North Rhine-Westphalia, Germany",Germany,North Rhine-Westphalia,Holy Roman Empire
+Amsterdam,52.3730796,4.8924534,"Amsterdam, North Holland, Netherlands",Netherlands,North Holland,Dutch Republic
+Antwerp,51.2211097,4.3997081,"Antwerp, Belgium",Belgium,Antwerp,Spanish Netherlands
+Augsburg,48.3690341,10.8979522,"Augsburg, Bavaria, Germany",Germany,Bavaria,Holy Roman Empire
+Bergen op Zoom,51.4944756,4.2871541,"Bergen op Zoom, North Brabant, Netherlands",Netherlands,North Brabant,Dutch Republic
+Breda,51.5887845,4.7760237,"Breda, North Brabant, Netherlands",Netherlands,North Brabant,Dutch Republic
+Bremen,53.0758196,8.8071646,"Bremen, Germany",Germany,Bremen,Holy Roman Empire
+Brunswick,52.2646577,10.5236066,"Brunswick, Lower Saxony, Germany",Germany,Lower Saxony,Holy Roman Empire
+Brussels,50.8465573,4.351697,"Brussels, Brussels-Capital, Belgium",Belgium,NA,Spanish Netherlands
+Caen,49.1813403,-0.3635615,"Caen, Calvados, France",France,Normandy,France
+Cape Lopez,-0.62106,8.71507,"l’Ogooué-Maritime, Gabon",Gabon,l’Ogooué-Maritime,Africa
+Cologne,50.938361,6.959974,"Cologne, North Rhine-Westphalia, Germany",Germany,North Rhine-Westphalia,Holy Roman Empire
+Delft,52.0114017,4.35839,"Delft, South Holland, Netherlands",Netherlands,South Holland,Dutch Republic
+Dieppe,49.9246182,1.0791444,"Dieppe, Seine-Maritime, France",France,Normandy,France
+Dordrecht,51.814429,4.6692438,"Dordrecht, South Holland, Netherlands",Netherlands,South Holland,Dutch Republic
+Duisburg,51.434999,6.759562,"Duisburg, North Rhine-Westphalia, Germany",Germany,North Rhine-Westphalia,Holy Roman Empire
+Emden,53.3670541,7.2058304,"Emden, Lower Saxony, Germany",Germany,Lower Saxony,Holy Roman Empire
+Frankfurt,50.1106444,8.6820917,"Frankfurt, Hesse, Germany",Germany,Hesse,Holy Roman Empire
+Ghent,51.0538286,3.7250121,"Ghent, Gent, Belgium",Belgium,East Flanders,Spanish Netherlands
+Goedereede,51.8181316,3.9776752,"Goedereede, South Holland, Netherlands",Netherlands,South Holland,Dutch Republic
+Gorkum,51.8296133,4.9738743,"Gorinchem, South Holland, Netherlands",Netherlands,South Holland,Dutch Republic
+Gravesend,51.4424747,0.3694468,"Gravesend, Kent, England, United Kingdom",United Kingdom,England,England
+Haarlem,52.3837058,4.6435597,"Haarlem, North Holland, Netherlands",Netherlands,North Holland,Dutch Republic
+Halberstadt,51.8953514,11.0520563,"38820 Halberstadt, Germany",Germany,Saxony-Anhalt,Holy Roman Empire
+Hamburg,53.550341,10.000654,"Hamburg, Germany",Germany,Hamburg,Holy Roman Empire
+Harlingen,53.1752103,5.4141998,"Harlingen, Frisia, Netherlands",Netherlands,Frisia,Dutch Republic
+Heidelberg,49.4093582,8.694724,"Heidelberg, Baden-Württemberg, Germany",Germany,Baden-Württemberg,Holy Roman Empire
+Helmstedt,52.2277037,11.0104702,"Helmstedt, Lower Saxony, Germany",Germany,Lower Saxony,Holy Roman Empire
+Huisduinen,52.9439933,4.7217783,"Huisduinen, Den Helder, North Holland, Netherlands",Netherlands,North Holland,Dutch Republic
+Leeuwarden,53.2005936,5.7918548,"Leeuwarden, Frisia, Netherlands",Netherlands,Frisia,Dutch Republic
+Leiden,52.1594747,4.4908843,"Leiden, South Holland, Netherlands",Netherlands,South Holland,Dutch Republic
+Leipzig,51.3406321,12.3747329,"Leipzig, Saxony, Germany",Germany,Saxony,Holy Roman Empire
+Lier,51.131069,4.5696516,"2500 Lier, Belgium",Belgium,Antwerp,Spanish Netherlands
+Lille,50.6365654,3.0635282,"Lille, Nord, France",France,Hauts-de-France,France
+Lisse,52.2576098,4.5630329,"Lisse, South Holland, Netherlands",Netherlands,South Holland,Dutch Republic
+London,51.5074456,-0.1277653,"London, United Kingdom",United Kingdom,England,England
+Lyon,45.7578137,4.8320114,"Lyon, Métropole de Lyon, France",France,Auvergne-Rhône-Alpes,France
+Marburg,50.8090106,8.7704695,"Marburg, Hesse, Germany",Germany,Hesse,Holy Roman Empire
+Middelburg,51.4996784,3.6137371,"Middelburg, Zeeland, Netherlands",Netherlands,Zeeland,Dutch Republic
+Moree,5.1301756,-1.2039271,"Moree, Abura/Asebu/Kwamankese District, Ghana",Ghana,Central Region,Africa
+Naples,40.8358846,14.2487679,"Naples, Italy",Italy,Campania,Italy
+Newbury,51.4020243,-1.3242212,"Newbury, Berkshire, England, United Kingdom",United Kingdom,England,England
+Nîmes,43.8374249,4.3600687,"Nîmes, Gard, France",France,Occitania,France
+Noordwijk,52.2410856,4.4461969,"Noordwijk, South Holland, Netherlands",Netherlands,South Holland,Dutch Republic
+Nuremberg,49.453872,11.077298,"Nuremberg, Bavaria, Germany",Germany,Bavaria,Holy Roman Empire
+Paris,48.8588897,2.320041,"Paris, France",France,Ile-de-France,France
+Prague,50.0874654,14.4212535,"Prague, Czechia",Czechia,Prague,Holy Roman Empire
+Rotterdam,51.9244424,4.47775,"Rotterdam, South Holland, Netherlands",Netherlands,South Holland,Dutch Republic
+Rouen,49.4404591,1.0939658,"Rouen, Seine-Maritime, France",France,Normandy,France
+Salins-les-Bains,46.9402176,5.8779343,"39110 Salins-les-Bains, France",France,Bourgogne – Franche-Comté,France
+Segeberg,53.9232287,10.1612312,"23826 Segeberg, Germany",Germany,Schleswig-Holstein,Holy Roman Empire
+South Downs,50.2227168,-5.2164433,"South Downs, Lanner, TR15 2NW, United Kingdom",United Kingdom,England,England
+Spieren,51.1994275,5.0095,"Spieren, 2440 Geel, Belgium",Belgium,Antwerp,Spanish Netherlands
+Stade,53.599794,9.475438,"Stade, Lower Saxony, Germany",Germany,Lower Saxony,Holy Roman Empire
+Staden,50.9747148,3.0145726,"8840 Staden, Belgium",Belgium,West Flanders,Spanish Netherlands
+Stockholm,59.3251172,18.0710935,"Stockholm, Stockholm County, Sweden",Sweden,NA,Sweden
+Tangier,35.7625681,-5.8295062,"Tangier, Pachalik de Tanger باشوية طنجة, Morocco",Morocco,NA,Africa
+The Hague,52.0799838,4.3113461,"The Hague, South Holland, Netherlands",Netherlands,South Holland,Dutch Republic
+Utrecht,52.0907006,5.1215634,"Utrecht, Netherlands",Netherlands,Utrecht,Dutch Republic
+Venice,45.4371908,12.3345898,"Venice, Venezia, Italy",Italy,Veneto,Italy
+Verona,45.4424977,10.9857377,"Verona, Italy",Italy,Veneto,Italy
+Vicenza,45.6348591,11.4063543,"Vicenza, Italy",Italy,Veneto,Italy
+Vlissingen,51.4480929,3.5697992,"Vlissingen, Zeeland, Netherlands",Netherlands,Zeeland,Dutch Republic
+Wesel,51.6576909,6.617087,"Wesel, North Rhine-Westphalia, Germany",Germany,North Rhine-Westphalia,Holy Roman Empire
+West-Souburg,51.4664495,3.5893695,"Vlissingen, Zeeland, Netherlands",Netherlands,Zeeland,Dutch Republic
+Zoutkamp,53.3369602,6.3011339,"Zoutkamp, Groningen, Netherlands",Netherlands,Groningen,Dutch Republic
+Het Vlie,53.202995,4.9949134,"Vlieland, Frisia, Netherlands",Netherlands,Frisia,Dutch Republic
+Liege,50.6450944,5.5736112,"Liège, Belgium",Belgium,Liège,Spanish Netherlands
